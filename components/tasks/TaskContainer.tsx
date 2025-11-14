@@ -91,7 +91,7 @@ export function TaskContainer({
 
           {/* Responsive Grid - 5 columns */}
           <div
-            className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
+            className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5"
             role="list"
             aria-label={
               viewMode === "pending" ? "Featured tasks" : "Recently completed tasks"

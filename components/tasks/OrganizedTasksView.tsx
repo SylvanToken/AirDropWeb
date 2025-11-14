@@ -242,7 +242,7 @@ export function OrganizedTasksView({ organized, isFullyVerified }: OrganizedTask
         </h2>
         {activeTasks.length > 0 ? (
           <div 
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
             role="list"
             aria-label="Active tasks"
           >
@@ -290,7 +290,7 @@ export function OrganizedTasksView({ organized, isFullyVerified }: OrganizedTask
         </h2>
         {(pendingTasks.length > 0 || pendingList.length > 0) ? (
           <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
               {pendingTasks.map((task) => (
                 <TaskCard
                   key={task.id}
@@ -403,7 +403,7 @@ export function OrganizedTasksView({ organized, isFullyVerified }: OrganizedTask
         </h2>
         {completedTasks.length > 0 ? (
           <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
               {completedTasks.map((task) => (
                 <TaskCard
                   key={task.id}
@@ -513,7 +513,7 @@ export function OrganizedTasksView({ organized, isFullyVerified }: OrganizedTask
         </h2>
         {missedTasks.length > 0 ? (
           <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
               {missedTasks.map((task) => (
                 <TaskCard
                   key={task.id}
