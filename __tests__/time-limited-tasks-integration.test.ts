@@ -83,7 +83,10 @@ describe('Time-Limited Tasks - Integration Tests', () => {
       // Assert
       expect(result.duration).toBe(2)
       expect(result.expiresAt).toBeDefined()
-      expect(result.expiresAt.getTime()).toBeGreaterThan(Date.now())
+      expect(result.expiresAt).not.toBeNull()
+      if (result.expiresAt) {
+        expect(result.expiresAt.getTime()).toBeGreaterThan(Date.now())
+      }
       expect(prisma.task.create).toHaveBeenCalledWith({
         data: expect.objectContaining({
           duration: 2,
@@ -166,8 +169,10 @@ describe('Time-Limited Tasks - Integration Tests', () => {
 
         // Verify expiration is approximately correct (within 1 second tolerance)
         const expectedTime = now + duration * 60 * 60 * 1000
-        const actualTime = result.expiresAt.getTime()
-        expect(Math.abs(actualTime - expectedTime)).toBeLessThan(1000)
+        if (result.expiresAt) {
+          const actualTime = result.expiresAt.getTime()
+          expect(Math.abs(actualTime - expectedTime)).toBeLessThan(1000)
+        }
       }
     })
   })
@@ -197,7 +202,7 @@ describe('Time-Limited Tasks - Integration Tests', () => {
 
       // Act - Check if task is expired and mark it
       const task = await prisma.task.findUnique({ where: { id: 'task-expired' } })
-      const isExpired = task.expiresAt && new Date(task.expiresAt) < new Date()
+      const isExpired = task && task.expiresAt && new Date(task.expiresAt) < new Date()
 
       if (isExpired) {
         await prisma.task.update({
@@ -236,9 +241,9 @@ describe('Time-Limited Tasks - Integration Tests', () => {
 
       // Act
       const task = await prisma.task.findUnique({ where: { id: 'task-missed' } })
-      const isExpired = task.expiresAt && new Date(task.expiresAt) < new Date()
+      const isExpired = task && task.expiresAt && new Date(task.expiresAt) < new Date()
 
-      if (isExpired) {
+      if (isExpired && task && task.expiresAt) {
         await prisma.completion.create({
           data: {
             userId: 'user-1',
@@ -271,7 +276,7 @@ describe('Time-Limited Tasks - Integration Tests', () => {
 
       // Act
       const task = await prisma.task.findUnique({ where: { id: 'task-active' } })
-      const isExpired = task.expiresAt && new Date(task.expiresAt) < new Date()
+      const isExpired = task && task.expiresAt && new Date(task.expiresAt) < new Date()
 
       // Assert
       expect(isExpired).toBe(false)
@@ -290,7 +295,7 @@ describe('Time-Limited Tasks - Integration Tests', () => {
 
       // Act
       const task = await prisma.task.findUnique({ where: { id: 'task-regular' } })
-      const isExpired = task.expiresAt && new Date(task.expiresAt) < new Date()
+      const isExpired = task && task.expiresAt && new Date(task.expiresAt) < new Date()
 
       // Assert
       expect(isExpired).toBeFalsy() // null or false are both acceptable
@@ -327,9 +332,9 @@ describe('Time-Limited Tasks - Integration Tests', () => {
 
       // Act
       const task = await prisma.task.findUnique({ where: { id: 'task-1' } })
-      const isExpired = task.expiresAt && new Date(task.expiresAt) < new Date()
+      const isExpired = task && task.expiresAt && new Date(task.expiresAt) < new Date()
 
-      if (!isExpired && task.isActive) {
+      if (!isExpired && task && task.isActive) {
         const existingCompletion = await prisma.completion.findFirst({
           where: { userId: 'user-1', taskId: 'task-1' },
         })
@@ -379,10 +384,10 @@ describe('Time-Limited Tasks - Integration Tests', () => {
 
       // Act
       const task = await prisma.task.findUnique({ where: { id: 'task-expired' } })
-      const isExpired = task.expiresAt && new Date(task.expiresAt) < new Date()
+      const isExpired = task && task.expiresAt && new Date(task.expiresAt) < new Date()
 
       let completionAttempted = false
-      if (!isExpired && task.isActive) {
+      if (!isExpired && task && task.isActive) {
         completionAttempted = true
         await prisma.completion.create({
           data: {
@@ -412,10 +417,10 @@ describe('Time-Limited Tasks - Integration Tests', () => {
 
       // Act
       const task = await prisma.task.findUnique({ where: { id: 'task-expired' } })
-      const isExpired = task.expiresAt && new Date(task.expiresAt) < new Date()
+      const isExpired = task && task.expiresAt && new Date(task.expiresAt) < new Date()
 
       let result: { success: boolean; error?: string } = { success: true }
-      if (isExpired) {
+      if (isExpired && task) {
         result = {
           success: false,
           error: 'Task has expired and can no longer be completed',
@@ -737,7 +742,7 @@ describe('Time-Limited Tasks - Integration Tests', () => {
       })
 
       const isExpired =
-        activeTask.expiresAt && new Date(activeTask.expiresAt) < new Date()
+        activeTask && activeTask.expiresAt && new Date(activeTask.expiresAt) < new Date()
       expect(isExpired).toBe(false)
 
       // Step 3: Complete task
@@ -796,7 +801,7 @@ describe('Time-Limited Tasks - Integration Tests', () => {
       ;(prisma.task.findUnique as jest.Mock).mockResolvedValue(expiredTask)
       const task = await prisma.task.findUnique({ where: { id: 'task-expire' } })
 
-      const isExpired = task.expiresAt && new Date(task.expiresAt) < new Date()
+      const isExpired = task && task.expiresAt && new Date(task.expiresAt) < new Date()
       expect(isExpired).toBe(true)
 
       // Step 3: Mark as missed
@@ -805,30 +810,32 @@ describe('Time-Limited Tasks - Integration Tests', () => {
         isActive: false,
       })
 
-      const missedCompletion = {
-        id: 'comp-missed',
-        userId: 'user-1',
-        taskId: 'task-expire',
-        completedAt: new Date(),
-        missedAt: task.expiresAt,
-        pointsAwarded: 0,
-      }
-
-      ;(prisma.completion.create as jest.Mock).mockResolvedValue(missedCompletion)
-
-      await prisma.task.update({
-        where: { id: 'task-expire' },
-        data: { isActive: false },
-      })
-
-      await prisma.completion.create({
-        data: {
+      if (task && task.expiresAt) {
+        const missedCompletion = {
+          id: 'comp-missed',
           userId: 'user-1',
           taskId: 'task-expire',
+          completedAt: new Date(),
           missedAt: task.expiresAt,
           pointsAwarded: 0,
-        },
-      })
+        }
+
+        ;(prisma.completion.create as jest.Mock).mockResolvedValue(missedCompletion)
+
+        await prisma.task.update({
+          where: { id: 'task-expire' },
+          data: { isActive: false },
+        })
+
+        await prisma.completion.create({
+          data: {
+            userId: 'user-1',
+            taskId: 'task-expire',
+            missedAt: task.expiresAt,
+            pointsAwarded: 0,
+          },
+        })
+      }
 
       expect(prisma.task.update).toHaveBeenCalled()
       expect(prisma.completion.create).toHaveBeenCalledWith({

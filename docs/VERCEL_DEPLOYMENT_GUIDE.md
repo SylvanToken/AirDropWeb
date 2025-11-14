@@ -65,7 +65,7 @@ Go to **Project Settings** → **Environment Variables** and add:
 #### Database Configuration
 
 ```env
-DATABASE_URL=postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZcM@aws-1-us-east-1.pooler.supabase.com:5432/postgres
+DATABASE_URL=postgres://username:password@host:5432/database
 ```
 
 #### NextAuth Configuration
@@ -96,11 +96,11 @@ NODE_ENV=production
 #### Email Configuration (Resend)
 
 ```env
-RESEND_API_KEY=re_esWqEK4H_JANdaicdiRGjqfvUq4ZDmqLt
+RESEND_API_KEY=re_your_resend_api_key_here
 SMTP_HOST=smtp.resend.com
 SMTP_PORT=465
 SMTP_USER=resend
-SMTP_PASSWORD=re_esWqEK4H_JANdaicdiRGjqfvUq4ZDmqLt
+SMTP_PASSWORD=re_your_resend_api_key_here
 USE_REDIS=false
 ```
 

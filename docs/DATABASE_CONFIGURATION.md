@@ -48,7 +48,7 @@ DATABASE_URL="file:./dev.db"
 **Production (Vercel Environment Variables)**:
 ```env
 # PostgreSQL for production
-DATABASE_URL="postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZcM@aws-1-us-east-1.pooler.supabase.com:5432/postgres"
+DATABASE_URL="postgres://username:password@host:5432/database"
 ```
 
 ## 🚀 Deployment Workflow

@@ -117,17 +117,16 @@ async function resetTasks() {
       console.log('📋 Creating default campaign...');
       campaign = await prisma.campaign.create({
         data: {
-          name: 'Sylvan Token Launch Campaign',
-          nameTr: 'Sylvan Token Başlangıç Kampanyası',
+          title: 'Sylvan Token Launch Campaign',
+          titleTr: 'Sylvan Token Başlangıç Kampanyası',
           description: 'Complete tasks to earn Sylvan Token airdrop points',
           descriptionTr: 'Sylvan Token airdrop puanları kazanmak için görevleri tamamlayın',
           startDate: new Date(),
           endDate: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000), // 90 days from now
           isActive: true,
-          totalPoints: 0,
         },
       });
-      console.log(`   Created campaign: ${campaign.name}\n`);
+      console.log(`   Created campaign: ${campaign.title}\n`);
     }
     
     // Create new tasks

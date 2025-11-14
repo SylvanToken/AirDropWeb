@@ -214,7 +214,9 @@ export function generateTaskTranslations(
   action: string,
   replacements: Record<string, string> = {}
 ): TaskTranslations {
-  const template = translationTemplates[taskType as keyof typeof translationTemplates]?.[action as any];
+  const taskTypeKey = taskType as keyof typeof translationTemplates;
+  const taskTypeTemplates = translationTemplates[taskTypeKey];
+  const template = taskTypeTemplates ? (taskTypeTemplates as any)[action] : undefined;
   
   if (!template) {
     // Return empty translations if template not found

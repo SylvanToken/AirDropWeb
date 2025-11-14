@@ -1,0 +1,707 @@
+{
+  "apiKeys": [
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.env",
+      "line": 41,
+      "pattern": "apiKeys",
+      "context": "RESEND_API_KEY=\"re_esWqEK4H_JANdaicdiRGjqfvUq4ZDmqLt\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.env",
+      "line": 98,
+      "pattern": "apiKeys",
+      "context": "BSCSCAN_API_KEY=\"N8R5NJSDH686DGNJ85EJZP3IGG3GTU2UE4\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 21,
+      "pattern": "apiKeys",
+      "context": "\"context\": \"\\\"context\\\": \\\"RESEND_API_KEY=re_your_resend_api_key\\\",\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 28,
+      "pattern": "apiKeys",
+      "context": "\"context\": \"\\\"context\\\": \\\"RESEND_API_KEY=re_your_api_key_here\\\",\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 35,
+      "pattern": "apiKeys",
+      "context": "\"context\": \"\\\"context\\\": \\\"RESEND_API_KEY=re_esWqEK4H_JANdaicdiRGjqfvUq4ZDmqLt\\\",\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 49,
+      "pattern": "apiKeys",
+      "context": "\"context\": \"RESEND_API_KEY=re_your_resend_api_key\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 56,
+      "pattern": "apiKeys",
+      "context": "\"context\": \"RESEND_API_KEY=re_your_api_key_here\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 77,
+      "pattern": "apiKeys",
+      "context": "\"context\": \"RESEND_API_KEY=re_your_resend_api_key_here\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\DEPLOYMENT_OPTIONS.md",
+      "line": 142,
+      "pattern": "apiKeys",
+      "context": "RESEND_API_KEY=\"re_your_resend_api_key\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\DEPLOYMENT_OPTIONS.md",
+      "line": 347,
+      "pattern": "apiKeys",
+      "context": "RESEND_API_KEY=re_your_resend_api_key",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\EMAIL_LOCAL_TEST_GUIDE.md",
+      "line": 81,
+      "pattern": "apiKeys",
+      "context": "RESEND_API_KEY=re_your_api_key_here",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\GITHUB_DEPLOYMENT_GUIDE.md",
+      "line": 144,
+      "pattern": "apiKeys",
+      "context": "BSCSCAN_API_KEY=\"your-bscscan-api-key\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\LIB_README.md",
+      "line": 118,
+      "pattern": "apiKeys",
+      "context": "RESEND_API_KEY=\"re_your_api_key_here\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\VERCEL_DEPLOYMENT_GUIDE.md",
+      "line": 99,
+      "pattern": "apiKeys",
+      "context": "RESEND_API_KEY=re_your_resend_api_key_here",
+      "severity": "high"
+    }
+  ],
+  "tokens": [
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 86,
+      "pattern": "tokens",
+      "context": "\"context\": \"\\\"context\\\": \\\"'Cookie': 'next-auth.session-token=YOUR_SESSION_TOKEN_HERE'\\\",\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 93,
+      "pattern": "tokens",
+      "context": "\"context\": \"'Cookie': 'next-auth.session-token=YOUR_SESSION_TOKEN_HERE'\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\scripts\\test-wallet-api.ts",
+      "line": 6,
+      "pattern": "tokens",
+      "context": "'Cookie': 'next-auth.session-token=YOUR_SESSION_TOKEN_HERE'",
+      "severity": "high"
+    }
+  ],
+  "passwords": [
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.env",
+      "line": 13,
+      "pattern": "passwords",
+      "context": "ADMIN_PASSWORD=\"Mjkvebep_Brn68o\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.env",
+      "line": 30,
+      "pattern": "passwords",
+      "context": "SMTP_PASSWORD=\"stnjueibsosjffbw\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.env",
+      "line": 64,
+      "pattern": "passwords",
+      "context": "POSTGRES_PASSWORD=\"bkEOzJECBtU2SZcM\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\GITHUB_DEPLOYMENT_GUIDE.md",
+      "line": 57,
+      "pattern": "passwords",
+      "context": "ADMIN_PASSWORD=\"your-secure-password\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\GITHUB_DEPLOYMENT_GUIDE.md",
+      "line": 77,
+      "pattern": "passwords",
+      "context": "SMTP_PASSWORD=\"your-app-password\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\GITHUB_DEPLOYMENT_GUIDE.md",
+      "line": 105,
+      "pattern": "passwords",
+      "context": "POSTGRES_PASSWORD=\"your-password\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\GITHUB_DEPLOYMENT_GUIDE.md",
+      "line": 342,
+      "pattern": "passwords",
+      "context": "ADMIN_PASSWORD=\"your-password\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\LIB_QUEUE_README.md",
+      "line": 37,
+      "pattern": "passwords",
+      "context": "REDIS_PASSWORD=\"your-password\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\old\\LIB_QUEUE_IMPLEMENTATION_SUMMARY.md",
+      "line": 28,
+      "pattern": "passwords",
+      "context": "REDIS_PASSWORD=\"your-password\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\README.md",
+      "line": 760,
+      "pattern": "passwords",
+      "context": "ADMIN_PASSWORD=\"your-secure-admin-password\"",
+      "severity": "high"
+    }
+  ],
+  "credentials": [
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.env",
+      "line": 5,
+      "pattern": "credentials",
+      "context": "# DATABASE_URL=\"postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZcM@aws-1-us-east-1.pooler.sup",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.env",
+      "line": 9,
+      "pattern": "credentials",
+      "context": "NEXTAUTH_SECRET=\"your-secret-key-change-this-in-production\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.env",
+      "line": 45,
+      "pattern": "credentials",
+      "context": "# RESEND_WEBHOOK_SECRET=\"your-webhook-secret-from-resend-dashboard\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.env",
+      "line": 55,
+      "pattern": "credentials",
+      "context": "SUPABASE_JWT_SECRET=\"Me/qAOyTMg6iDSQ/HlMbwq+rPyU0vRlQhqsKObpJnau1nWGs2faznjvGTyXDs/uFEZ7v2B7X7h0he7/",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.env",
+      "line": 76,
+      "pattern": "credentials",
+      "context": "TURNSTILE_SECRET_KEY=\"0x4AAAAAACArCIAxxPkAefdXJYppUZPtiH4\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 174,
+      "pattern": "credentials",
+      "context": "\"context\": \"# DATABASE_URL=\\\"postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZcM@aws-1-us-east",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 209,
+      "pattern": "credentials",
+      "context": "\"context\": \"\\\"context\\\": \\\"# DATABASE_URL=\\\\\\\"postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2S",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 216,
+      "pattern": "credentials",
+      "context": "\"context\": \"\\\"context\\\": \\\"TWITTER_CLIENT_SECRET=your_twitter_client_secret\\\",\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 223,
+      "pattern": "credentials",
+      "context": "\"context\": \"\\\"context\\\": \\\"DATABASE_URL=\\\\\\\"postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZc",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 230,
+      "pattern": "credentials",
+      "context": "\"context\": \"\\\"context\\\": \\\"DATABASE_URL=\\\\\\\"postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZc",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 237,
+      "pattern": "credentials",
+      "context": "\"context\": \"\\\"context\\\": \\\"DATABASE_URL=\\\\\\\"postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZc",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 244,
+      "pattern": "credentials",
+      "context": "\"context\": \"\\\"context\\\": \\\"DATABASE_URL=postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZcM@aw",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 251,
+      "pattern": "credentials",
+      "context": "\"context\": \"\\\"context\\\": \\\"console.log('NEXTAUTH_SECRET:', process.env.NEXTAUTH_SECRET ? 'Set' : 'Mi",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 258,
+      "pattern": "credentials",
+      "context": "\"context\": \"\\\"context\\\": \\\"TWITTER_CLIENT_SECRET=your_api_key_secret_here\\\",\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 265,
+      "pattern": "credentials",
+      "context": "\"context\": \"\\\"context\\\": \\\"TWITTER_CLIENT_SECRET=your_twitter_client_secret\\\",\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 272,
+      "pattern": "credentials",
+      "context": "\"context\": \"\\\"context\\\": \\\"TWITTER_CLIENT_SECRET=secret_key_here_very_long_string\\\",\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 279,
+      "pattern": "credentials",
+      "context": "\"context\": \"\\\"context\\\": \\\"TWITTER_CLIENT_SECRET=staging_client_secret\\\",\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 286,
+      "pattern": "credentials",
+      "context": "\"context\": \"\\\"context\\\": \\\"DATABASE_URL=postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZcM@aw",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 293,
+      "pattern": "credentials",
+      "context": "\"context\": \"\\\"context\\\": \\\"const connectionString = 'postgres://postgres.fahcabutajczylskmmgw:bkEOzJ",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 300,
+      "pattern": "credentials",
+      "context": "\"context\": \"DATABASE_URL=\\\"postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZcM@aws-1-us-east-1",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 307,
+      "pattern": "credentials",
+      "context": "\"context\": \"DATABASE_URL=\\\"postgres://username:password@host:5432/database\\\"\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 377,
+      "pattern": "credentials",
+      "context": "\"context\": \"TWITTER_CLIENT_SECRET=your_twitter_client_secret\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 384,
+      "pattern": "credentials",
+      "context": "\"context\": \"DATABASE_URL=\\\"postgres://username:password@host:5432/database\\\"\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 405,
+      "pattern": "credentials",
+      "context": "\"context\": \"DATABASE_URL=\\\"postgres://username:password@host:5432/database\\\"\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 447,
+      "pattern": "credentials",
+      "context": "\"context\": \"DATABASE_URL=\\\"postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZcM@aws-1-us-east-1",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 468,
+      "pattern": "credentials",
+      "context": "\"context\": \"DATABASE_URL=postgres://username:password@host:5432/database\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 475,
+      "pattern": "credentials",
+      "context": "\"context\": \"console.log('NEXTAUTH_SECRET:', process.env.NEXTAUTH_SECRET ? 'Set' : 'Missing');\",",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 503,
+      "pattern": "credentials",
+      "context": "\"context\": \"TWITTER_CLIENT_SECRET=your_api_key_secret_here\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 510,
+      "pattern": "credentials",
+      "context": "\"context\": \"TWITTER_CLIENT_SECRET=your_twitter_client_secret\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 517,
+      "pattern": "credentials",
+      "context": "\"context\": \"TWITTER_CLIENT_SECRET=secret_key_here_very_long_string\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 524,
+      "pattern": "credentials",
+      "context": "\"context\": \"TWITTER_CLIENT_SECRET=staging_client_secret\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 531,
+      "pattern": "credentials",
+      "context": "\"context\": \"DATABASE_URL=postgres://username:password@host:5432/database\",",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\sensitive-data-scan-report.json",
+      "line": 552,
+      "pattern": "credentials",
+      "context": "\"context\": \"const connectionString = process.env.DATABASE_URL || 'postgres://username:password@host:",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\task-8.1-sensitive-data-report.md",
+      "line": 175,
+      "pattern": "credentials",
+      "context": "DATABASE_URL=\"postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZcM@aws-1-us-east-1.pooler.supab",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\github-preparation-and-testing\\task-8.1-sensitive-data-report.md",
+      "line": 180,
+      "pattern": "credentials",
+      "context": "DATABASE_URL=\"postgres://username:password@host:5432/database\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\old\\time-limited-tasks\\SECURITY_AUDIT_REPORT.md",
+      "line": 668,
+      "pattern": "credentials",
+      "context": "CRON_SECRET=\"<generated-strong-secret>\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\telegram-reaction-rewards\\DEPLOYMENT_CHECKLIST.md",
+      "line": 45,
+      "pattern": "credentials",
+      "context": "TELEGRAM_WEBHOOK_SECRET=\"<generate-random-string>\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\telegram-reaction-rewards\\DEPLOYMENT_CHECKLIST.md",
+      "line": 46,
+      "pattern": "credentials",
+      "context": "CRON_SECRET=\"<generate-random-string>\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\telegram-reaction-rewards\\DEPLOYMENT_GUIDE.md",
+      "line": 23,
+      "pattern": "credentials",
+      "context": "TELEGRAM_WEBHOOK_SECRET=\"your-secure-random-string-here\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\telegram-reaction-rewards\\DEPLOYMENT_GUIDE.md",
+      "line": 32,
+      "pattern": "credentials",
+      "context": "CRON_SECRET=\"your-cron-secret-key\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\.kiro\\specs\\telegram-reaction-rewards\\QUICK_START.md",
+      "line": 11,
+      "pattern": "credentials",
+      "context": "TELEGRAM_WEBHOOK_SECRET=\"your-secure-random-string\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\DEPLOYMENT_OPTIONS.md",
+      "line": 139,
+      "pattern": "credentials",
+      "context": "NEXTAUTH_SECRET=\"your-super-secret-key-min-32-characters-long\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\DEPLOYMENT_OPTIONS.md",
+      "line": 147,
+      "pattern": "credentials",
+      "context": "TWITTER_CLIENT_SECRET=\"your_twitter_client_secret\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\DEPLOYMENT_OPTIONS.md",
+      "line": 147,
+      "pattern": "credentials",
+      "context": "TWITTER_CLIENT_SECRET=\"your_twitter_client_secret\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\DEPLOYMENT_OPTIONS.md",
+      "line": 350,
+      "pattern": "credentials",
+      "context": "TWITTER_CLIENT_SECRET=your_twitter_client_secret",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\DATABASE_CONFIGURATION.md",
+      "line": 51,
+      "pattern": "credentials",
+      "context": "DATABASE_URL=\"postgres://username:password@host:5432/database\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\DEPLOYMENT.md",
+      "line": 28,
+      "pattern": "credentials",
+      "context": "NEXTAUTH_SECRET=\"<generate-with-openssl-rand-base64-32>\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\FRAUD_DETECTION.md",
+      "line": 188,
+      "pattern": "credentials",
+      "context": "CRON_SECRET=\"your-secure-random-string-here\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\GITHUB_DEPLOYMENT_GUIDE.md",
+      "line": 37,
+      "pattern": "credentials",
+      "context": "DATABASE_URL=\"postgres://username:password@host:5432/database\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\GITHUB_DEPLOYMENT_GUIDE.md",
+      "line": 44,
+      "pattern": "credentials",
+      "context": "NEXTAUTH_SECRET=\"your-production-secret-key-change-this\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\old\\ADMIN_LOGIN_TROUBLESHOOTING.md",
+      "line": 173,
+      "pattern": "credentials",
+      "context": "NEXTAUTH_SECRET=\"your-secret-key-here\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\old\\EMAIL_ADMIN_NOTIFICATIONS_INTEGRATION.md",
+      "line": 160,
+      "pattern": "credentials",
+      "context": "CRON_SECRET=\"your-cron-secret-key\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\old\\EMAIL_TASK_13_IMPLEMENTATION_SUMMARY.md",
+      "line": 113,
+      "pattern": "credentials",
+      "context": "CRON_SECRET=\"your-secure-cron-secret-key\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\old\\LIB_WEBHOOK_IMPLEMENTATION_SUMMARY.md",
+      "line": 69,
+      "pattern": "credentials",
+      "context": "RESEND_WEBHOOK_SECRET=\"your_webhook_signing_secret_here\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\old\\POSTGRESQL_MIGRATION_SUMMARY.md",
+      "line": 39,
+      "pattern": "credentials",
+      "context": "DATABASE_URL=\"postgres://username:password@host:5432/database\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\old\\TURNSTILE_IMPLEMENTATION_SUMMARY.md",
+      "line": 13,
+      "pattern": "credentials",
+      "context": "TURNSTILE_SECRET_KEY=\"0x4AAAAAACArCIAxxPkAefdXJYppUZPtiH4\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\old\\TURNSTILE_IMPLEMENTATION_SUMMARY.md",
+      "line": 223,
+      "pattern": "credentials",
+      "context": "TURNSTILE_SECRET_KEY=\"0x4AAAAAACArCIAxxPkAefdXJYppUZPtiH4\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\QUICK_DEPLOY_GUIDE.md",
+      "line": 39,
+      "pattern": "credentials",
+      "context": "DATABASE_URL=postgres://username:password@host:5432/database",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\TROUBLESHOOTING_GUIDE.md",
+      "line": 533,
+      "pattern": "credentials",
+      "context": "console.log('NEXTAUTH_SECRET:', process.env.NEXTAUTH_SECRET ? 'Set' : 'Missing');",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\TURNSTILE_CONFIGURATION.md",
+      "line": 12,
+      "pattern": "credentials",
+      "context": "TURNSTILE_SECRET_KEY=\"0x4AAAAAACArCIAxxPkAefdXJYppUZPtiH4\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\TURNSTILE_QUICK_REFERENCE.md",
+      "line": 10,
+      "pattern": "credentials",
+      "context": "TURNSTILE_SECRET_KEY=\"0x4AAAAAACArCIAxxPkAefdXJYppUZPtiH4\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\TURNSTILE_SETUP.md",
+      "line": 37,
+      "pattern": "credentials",
+      "context": "TURNSTILE_SECRET_KEY=\"0x4AAAAAACArCIAxxPkAefdXJYppUZPtiH4\"",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\TWITTER_API_SETUP.md",
+      "line": 74,
+      "pattern": "credentials",
+      "context": "TWITTER_CLIENT_SECRET=your_api_key_secret_here",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\TWITTER_ENV_VARIABLES.md",
+      "line": 14,
+      "pattern": "credentials",
+      "context": "TWITTER_CLIENT_SECRET=your_twitter_client_secret",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\TWITTER_ENV_VARIABLES.md",
+      "line": 94,
+      "pattern": "credentials",
+      "context": "TWITTER_CLIENT_SECRET=secret_key_here_very_long_string",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\TWITTER_ENV_VARIABLES.md",
+      "line": 129,
+      "pattern": "credentials",
+      "context": "TWITTER_CLIENT_SECRET=staging_client_secret",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\VERCEL_DEPLOYMENT_GUIDE.md",
+      "line": 68,
+      "pattern": "credentials",
+      "context": "DATABASE_URL=postgres://username:password@host:5432/database",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\docs\\WEBHOOK_SECURITY_GUIDE.md",
+      "line": 40,
+      "pattern": "credentials",
+      "context": "RESEND_WEBHOOK_SECRET=\"a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\README.md",
+      "line": 756,
+      "pattern": "credentials",
+      "context": "NEXTAUTH_SECRET=\"generate-a-secure-random-string-here\"",
+      "severity": "medium"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\scripts\\migrate-to-postgres.js",
+      "line": 6,
+      "pattern": "credentials",
+      "context": "const connectionString = process.env.DATABASE_URL || 'postgres://username:password@host:5432/databas",
+      "severity": "high"
+    },
+    {
+      "file": "D:\\SylvanToken\\KiroYazılımlar\\AirDropWeb\\VERCEL_DEPLOYMENT_GUIDE.md",
+      "line": 384,
+      "pattern": "credentials",
+      "context": "NEXTAUTH_SECRET=\"your-secret-key-min-32-characters\"",
+      "severity": "medium"
+    }
+  ],
+  "privateKeys": [],
+  "summary": {
+    "totalFindings": 98,
+    "highSeverity": 74,
+    "mediumSeverity": 24,
+    "lowSeverity": 0
+  },
+  "gitignoreCheck": {
+    "envIgnored": true,
+    "issues": []
+  }
+}

@@ -36,7 +36,7 @@ git push origin main
 
 ```bash
 # Database
-DATABASE_URL=postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZcM@aws-1-us-east-1.pooler.supabase.com:5432/postgres
+DATABASE_URL=postgres://username:password@host:5432/database
 
 # NextAuth (ÖNEMLİ: Yeni secret oluşturun!)
 NEXTAUTH_URL=https://your-app.vercel.app

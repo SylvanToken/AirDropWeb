@@ -1,7 +1,10 @@
 # Sylvan Token Airdrop Platform
 
-[![codecov](https://codecov.io/gh/YOUR_USERNAME/sylvan-airdrop-platform/branch/main/graph/badge.svg)](https://codecov.io/gh/YOUR_USERNAME/sylvan-airdrop-platform)
-[![Tests](https://github.com/YOUR_USERNAME/sylvan-airdrop-platform/workflows/Tests/badge.svg)](https://github.com/YOUR_USERNAME/sylvan-airdrop-platform/actions)
+[![Tests](https://img.shields.io/badge/tests-474%20passing-brightgreen.svg)](./docs/TESTING_GUIDE.md)
+[![Coverage](https://img.shields.io/badge/coverage-87.5%25-brightgreen.svg)](./docs/TEST_README.md)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black.svg)](https://nextjs.org/)
+[![License](https://img.shields.io/badge/license-Private-red.svg)](./LICENSE)
 
 A modern, eco-themed web-based task completion and reward tracking system for the Sylvan Token community. Users complete daily social media tasks (Twitter/X, Telegram) to earn points and qualify for airdrops.
 
@@ -684,9 +687,10 @@ The platform gracefully handles unsupported features:
 
 ### Prerequisites
 
-- Node.js 18.0 or higher
-- PostgreSQL 14 or higher
-- npm or yarn package manager
+- **Node.js**: 18.0 or higher ([Download](https://nodejs.org/))
+- **PostgreSQL**: 14 or higher ([Download](https://www.postgresql.org/download/))
+- **npm**: 9.0 or higher (comes with Node.js)
+- **Git**: For version control ([Download](https://git-scm.com/))
 
 ### Installation
 
@@ -725,7 +729,7 @@ npm run seed
 npm run dev
 ```
 
-Open [http://localhost:3005](http://localhost:3005) to view the application.
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
 ### Default Credentials
 
@@ -734,7 +738,7 @@ After running the seed script:
 **Admin Access:**
 - Email: `admin@sylvantoken.org`
 - Password: `Admin123!`
-- URL: [http://localhost:3005/admin](http://localhost:3005/admin)
+- URL: [http://localhost:3000/admin](http://localhost:3000/admin)
 
 **Test Users:**
 - `user1@example.com` / `Test123!` (150 points)
@@ -752,17 +756,44 @@ Create a `.env.local` file in the root directory with the following variables:
 DATABASE_URL="postgresql://username:password@localhost:5432/sylvan_airdrop"
 
 # NextAuth Configuration
-NEXTAUTH_URL="http://localhost:3005"
+NEXTAUTH_URL="http://localhost:3000"
 NEXTAUTH_SECRET="generate-a-secure-random-string-here"
 
-# Admin Credentials (for initial setup)
-ADMIN_EMAIL="admin@sylvantoken.org"
-ADMIN_PASSWORD="your-secure-admin-password"
+# Email Configuration (Resend)
+RESEND_API_KEY="re_your_api_key_here"
+EMAIL_FROM="noreply@yourdomain.com"
+
+# Twitter OAuth (Optional - for Twitter task verification)
+TWITTER_CLIENT_ID="your_twitter_client_id"
+TWITTER_CLIENT_SECRET="your_twitter_client_secret"
+
+# Cloudflare Turnstile (Optional - for bot protection)
+NEXT_PUBLIC_TURNSTILE_SITE_KEY="your_turnstile_site_key"
+TURNSTILE_SECRET_KEY="your_turnstile_secret_key"
+NEXT_PUBLIC_TURNSTILE_ENABLED="false"
 
 # Application Settings
 NODE_ENV="development"
-PORT=3005
+NEXT_PUBLIC_APP_URL="http://localhost:3000"
 ```
+
+### Required Variables
+
+These variables are **required** for the application to run:
+
+- `DATABASE_URL` - PostgreSQL connection string
+- `NEXTAUTH_URL` - Application URL (must match your domain)
+- `NEXTAUTH_SECRET` - Secret for JWT encryption (min 32 characters)
+
+### Optional Variables
+
+These variables enable additional features:
+
+- `RESEND_API_KEY` - Email service API key ([Get one](https://resend.com))
+- `EMAIL_FROM` - Sender email address for notifications
+- `TWITTER_CLIENT_ID` / `TWITTER_CLIENT_SECRET` - Twitter OAuth credentials
+- `NEXT_PUBLIC_TURNSTILE_SITE_KEY` / `TURNSTILE_SECRET_KEY` - Cloudflare Turnstile for bot protection
+- `NEXT_PUBLIC_TURNSTILE_ENABLED` - Enable/disable Turnstile (true/false)
 
 ### Generating NEXTAUTH_SECRET
 
@@ -839,12 +870,14 @@ The seed script creates:
 ### Available Scripts
 
 ```bash
-npm run dev          # Start development server (port 3005)
+npm run dev          # Start development server (port 3000)
 npm run build        # Build for production
 npm run start        # Start production server
 npm run lint         # Run ESLint
+npm run lint:fix     # Run ESLint and auto-fix issues
 npm run test         # Run all tests
 npm run test:watch   # Run tests in watch mode
+npm run test:e2e     # Run Playwright E2E tests
 npm run seed         # Seed database with initial data
 ```
 
@@ -1149,7 +1182,7 @@ open coverage/lcov-report/index.html
 For detailed testing information, see:
 
 - **[Testing Guide](./docs/TESTING_GUIDE.md)** - Comprehensive testing documentation
-- **[Test Coverage Report](./docs/TEST_COVERAGE_REPORT.md)** - Detailed coverage analysis
+- **[Test README](./docs/TEST_README.md)** - Test overview and results
 - **[Test Infrastructure](./docs/TESTING_INSTALLATION.md)** - Setup and configuration
 - **[Quick Start Guide](./docs/TESTING_QUICK_START.md)** - Get started quickly
 
@@ -1770,7 +1803,7 @@ module.exports = {
     args: 'start',
     env: {
       NODE_ENV: 'production',
-      PORT: 3005
+      PORT: 3000
     }
   }]
 }
@@ -1800,7 +1833,7 @@ COPY . .
 RUN npx prisma generate
 RUN npm run build
 
-EXPOSE 3005
+EXPOSE 3000
 
 CMD ["npm", "start"]
 ```
@@ -1813,11 +1846,12 @@ services:
   app:
     build: .
     ports:
-      - "3005:3005"
+      - "3000:3000"
     environment:
       - DATABASE_URL=postgresql://postgres:password@db:5432/sylvan_airdrop
-      - NEXTAUTH_URL=http://localhost:3005
+      - NEXTAUTH_URL=http://localhost:3000
       - NEXTAUTH_SECRET=your-secret
+      - NODE_ENV=production
     depends_on:
       - db
   

@@ -11,35 +11,35 @@ import WelcomeEmail from '@/emails/welcome';
 import TaskCompletionEmail from '@/emails/task-completion';
 
 async function testTurkishEmails() {
-  console.log('🧪 Türkçe e-posta şablonlarını test ediyoruz...\n');
+  console.log('🧪 Testing Turkish email templates...\n');
   
   const testRecipients = ['admin@sylvantoken.org', 'gada.tr@gmail.com'];
   
   try {
-    // Test 1: Hoş Geldiniz E-postası
-    console.log('📧 1/2 Hoş Geldiniz E-postası gönderiliyor...');
+    // Test 1: Welcome Email
+    console.log('📧 1/2 Sending Welcome Email...');
     await sendEmailTemplate(
       WelcomeEmail,
       {
-        username: 'Test Kullanıcı',
+        username: 'Test User',
         dashboardUrl: 'https://sylvantoken.org/dashboard',
         locale: 'tr',
       },
       {
         to: testRecipients,
-        subject: '🌿 Sylvan Token\'a Hoş Geldiniz',
+        subject: '🌿 Welcome to Sylvan Token',
         templateName: 'welcome-tr',
       }
     );
-    console.log('✅ Hoş geldiniz e-postası gönderildi!\n');
+    console.log('✅ Welcome email sent!\n');
     
-    // Test 2: Görev Tamamlama E-postası
-    console.log('📧 2/2 Görev Tamamlama E-postası gönderiliyor...');
+    // Test 2: Task Completion Email
+    console.log('📧 2/2 Sending Task Completion Email...');
     await sendEmailTemplate(
       TaskCompletionEmail,
       {
-        username: 'Test Kullanıcı',
-        taskName: 'Günlük Giriş',
+        username: 'Test User',
+        taskName: 'Daily Login',
         points: 50,
         totalPoints: 250,
         dashboardUrl: 'https://sylvantoken.org/dashboard',
@@ -47,18 +47,18 @@ async function testTurkishEmails() {
       },
       {
         to: testRecipients,
-        subject: '🎯 Görev Tamamlandı - 50 Puan Kazandınız!',
+        subject: '🎯 Task Completed - You Earned 50 Points!',
         templateName: 'task-completion-tr',
       }
     );
-    console.log('✅ Görev tamamlama e-postası gönderildi!\n');
+    console.log('✅ Task completion email sent!\n');
     
-    console.log('✨ Tüm Türkçe e-postalar başarıyla gönderildi!');
-    console.log('📝 Gelen kutunuzu kontrol edin - logo hem başlıkta hem de alt bilgide görünmelidir.');
-    console.log('📧 Gönderilen toplam e-posta: 2');
+    console.log('✨ All Turkish emails sent successfully!');
+    console.log('📝 Check your inbox - the logo should appear in both header and footer.');
+    console.log('📧 Total emails sent: 2');
     
   } catch (error) {
-    console.error('❌ E-posta gönderme hatası:', error);
+    console.error('❌ Email sending error:', error);
     process.exit(1);
   }
 }

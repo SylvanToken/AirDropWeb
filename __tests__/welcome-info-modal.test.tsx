@@ -30,7 +30,7 @@ describe('WelcomeInfoModal', () => {
       (cookieUtils.getCookie as jest.Mock).mockReturnValue(null);
       render(<WelcomeInfoModal />);
       expect(screen.getByRole('dialog')).toBeInTheDocument();
-      expect(screen.getByText('Önemli Hesap Bilgileri')).toBeInTheDocument();
+      expect(screen.getByText('Important Account Information')).toBeInTheDocument();
     });
 
     it('should not display modal when cookie exists', () => {
@@ -54,14 +54,14 @@ describe('WelcomeInfoModal', () => {
 
     it('should display all 8 information items', () => {
       render(<WelcomeInfoModal />);
-      expect(screen.getByText(/Hesap güvenliğiniz sizin sorumluluğunuzdadır/i)).toBeInTheDocument();
-      expect(screen.getByText(/Şifremi Unuttum.*seçeneği bulunmamaktadır/i)).toBeInTheDocument();
-      expect(screen.getByText(/Sosyal medya kullanıcı adınız kayıt sonrası değiştirilemez/i)).toBeInTheDocument();
-      expect(screen.getByText(/Cüzdan adresiniz kayıt sonrası değiştirilemez/i)).toBeInTheDocument();
-      expect(screen.getByText(/Kaydettiğiniz bilgiler gelecek etkinlikler için kullanılacaktır/i)).toBeInTheDocument();
-      expect(screen.getByText(/Erken üyeler farklı puanlama avantajları alabilir/i)).toBeInTheDocument();
-      expect(screen.getByText(/Bazı görevler ve aktiviteler sınırlı sürelidir/i)).toBeInTheDocument();
-      expect(screen.getByText(/Lütfen tüm bilgilerin doğru olduğundan emin olun/i)).toBeInTheDocument();
+      expect(screen.getByText(/Account security is your responsibility/i)).toBeInTheDocument();
+      expect(screen.getByText(/Forgot Password.*option is not available/i)).toBeInTheDocument();
+      expect(screen.getByText(/Social media username cannot be changed after registration/i)).toBeInTheDocument();
+      expect(screen.getByText(/Wallet address cannot be changed after registration/i)).toBeInTheDocument();
+      expect(screen.getByText(/Your saved information will be used for future events/i)).toBeInTheDocument();
+      expect(screen.getByText(/Early members may receive different scoring advantages/i)).toBeInTheDocument();
+      expect(screen.getByText(/Some tasks and activities are time-limited/i)).toBeInTheDocument();
+      expect(screen.getByText(/Please ensure all information is accurate/i)).toBeInTheDocument();
     });
   });
 
@@ -73,14 +73,14 @@ describe('WelcomeInfoModal', () => {
     it('should start countdown at 30 seconds', () => {
       render(<WelcomeInfoModal />);
       const button = screen.getByRole('button');
-      expect(button.textContent).toBe('Anladım (30)');
+      expect(button.textContent).toBe('Understood (30)');
     });
 
     it('should decrement countdown every second', () => {
       render(<WelcomeInfoModal />);
       const button = screen.getByRole('button');
       act(() => { jest.advanceTimersByTime(1000); });
-      expect(button.textContent).toBe('Anladım (29)');
+      expect(button.textContent).toBe('Understood (29)');
     });
 
     it('should disable button during countdown', () => {
@@ -94,7 +94,7 @@ describe('WelcomeInfoModal', () => {
       const button = screen.getByRole('button');
       act(() => { jest.advanceTimersByTime(30000); });
       expect(button).not.toBeDisabled();
-      expect(button.textContent).toBe('Anladım');
+      expect(button.textContent).toBe('Understood');
     });
   });
 
@@ -106,7 +106,7 @@ describe('WelcomeInfoModal', () => {
     it('should display checkbox below button', () => {
       render(<WelcomeInfoModal />);
       expect(screen.getByRole('checkbox')).toBeInTheDocument();
-      expect(screen.getByLabelText('Bunu bir daha gösterme')).toBeInTheDocument();
+      expect(screen.getByLabelText('Don\'t show this again')).toBeInTheDocument();
     });
 
     it('should have checkbox unchecked by default', () => {

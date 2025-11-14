@@ -34,7 +34,7 @@ Deployment platformunuzda aşağıdaki environment variables'ları ayarlamanız 
 
 ```bash
 # PostgreSQL/Supabase
-DATABASE_URL="postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZcM@aws-1-us-east-1.pooler.supabase.com:5432/postgres"
+DATABASE_URL="postgres://username:password@host:5432/database"
 ```
 
 #### 2. NextAuth

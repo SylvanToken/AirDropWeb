@@ -1,6 +1,6 @@
-# ⚡ Quick Start - 3 Adımda Deployment
+# ⚡ Quick Start - 3 Steps to Deployment
 
-## 🔐 Özel Erişim Anahtarınız
+## 🔐 Your Special Access Key
 
 ```
 07c3bc6110ce1528fa7206f504420d3fc62deab8a8ea03548d289b6eb8a3fc1c
@@ -8,7 +8,7 @@
 
 ---
 
-## 📦 Adım 1: GitHub'a Push
+## 📦 Step 1: Push to GitHub
 
 ```bash
 git add .
@@ -18,9 +18,9 @@ git push origin main
 
 ---
 
-## ⚙️ Adım 2: Vercel Environment Variable
+## ⚙️ Step 2: Vercel Environment Variable
 
-1. https://vercel.com/dashboard → Projeniz
+1. https://vercel.com/dashboard → Your Project
 2. Settings → Environment Variables
 3. Add New:
    ```
@@ -31,36 +31,36 @@ git push origin main
 
 ---
 
-## 🌐 Adım 3: Test Et
+## 🌐 Step 3: Test
 
-### Normal Kullanıcılar:
+### Normal Users:
 ```
 https://airdrop.sylvantoken.org/
 ```
-→ Geri sayaç görür ✅
+→ Sees countdown ✅
 
-### Siz (Test):
+### You (Test):
 ```
 https://airdrop.sylvantoken.org/?access=07c3bc6110ce1528fa7206f504420d3fc62deab8a8ea03548d289b6eb8a3fc1c
 ```
-→ Dashboard'a gider ✅
+→ Goes to dashboard ✅
 
 ---
 
-## ✅ Hazırlanan Dosyalar
+## ✅ Prepared Files
 
-- `middleware.ts` - Özel key kontrolü
-- `public/countdown.html` - Geri sayaç
+- `middleware.ts` - Special key control
+- `public/countdown.html` - Countdown
 - `.gitignore` - Git ignore
-- `.env.example` - Env örneği
+- `.env.example` - Env example
 
 ---
 
-## 🎯 Sonuç
+## 🎯 Result
 
-✅ Mevcut site bozulmadı
-✅ Özel key ile test erişimi
-✅ 7 gün cookie ile otomatik giriş
-✅ Tek repo, tek deployment
+✅ Existing site not broken
+✅ Test access with special key
+✅ Automatic login with 7-day cookie
+✅ Single repo, single deployment
 
-Detaylar için: `DEPLOYMENT_INSTRUCTIONS.md`
+For details: `DEPLOYMENT_INSTRUCTIONS.md`

@@ -2,7 +2,8 @@ const { Client } = require('pg');
 const fs = require('fs');
 const path = require('path');
 
-const connectionString = 'postgres://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZcM@aws-1-us-east-1.pooler.supabase.com:5432/postgres';
+// Use environment variable for database connection
+const connectionString = process.env.DATABASE_URL || 'postgres://username:password@host:5432/database';
 
 // Read the Prisma schema and generate SQL
 const schema = fs.readFileSync(path.join(__dirname, '../prisma/schema.prisma'), 'utf8');
