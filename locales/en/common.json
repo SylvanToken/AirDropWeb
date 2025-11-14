@@ -1,0 +1,238 @@
+{
+  "header": {
+    "dashboard": "Dashboard",
+    "tasks": "Tasks",
+    "wallet": "Wallet",
+    "profile": "Profile",
+    "leaderboard": "Leaderboard",
+    "logout": "Logout",
+    "admin": "Admin"
+  },
+  "footer": {
+    "copyright": "© 2025 Sylvan Token. All rights reserved.",
+    "builtWith": "Built with ❤️ for the Sylvan Token Community",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "language": "Language"
+  },
+  "language": {
+    "select": "Select Language",
+    "current": "Current Language"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "actions": "Actions",
+    "signIn": "Sign In"
+  },
+  "errors": {
+    "generic": "An error occurred. Please try again.",
+    "network": "Network error. Please check your connection.",
+    "unauthorized": "You are not authorized to perform this action.",
+    "notFound": "The requested resource was not found.",
+    "validation": "Please check your input and try again."
+  },
+  "welcomeModal": {
+    "title": "Important Account Information",
+    "subtitle": "Please read carefully before completing your registration:",
+    "button": {
+      "understood": "Understood",
+      "countdownLabel": "Understood button will be active in {count} seconds",
+      "readyLabel": "Understood, close modal"
+    },
+    "checkbox": {
+      "label": "Don't show this again"
+    },
+    "items": {
+      "security": "Account security is your responsibility",
+      "noPasswordReset": "\"Forgot Password\" option is not available",
+      "socialMediaLock": "Social media username cannot be changed after registration",
+      "walletLock": "Wallet address cannot be changed after registration",
+      "futureEvents": "Your saved information will be used for future events",
+      "earlyBenefits": "Early members may receive different scoring advantages",
+      "timeLimited": "Some tasks and activities are time-limited",
+      "accuracy": "Please ensure all information is accurate"
+    }
+  },
+  "accessibility": {
+    "skipToMain": "Skip to main content",
+    "skipToNav": "Skip to navigation",
+    "skipToFooter": "Skip to footer",
+    "settings": "Accessibility Settings",
+    "settingsDescription": "Customize your experience for better accessibility",
+    "animations": "Animations",
+    "animationsEnabled": "Animations and transitions are enabled",
+    "animationsDisabled": "Animations and transitions are disabled",
+    "toggleAnimations": "Toggle animations",
+    "systemPreference": "System Preference:",
+    "reducedMotionDetected": "Your system is set to prefer reduced motion. You can override this setting above.",
+    "info": "Disabling animations will reduce motion effects throughout the application while maintaining functionality."
+  },
+  "shortcuts": {
+    "title": "Keyboard Shortcuts",
+    "home": "Go to Home",
+    "dashboard": "Go to Dashboard",
+    "tasks": "Go to Tasks",
+    "leaderboard": "Go to Leaderboard",
+    "profile": "Go to Profile",
+    "tab": "Navigate between elements",
+    "shiftTab": "Navigate backwards",
+    "enter": "Activate focused element",
+    "escape": "Close modal/dropdown"
+  },
+  "hero": {
+    "home": {
+      "title": "Welcome to Sylvan Token",
+      "subtitle": "Complete tasks, earn rewards, and grow with our community",
+      "cta": "Get Started"
+    },
+    "dashboard": {
+      "title": "Welcome back, {username}!",
+      "subtitle": "Track your progress and compete with the community"
+    },
+    "tasks": {
+      "title": "Available Tasks",
+      "subtitle": "Complete tasks to earn points and climb the leaderboard"
+    },
+    "leaderboard": {
+      "title": "Community Leaderboard",
+      "subtitle": "See how you rank among other members",
+      "yourRank": "Your Rank: #{rank} of {total}"
+    }
+  },
+  "leaderboardPage": {
+    "pageTitle": "Community Leaderboard",
+    "pageSubtitle": "See how you rank among other members",
+    "userRankLabel": "Your Rank: #{rank} of {total}",
+    "loadingText": "Loading..."
+  },
+  "home": {
+    "features": {
+      "title": "Why Choose Sylvan Token?",
+      "subtitle": "Join thousands of users earning rewards through simple tasks",
+      "tasks": {
+        "title": "Easy Tasks",
+        "description": "Complete simple social media tasks and earn points instantly"
+      },
+      "rewards": {
+        "title": "Real Rewards",
+        "description": "Earn points that translate to real token rewards"
+      },
+      "community": {
+        "title": "Active Community",
+        "description": "Join a thriving community of token enthusiasts"
+      },
+      "instant": {
+        "title": "Instant Tracking",
+        "description": "Track your progress and earnings in real-time"
+      }
+    },
+    "benefits": {
+      "title": "Start Earning Today",
+      "subtitle": "Join the Sylvan Token community and unlock exclusive benefits",
+      "item1": "Complete daily tasks to earn points and climb the leaderboard",
+      "item2": "Connect your wallet to receive token rewards directly",
+      "item3": "Compete with other members for bonus rewards and recognition",
+      "item4": "Access exclusive campaigns and early opportunities"
+    },
+    "stats": {
+      "users": "10K+",
+      "usersLabel": "Registered Users",
+      "tasks": "50K+",
+      "tasksLabel": "Tasks Completed",
+      "rewards": "1M+",
+      "rewardsLabel": "Points Distributed"
+    },
+    "tokenDistribution": {
+      "title": "Token Distribution",
+      "subtitle": "Real-time token allocation",
+      "totalSupply": "Total Supply",
+      "holders": "Holders",
+      "circulating": "Circulating",
+      "locked": "Locked",
+      "team": "Team",
+      "donation": "Donation",
+      "fee": "Fee",
+      "burned": "Burned",
+      "updated": "Updated",
+      "billion": "Billion",
+      "million": "Million"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Create your account now and start earning rewards today",
+      "button": "Create Free Account"
+    }
+  },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode",
+    "toggle": "Toggle Theme"
+  },
+  "twitter": {
+    "connection": {
+      "title": "Twitter Connection",
+      "description": "Connect your Twitter account for automatic task verification",
+      "connected": "Connected",
+      "notConnected": "Not Connected",
+      "connect": "Connect Twitter",
+      "disconnect": "Disconnect",
+      "reconnect": "Reconnect",
+      "connecting": "Connecting...",
+      "disconnecting": "Disconnecting...",
+      "tokenExpired": "Token Expired",
+      "tokenExpiredMessage": "Your Twitter connection has expired. Please reconnect to enable automatic verification."
+    },
+    "verification": {
+      "title": "Twitter Verification",
+      "pending": "Pending",
+      "verifying": "Verifying...",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "error": "Error",
+      "retry": "Retry Verification",
+      "complete": "Complete Task",
+      "pointsEarned": "+{points} points earned!",
+      "checkingActivity": "Checking your Twitter activity...",
+      "waitingVerification": "Waiting for verification...",
+      "taskVerified": "Great! Your {taskType} task has been verified.",
+      "taskRejected": "Please complete the {taskType} action and try again.",
+      "verificationFailed": "Verification failed. Please try again or contact support."
+    },
+    "tasks": {
+      "follow": "Follow",
+      "like": "Like",
+      "retweet": "Retweet",
+      "followTitle": "Follow on Twitter",
+      "likeTitle": "Like Tweet",
+      "retweetTitle": "Retweet",
+      "instructions": "Instructions:",
+      "howItWorks": "How it works:",
+      "step1": "Connect your Twitter account (one-time setup)",
+      "step2": "Complete the Twitter action",
+      "step3": "Verification happens automatically",
+      "step4": "Earn points instantly!",
+      "connectionRequired": "Twitter Connection Required",
+      "connectionRequiredMessage": "Connect your Twitter account to enable automatic verification for this task. This will make the process much faster and easier!",
+      "automaticVerification": "Automatic Verification",
+      "automaticVerificationMessage": "Once you complete the action, we'll automatically verify it and award your points!",
+      "manualMode": "Manual Mode"
+    }
+  }
+}

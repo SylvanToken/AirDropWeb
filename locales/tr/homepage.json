@@ -1,0 +1,37 @@
+{
+  "header": {
+    "navigation": {
+      "home": "Ana Sayfa",
+      "about": "Hakkımızda",
+      "airdrop": "Airdrop",
+      "whitepaper": "Beyaz Kitap",
+      "community": "Topluluk",
+      "contact": "İletişim"
+    },
+    "buttons": {
+      "connectWallet": "Cüzdan Bağla",
+      "joinAirdrop": "Airdrop'a Katıl",
+      "login": "Giriş Yap",
+      "register": "Kayıt Ol",
+      "dashboard": "Panel"
+    }
+  },
+  "footer": {
+    "description": "Sylvan Token, blockchain teknolojisi aracılığıyla çevresel sürdürülebilirlikte öncülük ediyor. Daha yeşil bir gelecek yaratmada bize katılın.",
+    "links": {
+      "terms": "Şartlar",
+      "privacy": "Gizlilik"
+    },
+    "social": {
+      "twitter": "Twitter",
+      "telegram": "Telegram"
+    },
+    "branding": {
+      "tagline": "Çevre Dostu Airdrop Platformu",
+      "madeWith": "ile yapıldı",
+      "forNature": "doğa için",
+      "greenerFuture": "Birlikte daha yeşil bir gelecek inşa ediyoruz 🌱"
+    },
+    "copyright": "© {year} Sylvan Token"
+  }
+}

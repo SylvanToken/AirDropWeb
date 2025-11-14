@@ -1,0 +1,35 @@
+{
+  "required": "此字段为必填项",
+  "email": "请输入有效的电子邮件地址",
+  "password": {
+    "min": "密码必须至少{min}个字符",
+    "max": "密码最多{max}个字符",
+    "uppercase": "密码必须包含至少一个大写字母",
+    "lowercase": "密码必须包含至少一个小写字母",
+    "number": "密码必须包含至少一个数字",
+    "special": "密码必须包含至少一个特殊字符"
+  },
+  "username": {
+    "min": "用户名必须至少{min}个字符",
+    "max": "用户名最多{max}个字符",
+    "invalid": "用户名只能包含字母、数字和下划线",
+    "taken": "此用户名已被使用"
+  },
+  "wallet": {
+    "invalid": "无效的钱包地址格式",
+    "required": "钱包地址为必填项"
+  },
+  "social": {
+    "twitterInvalid": "无效的Twitter用户名",
+    "telegramInvalid": "无效的Telegram用户名",
+    "taken": "此用户名已链接到另一个账户"
+  },
+  "file": {
+    "tooLarge": "文件大小必须小于{maxSize}MB",
+    "invalidType": "无效的文件类型。允许的类型：{types}",
+    "required": "请选择一个文件"
+  },
+  "terms": {
+    "required": "您必须接受条款和条件"
+  }
+}

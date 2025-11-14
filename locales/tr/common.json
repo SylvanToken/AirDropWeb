@@ -1,0 +1,238 @@
+{
+  "header": {
+    "dashboard": "Panel",
+    "tasks": "Görevler",
+    "wallet": "Cüzdan",
+    "profile": "Profil",
+    "leaderboard": "Sıralama",
+    "logout": "Çıkış Yap",
+    "admin": "Yönetici"
+  },
+  "footer": {
+    "copyright": "© 2025 Sylvan Token. Tüm hakları saklıdır.",
+    "builtWith": "Sylvan Token Topluluğu için ❤️ ile yapıldı",
+    "terms": "Şartlar",
+    "privacy": "Gizlilik",
+    "language": "Dil"
+  },
+  "language": {
+    "select": "Dil Seçin",
+    "current": "Mevcut Dil"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "success": "Başarılı",
+    "cancel": "İptal",
+    "confirm": "Onayla",
+    "save": "Kaydet",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "create": "Oluştur",
+    "back": "Geri",
+    "next": "İleri",
+    "submit": "Gönder",
+    "close": "Kapat",
+    "yes": "Evet",
+    "no": "Hayır",
+    "search": "Ara",
+    "filter": "Filtrele",
+    "sort": "Sırala",
+    "actions": "İşlemler",
+    "signIn": "Giriş Yap"
+  },
+  "errors": {
+    "generic": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "network": "Ağ hatası. Lütfen bağlantınızı kontrol edin.",
+    "unauthorized": "Bu işlemi gerçekleştirme yetkiniz yok.",
+    "notFound": "İstenen kaynak bulunamadı.",
+    "validation": "Lütfen girişinizi kontrol edin ve tekrar deneyin."
+  },
+  "welcomeModal": {
+    "title": "Önemli Hesap Bilgileri",
+    "subtitle": "Lütfen kaydınızı tamamlamadan önce dikkatlice okuyun:",
+    "button": {
+      "understood": "Anladım",
+      "countdownLabel": "Anladım butonu {count} saniye sonra aktif olacak",
+      "readyLabel": "Anladım, modalı kapat"
+    },
+    "checkbox": {
+      "label": "Bunu bir daha gösterme"
+    },
+    "items": {
+      "security": "Hesap güvenliğiniz sizin sorumluluğunuzdadır",
+      "noPasswordReset": "\"Şifremi Unuttum\" seçeneği bulunmamaktadır",
+      "socialMediaLock": "Sosyal medya kullanıcı adınız kayıt sonrası değiştirilemez",
+      "walletLock": "Cüzdan adresiniz kayıt sonrası değiştirilemez",
+      "futureEvents": "Kaydettiğiniz bilgiler gelecek etkinlikler için kullanılacaktır",
+      "earlyBenefits": "Erken üyeler farklı puanlama avantajları alabilir",
+      "timeLimited": "Bazı görevler ve aktiviteler sınırlı sürelidir",
+      "accuracy": "Lütfen tüm bilgilerin doğru olduğundan emin olun"
+    }
+  },
+  "hero": {
+    "home": {
+      "title": "Sylvan Token'a Hoş Geldiniz",
+      "subtitle": "Görevleri tamamlayın, ödüller kazanın ve topluluğumuzla büyüyün",
+      "cta": "Başlayın"
+    },
+    "dashboard": {
+      "title": "Tekrar hoş geldiniz, {username}!",
+      "subtitle": "İlerlemenizi takip edin ve toplulukla yarışın"
+    },
+    "tasks": {
+      "title": "Mevcut Görevler",
+      "subtitle": "Puan kazanmak ve lider tablosunda yükselmek için görevleri tamamlayın"
+    },
+    "leaderboard": {
+      "title": "Topluluk Lider Tablosu",
+      "subtitle": "Diğer üyeler arasında sıralamanızı görün",
+      "yourRank": "Sıralamanız: #{rank} / {total}"
+    }
+  },
+  "leaderboardPage": {
+    "pageTitle": "Topluluk Lider Tablosu",
+    "pageSubtitle": "Diğer üyeler arasında sıralamanızı görün",
+    "userRankLabel": "Sıralamanız: #{rank} / {total}",
+    "loadingText": "Yükleniyor..."
+  },
+  "home": {
+    "features": {
+      "title": "Neden Sylvan Token'ı Seçmelisiniz?",
+      "subtitle": "Basit görevler aracılığıyla ödül kazanan binlerce kullanıcıya katılın",
+      "tasks": {
+        "title": "Kolay Görevler",
+        "description": "Basit sosyal medya görevlerini tamamlayın ve anında puan kazanın"
+      },
+      "rewards": {
+        "title": "Gerçek Ödüller",
+        "description": "Gerçek token ödüllerine dönüşen puanlar kazanın"
+      },
+      "community": {
+        "title": "Aktif Topluluk",
+        "description": "Gelişen bir token meraklıları topluluğuna katılın"
+      },
+      "instant": {
+        "title": "Anlık Takip",
+        "description": "İlerlemenizi ve kazançlarınızı gerçek zamanlı olarak takip edin"
+      }
+    },
+    "benefits": {
+      "title": "Bugün Kazanmaya Başlayın",
+      "subtitle": "Sylvan Token topluluğuna katılın ve özel avantajların kilidini açın",
+      "item1": "Puan kazanmak ve lider tablosunda yükselmek için günlük görevleri tamamlayın",
+      "item2": "Token ödüllerini doğrudan almak için cüzdanınızı bağlayın",
+      "item3": "Bonus ödüller ve tanınma için diğer üyelerle yarışın",
+      "item4": "Özel kampanyalara ve erken fırsatlara erişin"
+    },
+    "stats": {
+      "users": "10K+",
+      "usersLabel": "Kayıtlı Kullanıcı",
+      "tasks": "50K+",
+      "tasksLabel": "Tamamlanan Görev",
+      "rewards": "1M+",
+      "rewardsLabel": "Dağıtılan Puan"
+    },
+    "tokenDistribution": {
+      "title": "Token Dağılımı",
+      "subtitle": "Gerçek zamanlı token tahsisi",
+      "totalSupply": "Toplam Arz",
+      "holders": "Sahip Sayısı",
+      "circulating": "Dolaşımda",
+      "locked": "Kilitli",
+      "team": "Takım",
+      "donation": "Bağış",
+      "fee": "Ücret",
+      "burned": "Yakılan",
+      "updated": "Güncellendi",
+      "billion": "Milyar",
+      "million": "Milyon"
+    },
+    "cta": {
+      "title": "Başlamaya Hazır mısınız?",
+      "subtitle": "Şimdi hesabınızı oluşturun ve bugün ödül kazanmaya başlayın",
+      "button": "Ücretsiz Hesap Oluştur"
+    }
+  },
+  "theme": {
+    "light": "Açık Mod",
+    "dark": "Koyu Mod",
+    "toggle": "Temayı Değiştir"
+  },
+  "accessibility": {
+    "skipToMain": "Ana içeriğe atla",
+    "skipToNav": "Navigasyona atla",
+    "skipToFooter": "Alt bilgiye atla",
+    "settings": "Erişilebilirlik Ayarları",
+    "settingsDescription": "Daha iyi erişilebilirlik için deneyiminizi özelleştirin",
+    "animations": "Animasyonlar",
+    "animationsEnabled": "Animasyonlar ve geçişler etkin",
+    "animationsDisabled": "Animasyonlar ve geçişler devre dışı",
+    "toggleAnimations": "Animasyonları değiştir",
+    "systemPreference": "Sistem Tercihi:",
+    "reducedMotionDetected": "Sisteminiz azaltılmış hareket tercih edecek şekilde ayarlanmış. Bu ayarı yukarıdan geçersiz kılabilirsiniz.",
+    "info": "Animasyonları devre dışı bırakmak, işlevselliği korurken uygulama genelinde hareket efektlerini azaltacaktır."
+  },
+  "shortcuts": {
+    "title": "Klavye Kısayolları",
+    "home": "Ana Sayfaya Git",
+    "dashboard": "Panele Git",
+    "tasks": "Görevlere Git",
+    "leaderboard": "Sıralamaya Git",
+    "profile": "Profile Git",
+    "tab": "Öğeler arasında gezin",
+    "shiftTab": "Geriye doğru gezin",
+    "enter": "Odaklanılan öğeyi etkinleştir",
+    "escape": "Modal/açılır menüyü kapat"
+  },
+  "twitter": {
+    "connection": {
+      "title": "[EN] Twitter Connection",
+      "description": "[EN] Connect your Twitter account for automatic task verification",
+      "connected": "[EN] Connected",
+      "notConnected": "[EN] Not Connected",
+      "connect": "[EN] Connect Twitter",
+      "disconnect": "[EN] Disconnect",
+      "reconnect": "[EN] Reconnect",
+      "connecting": "[EN] Connecting...",
+      "disconnecting": "[EN] Disconnecting...",
+      "tokenExpired": "[EN] Token Expired",
+      "tokenExpiredMessage": "[EN] Your Twitter connection has expired. Please reconnect to enable automatic verification."
+    },
+    "verification": {
+      "title": "[EN] Twitter Verification",
+      "pending": "[EN] Pending",
+      "verifying": "[EN] Verifying...",
+      "approved": "[EN] Approved",
+      "rejected": "[EN] Rejected",
+      "error": "[EN] Error",
+      "retry": "[EN] Retry Verification",
+      "complete": "[EN] Complete Task",
+      "pointsEarned": "[EN] +{points} points earned!",
+      "checkingActivity": "[EN] Checking your Twitter activity...",
+      "waitingVerification": "[EN] Waiting for verification...",
+      "taskVerified": "[EN] Great! Your {taskType} task has been verified.",
+      "taskRejected": "[EN] Please complete the {taskType} action and try again.",
+      "verificationFailed": "[EN] Verification failed. Please try again or contact support."
+    },
+    "tasks": {
+      "follow": "[EN] Follow",
+      "like": "[EN] Like",
+      "retweet": "[EN] Retweet",
+      "followTitle": "[EN] Follow on Twitter",
+      "likeTitle": "[EN] Like Tweet",
+      "retweetTitle": "[EN] Retweet",
+      "instructions": "[EN] Instructions:",
+      "howItWorks": "[EN] How it works:",
+      "step1": "[EN] Connect your Twitter account (one-time setup)",
+      "step2": "[EN] Complete the Twitter action",
+      "step3": "[EN] Verification happens automatically",
+      "step4": "[EN] Earn points instantly!",
+      "connectionRequired": "[EN] Twitter Connection Required",
+      "connectionRequiredMessage": "[EN] Connect your Twitter account to enable automatic verification for this task. This will make the process much faster and easier!",
+      "automaticVerification": "[EN] Automatic Verification",
+      "automaticVerificationMessage": "[EN] Once you complete the action, we'll automatically verify it and award your points!",
+      "manualMode": "[EN] Manual Mode"
+    }
+  }
+}

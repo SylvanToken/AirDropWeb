@@ -1,0 +1,2433 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Wild Nature Theme - Light Mode (Inspired by forest greens) */
+    /* Colors are managed centrally in config/theme.ts and injected by ThemeProvider */
+    /* These are default fallback values - actual values are set dynamically */
+    --background: 95 35% 92%;
+    --foreground: 140 60% 18%;
+    --card: 95 25% 96%;
+    --card-foreground: 140 60% 18%;
+    --popover: 95 25% 96%;
+    --popover-foreground: 140 60% 18%;
+    --primary: 140 60% 18%;
+    --primary-foreground: 85 65% 55%;
+    --secondary: 85 40% 32%;
+    --secondary-foreground: 95 25% 96%;
+    --muted: 95 20% 85%;
+    --muted-foreground: 140 25% 35%;
+    --accent: 85 65% 55%;
+    --accent-foreground: 140 60% 18%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 95 20% 80%;
+    --input: 95 20% 80%;
+    --ring: 140 60% 18%;
+    --radius: 0.75rem;
+    --eco-leaf: 85 65% 55%;
+    --eco-forest: 140 60% 18%;
+    --eco-earth: 85 40% 32%;
+    --eco-sky: 95 35% 65%;
+    --eco-moss: 100 40% 30%;
+    --task-pending: 45 90% 50%;
+    --task-active: 200 80% 50%;
+    --task-completed: 145 65% 45%;
+    --task-expired: 0 70% 50%;
+    --task-urgent: 15 90% 55%;
+    --status-success: 145 65% 45%;
+    --status-error: 0 70% 50%;
+    --status-warning: 45 90% 50%;
+    --status-info: 200 60% 50%;
+    --bg-opacity: 0.9;
+    
+    /* Design Tokens - Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+    
+    /* Design Tokens - Typography */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-display: 3rem;
+    
+    /* Design Tokens - Transitions */
+    --transition-fast: 150ms;
+    --transition-base: 200ms;
+    --transition-slow: 300ms;
+    --transition-slower: 500ms;
+    
+    /* Design Tokens - Z-index */
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
+  }
+
+  .dark {
+    /* Wild Nature Theme - Dark Mode (Deep forest night) */
+    /* Colors are managed centrally in config/theme.ts and injected by ThemeProvider */
+    /* These are default fallback values - actual values are set dynamically */
+    --background: 140 35% 10%;
+    --foreground: 85 65% 55%;
+    --card: 140 30% 14%;
+    --card-foreground: 85 65% 55%;
+    --popover: 140 30% 14%;
+    --popover-foreground: 85 65% 55%;
+    --primary: 85 65% 55%;
+    --primary-foreground: 140 35% 10%;
+    --secondary: 85 25% 25%;
+    --secondary-foreground: 95 25% 92%;
+    --muted: 140 20% 20%;
+    --muted-foreground: 95 15% 65%;
+    --accent: 85 70% 60%;
+    --accent-foreground: 140 35% 10%;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 140 20% 24%;
+    --input: 140 20% 24%;
+    --ring: 85 65% 55%;
+    --eco-leaf: 85 65% 55%;
+    --eco-forest: 140 60% 18%;
+    --eco-earth: 85 40% 32%;
+    --eco-sky: 95 30% 55%;
+    --eco-moss: 100 40% 30%;
+    --task-pending: 45 90% 60%;
+    --task-active: 200 80% 60%;
+    --task-completed: 145 65% 55%;
+    --task-expired: 0 70% 60%;
+    --task-urgent: 15 90% 65%;
+    --status-success: 145 65% 55%;
+    --status-error: 0 70% 60%;
+    --status-warning: 45 90% 60%;
+    --status-info: 200 60% 60%;
+    --bg-opacity: 0.9;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image: 
+      radial-gradient(circle at 20% 50%, hsla(var(--eco-leaf), calc(0.08 * var(--bg-opacity))) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, hsla(var(--eco-moss), calc(0.06 * var(--bg-opacity))) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, hsla(var(--eco-forest), calc(0.05 * var(--bg-opacity))) 0%, transparent 50%),
+      linear-gradient(135deg, hsla(var(--eco-leaf), calc(0.02 * var(--bg-opacity))) 0%, hsla(var(--eco-forest), calc(0.03 * var(--bg-opacity))) 100%);
+    background-attachment: fixed;
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+  }
+}
+
+@layer utilities {
+  /* Touch-friendly minimum sizes (44x44px for accessibility) */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  .touch-target-sm {
+    @apply min-h-[36px] min-w-[36px];
+  }
+
+  .touch-target-lg {
+    @apply min-h-[56px] min-w-[56px];
+  }
+
+  /* Responsive container with proper padding */
+  .container-fluid {
+    @apply w-full px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Responsive flex layouts */
+  .flex-responsive {
+    @apply flex flex-col sm:flex-row;
+  }
+
+  .flex-responsive-reverse {
+    @apply flex flex-col-reverse sm:flex-row;
+  }
+
+  /* Smooth transitions for interactive elements */
+  .transition-smooth {
+    @apply transition-all duration-200 ease-in-out;
+  }
+
+  .transition-fast {
+    transition-duration: var(--transition-fast);
+  }
+
+  .transition-base {
+    transition-duration: var(--transition-base);
+  }
+
+  .transition-slow {
+    transition-duration: var(--transition-slow);
+  }
+
+  /* Responsive text sizes */
+  .text-responsive-xs {
+    @apply text-xs sm:text-sm;
+  }
+
+  .text-responsive-sm {
+    @apply text-sm sm:text-base;
+  }
+
+  .text-responsive-base {
+    @apply text-base sm:text-lg;
+  }
+
+  .text-responsive-lg {
+    @apply text-lg sm:text-xl;
+  }
+
+  .text-responsive-xl {
+    @apply text-xl sm:text-2xl;
+  }
+
+  .text-responsive-2xl {
+    @apply text-2xl sm:text-3xl;
+  }
+
+  .text-responsive-display {
+    @apply text-3xl sm:text-4xl lg:text-display;
+  }
+
+  /* Responsive spacing */
+  .spacing-responsive {
+    @apply space-y-4 sm:space-y-6;
+  }
+
+  /* Responsive padding */
+  .padding-responsive {
+    @apply p-4 sm:p-6 lg:p-8;
+  }
+
+  /* Responsive grid gaps */
+  .gap-responsive {
+    @apply gap-3 sm:gap-4 lg:gap-6;
+  }
+
+  .gap-responsive-sm {
+    @apply gap-2 sm:gap-3 lg:gap-4;
+  }
+
+  .gap-responsive-lg {
+    @apply gap-4 sm:gap-6 lg:gap-8;
+  }
+
+  /* Responsive grid layouts */
+  .grid-responsive-2 {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-responsive;
+  }
+
+  .grid-responsive-3 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-responsive;
+  }
+
+  .grid-responsive-4 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-responsive;
+  }
+
+  .grid-responsive-auto {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-responsive;
+  }
+
+  /* Responsive card grid (optimized for cards) */
+  .grid-cards {
+    @apply grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 lg:gap-6;
+  }
+
+  .grid-cards-2 {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6;
+  }
+
+  .grid-cards-3 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6;
+  }
+
+  /* Button loading state */
+  .btn-loading {
+    @apply opacity-70 cursor-not-allowed;
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-eco-lg hover:-translate-y-1;
+  }
+
+  /* Card variants */
+  .card-elevated {
+    @apply bg-card shadow-eco rounded-lg;
+  }
+
+  .card-glass {
+    @apply bg-card/80 backdrop-blur-md border border-white/20 dark:border-white/10 rounded-lg;
+  }
+
+  .card-outlined {
+    @apply bg-transparent border-2 border-eco-leaf/20 rounded-lg hover:bg-eco-leaf/5;
+  }
+
+  /* Mobile-friendly tap highlight */
+  .tap-highlight-none {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .tap-highlight-eco {
+    -webkit-tap-highlight-color: hsla(var(--eco-leaf), 0.2);
+  }
+
+  /* Touch feedback animations */
+  .touch-feedback {
+    @apply transition-all duration-150 active:scale-95 active:opacity-90;
+  }
+
+  .touch-feedback-strong {
+    @apply transition-all duration-150 active:scale-90 active:opacity-80;
+  }
+
+  .touch-feedback-subtle {
+    @apply transition-all duration-150 active:scale-[0.98] active:opacity-95;
+  }
+
+  /* Touch-friendly button states */
+  .btn-touch {
+    @apply touch-target tap-highlight-none touch-feedback;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  /* Swipe indicator */
+  .swipe-indicator {
+    @apply absolute inset-0 pointer-events-none;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsla(var(--eco-leaf), 0.1) 50%,
+      transparent 100%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+  }
+
+  .swipe-indicator.active {
+    transform: translateX(100%);
+  }
+
+  /* Prevent text selection on interactive elements */
+  .no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Safe area padding for mobile devices (notch support) */
+  .safe-area-inset-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-area-inset-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-area-inset-left {
+    padding-left: env(safe-area-inset-left);
+  }
+
+  .safe-area-inset-right {
+    padding-right: env(safe-area-inset-right);
+  }
+
+  /* Combined safe area insets */
+  .safe-area-inset-x {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+
+  .safe-area-inset-y {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-area-inset {
+    padding-top: env(safe-area-inset-top);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+  }
+
+  /* Safe area with additional padding */
+  .safe-area-p-4 {
+    padding: calc(env(safe-area-inset-top) + 1rem) calc(env(safe-area-inset-right) + 1rem) calc(env(safe-area-inset-bottom) + 1rem) calc(env(safe-area-inset-left) + 1rem);
+  }
+
+  /* Safe area margins */
+  .safe-area-mt {
+    margin-top: env(safe-area-inset-top);
+  }
+
+  .safe-area-mb {
+    margin-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-area-ml {
+    margin-left: env(safe-area-inset-left);
+  }
+
+  .safe-area-mr {
+    margin-right: env(safe-area-inset-right);
+  }
+
+  /* Scrollbar styling */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+
+  /* Responsive container with max-width */
+  .container-responsive {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Eco-Friendly Gradients */
+  .gradient-eco-primary {
+    background: linear-gradient(135deg, hsl(var(--eco-leaf)) 0%, hsl(var(--eco-forest)) 100%);
+  }
+
+  .gradient-eco-soft {
+    background: linear-gradient(135deg, hsl(var(--eco-moss)) 0%, hsl(var(--eco-leaf)) 100%);
+  }
+
+  .gradient-eco-earth {
+    background: linear-gradient(135deg, hsl(var(--eco-earth)) 0%, hsl(var(--eco-moss)) 100%);
+  }
+
+  .gradient-eco-sky {
+    background: linear-gradient(135deg, hsl(var(--eco-sky)) 0%, hsl(var(--eco-leaf)) 100%);
+  }
+
+  .gradient-eco-card {
+    background: linear-gradient(135deg, 
+      hsl(var(--card)) 0%, 
+      hsl(120 20% 96%) 100%
+    );
+  }
+
+  .gradient-eco-radial {
+    background: radial-gradient(circle at center, hsl(var(--eco-leaf) / 0.1) 0%, transparent 70%);
+  }
+
+  /* Multi-layer Eco Background Gradients (90% opacity) */
+  .bg-eco-multilayer {
+    background-image: 
+      radial-gradient(circle at 20% 50%, hsla(var(--eco-leaf), 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, hsla(var(--eco-moss), 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, hsla(var(--eco-forest), 0.05) 0%, transparent 50%),
+      linear-gradient(135deg, hsla(var(--eco-leaf), 0.02) 0%, hsla(var(--eco-forest), 0.03) 100%);
+    opacity: 0.9;
+  }
+
+  .bg-eco-multilayer-fixed {
+    background-image: 
+      radial-gradient(circle at 20% 50%, hsla(var(--eco-leaf), 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, hsla(var(--eco-moss), 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, hsla(var(--eco-forest), 0.05) 0%, transparent 50%),
+      linear-gradient(135deg, hsla(var(--eco-leaf), 0.02) 0%, hsla(var(--eco-forest), 0.03) 100%);
+    background-attachment: fixed;
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+    opacity: 0.9;
+  }
+
+  /* Eco-Friendly Text Gradients */
+  .text-gradient-eco {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--eco-leaf)) 0%, hsl(var(--eco-forest)) 100%);
+  }
+
+  .text-gradient-nature {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--eco-moss)) 0%, hsl(var(--eco-sky)) 100%);
+  }
+
+  .text-gradient-earth {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--eco-earth)) 0%, hsl(var(--eco-leaf)) 100%);
+  }
+
+  /* Eco-Friendly Shadows */
+  .shadow-eco {
+    box-shadow: 0 4px 20px -2px hsla(var(--eco-leaf), 0.15);
+  }
+
+  .shadow-eco-lg {
+    box-shadow: 0 10px 40px -5px hsla(var(--eco-leaf), 0.2);
+  }
+
+  .shadow-eco-xl {
+    box-shadow: 0 20px 60px -10px hsla(var(--eco-leaf), 0.25);
+  }
+
+  .shadow-glow {
+    box-shadow: 0 0 20px hsla(var(--eco-leaf), 0.3);
+  }
+
+  .shadow-glow-lg {
+    box-shadow: 0 0 40px hsla(var(--eco-leaf), 0.4);
+  }
+
+  /* Glassmorphism effects */
+  .glass {
+    @apply backdrop-blur-md bg-white/10 dark:bg-black/10;
+  }
+
+  .glass-strong {
+    @apply backdrop-blur-lg bg-white/20 dark:bg-black/20;
+  }
+
+  /* Eco-friendly hover effects */
+  .hover-eco {
+    @apply transition-all duration-300;
+  }
+
+  .hover-eco:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px -5px hsla(var(--eco-leaf), 0.25);
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
+  .hover-glow {
+    @apply transition-shadow duration-300 hover:shadow-glow;
+  }
+
+  /* Nature-inspired borders */
+  .border-eco {
+    border: 2px solid hsl(var(--eco-leaf) / 0.2);
+  }
+
+  .border-eco-gradient {
+    border: 2px solid transparent;
+    background-image: 
+      linear-gradient(hsl(var(--background)), hsl(var(--background))),
+      linear-gradient(135deg, hsl(var(--eco-leaf)), hsl(var(--eco-moss)));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  /* Organic shapes */
+  .organic-shape {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  .organic-shape-alt {
+    border-radius: 40% 60% 70% 30% / 40% 70% 30% 60%;
+  }
+
+  /* Eco-friendly focus rings */
+  .focus-eco:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px hsla(var(--eco-leaf), 0.3);
+  }
+
+  .focus-ring-eco:focus-visible {
+    @apply outline-none ring-2 ring-eco-leaf ring-offset-2 ring-offset-background;
+  }
+
+  /* Loading skeleton with shimmer */
+  .skeleton {
+    @apply bg-muted animate-pulse rounded;
+  }
+
+  .skeleton-shimmer {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--muted)) 0%,
+      hsl(var(--muted-foreground) / 0.1) 50%,
+      hsl(var(--muted)) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+  }
+
+  /* Backdrop blur utilities */
+  .backdrop-blur-eco {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  /* Sticky header with blur */
+  .sticky-header {
+    @apply sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border;
+  }
+
+  /* Page transitions */
+  .page-enter {
+    @apply animate-fade-in;
+  }
+
+  .page-slide-right {
+    @apply animate-slide-in-right;
+  }
+
+  .page-slide-left {
+    @apply animate-slide-in-left;
+  }
+
+  /* Modal animations */
+  .animate-modal-fade-in {
+    animation: modalFadeIn 0.3s ease-out forwards;
+  }
+
+  .animate-backdrop-fade-in {
+    animation: backdropFadeIn 0.3s ease-out forwards;
+  }
+
+  /* Reduced motion support - Comprehensive */
+  @media (prefers-reduced-motion: reduce) {
+    /* Disable all animations and transitions except essential state changes */
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+    
+    /* Disable neon pulse animations */
+    .neon-pulse,
+    .neon-active,
+    .neon-status-active {
+      animation: none !important;
+    }
+    
+    /* Disable floating animations */
+    .animate-float,
+    .animate-float-delayed {
+      animation: none !important;
+    }
+    
+    /* Disable gradient shift animations */
+    .gradient-smooth {
+      animation: none !important;
+      background-size: 100% 100%;
+    }
+    
+    /* Simplify hover transitions - remove transform animations */
+    .hover-lift:hover,
+    .hover-scale:hover,
+    .hover-eco:hover,
+    .transform-3d:hover .transform-3d-child {
+      transform: none !important;
+    }
+    
+    /* Simplify neon glow effects on hover - keep color changes only */
+    .neon-glow-green:hover,
+    .neon-glow-green-strong:hover,
+    .neon-border:hover,
+    .neon-border-strong:hover,
+    button.neon-btn:hover,
+    .neon-btn:hover {
+      box-shadow: none !important;
+      transform: none !important;
+    }
+    
+    /* Disable active state animations */
+    button.neon-btn:active,
+    .neon-btn:active {
+      animation: none !important;
+    }
+    
+    /* Disable card focus animations */
+    .neon-card:focus,
+    .neon-card:focus-within {
+      animation: none !important;
+    }
+    
+    /* Disable input focus glow animation */
+    .input-focus-animate:focus-visible {
+      animation: none !important;
+    }
+    
+    /* Disable modal animations */
+    .animate-modal-fade-in,
+    .animate-backdrop-fade-in {
+      animation: none !important;
+    }
+    
+    /* Disable page transition animations */
+    .page-enter,
+    .page-slide-right,
+    .page-slide-left {
+      animation: none !important;
+    }
+    
+    /* Disable skeleton shimmer */
+    .skeleton-shimmer {
+      animation: none !important;
+      background: hsl(var(--muted));
+    }
+    
+    /* Disable swipe indicator animation */
+    .swipe-indicator.active {
+      transform: none !important;
+      transition: none !important;
+    }
+    
+    /* Disable touch feedback animations */
+    .touch-feedback,
+    .touch-feedback-strong,
+    .touch-feedback-subtle {
+      transition: none !important;
+    }
+    
+    .touch-feedback:active,
+    .touch-feedback-strong:active,
+    .touch-feedback-subtle:active {
+      transform: none !important;
+      opacity: 1 !important;
+    }
+    
+    /* Disable 3D transform depth animations */
+    .transform-3d-child {
+      transform: none !important;
+      transition: none !important;
+    }
+    
+    /* Disable layered depth hover effect */
+    .layered-depth::before {
+      transition: none !important;
+    }
+    
+    /* Keep essential state change transitions for accessibility */
+    button,
+    a,
+    input,
+    select,
+    textarea,
+    [role="button"],
+    [role="link"] {
+      transition: background-color 0.15s ease, 
+                  color 0.15s ease, 
+                  border-color 0.15s ease, 
+                  opacity 0.15s ease !important;
+    }
+    
+    /* Maintain focus indicators - essential for accessibility */
+    *:focus-visible {
+      transition: outline 0.15s ease, 
+                  box-shadow 0.15s ease !important;
+    }
+  }
+
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .border-eco {
+      border-width: 3px;
+    }
+    
+    .focus-eco:focus,
+    .focus-ring-eco:focus-visible {
+      outline: 3px solid currentColor;
+      outline-offset: 3px;
+    }
+  }
+
+  /* Landscape orientation optimizations */
+  @media (orientation: landscape) {
+    /* Reduce hero heights in landscape */
+    .hero-landscape-sm {
+      min-height: 250px;
+      max-height: 40vh;
+    }
+
+    .hero-landscape-md {
+      min-height: 300px;
+      max-height: 50vh;
+    }
+
+    .hero-landscape-lg {
+      min-height: 350px;
+      max-height: 60vh;
+    }
+
+    /* Optimize spacing for landscape */
+    .landscape-compact {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    /* Horizontal navigation for landscape tablets */
+    .landscape-nav-horizontal {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    /* Reduce vertical spacing in landscape */
+    .landscape-spacing-sm {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Grid adjustments for landscape */
+    .landscape-grid-auto {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+
+  /* Landscape on small screens (phones) */
+  @media (max-width: 768px) and (orientation: landscape) {
+    /* Hide or minimize bottom nav in landscape */
+    .landscape-hide-mobile {
+      display: none;
+    }
+
+    /* Compact header in landscape */
+    .landscape-header-compact {
+      height: 3rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+    }
+
+    /* Reduce hero heights significantly on mobile landscape */
+    .hero-mobile-landscape {
+      min-height: 200px;
+      max-height: 35vh;
+    }
+  }
+
+  /* Landscape on tablets */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* Optimize grid for landscape tablets */
+    .tablet-landscape-grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tablet-landscape-grid-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Horizontal layout for landscape tablets */
+    .tablet-landscape-flex-row {
+      flex-direction: row;
+    }
+  }
+}
+
+/* Animation Keyframes */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes leaf-float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+  75% {
+    transform: translateY(-5px) rotate(-5deg);
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-eco {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modal entrance animation - fade in with slight scale */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Backdrop fade in animation */
+@keyframes backdropFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Floating leaf animations for completion modal */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-15px) rotate(10deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+  75% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY STYLES (WCAG 2.1 AA Compliant)
+   ============================================ */
+
+/* Screen reader only content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Screen reader only, but visible on focus */
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Enhanced focus indicators (WCAG 2.1 AA compliant) */
+.focus-visible-enhanced:focus-visible {
+  outline: 3px solid hsl(var(--eco-forest));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.dark .focus-visible-enhanced:focus-visible {
+  outline-color: hsl(var(--eco-leaf));
+}
+
+/* High contrast focus for buttons */
+button:focus-visible,
+a:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid hsl(var(--eco-forest));
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px hsla(var(--eco-leaf), 0.2);
+}
+
+.dark button:focus-visible,
+.dark a:focus-visible,
+.dark [role="button"]:focus-visible {
+  outline-color: hsl(var(--eco-leaf));
+  box-shadow: 0 0 0 4px hsla(var(--eco-leaf), 0.3);
+}
+
+/* Error states with sufficient contrast */
+.error-state {
+  border-color: hsl(0 70% 50%);
+  color: hsl(0 70% 40%);
+  background-color: hsl(0 70% 97%);
+}
+
+.dark .error-state {
+  border-color: hsl(0 70% 60%);
+  color: hsl(0 70% 70%);
+  background-color: hsl(0 70% 10%);
+}
+
+/* Success states with sufficient contrast */
+.success-state {
+  border-color: hsl(145 65% 45%);
+  color: hsl(145 65% 28%);
+  background-color: hsl(145 65% 97%);
+}
+
+.dark .success-state {
+  border-color: hsl(145 65% 55%);
+  color: hsl(145 65% 70%);
+  background-color: hsl(145 65% 10%);
+}
+
+/* Warning states with sufficient contrast */
+.warning-state {
+  border-color: hsl(45 90% 50%);
+  color: hsl(45 90% 30%);
+  background-color: hsl(45 90% 97%);
+}
+
+.dark .warning-state {
+  border-color: hsl(45 90% 60%);
+  color: hsl(45 90% 80%);
+  background-color: hsl(45 90% 10%);
+}
+
+/* Info states with sufficient contrast */
+.info-state {
+  border-color: hsl(200 60% 50%);
+  color: hsl(200 60% 35%);
+  background-color: hsl(200 60% 97%);
+}
+
+.dark .info-state {
+  border-color: hsl(200 60% 60%);
+  color: hsl(200 60% 75%);
+  background-color: hsl(200 60% 10%);
+}
+
+/* Link styles with sufficient contrast */
+a:not(.no-underline) {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  color: hsl(var(--eco-forest));
+}
+
+.dark a:not(.no-underline) {
+  color: hsl(var(--eco-leaf));
+}
+
+a:hover:not(.no-underline) {
+  text-decoration-thickness: 2px;
+}
+
+/* Skip link styles */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: hsl(var(--eco-leaf));
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 0 0 4px 0;
+  z-index: 9999;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid hsl(var(--eco-forest));
+  outline-offset: 2px;
+}
+
+/* Ensure minimum touch target size (44x44px) */
+.touch-target {
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* High contrast mode adjustments */
+@media (prefers-contrast: high) {
+  /* Increase border widths */
+  .border {
+    border-width: 2px;
+  }
+  
+  /* Stronger focus indicators */
+  *:focus-visible {
+    outline-width: 3px;
+    outline-offset: 3px;
+  }
+  
+  /* Increase text contrast */
+  body {
+    color: hsl(0 0% 0%);
+  }
+  
+  .dark body {
+    color: hsl(0 0% 100%);
+  }
+  
+  /* Remove subtle backgrounds */
+  .bg-muted {
+    background-color: transparent;
+    border: 2px solid currentColor;
+  }
+}
+
+/* Reduced motion preferences - Comprehensive accessibility support */
+@media (prefers-reduced-motion: reduce) {
+  /* Disable all animations and most transitions */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  /* Remove transform animations */
+  .hover-lift:hover,
+  .hover-scale:hover,
+  .hover-eco:hover {
+    transform: none !important;
+  }
+  
+  /* Disable neon pulse animations */
+  .neon-pulse,
+  .neon-active,
+  .neon-status-active,
+  .animate-float,
+  .animate-float-delayed {
+    animation: none !important;
+  }
+  
+  /* Simplify neon effects - keep visual feedback but remove animations */
+  .neon-glow-green,
+  .neon-glow-green-strong,
+  .neon-border,
+  .neon-border-strong {
+    box-shadow: none !important;
+  }
+  
+  .neon-glow-green:hover,
+  .neon-glow-green-strong:hover {
+    box-shadow: none !important;
+    transform: none !important;
+  }
+  
+  /* Keep essential transitions for state changes - critical for accessibility */
+  button,
+  a,
+  input,
+  select,
+  textarea,
+  [role="button"],
+  [role="link"] {
+    transition: background-color 0.15s ease, 
+                color 0.15s ease, 
+                border-color 0.15s ease, 
+                opacity 0.15s ease !important;
+  }
+  
+  /* Maintain focus indicators with minimal transition - essential for keyboard navigation */
+  *:focus-visible {
+    transition: outline 0.15s ease, 
+                box-shadow 0.15s ease !important;
+  }
+}
+
+/* Color blindness support - ensure not relying on color alone */
+.status-indicator::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-success::before {
+  background-color: hsl(145 65% 45%);
+}
+
+.status-error::before {
+  background-color: hsl(0 70% 50%);
+}
+
+.status-warning::before {
+  background-color: hsl(45 90% 50%);
+}
+
+.status-info::before {
+  background-color: hsl(200 60% 50%);
+}
+
+/* Ensure icons have proper spacing and are not the only indicator */
+.icon-with-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Keyboard navigation indicators */
+.keyboard-nav-active *:focus {
+  outline: 2px solid hsl(var(--eco-forest));
+  outline-offset: 2px;
+}
+
+.dark .keyboard-nav-active *:focus {
+  outline-color: hsl(var(--eco-leaf));
+}
+
+/* Print styles for accessibility */
+@media print {
+  /* Ensure good contrast for printing */
+  body {
+    background: white;
+    color: black;
+  }
+  
+  /* Show link URLs */
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  
+  /* Remove unnecessary elements */
+  nav,
+  .no-print {
+    display: none;
+  }
+  
+  /* Ensure page breaks are appropriate */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+  
+  img {
+    page-break-inside: avoid;
+  }
+}
+
+/* Motion preferences - User controlled via data attribute */
+[data-reduce-motion="true"] * {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Disable transform animations */
+[data-reduce-motion="true"] .hover-lift:hover,
+[data-reduce-motion="true"] .hover-scale:hover,
+[data-reduce-motion="true"] .hover-eco:hover,
+[data-reduce-motion="true"] .transform-3d:hover .transform-3d-child {
+  transform: none !important;
+}
+
+/* Disable neon animations */
+[data-reduce-motion="true"] .neon-pulse,
+[data-reduce-motion="true"] .neon-active,
+[data-reduce-motion="true"] .neon-status-active,
+[data-reduce-motion="true"] .neon-card:focus,
+[data-reduce-motion="true"] .neon-card:focus-within,
+[data-reduce-motion="true"] button.neon-btn:active,
+[data-reduce-motion="true"] .neon-btn:active,
+[data-reduce-motion="true"] .animate-float,
+[data-reduce-motion="true"] .animate-float-delayed,
+[data-reduce-motion="true"] .gradient-smooth,
+[data-reduce-motion="true"] .input-focus-animate:focus-visible {
+  animation: none !important;
+}
+
+/* Simplify neon glow effects */
+[data-reduce-motion="true"] .neon-glow-green,
+[data-reduce-motion="true"] .neon-glow-green-strong {
+  box-shadow: none !important;
+  border: 1px solid hsla(var(--eco-leaf), 0.3);
+}
+
+[data-reduce-motion="true"] .neon-glow-green:hover,
+[data-reduce-motion="true"] .neon-glow-green-strong:hover,
+[data-reduce-motion="true"] .neon-border:hover,
+[data-reduce-motion="true"] .neon-border-strong:hover,
+[data-reduce-motion="true"] button.neon-btn:hover,
+[data-reduce-motion="true"] .neon-btn:hover {
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Simplify depth effects */
+[data-reduce-motion="true"] .depth-4k-1,
+[data-reduce-motion="true"] .depth-4k-2,
+[data-reduce-motion="true"] .depth-4k-3,
+[data-reduce-motion="true"] .transform-3d-child {
+  transform: none !important;
+}
+
+/* Disable touch feedback animations */
+[data-reduce-motion="true"] .touch-feedback:active,
+[data-reduce-motion="true"] .touch-feedback-strong:active,
+[data-reduce-motion="true"] .touch-feedback-subtle:active {
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+/* Keep essential transitions for state changes even with reduced motion */
+[data-reduce-motion="true"] button,
+[data-reduce-motion="true"] a,
+[data-reduce-motion="true"] input,
+[data-reduce-motion="true"] select,
+[data-reduce-motion="true"] textarea,
+[data-reduce-motion="true"] [role="button"],
+[data-reduce-motion="true"] [role="link"] {
+  transition: background-color 0.15s ease, 
+              color 0.15s ease, 
+              border-color 0.15s ease, 
+              opacity 0.15s ease !important;
+}
+
+/* Maintain focus indicators - essential for accessibility */
+[data-reduce-motion="true"] *:focus-visible {
+  transition: outline 0.15s ease, 
+              box-shadow 0.15s ease !important;
+}
+
+
+/* ============================================
+   Browser-Specific Fixes
+   ============================================ */
+
+/* Safari-specific fixes */
+.browser-safari {
+  /* Fix for 100vh on mobile Safari */
+  --real-vh: var(--vh, 1vh);
+}
+
+.browser-safari .min-h-screen {
+  min-height: calc(var(--real-vh, 1vh) * 100);
+}
+
+/* Firefox-specific fixes */
+.browser-firefox {
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+}
+
+/* Edge-specific fixes */
+.browser-edge {
+  /* Ensure proper rendering */
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/* Backdrop filter fallback */
+.no-backdrop-filter .backdrop-blur-md,
+.no-backdrop-filter .backdrop-blur-lg,
+.no-backdrop-filter .backdrop-blur-xl {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  background-color: rgba(255, 255, 255, var(--backdrop-opacity, 0.95));
+}
+
+.dark .no-backdrop-filter .backdrop-blur-md,
+.dark .no-backdrop-filter .backdrop-blur-lg,
+.dark .no-backdrop-filter .backdrop-blur-xl {
+  background-color: rgba(15, 23, 42, var(--backdrop-opacity, 0.95));
+}
+
+/* Touch device optimizations */
+.touch-device {
+  /* Disable hover effects on touch devices */
+  --enable-hover: 0;
+}
+
+.touch-device * {
+  /* Prevent text selection on touch */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Mobile-specific fixes */
+.is-mobile input,
+.is-mobile textarea,
+.is-mobile select {
+  /* Prevent zoom on input focus */
+  font-size: 16px !important;
+}
+
+.is-mobile .text-sm {
+  /* Ensure minimum font size on mobile */
+  font-size: max(14px, 0.875rem);
+}
+
+/* Tablet-specific fixes */
+.is-tablet {
+  /* Optimize for tablet viewport */
+  --container-padding: 2rem;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+  
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  * {
+    border-color: currentColor !important;
+  }
+  
+  button,
+  a {
+    text-decoration: underline;
+  }
+}
+
+/* Forced colors mode (Windows High Contrast) */
+@media (forced-colors: active) {
+  * {
+    forced-color-adjust: auto;
+  }
+  
+  .bg-gradient-to-r,
+  .bg-gradient-to-br {
+    background: ButtonFace !important;
+  }
+}
+
+
+/* ============================================
+   REDUCED MOTION SUPPORT
+   ============================================
+   
+   This application implements comprehensive reduced motion support
+   following WCAG 2.1 guidelines for accessibility.
+   
+   When prefers-reduced-motion: reduce is detected:
+   - All decorative animations are disabled (neon pulse, floating, gradients)
+   - Transform animations are removed (hover lifts, scales, 3D effects)
+   - Transition durations are minimized to 0.01ms
+   - Essential state change transitions are preserved (0.15s)
+   - Focus indicators maintain minimal transitions for accessibility
+   - Visual feedback is simplified but still present
+   
+   Essential transitions that are maintained:
+   - Background color changes (for button states)
+   - Text color changes (for link states)
+   - Border color changes (for input focus)
+   - Opacity changes (for disabled states)
+   - Focus indicators (for keyboard navigation)
+   
+   This ensures users with vestibular disorders or motion sensitivity
+   can use the application comfortably while maintaining usability.
+   ============================================ */
+
+/* ============================================
+   4K DEPTH & NEON EFFECTS
+   ============================================ */
+
+/* 4K Depth System - Multi-layered box shadows with eco-leaf tinted glow */
+.depth-4k-1 {
+  box-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 2px 4px rgba(0, 0, 0, 0.05),
+    0 4px 8px rgba(0, 0, 0, 0.05),
+    0 0 10px hsla(var(--eco-leaf), 0.05);
+  transform: translateZ(10px);
+}
+
+.depth-4k-2 {
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.06),
+    0 4px 8px rgba(0, 0, 0, 0.06),
+    0 8px 16px rgba(0, 0, 0, 0.06),
+    0 16px 32px rgba(0, 0, 0, 0.06),
+    0 0 20px hsla(var(--eco-leaf), 0.1);
+  transform: translateZ(20px);
+}
+
+.depth-4k-3 {
+  box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.07),
+    0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07),
+    0 32px 64px rgba(0, 0, 0, 0.07),
+    0 0 30px hsla(var(--eco-leaf), 0.15);
+  transform: translateZ(30px);
+}
+
+/* Legacy depth layers (kept for backward compatibility) */
+.depth-layer-1 {
+  transform: translateZ(10px);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.depth-layer-2 {
+  transform: translateZ(20px);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+.depth-layer-3 {
+  transform: translateZ(30px);
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+}
+
+/* Neon Glow Effects */
+.neon-glow-green {
+  box-shadow: 
+    0 0 10px hsla(var(--eco-leaf), 0.3),
+    0 0 20px hsla(var(--eco-leaf), 0.2),
+    0 0 30px hsla(var(--eco-leaf), 0.1),
+    inset 0 0 10px hsla(var(--eco-leaf), 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.neon-glow-green:hover {
+  box-shadow: 
+    0 0 15px hsla(var(--eco-leaf), 0.5),
+    0 0 30px hsla(var(--eco-leaf), 0.3),
+    0 0 45px hsla(var(--eco-leaf), 0.2),
+    inset 0 0 15px hsla(var(--eco-leaf), 0.08);
+}
+
+.neon-glow-green-strong {
+  box-shadow: 
+    0 0 15px hsla(var(--eco-leaf), 0.5),
+    0 0 30px hsla(var(--eco-leaf), 0.3),
+    0 0 45px hsla(var(--eco-leaf), 0.2),
+    0 0 60px hsla(var(--eco-leaf), 0.1),
+    inset 0 0 15px hsla(var(--eco-leaf), 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.neon-glow-green-strong:hover {
+  box-shadow: 
+    0 0 20px hsla(var(--eco-leaf), 0.7),
+    0 0 40px hsla(var(--eco-leaf), 0.5),
+    0 0 60px hsla(var(--eco-leaf), 0.3),
+    0 0 80px hsla(var(--eco-leaf), 0.2),
+    inset 0 0 20px hsla(var(--eco-leaf), 0.15);
+}
+
+.neon-border {
+  border: 1px solid hsla(var(--eco-leaf), 0.3);
+  box-shadow: 
+    0 0 5px hsla(var(--eco-leaf), 0.2),
+    inset 0 0 5px hsla(var(--eco-leaf), 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neon-border:hover {
+  border-color: hsla(var(--eco-leaf), 0.5);
+  box-shadow: 
+    0 0 10px hsla(var(--eco-leaf), 0.3),
+    inset 0 0 10px hsla(var(--eco-leaf), 0.15);
+}
+
+.neon-border-strong {
+  border: 2px solid hsla(var(--eco-leaf), 0.5);
+  box-shadow: 
+    0 0 10px hsla(var(--eco-leaf), 0.4),
+    0 0 20px hsla(var(--eco-leaf), 0.2),
+    inset 0 0 10px hsla(var(--eco-leaf), 0.15);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neon-border-strong:hover {
+  border-color: hsla(var(--eco-leaf), 0.7);
+  box-shadow: 
+    0 0 15px hsla(var(--eco-leaf), 0.6),
+    0 0 30px hsla(var(--eco-leaf), 0.4),
+    inset 0 0 15px hsla(var(--eco-leaf), 0.2);
+}
+
+/* Smooth Gradient Transitions */
+.gradient-smooth {
+  background: linear-gradient(
+    135deg,
+    hsla(var(--eco-leaf), 0.05) 0%,
+    hsla(var(--eco-forest), 0.03) 25%,
+    hsla(var(--eco-moss), 0.04) 50%,
+    hsla(var(--eco-leaf), 0.02) 75%,
+    hsla(var(--eco-forest), 0.05) 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* 4K Quality Box Shadows */
+.shadow-4k-sm {
+  box-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 2px 4px rgba(0, 0, 0, 0.05),
+    0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-4k-md {
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.06),
+    0 4px 8px rgba(0, 0, 0, 0.06),
+    0 8px 16px rgba(0, 0, 0, 0.06),
+    0 16px 32px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-4k-lg {
+  box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.07),
+    0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07),
+    0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+/* Layered Depth Effect */
+.layered-depth {
+  position: relative;
+}
+
+.layered-depth::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(135deg, hsla(var(--eco-leaf), 0.1), hsla(var(--eco-forest), 0.1));
+  border-radius: inherit;
+  z-index: -1;
+  filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.layered-depth:hover::before {
+  opacity: 1;
+}
+
+/* Glassmorphism with Depth - Enhanced with layered shadows and eco-leaf tint */
+.glass-depth {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.05),
+    0 4px 8px rgba(0, 0, 0, 0.05),
+    0 8px 16px rgba(0, 0, 0, 0.06),
+    0 16px 32px rgba(0, 0, 0, 0.07),
+    0 0 20px hsla(var(--eco-leaf), 0.08),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.dark .glass-depth {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.12),
+    0 16px 32px rgba(0, 0, 0, 0.15),
+    0 0 25px hsla(var(--eco-leaf), 0.12),
+    inset 0 0 20px rgba(255, 255, 255, 0.03);
+}
+
+/* Animated Neon Pulse */
+@keyframes neon-pulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 10px hsla(var(--eco-leaf), 0.3),
+      0 0 20px hsla(var(--eco-leaf), 0.2),
+      0 0 30px hsla(var(--eco-leaf), 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 0 15px hsla(var(--eco-leaf), 0.5),
+      0 0 30px hsla(var(--eco-leaf), 0.3),
+      0 0 45px hsla(var(--eco-leaf), 0.2);
+  }
+}
+
+.neon-pulse {
+  animation: neon-pulse 2s ease-in-out infinite;
+}
+
+/* Neon Effects for Interactive Elements */
+
+/* Button Neon Glow on Hover */
+button.neon-btn,
+.neon-btn {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+button.neon-btn:hover,
+.neon-btn:hover {
+  box-shadow: 
+    0 0 10px hsla(var(--eco-leaf), 0.4),
+    0 0 20px hsla(var(--eco-leaf), 0.3),
+    0 0 30px hsla(var(--eco-leaf), 0.2),
+    0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+button.neon-btn:active,
+.neon-btn:active {
+  box-shadow: 
+    0 0 15px hsla(var(--eco-leaf), 0.5),
+    0 0 30px hsla(var(--eco-leaf), 0.4),
+    0 0 45px hsla(var(--eco-leaf), 0.3);
+  animation: neon-pulse 1s ease-in-out;
+}
+
+/* Input Neon Ring on Focus */
+input.neon-input:focus,
+textarea.neon-input:focus,
+select.neon-input:focus,
+.neon-input:focus {
+  outline: none;
+  border-color: hsla(var(--eco-leaf), 0.6);
+  box-shadow: 
+    0 0 0 3px hsla(var(--eco-leaf), 0.2),
+    0 0 10px hsla(var(--eco-leaf), 0.3),
+    0 0 20px hsla(var(--eco-leaf), 0.2),
+    0 0 30px hsla(var(--eco-leaf), 0.1);
+}
+
+/* Default form element neon focus effects */
+input:not([type="checkbox"]):not([type="radio"]):focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none;
+  border-color: hsl(var(--eco-leaf));
+  box-shadow: 
+    0 0 0 3px hsla(var(--eco-leaf), 0.2),
+    0 0 10px hsla(var(--eco-leaf), 0.3),
+    0 0 20px hsla(var(--eco-leaf), 0.2),
+    0 0 30px hsla(var(--eco-leaf), 0.1);
+}
+
+/* Eco-themed placeholder colors */
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: hsl(var(--muted-foreground) / 0.6);
+  transition: color 0.3s ease;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder,
+select:focus::placeholder {
+  color: hsl(var(--eco-leaf) / 0.4);
+}
+
+/* Select element neon styling */
+select {
+  border-color: hsl(var(--input));
+  transition: all 0.3s ease;
+}
+
+select:focus-visible {
+  border-color: hsl(var(--eco-leaf));
+}
+
+/* Checkbox and radio neon focus */
+input[type="checkbox"]:focus-visible,
+input[type="radio"]:focus-visible {
+  outline: none;
+  box-shadow: 
+    0 0 0 2px hsl(var(--background)),
+    0 0 0 4px hsla(var(--eco-leaf), 0.5),
+    0 0 10px hsla(var(--eco-leaf), 0.3);
+}
+
+/* Focus glow animation for inputs */
+@keyframes input-focus-glow {
+  0% {
+    box-shadow: 
+      0 0 0 3px hsla(var(--eco-leaf), 0.1),
+      0 0 5px hsla(var(--eco-leaf), 0.2);
+  }
+  50% {
+    box-shadow: 
+      0 0 0 3px hsla(var(--eco-leaf), 0.25),
+      0 0 15px hsla(var(--eco-leaf), 0.35),
+      0 0 25px hsla(var(--eco-leaf), 0.25);
+  }
+  100% {
+    box-shadow: 
+      0 0 0 3px hsla(var(--eco-leaf), 0.2),
+      0 0 10px hsla(var(--eco-leaf), 0.3),
+      0 0 20px hsla(var(--eco-leaf), 0.2);
+  }
+}
+
+.input-focus-animate:focus-visible {
+  animation: input-focus-glow 0.6s ease-out;
+}
+
+/* Card Neon Border on Focus */
+.neon-card:focus,
+.neon-card:focus-within {
+  outline: none;
+  border-color: hsla(var(--eco-leaf), 0.5);
+  box-shadow: 
+    0 0 10px hsla(var(--eco-leaf), 0.3),
+    0 0 20px hsla(var(--eco-leaf), 0.2),
+    0 0 30px hsla(var(--eco-leaf), 0.1),
+    0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: neon-pulse 2s ease-in-out;
+}
+
+/* Active State Animated Pulse */
+.neon-active {
+  animation: neon-pulse 2s ease-in-out infinite;
+}
+
+/* Neon Glow for Status Indicators */
+.neon-status-active {
+  box-shadow: 
+    0 0 8px hsla(var(--eco-leaf), 0.5),
+    0 0 16px hsla(var(--eco-leaf), 0.3);
+  animation: neon-pulse 2s ease-in-out infinite;
+}
+
+/* Neon Ring for Focused Interactive Elements */
+.neon-ring:focus-visible {
+  outline: none;
+  box-shadow: 
+    0 0 0 2px hsl(var(--background)),
+    0 0 0 4px hsla(var(--eco-leaf), 0.5),
+    0 0 10px hsla(var(--eco-leaf), 0.3),
+    0 0 20px hsla(var(--eco-leaf), 0.2);
+}
+
+/* Neon Hover Effect for Links and Buttons */
+a.neon-link:hover,
+.neon-link:hover {
+  text-shadow: 
+    0 0 5px hsla(var(--eco-leaf), 0.5),
+    0 0 10px hsla(var(--eco-leaf), 0.3);
+  transition: text-shadow 0.3s ease;
+}
+
+/* Reduced Motion Support for Neon Effects - Extended */
+@media (prefers-reduced-motion: reduce) {
+  /* Disable all neon pulse and glow animations */
+  .neon-pulse,
+  .neon-active,
+  .neon-status-active,
+  .neon-card:focus,
+  .neon-card:focus-within,
+  button.neon-btn:active,
+  .neon-btn:active {
+    animation: none !important;
+  }
+  
+  /* Simplify neon effects - keep borders but remove animated glows */
+  .neon-glow-green,
+  .neon-glow-green-strong {
+    box-shadow: none !important;
+    border: 1px solid hsla(var(--eco-leaf), 0.3);
+  }
+  
+  .neon-border,
+  .neon-border-strong {
+    box-shadow: none !important;
+  }
+  
+  /* Simplify input focus effects - keep ring but remove glow */
+  input:not([type="checkbox"]):not([type="radio"]):focus-visible,
+  textarea:focus-visible,
+  select:focus-visible,
+  input.neon-input:focus,
+  textarea.neon-input:focus,
+  select.neon-input:focus,
+  .neon-input:focus {
+    box-shadow: 0 0 0 3px hsla(var(--eco-leaf), 0.3) !important;
+  }
+  
+  /* Simplify checkbox and radio focus */
+  input[type="checkbox"]:focus-visible,
+  input[type="radio"]:focus-visible {
+    box-shadow: 0 0 0 2px hsl(var(--background)),
+                0 0 0 4px hsla(var(--eco-leaf), 0.5) !important;
+  }
+  
+  /* Simplify neon ring focus */
+  .neon-ring:focus-visible {
+    box-shadow: 0 0 0 2px hsl(var(--background)),
+                0 0 0 4px hsla(var(--eco-leaf), 0.5) !important;
+  }
+  
+  /* Remove text shadow from neon links */
+  a.neon-link:hover,
+  .neon-link:hover {
+    text-shadow: none !important;
+  }
+  
+  /* Simplify button hover effects */
+  button.neon-btn:hover,
+  .neon-btn:hover {
+    box-shadow: none !important;
+    transform: none !important;
+  }
+  
+  /* Simplify depth effects - keep shadows but remove transforms */
+  .depth-4k-1,
+  .depth-4k-2,
+  .depth-4k-3 {
+    transform: none !important;
+  }
+  
+  /* Simplify glass depth effects */
+  .glass-depth {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .dark .glass-depth {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  }
+}
+
+/* 3D Transform Depth */
+.transform-3d {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.transform-3d-child {
+  transform: translateZ(20px);
+  transition: transform 0.3s ease;
+}
+
+.transform-3d:hover .transform-3d-child {
+  transform: translateZ(40px);
+}
+
+/* Admin Task Grid - Responsive 5-column layout */
+.task-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+/* Medium screens: 3 columns (768px - 1279px) */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .task-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+}
+
+/* Large screens: 5 columns (>= 1280px) */
+@media (min-width: 1280px) {
+  .task-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
+/* ============================================
+   ASPECT RATIO PRESERVATION SYSTEM
+   ============================================ */
+
+/* Base aspect ratio utilities */
+.aspect-ratio-auto {
+  aspect-ratio: auto;
+}
+
+.aspect-ratio-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-ratio-video {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-ratio-photo {
+  aspect-ratio: 4 / 3;
+}
+
+.aspect-ratio-portrait {
+  aspect-ratio: 3 / 4;
+}
+
+.aspect-ratio-landscape {
+  aspect-ratio: 4 / 3;
+}
+
+.aspect-ratio-wide {
+  aspect-ratio: 21 / 9;
+}
+
+.aspect-ratio-ultrawide {
+  aspect-ratio: 32 / 9;
+}
+
+/* Card aspect ratio preservation */
+.card-aspect-square {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.card-aspect-auto {
+  aspect-ratio: auto;
+  min-height: fit-content;
+}
+
+/* Image aspect ratio preservation */
+.img-aspect-preserve {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.img-aspect-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: inherit;
+}
+
+.img-aspect-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  aspect-ratio: inherit;
+}
+
+/* Responsive aspect ratio scaling */
+.aspect-responsive {
+  aspect-ratio: auto;
+}
+
+@media (min-width: 640px) {
+  .aspect-responsive {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .aspect-responsive {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* Container with aspect ratio */
+.aspect-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.aspect-container > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Aspect ratio with padding-bottom technique (fallback for older browsers) */
+.aspect-ratio-box {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.aspect-ratio-box-square {
+  padding-bottom: 100%; /* 1:1 */
+}
+
+.aspect-ratio-box-video {
+  padding-bottom: 56.25%; /* 16:9 */
+}
+
+.aspect-ratio-box-photo {
+  padding-bottom: 75%; /* 4:3 */
+}
+
+.aspect-ratio-box-portrait {
+  padding-bottom: 133.33%; /* 3:4 */
+}
+
+.aspect-ratio-box > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Proportional scaling utilities */
+.scale-proportional {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.scale-proportional-height {
+  height: 100%;
+  width: auto;
+  max-height: 100%;
+}
+
+/* Maintain aspect ratio on resize */
+.maintain-aspect {
+  aspect-ratio: var(--aspect-ratio, auto);
+  width: 100%;
+  height: auto;
+}
+
+/* Card content aspect ratio preservation */
+.card-content-aspect {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-content-aspect > * {
+  flex-shrink: 0;
+}
+
+.card-content-aspect > .card-body {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+/* Image wrapper with aspect ratio */
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive image with natural aspect ratio */
+.img-natural {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Grid items with consistent aspect ratio */
+.grid-aspect-square > * {
+  aspect-ratio: 1 / 1;
+}
+
+.grid-aspect-video > * {
+  aspect-ratio: 16 / 9;
+}
+
+.grid-aspect-photo > * {
+  aspect-ratio: 4 / 3;
+}
+
+/* Flexible aspect ratio for content priority */
+.aspect-content-first {
+  aspect-ratio: auto;
+  min-height: fit-content;
+}
+
+@supports not (aspect-ratio: 1 / 1) {
+  /* Fallback for browsers that don't support aspect-ratio */
+  .aspect-ratio-square::before,
+  .card-aspect-square::before {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+  .aspect-ratio-video::before {
+    content: '';
+    display: block;
+    padding-bottom: 56.25%;
+  }
+  
+  .aspect-ratio-photo::before {
+    content: '';
+    display: block;
+    padding-bottom: 75%;
+  }
+  
+  .aspect-ratio-square,
+  .aspect-ratio-video,
+  .aspect-ratio-photo,
+  .card-aspect-square {
+    position: relative;
+  }
+  
+  .aspect-ratio-square > *:not(::before),
+  .aspect-ratio-video > *:not(::before),
+  .aspect-ratio-photo > *:not(::before),
+  .card-aspect-square > *:not(::before) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Responsive aspect ratio adjustments */
+@media (max-width: 640px) {
+  /* On small screens, prioritize content over strict aspect ratios */
+  .aspect-responsive-content {
+    aspect-ratio: auto !important;
+    min-height: fit-content;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* On medium screens, use moderate aspect ratios */
+  .aspect-responsive-moderate {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* On large screens, use wider aspect ratios */
+  .aspect-responsive-wide {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* Task Transition Animations */
+@keyframes task-move-to-list {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.95) translateY(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0.9) translateY(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes task-complete {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.6;
+  }
+}
+
+@keyframes task-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes task-fade-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+/* Animation classes */
+.animate-task-move-to-list {
+  animation: task-move-to-list var(--transition-slow) ease-out forwards;
+}
+
+.animate-task-complete {
+  animation: task-complete var(--transition-slow) ease-out forwards;
+}
+
+.animate-task-fade-in {
+  animation: task-fade-in var(--transition-base) ease-out forwards;
+}
+
+.animate-task-fade-out {
+  animation: task-fade-out var(--transition-base) ease-out forwards;
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-task-move-to-list,
+  .animate-task-complete,
+  .animate-task-fade-in,
+  .animate-task-fade-out {
+    animation: none;
+    transition: none;
+  }
+  
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Task Manager specific animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+/* Responsive utilities for Task Manager */
+@layer utilities {
+  /* 2xl breakpoint for extra large screens */
+  @media (min-width: 1536px) {
+    .grid-cols-2xl-5 {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+}

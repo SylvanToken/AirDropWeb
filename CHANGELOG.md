@@ -1,0 +1,1050 @@
+# Changelog
+
+All notable changes to the Sylvan Token Airdrop Platform will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Added
+- **Email System Documentation** - 2025-11-11
+  - Created comprehensive email system documentation (EMAIL_SYSTEM.md)
+  - Created email templates guide with step-by-step instructions (EMAIL_TEMPLATES_GUIDE.md)
+  - Created troubleshooting guide for common email issues (EMAIL_TROUBLESHOOTING.md)
+  - Created email preferences system documentation (EMAIL_PREFERENCES.md)
+  - Created quick reference guide for developers (EMAIL_QUICK_REFERENCE.md)
+  - Updated emails/README.md with links to all documentation
+  - Documented email architecture, components, and workflows
+  - Documented all available email templates and their usage
+  - Documented email queue system and configuration
+  - Documented email logging and analytics
+  - Documented multilingual support and translations
+  - Documented security and compliance requirements
+  - Documented API endpoints and webhooks
+  - Documented testing strategies and tools
+  - Documented performance considerations and monitoring
+  - Added troubleshooting guide with common issues and solutions
+  - Added email preferences system documentation with examples
+  - Added quick reference for common tasks and patterns
+  - Requirements: All
+- **Email Security Implementation** - 2025-11-11
+  - Implemented comprehensive email address validation with RFC 5321 compliance
+  - Added disposable email domain detection and blocking
+  - Created HTML content sanitization to prevent XSS attacks
+  - Implemented AES-256-CBC encryption for sensitive data storage
+  - Added HMAC-SHA256 secure token generation for unsubscribe links
+  - Implemented per-recipient rate limiting (10 emails/hour default)
+  - Added email size validation (100KB default limit)
+  - Created spam detection with keyword and pattern analysis
+  - Implemented security audit logging for all email operations
+  - Updated email client with integrated security checks
+  - Created comprehensive security documentation (SECURITY_GUIDE.md)
+  - Created DNS configuration guide (DNS_CONFIGURATION.md)
+  - Added SPF, DKIM, and DMARC record generation utilities
+  - Created security test suite with 27 tests (all passing)
+  - Added EMAIL_ENCRYPTION_KEY environment variable
+  - Updated email utilities to use secure token generation
+  - Created quick reference guide for security features
+  - Requirements: 9.1, 9.3, 9.4
+- **Email Unsubscribe Functionality** - 2025-11-11
+  - Created `/api/email/unsubscribe` API route for handling unsubscribe requests
+  - Implemented secure token-based unsubscribe system
+  - Created unsubscribe confirmation page at `/email/unsubscribe`
+  - Added multilingual support for unsubscribe page (EN, TR, DE, ZH, RU)
+  - Created unsubscribe confirmation email template
+  - Added email preference management on unsubscribe
+  - Implemented automatic confirmation email after unsubscribe
+  - Added translations for unsubscribe UI in all supported languages
+  - Created `generateManagePreferencesUrl()` utility function
+  - Requirements: 7.3, 7.5, 9.2
+- **Email Infrastructure Setup** - 2025-11-11
+  - Installed Resend package for email delivery
+  - Installed React Email packages for template management
+  - Installed Bull queue for asynchronous email processing
+  - Created `lib/email/` directory structure for email utilities
+  - Created `emails/` directory for React Email templates
+  - Created `emails/components/` directory for reusable email components
+  - Added RESEND_API_KEY to environment variables (.env, .env.example, .env.test)
+  - Added REDIS_URL to environment variables for email queue
+  - Created README documentation for email library and templates
+  - Requirements: 5.1, 8.1
+- **Test Documentation** - 2025-11-11
+  - Updated TESTING_GUIDE.md with comprehensive test information
+  - Added documentation for all 16 test suites (542 tests total)
+  - Documented test utilities and fixtures usage
+  - Added examples for writing new tests
+  - Created TEST_COVERAGE_REPORT.md with detailed coverage analysis
+  - Documented coverage by feature area (campaign system, wallet, social media, fraud detection, etc.)
+  - Identified areas needing improvement with priority levels
+  - Set short-term, medium-term, and long-term coverage goals
+  - Updated README.md with comprehensive testing section
+  - Added test coverage badge and quick start commands
+  - Documented all test categories (unit, integration, E2E, performance, accessibility)
+  - Added links to detailed testing documentation
+  - Requirements: All comprehensive test coverage requirements
+
+- **Advanced Search UI** - 2025-11-10
+  - Integrated global search into admin header with prominent search button
+  - Added keyboard shortcut support (Cmd+K / Ctrl+K) to open search dialog
+  - Created model selector tabs for switching between users, tasks, campaigns, completions
+  - Implemented search result navigation to detail pages
+  - Added SearchShortcuts component for saving frequent searches
+  - Created predefined quick search shortcuts (Active Users, Pending Completions, etc.)
+  - Implemented custom shortcut creation with name, query, model, and description
+  - Added shortcut management (edit, delete) with localStorage persistence
+  - Integrated shortcuts sidebar in search dialog
+  - Created visual search tips and syntax help
+  - Added keyboard shortcut hint badge (⌘K) in header
+  - Implemented responsive search dialog with grid layout
+  - Created comprehensive UI guide documentation
+  - Requirements: 10.1, 10.2, 10.3, 10.4, 10.5
+
+- **Advanced Search System** - 2025-11-10
+  - Implemented full-text search across multiple models (users, tasks, completions, campaigns)
+  - Added intelligent relevance scoring with exact match, starts-with, and contains matching
+  - Created search result highlighting with HTML mark tags
+  - Implemented autocomplete suggestions with field, operator, and value suggestions
+  - Added support for complex query operators (AND, OR, NOT)
+  - Implemented field-specific search syntax (e.g., email:john@example.com)
+  - Created quoted phrase search for exact matches
+  - Added search history tracking per admin user
+  - Implemented search history management (view, delete, clear all)
+  - Created AdvancedSearch component with dropdown suggestions and results dialog
+  - Added API endpoint `/api/admin/search` for performing searches
+  - Implemented API endpoint `/api/admin/search/autocomplete` for suggestions
+  - Created API endpoint `/api/admin/search/history` for history management
+  - Added SearchHistory database model with migration
+  - Created comprehensive search guide documentation
+  - Integrated debounced autocomplete with 300ms delay
+  - Added keyboard navigation support (Arrow keys, Enter, Escape)
+  - Implemented search execution time tracking
+  - Requirements: 10.1, 10.2, 10.3, 10.4
+
+- **Campaign Analytics System** - 2025-11-10
+  - Implemented comprehensive campaign analytics calculations
+  - Added participation rate tracking (percentage of users who engaged)
+  - Implemented completion rate analysis (task completion percentage)
+  - Created engagement score calculation (0-100 composite metric)
+  - Added task-level performance breakdown with individual metrics
+  - Implemented campaign comparison functionality for benchmarking
+  - Created automatic performance report generation with recommendations
+  - Added daily and weekly participation pattern tracking
+  - Implemented approval rate tracking per task
+  - Created API endpoint `/api/admin/campaigns/[id]/analytics` for analytics retrieval
+  - Added API endpoint `/api/admin/campaigns/[id]/report` for performance reports
+  - Implemented API endpoint `/api/admin/campaigns/compare` for multi-campaign comparison
+  - Created comprehensive analytics guide documentation
+  - Added unit tests with 10 test cases covering all analytics functions
+  - Integrated audit logging for all analytics operations
+  - Requirements: 9.1, 9.2, 9.3, 9.4, 9.5
+
+- **Workflow Management UI** - 2025-01-10
+  - Created WorkflowBuilder component for creating and editing workflows
+  - Implemented workflows page at `/admin/workflows` with list view
+  - Added workflow creation form with trigger configuration (user_registered, task_completed, schedule)
+  - Implemented condition builder with AND/OR logic support
+  - Added action configuration for send_email, update_status, assign_points, and create_notification
+  - Created workflow enable/disable toggle functionality
+  - Implemented workflow testing functionality with test context
+  - Added workflow statistics display (total executions, success rate, failures)
+  - Created API endpoints for workflow CRUD operations
+  - Added workflow testing API endpoint at `/api/admin/workflows/[id]/test`
+  - Integrated workflows link into admin sidebar navigation
+  - Added toast notification system for user feedback
+  - Created Toaster, Toast, and use-toast components
+  - Requirements: 6.1, 6.2, 6.3, 6.5
+
+- **Advanced Data Export System** - 2025-01-10
+  - Created ExportDialog component with format selection (CSV, Excel, JSON)
+  - Implemented field selection with "Select All" / "Deselect All" functionality
+  - Added export API endpoint at `/api/admin/export` with authentication and authorization
+  - Integrated export functionality into User Management page
+  - Support for filtered exports based on active UI filters
+  - Visual status indicators for export success, errors, and async processing
+  - Comprehensive export guide documentation in `lib/admin/EXPORT_GUIDE.md`
+  - Added export translations for all supported languages (EN, TR, DE, ZH, RU)
+  - Audit logging for all export operations
+  - Support for large dataset handling (async export ready for future implementation)
+  - Requirements: 3.1, 3.2, 3.3, 3.4, 3.5
+
+### Fixed
+- **Authentication Pages Layout** - 2025-11-10
+  - Fixed Header component to display for non-authenticated users on login/register pages
+  - Replaced Next.js Image components with CSS background images to resolve optimization errors
+  - Updated Logo component to use CSS background instead of Image component
+  - Fixed missing background images and logos on authentication pages
+  - Ensured consistent visual presentation across all pages
+
+### Changed
+- **Authentication Pages Design Enhancement** - 2025-11-10
+  - Enhanced login and register form sections with background images and overlay effects
+  - Updated form cards to use glassmorphism effect (glass variant with backdrop blur)
+  - Improved visual hierarchy with semi-transparent backgrounds
+  - Added gradient overlays for better form readability
+  - Replaced Image components in LoginForm and RegisterForm with CSS backgrounds
+  - Enhanced border styling with eco-themed colors
+  - Reduced background image size to 50% for better performance and visual balance
+  - Updated hero section and auth pages to use optimized background sizing
+
+- **Home Page Improvements** - 2025-11-10
+  - Converted "Get Started" and "Sign In" text to proper Button components
+  - Added translation support for button labels (signIn key added to all languages)
+  - Improved button accessibility with proper Link wrapping
+  - Enhanced button styling with full width on mobile, auto width on desktop
+
+- **Statistics Label Update** - 2025-11-10
+  - Changed "Active Users" to "Registered Users" across all languages
+  - Updated translations: EN, TR, DE, ZH, RU
+  - More accurate representation of user metrics
+
+### Added
+- **Unsplash Image Integration** - 2025-11-10
+  - Integrated Unsplash Source API for high-quality nature images
+  - Added support for dynamic image categories: forest, ocean, mountain, wildlife, plants, sky, nature
+  - Configurable image source (Unsplash, local, or mixed) via IMAGE_SOURCE constant
+  - Enhanced hero image system with fallback support
+  - Added new 'nature' category for general nature-themed images
+  - Improved image variety with Unsplash's vast collection
+  - All images are eco-themed and align with Sylvan Token's environmental focus
+  - **Mixed mode**: Random selection from both local and Unsplash images for maximum variety
+
+### Changed
+- **Language Switcher Consolidation** - 2025-11-10
+  - Removed duplicate language switchers from Footer, Home page, Login, Register, and Admin Login
+  - Centralized language selection to Header only
+  - Language switcher now displays flag emojis for all browsers
+  - Improved UX with single, consistent language selection point
+  - Flag emojis: 🇬🇧 English, 🇹🇷 Türkçe, 🇩🇪 Deutsch, 🇨🇳 中文, 🇷🇺 Русский
+
+- **Home Page Background Implementation** - 2025-11-10
+  - Added fixed full-page background image to HOME PAGE ONLY
+  - Other pages (login, register, dashboard, etc.) have NO background
+  - Background uses mixed random images (local + Unsplash)
+  - Fixed positioning (background-attachment: fixed) - doesn't scroll with content
+  - **background-size: contain** - Entire image fits in viewport, no cropping
+  - Configurable opacity settings for watermark effect
+  - **BACKGROUND_OPACITY**: 70% visibility (default)
+  - **OVERLAY_OPACITY**: 30% overlay darkness (default)
+  - Easy to adjust - just change the constant values in PageBackground.tsx
+  - Cross-browser compatibility (Chrome, Firefox, Safari, Edge, IE11+)
+  - Vendor prefixes for maximum compatibility
+  - Backdrop blur effect for modern glassmorphism look
+  - Z-index layering ensures content appears above background
+
+## [2.0.0] - 2025-11-09
+
+### Added
+- **Complete Modern Eco-Themed Redesign**
+  - Comprehensive visual redesign with nature-inspired environmental theme
+  - Modern design patterns including glassmorphism, gradients, and smooth animations
+  - Random hero imagery system featuring forests, oceans, mountains, wildlife, plants, and sky
+  - Full dark mode support with eco-themed color adjustments
+  - Nature-inspired animations (leaf-float, grow, wave, pulse-eco)
+  - Organic shapes and flowing layouts throughout the platform
+
+- **Enhanced Design System Foundation**
+  - Extended Tailwind configuration with comprehensive eco color palette
+  - Design token system with CSS custom properties for consistency
+  - Custom eco-themed shadows (shadow-eco, shadow-eco-lg, shadow-eco-xl, shadow-glow)
+  - Glassmorphism effects with backdrop blur utilities
+  - Responsive typography scales with mobile-first approach
+  - Touch-optimized utilities (44x44px minimum touch targets)
+  - Safe area inset support for notched devices
+  - Z-index design tokens for consistent layering
+
+- **Hero Section Component System**
+  - Reusable HeroSection component with multiple variants (home, dashboard, tasks, leaderboard)
+  - Random hero image selection from categorized nature images
+  - Support for background images with overlay options
+  - Responsive height system (sm, md, lg, full)
+  - Glassmorphism effect for content overlay
+  - Next.js Image optimization with blur placeholders
+  - Hero content layouts with titles, subtitles, and CTAs
+
+- **Enhanced Component Library**
+  - Updated Card components with new variants (default, elevated, outlined, glass)
+  - Eco-themed hover effects with lift animations
+  - Redesigned Button components with eco gradient variant
+  - Loading states with spinner animations
+  - Icon support for buttons (left/right positioning)
+  - Enhanced Input components with eco-themed focus states
+  - Floating label animations
+  - Comprehensive loading and skeleton components with shimmer animation
+  - Progress bar and loading overlay components
+
+- **Complete Internationalization System**
+  - Full support for 5 languages: English, Turkish, German, Chinese (Simplified), Russian
+  - Complete translation files for all namespaces (common, auth, tasks, wallet, dashboard, admin, profile, legal)
+  - Enhanced I18nProvider with locale persistence (localStorage and cookies)
+  - Locale change event handling with fallback logic
+  - Development mode warnings for missing translation keys
+  - Redesigned LanguageSwitcher with flag emojis and smooth animations
+  - Locale-aware formatting utilities (dates, numbers, currency, relative time)
+  - All pages and components fully translated
+  - Translation completeness verification across all languages
+
+- **Redesigned Navigation System**
+  - Updated Header with eco theme and glassmorphism
+  - Sticky header with backdrop blur effect
+  - Eco-themed active state indicators
+  - Logo with hover animations
+  - Responsive mobile menu with hamburger icon
+  - Slide-out drawer animation for mobile
+  - Bottom navigation bar for primary mobile actions
+  - Touch-optimized buttons throughout
+  - Gesture support for mobile drawer
+  - Updated Footer with nature-inspired background patterns
+
+- **Redesigned User Pages**
+  - New home page with hero section and animated features
+  - Updated authentication pages (login, register) with eco theme
+  - Redesigned dashboard with hero section and user stats
+  - Enhanced stats cards with gradient backgrounds
+  - Updated charts and graphs with eco color palette
+  - Redesigned tasks page with hero section and filters
+  - Updated TaskCard with eco theme and completion animations
+  - Task filters and sorting with smooth animations
+  - Enhanced task completion flow with success animations
+  - Redesigned leaderboard page with hero and rank showcase
+  - Updated leaderboard table with eco theme and user highlighting
+  - Time period filters (daily, weekly, all-time)
+  - Redesigned profile page with eco theme
+  - Avatar upload with preview functionality
+  - Updated wallet page with eco styling
+
+- **Redesigned Admin Panel**
+  - Updated admin dashboard with modern card layouts and data visualization
+  - Real-time statistics with auto-refresh
+  - Redesigned user management with advanced filters
+  - Bulk actions with confirmation modals
+  - User detail modal with tabs
+  - Export functionality for user data
+  - Updated task management with eco theme
+  - Task preview with live updates
+  - Drag-and-drop for task ordering
+  - Task analytics dashboard
+  - Redesigned admin sidebar with collapsible menu
+  - Active state indicators with animations
+  - Mobile-friendly drawer implementation
+
+- **Comprehensive Animation System**
+  - Page transition animations (fade, slide)
+  - Loading animations for route changes
+  - Smooth scroll behavior throughout
+  - Scroll-to-top button with eco styling
+  - Button hover and active animations
+  - Card hover effects with lift
+  - Input focus animations
+  - Icon hover rotations and scales
+  - Success/error state animations
+  - Nature-inspired animations (leaf float, grow, wave)
+  - Skeleton loaders with shimmer effects
+  - Loading overlays with blur
+
+- **Mobile and Responsive Optimizations**
+  - Mobile-first design approach (320px to 4K)
+  - Responsive grid systems and flexible layouts
+  - Responsive typography scales
+  - Touch optimizations (44x44px minimum targets)
+  - Touch feedback animations
+  - Swipe gesture support
+  - Safe area support for notched devices
+  - Landscape orientation optimizations
+  - Responsive hero section heights
+  - Horizontal navigation for landscape tablets
+
+- **Accessibility Features (WCAG 2.1 AA Compliant)**
+  - Comprehensive keyboard navigation support
+  - Logical tab order throughout
+  - Skip links for main content
+  - Keyboard shortcuts for common actions
+  - Enhanced screen reader support with ARIA labels
+  - ARIA live regions for dynamic content
+  - Descriptive alt text for all images
+  - Semantic HTML structure
+  - Color contrast compliance (4.5:1 for normal text, 3:1 for large text)
+  - Sufficient focus indicators
+  - Error states with color + icon + text
+  - Motion preferences support (prefers-reduced-motion)
+  - Option to disable animations
+  - Accessibility settings component
+
+- **Performance Optimizations**
+  - Image optimization with WebP format and JPEG fallbacks
+  - Lazy loading for below-fold images
+  - Blur placeholders for better UX
+  - Optimized image sizes for different breakpoints
+  - Purged unused Tailwind classes
+  - Code splitting for heavy components
+  - Dynamic imports for below-fold content
+  - Long-term caching for static assets
+  - Service worker for offline support
+  - Translation file caching
+  - CDN caching for images
+
+- **Testing and Quality Assurance**
+  - Visual regression testing with Playwright
+  - Component testing in light and dark modes
+  - Layout verification at all breakpoints
+  - Language variation testing for all 5 languages
+  - Accessibility testing with axe-core
+  - Automated WCAG 2.1 AA compliance testing
+  - Keyboard navigation verification
+  - Screen reader support testing
+  - Color contrast validation
+  - Performance testing with Lighthouse
+  - Core Web Vitals monitoring
+  - Bundle size analysis
+  - Cross-browser compatibility testing (Chrome, Firefox, Safari, Edge)
+  - Mobile browser testing (iOS Safari, Chrome Mobile)
+  - Internationalization testing for all languages
+
+### Changed
+- Complete visual overhaul of entire platform
+- Updated all components to use eco theme
+- Enhanced user experience with modern design patterns
+- Improved mobile responsiveness across all pages
+- Updated color palette to nature-inspired tones
+- Enhanced animations and transitions throughout
+- Improved accessibility across all components
+- Optimized performance for faster load times
+- Updated documentation to reflect new design system
+
+### Improved
+- User interface consistency across all pages
+- Navigation experience on mobile devices
+- Loading states and skeleton screens
+- Error handling and user feedback
+- Form validation and error messages
+- Admin panel usability and efficiency
+- Leaderboard display and filtering
+- Task completion flow and feedback
+- Profile and wallet management interfaces
+- Overall platform aesthetics and user engagement
+
+### Technical Improvements
+- Enhanced Tailwind configuration with custom utilities
+- Improved component architecture and reusability
+- Better TypeScript type definitions
+- Optimized bundle size and code splitting
+- Enhanced caching strategies
+- Improved image optimization pipeline
+- Better internationalization implementation
+- Enhanced accessibility utilities
+- Improved responsive design utilities
+- Better animation performance
+
+### Breaking Changes
+- None - All changes are backward compatible with existing data
+
+### Notes
+- This release represents a complete visual redesign while maintaining all existing functionality
+- All user data, tasks, and completions remain intact
+- The redesign focuses on improving user experience, accessibility, and performance
+- Full internationalization support ensures global accessibility
+- WCAG 2.1 AA compliance ensures accessibility for all users
+
+### Added
+- Comprehensive testing and quality assurance suite (2025-11-09)
+  - Visual regression testing with Playwright
+    - Component rendering tests in light and dark modes
+    - Layout verification at all breakpoints (mobile, tablet, desktop, wide)
+    - Language variation testing for all 5 supported languages
+    - Interactive state screenshots (hover, focus, active)
+    - Hero section and card variant testing
+    - Layout consistency checks across pages
+  - Accessibility testing with axe-core
+    - Automated WCAG 2.1 AA compliance testing
+    - Keyboard navigation verification
+    - Screen reader support testing (ARIA labels, semantic HTML)
+    - Color contrast validation (4.5:1 for normal text, 3:1 for large text)
+    - Touch target size verification (44x44px minimum)
+    - Motion preferences support testing
+  - Comprehensive accessibility audit completed (2025-11-09)
+    - Automated testing with axe-core: 0 violations across all pages
+    - Manual keyboard navigation testing: Full compliance
+    - Screen reader testing: NVDA, JAWS, and VoiceOver compatibility verified
+    - Color contrast verification: All elements meet or exceed WCAG AA standards
+  - Cross-browser compatibility testing and fixes (2025-11-09)
+    - Comprehensive testing across Chrome, Firefox, Safari, and Edge
+    - Mobile browser testing on iOS Safari and Chrome Mobile
+    - Browser detection and capability checking utilities
+    - Browser-specific CSS fixes and fallbacks
+    - Backdrop-filter fallback for older browsers
+    - Safari 100vh viewport fix for mobile devices
+    - Touch device optimizations and detection
+    - Browser compatibility warning component
+    - Detailed cross-browser testing documentation
+    - Touch target testing: All interactive elements meet 44x44px minimum
+    - Motion preferences testing: Full prefers-reduced-motion support
+    - Documentation: Accessibility audit report and manual testing checklist created
+    - Compliance status: WCAG 2.1 Level AA compliant
+  - Performance testing with Lighthouse (2025-11-09)
+    - Lighthouse score audits (≥90 for all categories)
+    - Core Web Vitals monitoring (LCP, FID, CLS)
+    - Network performance testing on slow 3G (583ms load time ✅)
+    - Bundle size analysis (JS <500KB, CSS <100KB)
+    - Image optimization verification (WebP/AVIF)
+    - Runtime performance monitoring (60fps animations)
+    - Code splitting verification
+    - Custom performance audit script created
+    - Bundle analysis script created
+    - Comprehensive performance audit report generated
+    - Performance testing summary documented
+    - Development environment testing completed
+    - Excellent layout stability achieved (CLS: 0.000)
+    - Production build verification pending
+  - Cross-browser compatibility testing
+    - Desktop browser testing (Chrome, Firefox, Safari, Edge)
+    - Mobile browser testing (iOS Safari, Chrome Mobile)
+    - Mobile device testing (iPhone, Pixel, iPad)
+    - CSS feature support verification (Grid, Flexbox, Custom Properties)
+    - JavaScript feature compatibility testing
+    - Image format support detection (WebP, AVIF)
+    - Console error monitoring
+  - Internationalization testing
+    - Translation file completeness verification
+    - Translation key consistency across all languages
+    - Language switching functionality testing
+    - Date/number/currency formatting validation
+    - Text overflow prevention testing
+    - Special character rendering verification (Chinese, German, Turkish)
+    - Placeholder preservation testing
+  - Test infrastructure
+    - Playwright configuration for multi-browser testing
+    - Test runner script with suite selection
+    - Comprehensive testing documentation (TESTING_GUIDE.md)
+    - Quick start guide (TESTING_QUICK_START.md)
+    - NPM scripts for all test suites
+    - HTML, JSON, and JUnit report generation
+  - Testing dependencies
+    - @playwright/test for E2E testing
+    - @axe-core/playwright for accessibility testing
+    - playwright-lighthouse for performance auditing
+- Comprehensive accessibility features (WCAG 2.1 AA compliant) (2025-11-09)
+  - Implemented skip links for keyboard navigation (skip to main, navigation, footer)
+  - Added global keyboard shortcuts (Alt+H/D/T/L/P for navigation)
+  - Created KeyboardShortcutsProvider for application-wide shortcuts
+  - Enhanced screen reader support with ARIA labels and live regions
+  - Added AriaLive component for dynamic content announcements
+  - Implemented semantic HTML with proper landmarks (header, nav, main, footer)
+  - Added aria-current, aria-expanded, aria-haspopup attributes throughout
+  - Ensured all color combinations meet WCAG AA contrast standards (4.5:1 minimum)
+  - Created accessibility-utils library with contrast ratio calculations
+  - Documented all color contrast ratios for light and dark modes
+  - Enhanced focus indicators with 2px outlines and sufficient contrast
+  - Implemented error/success states with color + icon + text (not color alone)
+  - Added motion preferences support with system detection
+  - Created MotionPreferencesProvider for animation control
+  - Implemented user toggle for animations with localStorage persistence
+  - Added prefers-reduced-motion media query support
+  - Created AccessibilitySettings component for user preferences
+  - Added data-reduce-motion attribute for CSS targeting
+  - Ensured minimum 44x44px touch targets for all interactive elements
+  - Created comprehensive accessibility documentation (docs/ACCESSIBILITY.md)
+- Comprehensive responsive design system (2025-11-09)
+  - Implemented mobile-first design approach supporting 320px to 4K displays
+  - Created responsive layout utilities and components
+  - Added ResponsiveContainer, ResponsiveGrid, and ResponsiveStack components
+  - Implemented responsive typography scales that adapt across breakpoints
+  - Created responsive spacing, padding, and gap utilities
+  - Added flexible grid systems with auto-fit and configurable columns
+  - Implemented container widths for all breakpoints (sm to 2xl)
+- Touch optimizations for mobile devices (2025-11-09)
+  - Ensured all interactive elements meet WCAG 2.1 AA standards (44x44px minimum)
+  - Created TouchFeedback component with configurable strength levels
+  - Implemented Swipeable component for gesture detection
+  - Added touch feedback animations (subtle, normal, strong)
+  - Created touch utilities library with device detection
+  - Implemented swipe gesture support (left, right, up, down)
+  - Added custom eco-themed tap highlight colors
+  - Enhanced buttons with touch-friendly sizes and feedback
+  - Updated mobile menu with swipe-to-dismiss functionality
+- Safe area support for notched devices (2025-11-09)
+  - Added viewport-fit=cover for safe area support
+  - Implemented safe area inset utilities for all sides
+  - Created safe area padding classes (top, bottom, left, right)
+  - Added combined safe area utilities (x, y, all sides)
+  - Updated Header with safe-area-inset-top
+  - Updated Footer with safe-area-inset-bottom
+  - Enhanced mobile bottom nav with pb-safe
+  - Added Tailwind spacing utilities for safe areas
+- Landscape orientation optimizations (2025-11-09)
+  - Optimized hero section heights for landscape mode
+  - Reduced vertical spacing in landscape orientation
+  - Hidden mobile bottom nav in landscape on small screens
+  - Created landscape-specific grid layouts for tablets
+  - Implemented landscape detection utilities and hooks
+  - Added orientation-aware component rendering
+  - Optimized dashboard and task layouts for landscape
+  - Created landscape-specific CSS utilities and classes
+- Redesigned admin panel with modern eco theme (2025-11-09)
+  - Updated admin dashboard with real-time statistics and gradient stat cards
+  - Enhanced stats cards with eco-themed gradients (blue, green, purple, amber)
+  - Added data visualization with live updates every 30 seconds
+  - Implemented responsive layout for mobile devices
+  - Created quick actions section with icon-based navigation
+  - Added session information card with user details
+  - Improved access control display with grid layout
+  - Enhanced user management with advanced filters and export functionality
+  - Added role-based filtering (All Users, Users Only, Admins Only)
+  - Implemented CSV export for user data
+  - Created user avatars with gradient backgrounds
+  - Added badge styling for points and completions
+  - Enhanced task management with eco-themed cards
+  - Implemented task filtering (All, Active, Inactive)
+  - Added task type color coding with gradients
+  - Created task analytics display with completion counts
+  - Updated task form with improved styling and validation
+  - Redesigned admin sidebar with collapsible menu
+  - Added gradient icon backgrounds for navigation items
+  - Implemented active state indicators with sparkle animations
+  - Created mobile-friendly drawer with overlay
+  - Added quick actions panel in sidebar
+  - Enhanced sidebar with smooth animations and transitions
+  - Implemented tooltip for collapsed sidebar state
+- Redesigned header and navigation with eco theme (2025-11-09)
+  - Updated Header component with glassmorphism and backdrop blur effects
+  - Enhanced logo with hover animations (scale, rotate, glow effect)
+  - Gradient text for branding with animated gradient-x effect
+  - Active state indicators with eco gradient backgrounds
+  - Improved navigation links with smooth transitions and hover effects
+  - Mobile-responsive hamburger menu with slide-in drawer animation
+  - Added leaderboard link to main navigation
+  - User info display with glassmorphic card styling
+  - Touch-optimized buttons (44x44px minimum) for mobile
+- Mobile bottom navigation bar (2025-11-09)
+  - Fixed bottom navigation for mobile devices (hidden on desktop)
+  - Five primary actions: Dashboard, Tasks, Leaderboard, Wallet, Profile
+  - Active state with gradient background and scale animation
+  - Touch-optimized with 44x44px minimum touch targets
+  - Safe area support for devices with notches (pb-safe utility)
+  - Smooth transitions and hover effects
+  - Active indicator dot for current page
+- Updated Footer component with eco theme (2025-11-09)
+  - Nature-inspired background pattern with gradient orbs
+  - Enhanced branding with animated logo and gradient text
+  - Added footer links (Terms, Privacy) with underline hover effect
+  - Improved social media buttons with gradient backgrounds and hover animations
+  - Language switcher integrated into footer
+  - Responsive layout for mobile and desktop
+  - Heart icon with pulse animation
+  - Leaf icons for eco-friendly messaging
+- Updated AdminHeader component with eco theme (2025-11-09)
+  - Amber/orange gradient theme for admin distinction
+  - Mobile-responsive drawer navigation
+  - Enhanced logo with hover effects
+  - Shield icon badge for admin identification
+  - Glassmorphic user info card
+  - Touch-optimized mobile menu
+- Modern eco-themed design system foundation (2025-11-09)
+  - Comprehensive Tailwind CSS configuration with eco-themed color palette
+  - Extended color system with eco-leaf, eco-forest, eco-earth, eco-sky, and eco-moss
+  - Design token system with CSS custom properties for colors, spacing, typography, and transitions
+  - Nature-inspired gradients (eco-primary, eco-soft, eco-earth, eco-sky)
+  - Custom eco-themed shadows (shadow-eco, shadow-eco-lg, shadow-eco-xl, shadow-glow)
+  - Glassmorphism effects with backdrop blur utilities
+  - Dark mode support with adjusted eco color palette
+  - Nature-inspired animations (leaf-float, grow, wave, pulse-eco, shimmer)
+  - Page transition animations (fade-in, slide-in-right, slide-in-left, scale-in)
+  - Responsive typography scales with mobile-first approach
+  - Touch-optimized utilities (44x44px minimum touch targets)
+  - Safe area inset support for mobile devices with notches
+  - Organic shape utilities for nature-inspired designs
+  - Eco-friendly focus rings and hover effects
+  - Card variants (elevated, glass, outlined)
+  - Skeleton loading with shimmer animation
+  - Reduced motion and high contrast mode support
+  - Z-index design tokens for consistent layering
+  - Custom spacing and border radius scales
+- Background watermark feature with random hero images (2025-11-09)
+  - Session-based random hero image selection from `/assets/images/heroes/`
+  - Fixed center position with subtle opacity (3%) and grayscale filter
+  - Applied to both user and admin layouts
+  - 13 unique hero character images available
+  - Image persists throughout user session using sessionStorage
+- Admin root page redirect to dashboard (2025-11-09)
+
+### Changed
+- Task completion now requires timer for all task types (2025-11-09)
+  - Removed "Mark as Complete" button
+  - All tasks now use 30-second timer with window tracking
+  - Window closure detection with automatic timer reset
+  - Warning message when task window is closed prematurely
+
+### Note
+- If translations are not displaying correctly (2025-11-09):
+  1. Server-side: Delete `.next` folder and restart dev server
+  2. Client-side: Clear browser cache (Ctrl+Shift+Delete) and localStorage (`localStorage.clear()` in console)
+  3. Hard refresh the page (Ctrl+F5 or Cmd+Shift+R)
+
+### Fixed
+- Admin user detail page pagination error - added null check for pagination.totalPages (2025-11-09)
+- Admin verification dashboard error caused by unused translation hook (2025-11-09)
+- Task edit page not loading task data - added missing GET endpoint to `/api/admin/tasks/[id]` (2025-11-09)
+- Missing translation keys in tasks.json for German, Chinese, and Russian languages (2025-11-09)
+  - Added: startTask, timerActive, timerDescription, completeNow, completing, underReview, pendingApproval, approved, autoApproved, rejected
+  - Added: taskUnderReview, verificationPending, manualReviewMessage, autoApprovalMessage, verificationMessage, taskRejected, rejectionMessage
+  - Added: taskFailed, taskFailedMessage, doNotCloseWindow
+- Russian language support added to i18n configuration (2025-11-09)
+- Russian common.json formatting fixed (2025-11-09)
+- Admin layout client/server component structure fixed for background watermark (2025-11-09)
+- TaskTimer now properly detects window closure and resets timer (2025-11-09)
+- TaskTimer button text not displaying - moved startTask key to root level in all language files (2025-11-09)
+- Removed unused imports from TaskCard component (2025-11-09)
+
+### Added
+- Hybrid Anti-Fraud Detection System (2025-11-09)
+  - Comprehensive fraud scoring system (0-100 risk score)
+  - Automatic fraud detection with multiple indicators:
+    - Completion time analysis (too fast = suspicious)
+    - Account age verification (new accounts = higher risk)
+    - Verification status checks (wallet, social media)
+    - Daily completion rate monitoring
+    - IP address pattern analysis
+    - Multiple accounts from same IP detection
+    - Bot behavior detection (regular completion patterns)
+  - Three-tier verification system:
+    - Low risk (score < 20): Auto-approved immediately
+    - Medium risk (score 20-50): Auto-approved after 1-24 hours
+    - High risk (score > 50): Manual review required
+  - Random manual review selection (20% of all completions)
+  - Admin verification dashboard at /admin/verifications
+  - Real-time fraud analysis display for admins
+  - Manual approve/reject functionality with reason tracking
+  - User-facing verification status indicators
+  - Pending completion notifications with estimated approval time
+  - Auto-approval cron job API endpoint
+  - Fraud detection data storage (IP, user agent, completion time)
+  - Risk level badges (LOW, MEDIUM, HIGH, CRITICAL)
+  - Comprehensive admin review interface with user and task details
+- Terms of Use and Privacy Policy (2025-11-09)
+  - Created comprehensive Terms of Use page at /terms
+  - Created detailed Privacy Policy page at /privacy
+  - Added mandatory acceptance checkbox to registration form
+  - Database fields for tracking terms acceptance
+  - Terms acceptance validation in registration API
+  - Links to legal documents open in new tab
+  - Back navigation from legal pages to registration
+- Multi-language support for tasks and campaigns (2025-11-09)
+  - Database schema updated with translation fields for all languages
+  - Automatic translation system for tasks and campaigns
+  - Admin creates tasks in English, translations auto-generated
+  - Support for Turkish, German, Chinese, and Russian
+  - Tasks API returns localized content based on user's language
+  - Campaign translations support
+  - Translation utility with common phrases and keywords
+  - Seamless language switching for all task content
+- Interactive Terms and Privacy Policy modals (2025-11-09)
+  - Modal popups for Terms of Use and Privacy Policy
+  - Scroll-to-accept functionality - users must scroll to bottom
+  - Accept button disabled until user reads entire document
+  - Full multi-language support for legal documents (EN, TR, DE, ZH, RU)
+  - Complete translations for all 5 languages
+  - German (DE): Full translation of Terms and Privacy Policy
+  - Chinese (ZH): Full translation of Terms and Privacy Policy
+  - Russian (RU): Full translation of Terms and Privacy Policy
+  - Turkish (TR): Full translation of Terms and Privacy Policy
+  - English (EN): Original comprehensive legal content
+  - Integrated into registration flow
+  - Users must accept both documents to register
+  - Visual indicator showing scroll progress
+  - Professional legal content covering all aspects
+  - Each user sees legal documents in their selected language
+- Complete multi-language support (2025-11-09)
+  - All translation files completed for 5 languages (EN, TR, DE, ZH, RU)
+  - Profile translations fully translated to German, Chinese, and Russian
+  - Language switcher fully functional with page reload
+  - Removed alert message, translations now work seamlessly
+- Admin panel eco-friendly theme (2025-11-09)
+  - Applied eco-friendly color scheme to admin panel
+  - Gradient backgrounds and eco borders
+  - Consistent theme across user and admin interfaces
+  - Smooth transitions and hover effects
+- Logo and assets organization (2025-11-09)
+  - Created public/assets/images directory for logos and images
+  - Integrated sylvan-token-logo.png across all pages
+  - Updated Header with official logo
+  - Updated Footer with official logo
+  - Updated AdminHeader with official logo
+  - Updated LoginForm with centered logo
+  - Updated RegisterForm with centered logo
+  - Updated AdminLoginForm with logo and shield badge
+  - Created reusable Logo component
+  - Consistent branding across all pages
+  - Dashboard translations verified for all languages
+  - Tasks translations verified for all languages
+  - Wallet translations verified for all languages
+  - Admin translations verified for all languages
+  - Auth translations verified for all languages
+  - Common translations verified for all languages
+  - Language switcher fully functional
+  - All UI text properly localized
+- User profile management system (2025-11-09)
+  - Comprehensive profile page showing all user information
+  - X (Twitter) username linking with permanent verification
+  - Telegram username linking with permanent verification
+  - Social media usernames locked after verification (cannot be changed)
+  - Unique username validation across platform
+  - Profile page accessible from header navigation
+  - View username, email, wallet, Twitter, and Telegram in one place
+  - Random social media data added to seed users for testing
+  - Multi-language support for profile interface (EN, TR, DE, ZH)
+  - Confirmation modals with critical warnings
+  - API endpoints for profile and social media management
+- Eco-friendly nature-inspired theme (2025-11-09)
+  - Natural color palette with forest green, sage, teal, and earth tones
+  - Smooth gradient backgrounds and transitions
+  - Organic shapes and nature-inspired animations
+  - Scroll to top button with leaf float animation
+  - Backdrop blur effects for modern glass-morphism look
+  - Custom eco-friendly shadows and borders
+  - Responsive design with environmental consciousness
+  - Dark mode support with adjusted eco colors
+  - Subtle background patterns for depth
+  - Professional and calming user experience
+- Simplified task completion flow (2025-11-09)
+  - Removed "Complete Task" button from TaskCard
+  - Tasks now show "Start Task" button that opens external link directly
+  - Users complete tasks externally and mark as complete manually
+  - Improved user experience with clearer task flow
+  - Added "No Link Available" state for tasks without URLs
+- Enhanced seed data (2025-11-09)
+  - Added 40 diverse test users with creative usernames
+  - Point distribution ranges from 100 to 2100 points
+  - Realistic leaderboard data for testing
+  - 80% of users have wallet addresses
+  - 60% of users have verified wallets
+
+### Changed
+- Updated TaskCard component to remove automatic completion
+- Enhanced translation files with new task action keys
+- Improved seed script with better user diversity
+- Enhanced wallet error handling with detailed, user-friendly messages (2025-11-09)
+  - Added specific error messages for each failure scenario
+  - Wallet already verified error with explanation
+  - Wallet address in use by another account error
+  - Invalid address format error with guidance
+  - Validation error with retry instructions
+  - Multi-language support for all error messages (EN, TR, DE, ZH)
+
+### Added
+- Full leaderboard page (2025-11-09)
+  - Dedicated leaderboard page showing all users
+  - Pagination support (50 users per page)
+  - "Load More" button for infinite scroll
+  - User highlighting (current user highlighted)
+  - Rank badges for top 3 (gold, silver, bronze)
+  - "View Full List" button on dashboard
+  - Back to dashboard navigation
+- Campaign management system (2025-11-09)
+  - Campaign model with start/end dates
+  - Tasks now belong to campaigns
+  - Admin can create/edit/delete campaigns
+  - Campaign list API with pagination
+  - Active campaigns API for users (filtered by date range)
+  - Campaign detail page showing all tasks
+  - Completions remain permanent across campaigns
+  - User points accumulate across all campaigns
+  - Admin UI for campaign management
+  - Campaign list page in admin panel
+  - Campaign detail page with task list
+  - Campaigns menu item in admin sidebar
+  - Task creation with campaign selection
+  - Campaign filter in tasks page
+  - Tasks grouped by campaign
+- User status management system (2025-11-09)
+  - Added status field to User model (ACTIVE, BLOCKED, DELETED)
+  - Admin can block/unblock users via PATCH /api/admin/users/[id]
+  - Admin can soft-delete users via DELETE /api/admin/users/[id]
+  - Blocked users cannot login or complete tasks
+  - Deleted users are anonymized and excluded from system
+  - Block and Delete buttons in admin user detail page
+- Login activity tracking (2025-11-09)
+  - Added LoginLog model to track all login attempts
+  - Records IP address, user agent, success status, and timestamp
+  - Admin can view last 10 login attempts per user
+  - Login history displayed in user detail page
+- Enhanced admin user detail page (2025-11-09)
+  - Display wallet address and verification status
+  - Show account status with color-coded badges
+  - Recent login activity with IP and device information
+  - Action buttons for block/unblock and delete operations
+- Enhanced duplicate prevention (2025-11-09)
+  - Email uniqueness enforced across all user statuses
+  - Wallet address uniqueness enforced system-wide
+  - Explicit duplicate checks in registration API
+  - Wallet API prevents duplicate addresses
+- Improved leaderboard consistency (2025-11-09)
+  - Only ACTIVE users appear in leaderboards
+  - Tie-breaker: earlier registration wins for same points
+  - Consistent ranking calculation across all endpoints
+  - Status filtering in rank calculations
+
+### Fixed
+- Fixed 307 redirect loop on admin login page (2025-11-09)
+  - Restructured admin routes with proper route groups
+  - Moved authenticated pages to (dashboard) route group
+  - Simplified admin layout to prevent redirect conflicts
+  - Fixed NextIntlClientProvider context initialization
+  - Implemented static translation imports for better performance
+- Fixed user dashboard locale handling (2025-11-09)
+  - Added locale state management
+  - Fixed formatDateTime locale parameter
+- Fixed admin dashboard session context (2025-11-09)
+  - Added SessionProvider to root layout
+  - Fixed useSession hook context errors
+- Fixed Prisma configuration (2025-11-09)
+  - Removed unnecessary datasources configuration
+  - Improved transaction error handling
+
+### Added
+- Internationalization (i18n) support for authentication pages
+  - Translation files for English (en), Turkish (tr), German (de), and Chinese (zh)
+  - Translated LoginForm component with all user-facing text
+  - Translated RegisterForm component including security warnings
+  - Translated AdminLoginForm component
+  - Translated admin login page access denied messages
+  - Common translations for shared UI elements
+- Internationalization (i18n) support for task and wallet pages
+  - Translation files for tasks.json in all 4 languages (en, tr, de, zh)
+  - Translation files for wallet.json in all 4 languages (en, tr, de, zh)
+  - Translated TaskCard component with task type labels and actions
+  - Translated TaskList component with section headers and messages
+  - Translated WalletSetup component with all warnings and instructions
+  - Translated WalletConfirmationModal with critical warnings and checklist
+  - Task type labels (Twitter Follow, Twitter Like, Twitter Retweet, Telegram Join, Custom)
+  - Wallet setup warnings and BEP-20 address information
+  - Wallet confirmation checklist and critical warnings
+- BEP-20 wallet address management system
+  - Wallet address input and validation
+  - BEP-20 format validation (0x + 40 hex characters)
+  - Wallet confirmation modal with critical warnings
+  - Permanent wallet locking after verification
+  - Wallet status display in dashboard
+  - Warning banner for users without wallet
+  - Wallet page at `/wallet` for address management
+  - API endpoints for wallet CRUD operations (`/api/users/wallet`)
+- Enhanced user registration security
+  - Password security warnings during registration
+  - No password reset/recovery notice
+  - Account permanence notification
+  - Future campaign access information
+- Wallet validation utilities
+  - BEP-20 address format validation
+  - Address masking for display
+  - Comprehensive error messages
+- Wallet requirement enforcement
+  - Task completion blocked without verified wallet
+  - API-level wallet verification check
+  - UI-level wallet requirement warnings
+  - Disabled task buttons for users without wallet
+  - Prominent warning banner on tasks page
+- Admin authentication and access control system
+  - Admin login page with dedicated UI at `/admin/login`
+  - Admin authentication form component with role verification
+  - Admin layout with session management
+  - Admin header with navigation and logout functionality
+  - Admin dashboard with authentication status and quick actions
+  - Placeholder pages for task and user management
+- Middleware protection for admin routes
+  - Role-based access control for `/admin/*` routes
+  - API endpoint protection for `/api/admin/*` routes
+  - Automatic redirect to admin login for unauthorized access
+  - 403 Forbidden responses for unauthorized API requests
+- Admin session management
+  - Proper role verification in NextAuth callbacks
+  - Session persistence with JWT tokens
+  - Logout functionality with redirect to admin login
+- Cross-platform compatibility features
+  - Responsive viewport configuration with proper meta tags
+  - Touch-friendly UI utilities (44x44px minimum touch targets)
+  - Safe area inset support for mobile devices with notches
+  - Mobile-optimized tap highlight and text selection controls
+  - Responsive container and spacing utilities
+  - Theme color support for light and dark modes
+- Project documentation
+  - CHANGELOG.md following Keep a Changelog format
+  - Cross-platform compatibility section in README
+  - Steering rules for code quality and standards
+  - Browser and device compatibility matrix
+- Branding guidelines
+  - Rule to prevent external tool references in project files
+  - Clean, project-focused documentation standards
+
+### Changed
+- Enhanced middleware.ts with admin route protection
+- Updated public routes to include `/admin/login`
+- Improved app/layout.tsx with comprehensive metadata and viewport configuration
+- Enhanced app/globals.css with mobile-first responsive utilities
+- Updated steering rules with project standards and branding guidelines
+- Expanded README.md with cross-platform support documentation
+- Cleaned all external tool references from project files
+- Updated Prisma schema to include wallet fields (walletAddress, walletVerified)
+- Enhanced User type definition with wallet properties
+- Updated Header component with wallet navigation link
+- Enhanced RegisterForm with security warnings
+
+### Removed
+- All external tool branding references from documentation
+- Generic template comments from steering files
+
+### Security
+- Implemented role-based access control (RBAC) for admin features
+- Added admin role verification at multiple layers (middleware, layout, page)
+- Protected admin API endpoints from unauthorized access
+- Wallet address uniqueness validation
+- Permanent wallet locking to prevent address changes
+- Comprehensive wallet verification process
+- Password security warnings and no-recovery policy
+- Account permanence enforcement
+
+## [0.1.0] - 2025-01-09
+
+### Added
+- Initial project setup with Next.js 14 and TypeScript
+- PostgreSQL database with Prisma ORM
+- User authentication system with NextAuth.js
+  - User registration with email and password
+  - User login with credentials provider
+  - JWT-based session management (7-day expiry)
+  - Password hashing with bcrypt
+- User role system (USER, ADMIN)
+- Task completion system
+  - Multiple task types (Twitter, Telegram, Custom)
+  - Daily task completion tracking
+  - Points reward system
+- User dashboard
+  - Task list with completion status
+  - Points tracking
+  - Completion history
+  - User statistics
+- Leaderboard system
+  - User ranking by total points
+  - Top users display
+- Database schema
+  - User model with authentication fields
+  - Task model with task types and metadata
+  - Completion model for tracking user progress
+- API routes
+  - `/api/auth/register` - User registration
+  - `/api/auth/[...nextauth]` - NextAuth endpoints
+  - `/api/tasks` - Task listing
+  - `/api/completions` - Task completion
+  - `/api/users/me` - User statistics
+- UI components with shadcn/ui
+  - Authentication forms (Login, Register)
+  - Task cards
+  - User dashboard layout
+  - Leaderboard display
+- Responsive design with Tailwind CSS
+- Route protection with middleware
+- Error handling and validation with Zod
+
+### Security
+- Password hashing with bcrypt
+- JWT-based authentication
+- Protected routes with middleware
+- Input validation and sanitization
+- SQL injection prevention with Prisma

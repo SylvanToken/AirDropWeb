@@ -1,0 +1,112 @@
+# Hero Images Directory
+
+This directory contains hero background images organized by category.
+
+**Last Updated:** 2025-01-10
+
+## Directory Structure
+
+### Nature Categories
+- **forest/**: Dense forests, tree canopies, forest paths, woodland scenes
+- **ocean/**: Waves, beaches, underwater scenes, coastal views
+- **mountain/**: Peaks, valleys, hiking trails, alpine landscapes
+- **wildlife/**: Animals in nature, birds, ecosystems, fauna
+- **plants/**: Close-ups of leaves, flowers, gardens, flora
+- **sky/**: Sunsets, clouds, stars, aurora, atmospheric scenes
+
+### Eco-Themed Categories
+- **conservation/**: Wildlife and habitat conservation
+- **ecology/**: Ecological systems, biodiversity
+- **environmental/**: Environmental protection themes
+- **green/**: Green energy, sustainable living
+- **sea/**: Marine life, ocean conservation
+- **landscape/**: Natural landscapes, scenic views
+- **nature/**: General nature photography
+
+### Character Heroes
+- **sylonis/**: Sylvan Token mascot characters
+  - Sylvus, Syla, Sylbo, Sylens, Sylervus, Sylmica
+  - Sylor, Sylphinus, Sylpis, Sylsto, Syltrox, Sylurs, Sylves
+
+## Image Specifications
+
+### Format Requirements
+- **Primary Format**: WebP (modern browsers)
+- **Fallback Format**: JPEG (legacy browsers)
+- **Compression**: Optimized for web delivery
+- **Quality**: 85% (balance between quality and file size)
+
+### Dimensions
+- **Desktop**: 1920x1080px (16:9 aspect ratio)
+- **Tablet**: 1024x768px (4:3 aspect ratio)
+- **Mobile**: 768x1024px (portrait orientation)
+
+### Technical Implementation
+- Use Next.js Image component for automatic optimization
+- Implement lazy loading for below-fold images
+- Add blur placeholders for better UX
+- Responsive srcSet for different screen sizes
+
+## Usage Guidelines
+
+### Random Image Selection
+Images are randomly selected from categories using `lib/hero-images.ts`:
+
+```typescript
+import { getRandomHeroImage } from '@/lib/hero-images';
+
+const heroImage = getRandomHeroImage('forest');
+```
+
+### Available Categories
+- `forest`, `ocean`, `mountain`, `wildlife`, `plants`, `sky`
+- `cleanup`, `conservation`, `earth`, `ecology`, `environmental`
+- `green`, `sustainability`, `water`, `sea`, `landscape`, `nature`
+- `hero` (character mascots)
+
+### HeroSection Component
+```tsx
+<HeroSection
+  variant="home"
+  backgroundImage={getRandomHeroImage('forest')}
+  overlay="gradient"
+  height="lg"
+/>
+```
+
+## Maintenance
+
+### Adding New Images
+1. Place images in appropriate category folder
+2. Follow naming convention: `category-name-##.webp`
+3. Ensure images meet dimension requirements
+4. Optimize images before committing
+5. Update this file with new image count
+
+### Image Optimization
+- Use tools like Squoosh, ImageOptim, or Sharp
+- Target file size: <200KB for desktop, <100KB for mobile
+- Maintain aspect ratios
+- Test on multiple devices
+
+### Quality Checks
+- [ ] Images are properly categorized
+- [ ] WebP and JPEG versions exist
+- [ ] Dimensions match specifications
+- [ ] File sizes are optimized
+- [ ] No copyright issues
+- [ ] Images align with eco theme
+
+## Update Schedule
+
+This file should be updated:
+- **Daily**: When new images are added
+- **Weekly**: Review image usage and performance
+- **Monthly**: Audit image quality and relevance
+- **Quarterly**: Clean up unused images
+
+**Next Review Date:** 2025-02-10
+
+---
+
+*For more information, see `lib/HERO_IMAGES_README.md` and `components/ui/HERO_README.md`*

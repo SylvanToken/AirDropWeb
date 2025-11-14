@@ -1,0 +1,64 @@
+{
+  "title": "Tekrar hoş geldin, {username}!",
+  "subtitle": "İlerlemenizi takip edin ve diğer topluluk üyeleriyle yarışın",
+  "loading": "Gösterge paneli yükleniyor...",
+  "hero": {
+    "title": "Tekrar hoş geldin, {username}!",
+    "subtitle": "İlerlemenizi takip edin ve diğer topluluk üyeleriyle yarışın",
+    "stats": {
+      "points": "Toplam Puan",
+      "tasks": "Tamamlanan Görevler",
+      "rank": "Sıralamanız",
+      "streak": "Günlük Seri"
+    }
+  },
+  "error": {
+    "title": "Hata",
+    "retry": "Tekrar Dene"
+  },
+  "stats": {
+    "totalPoints": {
+      "title": "Toplam Puan",
+      "description": "Daha fazla kazanmak için görevleri tamamlamaya devam edin!"
+    },
+    "rank": {
+      "title": "Sıralamanız",
+      "description": "Tüm katılımcılar arasında"
+    },
+    "streak": {
+      "title": "Mevcut Seri",
+      "day": "gün",
+      "days": "gün",
+      "description": "üst üste"
+    },
+    "completions": {
+      "title": "Tamamlanan Görevler",
+      "description": "Toplam tamamlama"
+    }
+  },
+  "recentCompletions": {
+    "title": "Son Tamamlamalar",
+    "subtitle": "En son tamamladığınız görevler",
+    "empty": "Henüz tamamlanmış görev yok",
+    "emptyDescription": "Burada görmek için görevleri tamamlamaya başlayın!",
+    "points": "puan"
+  },
+  "leaderboard": {
+    "title": "Lider Tablosu",
+    "subtitle": "İlk 10 topluluk üyesi",
+    "you": "(Siz)",
+    "task": "görev",
+    "tasks": "görev",
+    "points": "puan"
+  },
+  "threshold": {
+    "below": "Ödül alabilmeniz için 1500 puan toplamanız gerekli",
+    "above": "Tebrikler! Barajı geçtiniz",
+    "progress": "Puan"
+  },
+  "pointThreshold": {
+    "belowThreshold": "Ödül alabilmeniz için 1500 puan toplamanız gerekli",
+    "aboveThreshold": "Tebrikler! Barajı geçtiniz",
+    "pointsOf": "puan"
+  }
+}

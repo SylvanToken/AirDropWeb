@@ -1,0 +1,67 @@
+{
+  "general": {
+    "unknown": "发生未知错误",
+    "serverError": "发生服务器错误",
+    "networkError": "网络连接错误",
+    "timeout": "请求超时"
+  },
+  "auth": {
+    "invalidCredentials": "无效的电子邮件或密码",
+    "emailExists": "电子邮件已存在",
+    "usernameExists": "用户名已存在",
+    "unauthorized": "未经授权的访问",
+    "sessionExpired": "您的会话已过期",
+    "invalidToken": "无效或过期的令牌"
+  },
+  "validation": {
+    "required": "此字段为必填项",
+    "invalidEmail": "无效的电子邮件地址",
+    "invalidPassword": "密码必须至少8个字符",
+    "passwordMismatch": "密码不匹配",
+    "invalidUsername": "用户名必须为3-20个字符",
+    "invalidWallet": "无效的钱包地址"
+  },
+  "api": {
+    "notFound": "未找到资源",
+    "forbidden": "禁止访问",
+    "badRequest": "无效请求",
+    "conflict": "资源已存在",
+    "tooManyRequests": "请求过多，请稍后再试"
+  },
+  "database": {
+    "connectionError": "数据库连接错误",
+    "queryError": "数据库查询错误",
+    "uniqueConstraint": "此值已存在"
+  },
+  "errorReport": {
+    "title": "报告错误",
+    "subtitle": "通过报告问题帮助我们改进",
+    "button": "报告错误",
+    "types": {
+      "UI_ERROR": "UI/显示错误",
+      "API_ERROR": "API/连接错误",
+      "TASK_ERROR": "任务完成错误",
+      "PAYMENT_ERROR": "支付/钱包错误",
+      "OTHER": "其他"
+    },
+    "form": {
+      "errorType": "错误类型",
+      "errorTitle": "错误标题",
+      "errorTitlePlaceholder": "错误的简要描述",
+      "errorTitleRequired": "错误标题为必填项",
+      "errorDetails": "错误详情",
+      "errorDetailsPlaceholder": "请描述发生了什么、您试图做什么以及您看到的任何错误消息...",
+      "errorDetailsRequired": "错误详情为必填项",
+      "submit": "提交报告",
+      "cancel": "取消",
+      "submitting": "提交中..."
+    },
+    "success": {
+      "title": "报告已提交！",
+      "message": "感谢您帮助我们改进平台"
+    },
+    "validation": {
+      "allFieldsRequired": "请填写所有必填字段"
+    }
+  }
+}

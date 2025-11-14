@@ -1,0 +1,179 @@
+{
+  "terms": {
+    "title": "Kullanım Koşulları",
+    "lastUpdated": "Son Güncelleme: 9 Kasım 2025",
+    "scrollToAccept": "Kabul etmek için en alta kaydırın",
+    "cancel": "İptal",
+    "accept": "Kabul Ediyorum",
+    "close": "Kapat",
+    "section1": {
+      "title": "1. Koşulların Kabulü",
+      "content": "Sylvan Token Airdrop Platformu'na erişerek ve kullanarak, bu sözleşmenin hüküm ve koşullarını kabul etmiş olursunuz. Bu Kullanım Koşullarını kabul etmiyorsanız, lütfen Platformu kullanmayın."
+    },
+    "section2": {
+      "title": "2. Uygunluk",
+      "content": "Bu Platformu kullanmak için en az 18 yaşında olmalısınız. Platformu kullanarak, bu yaş gereksinimini karşıladığınızı ve bu Koşullara girme yasal kapasitesine sahip olduğunuzu beyan ve garanti edersiniz."
+    },
+    "section3": {
+      "title": "3. Hesap Kaydı",
+      "intro": "Airdrop programına katılmak için bir hesap oluşturmalısınız. Şunları kabul edersiniz:",
+      "item1": "Kayıt sırasında doğru, güncel ve eksiksiz bilgi sağlamak",
+      "item2": "Hesap bilgilerinizi korumak ve derhal güncellemek",
+      "item3": "Şifrenizin ve hesabınızın güvenliğini sağlamak",
+      "item4": "Hesabınız altında gerçekleşen tüm faaliyetlerden sorumlu olmak",
+      "item5": "Hesabınızın yetkisiz kullanımını derhal bize bildirmek"
+    },
+    "section4": {
+      "title": "4. Görev Tamamlama ve Ödüller",
+      "intro": "Platform, puan kazanmak için çeşitli görevleri tamamlamanıza olanak tanır:",
+      "item1": "Görevler gerçek ve gereksinimlere uygun şekilde tamamlanmalıdır",
+      "item2": "Puanlar, görev tamamlamanın başarılı doğrulanması üzerine verilir",
+      "item3": "Görev tamamlamayı doğrulama ve hileli faaliyet için puanları iptal etme hakkımızı saklı tutarız",
+      "item4": "Token dağıtımı kampanya kurallarına tabidir ve önceden haber verilmeksizin değişebilir",
+      "item5": "Dağıtılan tokenların belirli bir değerini veya faydasını garanti etmiyoruz"
+    },
+    "section5": {
+      "title": "5. Yasaklı Faaliyetler",
+      "intro": "Aşağıdaki yasaklı faaliyetlerde bulunmamayı kabul edersiniz:",
+      "item1": "Birden fazla hesap oluşturmak veya otomatik sistemler (botlar) kullanmak",
+      "item2": "Yanlış bilgi vermek veya başkalarının kimliğine bürünmek",
+      "item3": "Puan sistemini manipüle etmeye veya istismar etmeye çalışmak",
+      "item4": "Hileli görev tamamlamada bulunmak",
+      "item5": "Geçerli yasaları veya düzenlemeleri ihlal etmek",
+      "item6": "Platformun çalışmasına veya güvenliğine müdahale etmek"
+    },
+    "section6": {
+      "title": "6. Cüzdan ve Sosyal Medya Doğrulaması",
+      "intro": "Token almak için cüzdan adresinizi doğrulamalı ve sosyal medya doğrulamalarını tamamlamalısınız:",
+      "item1": "Cüzdan adresleri ve sosyal medya hesapları doğrulamadan sonra kalıcı olarak kilitlenir",
+      "item2": "Cüzdan adresinizin doğruluğunu sağlamaktan siz sorumlusunuz",
+      "item3": "Yanlış adreslere gönderilen tokenlerden sorumlu değiliz",
+      "item4": "Sosyal medya hesapları gerçek olmalı ve size ait olmalıdır"
+    },
+    "section7": {
+      "title": "7. Fikri Mülkiyet",
+      "content": "Platform üzerindeki metin, grafikler, logolar ve yazılım dahil tüm içerik Sylvan Token'ın mülkiyetindedir ve fikri mülkiyet yasalarıyla korunmaktadır."
+    },
+    "section8": {
+      "title": "8. Garanti Reddi",
+      "content": "PLATFORM 'OLDUĞU GİBİ' VE 'MEVCUT OLDUĞU ŞEKLİYLE' HERHANGİ BİR AÇIK VEYA ZIMNİ GARANTİ OLMAKSIZIN SAĞLANIR."
+    },
+    "section9": {
+      "title": "9. Sorumluluk Sınırlaması",
+      "content": "YASALARIN İZİN VERDİĞİ AZAMİ ÖLÇÜDE, SYLVAN TOKEN HERHANGİ BİR DOLAYLI, ARIZİ, ÖZEL, SONUÇ OLARAK ORTAYA ÇIKAN VEYA CEZAİ ZARARLARDAN SORUMLU OLMAYACAKTIR."
+    },
+    "section10": {
+      "title": "10. Koşullarda Değişiklikler",
+      "content": "Bu Koşulları istediğimiz zaman değiştirme hakkını saklı tutarız. Bu tür değişikliklerden sonra Platformu kullanmaya devam etmeniz, güncellenmiş Koşulları kabul ettiğiniz anlamına gelir."
+    },
+    "section11": {
+      "title": "11. Fesih",
+      "content": "Bu Koşulların ihlali de dahil olmak üzere herhangi bir nedenle, önceden haber vererek veya vermeksizin hesabınızı askıya alma veya feshetme hakkını saklı tutarız."
+    },
+    "section12": {
+      "title": "12. İletişim Bilgileri",
+      "content": "Bu Koşullar hakkında herhangi bir sorunuz varsa, lütfen resmi sosyal medya kanallarımız aracılığıyla bizimle iletişime geçin."
+    }
+  },
+  "privacy": {
+    "title": "Gizlilik Politikası",
+    "lastUpdated": "Son Güncelleme: 9 Kasım 2025",
+    "scrollToAccept": "Kabul etmek için en alta kaydırın",
+    "cancel": "İptal",
+    "accept": "Kabul Ediyorum",
+    "close": "Kapat",
+    "section1": {
+      "title": "1. Giriş",
+      "content": "Sylvan Token gizliliğinizi korumaya kararlıdır. Bu Gizlilik Politikası, Airdrop Platformumuzu kullandığınızda bilgilerinizi nasıl topladığımızı, kullandığımızı, ifşa ettiğimizi ve koruduğumuzu açıklar."
+    },
+    "section2": {
+      "title": "2. Topladığımız Bilgiler",
+      "subtitle1": "2.1 Kişisel Bilgiler",
+      "intro1": "Doğrudan bize sağladığınız bilgileri topluyoruz:",
+      "item1": "E-posta adresi",
+      "item2": "Kullanıcı adı",
+      "item3": "Şifre (şifrelenmiş)",
+      "item4": "Cüzdan adresi",
+      "item5": "Sosyal medya kullanıcı adları (Twitter, Telegram)",
+      "subtitle2": "2.2 Otomatik Olarak Toplanan Bilgiler",
+      "intro2": "Platforma eriştiğinizde otomatik olarak şunları topluyoruz:",
+      "item6": "IP adresi",
+      "item7": "Tarayıcı türü ve sürümü",
+      "item8": "Cihaz bilgileri",
+      "item9": "Giriş zaman damgaları",
+      "item10": "Görev tamamlama verileri"
+    },
+    "section3": {
+      "title": "3. Bilgilerinizi Nasıl Kullanırız",
+      "intro": "Toplanan bilgileri aşağıdaki amaçlar için kullanırız:",
+      "item1": "Hesabınızı oluşturmak ve yönetmek",
+      "item2": "Görev tamamlamalarını işlemek ve puan vermek",
+      "item3": "Doğrulanmış cüzdan adreslerine token dağıtmak",
+      "item4": "Sosyal medya hesap sahipliğini doğrulamak",
+      "item5": "Dolandırıcılığı önlemek ve platform güvenliğini sağlamak",
+      "item6": "Platform hakkında önemli güncellemeleri iletmek",
+      "item7": "Hizmetlerimizi ve kullanıcı deneyimini geliştirmek",
+      "item8": "Yasal yükümlülüklere uymak"
+    },
+    "section4": {
+      "title": "4. Bilgi Paylaşımı ve İfşası",
+      "intro": "Kişisel bilgilerinizi satmıyoruz. Bilgilerinizi aşağıdaki durumlarda paylaşabiliriz:",
+      "item1": "Genel Sıralama: Kullanıcı adınız ve puanlarınız herkese açık olarak görüntülenebilir",
+      "item2": "Hizmet Sağlayıcılar: Üçüncü taraf hizmet sağlayıcılarla bilgi paylaşabiliriz",
+      "item3": "Yasal Gereklilikler: Yasaların gerektirmesi durumunda bilgileri ifşa edebiliriz",
+      "item4": "İş Transferleri: Birleşme veya devralma ile bağlantılı olarak bilgiler aktarılabilir"
+    },
+    "section5": {
+      "title": "5. Veri Güvenliği",
+      "intro": "Kişisel bilgilerinizi korumak için uygun teknik ve organizasyonel önlemler uyguluyoruz:",
+      "item1": "Endüstri standardı algoritmalar kullanarak şifre şifreleme",
+      "item2": "Güvenli veritabanı depolama",
+      "item3": "Düzenli güvenlik denetimleri",
+      "item4": "Erişim kontrolleri ve kimlik doğrulama",
+      "note": "Ancak, İnternet üzerinden iletimin hiçbir yöntemi %100 güvenli değildir."
+    },
+    "section6": {
+      "title": "6. Veri Saklama",
+      "content": "Kişisel bilgilerinizi, bu Gizlilik Politikasında belirtilen amaçları yerine getirmek için gerekli olduğu sürece saklarız."
+    },
+    "section7": {
+      "title": "7. Haklarınız",
+      "intro": "Konumunuza bağlı olarak, kişisel bilgilerinizle ilgili belirli haklara sahip olabilirsiniz:",
+      "item1Title": "Erişim",
+      "item1": "Kişisel bilgilerinize erişim talep edin",
+      "item2Title": "Düzeltme",
+      "item2": "Yanlış bilgilerin düzeltilmesini talep edin",
+      "item3Title": "Silme",
+      "item3": "Hesabınızın ve verilerinizin silinmesini talep edin",
+      "item4Title": "İtiraz",
+      "item4": "Bilgilerinizin belirli işlenmesine itiraz edin",
+      "item5Title": "Veri Taşınabilirliği",
+      "item5": "Verilerinizin taşınabilir formatta bir kopyasını talep edin",
+      "note": "Not: Belirli bilgiler (cüzdan adresleri, doğrulanmış sosyal medya hesapları) doğrulamadan sonra değiştirilemez."
+    },
+    "section8": {
+      "title": "8. Çerezler ve İzleme",
+      "content": "Platform'daki deneyiminizi geliştirmek için çerezler ve benzer izleme teknolojileri kullanıyoruz. Çerezleri tarayıcı ayarlarınız aracılığıyla kontrol edebilirsiniz."
+    },
+    "section9": {
+      "title": "9. Üçüncü Taraf Bağlantıları",
+      "content": "Platform, üçüncü taraf web sitelerine veya hizmetlerine bağlantılar içerebilir. Bu üçüncü tarafların gizlilik uygulamalarından sorumlu değiliz."
+    },
+    "section10": {
+      "title": "10. Çocukların Gizliliği",
+      "content": "Platform, 18 yaşın altındaki kullanıcılar için tasarlanmamıştır. Çocuklardan bilerek kişisel bilgi toplamıyoruz."
+    },
+    "section11": {
+      "title": "11. Uluslararası Veri Transferleri",
+      "content": "Bilgileriniz, ikamet ettiğiniz ülkeden farklı ülkelere aktarılabilir ve işlenebilir. Platformu kullanarak, bu tür transferlere izin vermiş olursunuz."
+    },
+    "section12": {
+      "title": "12. Bu Gizlilik Politikasındaki Değişiklikler",
+      "content": "Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Bu tür değişikliklerden sonra Platformu kullanmaya devam etmeniz, güncellenmiş Gizlilik Politikasını kabul ettiğiniz anlamına gelir."
+    },
+    "section13": {
+      "title": "13. Bize Ulaşın",
+      "content": "Bu Gizlilik Politikası hakkında herhangi bir sorunuz varsa, lütfen resmi sosyal medya kanallarımız aracılığıyla bizimle iletişime geçin."
+    }
+  }
+}

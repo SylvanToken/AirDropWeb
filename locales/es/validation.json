@@ -1,0 +1,35 @@
+{
+  "required": "Este campo es obligatorio",
+  "email": "Por favor ingresa una dirección de correo electrónico válida",
+  "password": {
+    "min": "La contraseña debe tener al menos {min} caracteres",
+    "max": "La contraseña debe tener como máximo {max} caracteres",
+    "uppercase": "La contraseña debe contener al menos una letra mayúscula",
+    "lowercase": "La contraseña debe contener al menos una letra minúscula",
+    "number": "La contraseña debe contener al menos un número",
+    "special": "La contraseña debe contener al menos un carácter especial"
+  },
+  "username": {
+    "min": "El nombre de usuario debe tener al menos {min} caracteres",
+    "max": "El nombre de usuario debe tener como máximo {max} caracteres",
+    "invalid": "El nombre de usuario solo puede contener letras, números y guiones bajos",
+    "taken": "Este nombre de usuario ya está en uso"
+  },
+  "wallet": {
+    "invalid": "Formato de dirección de billetera inválido",
+    "required": "La dirección de billetera es obligatoria"
+  },
+  "social": {
+    "twitterInvalid": "Nombre de usuario de Twitter inválido",
+    "telegramInvalid": "Nombre de usuario de Telegram inválido",
+    "taken": "Este nombre de usuario ya está vinculado a otra cuenta"
+  },
+  "file": {
+    "tooLarge": "El tamaño del archivo debe ser menor a {maxSize}MB",
+    "invalidType": "Tipo de archivo inválido. Tipos permitidos: {types}",
+    "required": "Por favor selecciona un archivo"
+  },
+  "terms": {
+    "required": "Debes aceptar los términos y condiciones"
+  }
+}

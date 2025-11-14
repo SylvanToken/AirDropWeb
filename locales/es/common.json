@@ -1,0 +1,238 @@
+{
+  "header": {
+    "dashboard": "Panel",
+    "tasks": "Tareas",
+    "wallet": "Billetera",
+    "profile": "Perfil",
+    "leaderboard": "Clasificación",
+    "logout": "Cerrar Sesión",
+    "admin": "Administrador"
+  },
+  "footer": {
+    "copyright": "© 2025 Sylvan Token. Todos los derechos reservados.",
+    "builtWith": "Construido con ❤️ para la Comunidad Sylvan Token",
+    "terms": "Términos",
+    "privacy": "Privacidad",
+    "language": "Idioma"
+  },
+  "language": {
+    "select": "Seleccionar Idioma",
+    "current": "Idioma Actual"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "create": "Crear",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "submit": "Enviar",
+    "close": "Cerrar",
+    "yes": "Sí",
+    "no": "No",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "actions": "Acciones",
+    "signIn": "Iniciar Sesión"
+  },
+  "errors": {
+    "generic": "Ocurrió un error. Por favor, inténtalo de nuevo.",
+    "network": "Error de red. Por favor, verifica tu conexión.",
+    "unauthorized": "No estás autorizado para realizar esta acción.",
+    "notFound": "El recurso solicitado no fue encontrado.",
+    "validation": "Por favor, verifica tu entrada e inténtalo de nuevo."
+  },
+  "welcomeModal": {
+    "title": "Información Importante de la Cuenta",
+    "subtitle": "Por favor, lee cuidadosamente antes de completar tu registro:",
+    "button": {
+      "understood": "Entendido",
+      "countdownLabel": "El botón Entendido estará activo en {count} segundos",
+      "readyLabel": "Entendido, cerrar modal"
+    },
+    "checkbox": {
+      "label": "No mostrar esto de nuevo"
+    },
+    "items": {
+      "security": "La seguridad de la cuenta es tu responsabilidad",
+      "noPasswordReset": "La opción \"Olvidé mi Contraseña\" no está disponible",
+      "socialMediaLock": "El nombre de usuario de redes sociales no se puede cambiar después del registro",
+      "walletLock": "La dirección de billetera no se puede cambiar después del registro",
+      "futureEvents": "Tu información guardada se utilizará para eventos futuros",
+      "earlyBenefits": "Los miembros tempranos pueden recibir diferentes ventajas de puntuación",
+      "timeLimited": "Algunas tareas y actividades tienen tiempo limitado",
+      "accuracy": "Por favor, asegúrate de que toda la información sea precisa"
+    }
+  },
+  "accessibility": {
+    "skipToMain": "Saltar al contenido principal",
+    "skipToNav": "Saltar a la navegación",
+    "skipToFooter": "Saltar al pie de página",
+    "settings": "Configuración de Accesibilidad",
+    "settingsDescription": "Personaliza tu experiencia para una mejor accesibilidad",
+    "animations": "Animaciones",
+    "animationsEnabled": "Las animaciones y transiciones están habilitadas",
+    "animationsDisabled": "Las animaciones y transiciones están deshabilitadas",
+    "toggleAnimations": "Alternar animaciones",
+    "systemPreference": "Preferencia del Sistema:",
+    "reducedMotionDetected": "Tu sistema está configurado para preferir movimiento reducido. Puedes anular esta configuración arriba.",
+    "info": "Deshabilitar las animaciones reducirá los efectos de movimiento en toda la aplicación mientras mantiene la funcionalidad."
+  },
+  "shortcuts": {
+    "title": "Atajos de Teclado",
+    "home": "Ir a Inicio",
+    "dashboard": "Ir al Panel",
+    "tasks": "Ir a Tareas",
+    "leaderboard": "Ir a Clasificación",
+    "profile": "Ir a Perfil",
+    "tab": "Navegar entre elementos",
+    "shiftTab": "Navegar hacia atrás",
+    "enter": "Activar elemento enfocado",
+    "escape": "Cerrar modal/menú desplegable"
+  },
+  "hero": {
+    "home": {
+      "title": "Bienvenido a Sylvan Token",
+      "subtitle": "Completa tareas, gana recompensas y crece con nuestra comunidad",
+      "cta": "Comenzar"
+    },
+    "dashboard": {
+      "title": "¡Bienvenido de nuevo, {username}!",
+      "subtitle": "Rastrea tu progreso y compite con la comunidad"
+    },
+    "tasks": {
+      "title": "Tareas Disponibles",
+      "subtitle": "Completa tareas para ganar puntos y escalar en la clasificación"
+    },
+    "leaderboard": {
+      "title": "Clasificación de la Comunidad",
+      "subtitle": "Ve cómo te clasificas entre otros miembros",
+      "yourRank": "Tu Rango: #{rank} de {total}"
+    }
+  },
+  "leaderboardPage": {
+    "pageTitle": "Clasificación de la Comunidad",
+    "pageSubtitle": "Ve cómo te clasificas entre otros miembros",
+    "userRankLabel": "Tu Rango: #{rank} de {total}",
+    "loadingText": "Cargando..."
+  },
+  "home": {
+    "features": {
+      "title": "¿Por Qué Elegir Sylvan Token?",
+      "subtitle": "Únete a miles de usuarios ganando recompensas a través de tareas simples",
+      "tasks": {
+        "title": "Tareas Fáciles",
+        "description": "Completa tareas simples de redes sociales y gana puntos al instante"
+      },
+      "rewards": {
+        "title": "Recompensas Reales",
+        "description": "Gana puntos que se traducen en recompensas de tokens reales"
+      },
+      "community": {
+        "title": "Comunidad Activa",
+        "description": "Únete a una comunidad próspera de entusiastas de tokens"
+      },
+      "instant": {
+        "title": "Seguimiento Instantáneo",
+        "description": "Rastrea tu progreso y ganancias en tiempo real"
+      }
+    },
+    "benefits": {
+      "title": "Comienza a Ganar Hoy",
+      "subtitle": "Únete a la comunidad Sylvan Token y desbloquea beneficios exclusivos",
+      "item1": "Completa tareas diarias para ganar puntos y escalar en la clasificación",
+      "item2": "Conecta tu billetera para recibir recompensas de tokens directamente",
+      "item3": "Compite con otros miembros por recompensas adicionales y reconocimiento",
+      "item4": "Accede a campañas exclusivas y oportunidades tempranas"
+    },
+    "stats": {
+      "users": "10K+",
+      "usersLabel": "Usuarios Registrados",
+      "tasks": "50K+",
+      "tasksLabel": "Tareas Completadas",
+      "rewards": "1M+",
+      "rewardsLabel": "Puntos Distribuidos"
+    },
+    "tokenDistribution": {
+      "title": "Distribución de Tokens",
+      "subtitle": "Asignación de tokens en tiempo real",
+      "totalSupply": "Suministro Total",
+      "holders": "Titulares",
+      "circulating": "En Circulación",
+      "locked": "Bloqueado",
+      "team": "Equipo",
+      "donation": "Donación",
+      "fee": "Tarifa",
+      "burned": "Quemado",
+      "updated": "Actualizado",
+      "billion": "Mil Millones",
+      "million": "Millones"
+    },
+    "cta": {
+      "title": "¿Listo para Comenzar?",
+      "subtitle": "Crea tu cuenta ahora y comienza a ganar recompensas hoy",
+      "button": "Crear Cuenta Gratis"
+    }
+  },
+  "theme": {
+    "light": "Modo Claro",
+    "dark": "Modo Oscuro",
+    "toggle": "Cambiar Tema"
+  },
+  "twitter": {
+    "connection": {
+      "title": "Conexión de Twitter",
+      "description": "Conecta tu cuenta de Twitter para verificación automática de tareas",
+      "connected": "Conectado",
+      "notConnected": "No Conectado",
+      "connect": "Conectar Twitter",
+      "disconnect": "Desconectar",
+      "reconnect": "Reconectar",
+      "connecting": "Conectando...",
+      "disconnecting": "Desconectando...",
+      "tokenExpired": "Token Expirado",
+      "tokenExpiredMessage": "Tu conexión de Twitter ha expirado. Por favor, reconecta para habilitar la verificación automática."
+    },
+    "verification": {
+      "title": "Verificación de Twitter",
+      "pending": "Pendiente",
+      "verifying": "Verificando...",
+      "approved": "Aprobado",
+      "rejected": "Rechazado",
+      "error": "Error",
+      "retry": "Reintentar Verificación",
+      "complete": "Completar Tarea",
+      "pointsEarned": "¡+{points} puntos ganados!",
+      "checkingActivity": "Verificando tu actividad de Twitter...",
+      "waitingVerification": "Esperando verificación...",
+      "taskVerified": "¡Excelente! Tu tarea de {taskType} ha sido verificada.",
+      "taskRejected": "Por favor, completa la acción de {taskType} e inténtalo de nuevo.",
+      "verificationFailed": "La verificación falló. Por favor, inténtalo de nuevo o contacta al soporte."
+    },
+    "tasks": {
+      "follow": "Seguir",
+      "like": "Me Gusta",
+      "retweet": "Retuitear",
+      "followTitle": "Seguir en Twitter",
+      "likeTitle": "Dar Me Gusta al Tweet",
+      "retweetTitle": "Retuitear",
+      "instructions": "Instrucciones:",
+      "howItWorks": "Cómo funciona:",
+      "step1": "Conecta tu cuenta de Twitter (configuración única)",
+      "step2": "Completa la acción de Twitter",
+      "step3": "La verificación ocurre automáticamente",
+      "step4": "¡Gana puntos al instante!",
+      "connectionRequired": "Conexión de Twitter Requerida",
+      "connectionRequiredMessage": "Conecta tu cuenta de Twitter para habilitar la verificación automática para esta tarea. ¡Esto hará el proceso mucho más rápido y fácil!",
+      "automaticVerification": "Verificación Automática",
+      "automaticVerificationMessage": "¡Una vez que completes la acción, la verificaremos automáticamente y otorgaremos tus puntos!",
+      "manualMode": "Modo Manual"
+    }
+  }
+}

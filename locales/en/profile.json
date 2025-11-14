@@ -1,0 +1,117 @@
+{
+  "title": "My Profile",
+  "subtitle": "View and manage your account information",
+  "error": "Failed to load profile",
+  "accountInfo": {
+    "title": "Account Information",
+    "description": "Your basic account details",
+    "username": "Username",
+    "email": "Email Address",
+    "memberSince": "Member Since",
+    "totalPoints": "Total Points"
+  },
+  "wallet": {
+    "title": "BEP-20 Wallet",
+    "description": "Your verified wallet address for receiving rewards",
+    "verified": "Verified Wallet Address",
+    "notSet": "Wallet Not Set",
+    "notSetDescription": "Please add your BEP-20 wallet address on the Wallet page"
+  },
+  "referral": {
+    "title": "Your Referral Code",
+    "description": "Share your code with friends",
+    "copyButton": "Copy Code",
+    "copied": "Copied!",
+    "notGenerated": "Referral code not generated yet"
+  },
+  "socialMedia": {
+    "title": "Social Media Accounts",
+    "description": "Connect your social media accounts to complete tasks",
+    "verified": "Verified Username",
+    "permanentNote": "This username is permanently linked to your account",
+    "usernameLabel": "Username",
+    "usernameHelp": "Enter your username without the @ symbol",
+    "continue": "Continue",
+    "processing": "Processing...",
+    "twitter": {
+      "title": "Twitter",
+      "description": "Link your X (Twitter) account to verify your identity",
+      "verifiedDescription": "Your X (Twitter) account is verified and linked",
+      "placeholder": "@username",
+      "verify": "Verify Twitter",
+      "verified": "Verified",
+      "notSet": "Not Set"
+    },
+    "telegram": {
+      "title": "Telegram",
+      "description": "Link your Telegram account to verify your identity",
+      "verifiedDescription": "Your Telegram account is verified and linked",
+      "placeholder": "@username",
+      "verify": "Verify Telegram",
+      "verified": "Verified",
+      "notSet": "Not Set"
+    },
+    "warning": {
+      "title": "Important: Read Before Adding",
+      "permanent": "Your username will be permanently locked after confirmation",
+      "cannotChange": "You cannot change your username once verified",
+      "doubleCheck": "Double-check your username before confirming"
+    },
+    "info": {
+      "title": "Username Requirements",
+      "withoutAt": "Enter without @ symbol",
+      "length": "Must be 3-30 characters long",
+      "characters": "Can only contain letters, numbers, and underscores",
+      "example": "Example:"
+    },
+    "errors": {
+      "required": "Username is required",
+      "tooShort": "Username must be at least 3 characters",
+      "tooLong": "Username cannot exceed 30 characters",
+      "invalidFormat": "Username can only contain letters, numbers, and underscores",
+      "unknown": "An unexpected error occurred. Please try again."
+    }
+  },
+  "confirmation": {
+    "title": "Confirm Username",
+    "subtitle": "This action cannot be undone",
+    "usernameLabel": "Your Username",
+    "critical": {
+      "title": "CRITICAL: Please Read Carefully",
+      "permanent": "This username will be PERMANENTLY locked to your account",
+      "cannotChange": "You CANNOT change or update this username after confirmation",
+      "verify": "Verify the username is correct before confirming"
+    },
+    "acknowledgement": "By confirming, you acknowledge that you have read and understood all warnings above",
+    "cancel": "Cancel",
+    "confirm": "Confirm & Lock Username",
+    "confirming": "Confirming..."
+  },
+  "emailPreferences": {
+    "title": "Email Preferences",
+    "description": "Manage your email notification settings",
+    "taskCompletions": {
+      "title": "Task Completion Notifications",
+      "description": "Receive emails when you complete tasks and earn points"
+    },
+    "walletVerifications": {
+      "title": "Wallet Verification Updates",
+      "description": "Get notified about your wallet verification status changes"
+    },
+    "adminNotifications": {
+      "title": "Important Account Updates",
+      "description": "Receive critical notifications about your account"
+    },
+    "marketingEmails": {
+      "title": "Marketing & Promotions",
+      "description": "Get updates about new features, campaigns, and special offers"
+    },
+    "note": {
+      "title": "Note:",
+      "description": "Critical security and account-related emails will always be sent regardless of your preferences."
+    },
+    "save": "Save Preferences",
+    "saving": "Saving...",
+    "saved": "Preferences saved successfully!"
+  }
+}

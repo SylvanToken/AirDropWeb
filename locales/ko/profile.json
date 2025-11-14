@@ -1,0 +1,117 @@
+{
+  "title": "내 프로필",
+  "subtitle": "계정 정보를 확인하고 관리하세요",
+  "error": "프로필을 불러오지 못했습니다",
+  "accountInfo": {
+    "title": "계정 정보",
+    "description": "기본 계정 세부정보",
+    "username": "사용자명",
+    "email": "이메일 주소",
+    "memberSince": "가입일",
+    "totalPoints": "총 포인트"
+  },
+  "wallet": {
+    "title": "BEP-20 지갑",
+    "description": "보상을 받기 위한 인증된 지갑 주소",
+    "verified": "인증된 지갑 주소",
+    "notSet": "지갑이 설정되지 않음",
+    "notSetDescription": "지갑 페이지에서 BEP-20 지갑 주소를 추가해 주세요"
+  },
+  "referral": {
+    "title": "내 추천 코드",
+    "description": "친구들과 코드를 공유하세요",
+    "copyButton": "코드 복사",
+    "copied": "복사됨!",
+    "notGenerated": "추천 코드가 아직 생성되지 않았습니다"
+  },
+  "socialMedia": {
+    "title": "소셜 미디어 계정",
+    "description": "과제를 완료하려면 소셜 미디어 계정을 연결하세요",
+    "verified": "인증된 사용자명",
+    "permanentNote": "이 사용자명은 계정에 영구적으로 연결됩니다",
+    "usernameLabel": "사용자명",
+    "usernameHelp": "@ 기호 없이 사용자명을 입력하세요",
+    "continue": "계속",
+    "processing": "처리 중...",
+    "twitter": {
+      "title": "Twitter",
+      "description": "신원을 확인하려면 X (트위터) 계정을 연결하세요",
+      "verifiedDescription": "X (트위터) 계정이 인증되고 연결되었습니다",
+      "placeholder": "@사용자이름",
+      "verify": "Twitter 인증",
+      "verified": "인증됨",
+      "notSet": "설정되지 않음"
+    },
+    "telegram": {
+      "title": "Telegram",
+      "description": "신원을 확인하려면 텔레그램 계정을 연결하세요",
+      "verifiedDescription": "텔레그램 계정이 인증되고 연결되었습니다",
+      "placeholder": "@사용자이름",
+      "verify": "Telegram 인증",
+      "verified": "인증됨",
+      "notSet": "설정되지 않음"
+    },
+    "warning": {
+      "title": "중요: 추가하기 전에 읽어주세요",
+      "permanent": "사용자명은 확인 후 영구적으로 잠깁니다",
+      "cannotChange": "인증 후에는 사용자명을 변경할 수 없습니다",
+      "doubleCheck": "확인하기 전에 사용자명을 다시 확인하세요"
+    },
+    "info": {
+      "title": "사용자명 요구사항",
+      "withoutAt": "@ 기호 없이 입력하세요",
+      "length": "3-30자여야 합니다",
+      "characters": "문자, 숫자, 밑줄만 포함할 수 있습니다",
+      "example": "예시:"
+    },
+    "errors": {
+      "required": "사용자명은 필수입니다",
+      "tooShort": "사용자명은 최소 3자 이상이어야 합니다",
+      "tooLong": "사용자명은 30자를 초과할 수 없습니다",
+      "invalidFormat": "사용자명은 문자, 숫자, 밑줄만 포함할 수 있습니다",
+      "unknown": "예상치 못한 오류가 발생했습니다. 다시 시도해 주세요."
+    }
+  },
+  "confirmation": {
+    "title": "사용자명 확인",
+    "subtitle": "이 작업은 취소할 수 없습니다",
+    "usernameLabel": "사용자명",
+    "critical": {
+      "title": "중요: 주의 깊게 읽어주세요",
+      "permanent": "이 사용자명은 계정에 영구적으로 잠깁니다",
+      "cannotChange": "확인 후에는 이 사용자명을 변경하거나 업데이트할 수 없습니다",
+      "verify": "확인하기 전에 사용자명이 올바른지 확인하세요"
+    },
+    "acknowledgement": "확인함으로써 위의 모든 경고를 읽고 이해했음을 인정합니다",
+    "cancel": "취소",
+    "confirm": "확인 및 사용자명 잠금",
+    "confirming": "확인 중..."
+  },
+  "emailPreferences": {
+    "title": "이메일 환경설정",
+    "description": "이메일 알림 설정을 관리하세요",
+    "taskCompletions": {
+      "title": "작업 완료 알림",
+      "description": "작업을 완료하고 포인트를 획득할 때 이메일을 받습니다"
+    },
+    "walletVerifications": {
+      "title": "지갑 인증 업데이트",
+      "description": "지갑 인증 상태 변경에 대한 알림을 받습니다"
+    },
+    "adminNotifications": {
+      "title": "중요한 계정 업데이트",
+      "description": "계정에 대한 중요한 알림을 받습니다"
+    },
+    "marketingEmails": {
+      "title": "마케팅 및 프로모션",
+      "description": "새로운 기능, 캠페인 및 특별 제안에 대한 업데이트를 받습니다"
+    },
+    "note": {
+      "title": "참고:",
+      "description": "중요한 보안 및 계정 관련 이메일은 환경설정과 관계없이 항상 전송됩니다."
+    },
+    "save": "환경설정 저장",
+    "saving": "저장 중...",
+    "saved": "환경설정이 성공적으로 저장되었습니다!"
+  }
+}

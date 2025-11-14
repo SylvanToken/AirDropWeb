@@ -1,0 +1,117 @@
+{
+  "title": "我的资料",
+  "subtitle": "查看和管理您的账户信息",
+  "error": "无法加载资料",
+  "accountInfo": {
+    "title": "账户信息",
+    "description": "您的基本账户详情",
+    "username": "用户名",
+    "email": "电子邮件地址",
+    "memberSince": "注册时间",
+    "totalPoints": "总积分"
+  },
+  "wallet": {
+    "title": "BEP-20 钱包",
+    "description": "您已验证的钱包地址用于接收奖励",
+    "verified": "已验证的钱包地址",
+    "notSet": "未设置钱包",
+    "notSetDescription": "请在钱包页面添加您的 BEP-20 钱包地址"
+  },
+  "socialMedia": {
+    "verified": "已验证的用户名",
+    "permanentNote": "此用户名已永久绑定到您的账户",
+    "usernameLabel": "用户名",
+    "usernameHelp": "输入您的用户名，不带 @ 符号",
+    "continue": "继续",
+    "processing": "处理中...",
+    "twitter": {
+      "description": "链接您的 X (Twitter) 账户以验证您的身份",
+      "verifiedDescription": "您的 X (Twitter) 账户已验证并链接",
+      "title": "Twitter",
+      "placeholder": "@用户名",
+      "verify": "验证 Twitter",
+      "verified": "已验证",
+      "notSet": "未设置"
+    },
+    "telegram": {
+      "description": "链接您的 Telegram 账户以验证您的身份",
+      "verifiedDescription": "您的 Telegram 账户已验证并链接",
+      "title": "Telegram",
+      "placeholder": "@用户名",
+      "verify": "验证 Telegram",
+      "verified": "已验证",
+      "notSet": "未设置"
+    },
+    "warning": {
+      "title": "重要：添加前请阅读",
+      "permanent": "确认后您的用户名将被永久锁定",
+      "cannotChange": "验证后您无法更改用户名",
+      "doubleCheck": "确认前请仔细检查您的用户名"
+    },
+    "info": {
+      "title": "用户名要求",
+      "withoutAt": "输入时不带 @ 符号",
+      "length": "必须为 3-30 个字符",
+      "characters": "只能包含字母、数字和下划线",
+      "example": "示例："
+    },
+    "errors": {
+      "required": "用户名是必需的",
+      "tooShort": "用户名至少需要 3 个字符",
+      "tooLong": "用户名不能超过 30 个字符",
+      "invalidFormat": "用户名只能包含字母、数字和下划线",
+      "unknown": "发生意外错误。请重试。"
+    },
+    "title": "社交媒体账户",
+    "description": "连接您的社交媒体账户以完成任务"
+  },
+  "confirmation": {
+    "title": "确认用户名",
+    "subtitle": "此操作无法撤销",
+    "usernameLabel": "您的用户名",
+    "critical": {
+      "title": "重要：请仔细阅读",
+      "permanent": "此用户名将永久锁定到您的账户",
+      "cannotChange": "确认后您无法更改或更新此用户名",
+      "verify": "确认前请验证用户名是否正确"
+    },
+    "acknowledgement": "确认即表示您已阅读并理解上述所有警告",
+    "cancel": "取消",
+    "confirm": "确认并锁定用户名",
+    "confirming": "确认中..."
+  },
+  "emailPreferences": {
+    "title": "电子邮件偏好设置",
+    "description": "管理您的电子邮件通知设置",
+    "taskCompletions": {
+      "title": "任务完成通知",
+      "description": "在您完成任务并获得积分时接收电子邮件"
+    },
+    "walletVerifications": {
+      "title": "钱包验证更新",
+      "description": "获取有关钱包验证状态变化的通知"
+    },
+    "adminNotifications": {
+      "title": "重要账户更新",
+      "description": "接收有关您账户的重要通知"
+    },
+    "marketingEmails": {
+      "title": "营销与促销",
+      "description": "获取有关新功能、活动和特别优惠的更新"
+    },
+    "note": {
+      "title": "注意：",
+      "description": "无论您的偏好设置如何，关键的安全和账户相关电子邮件将始终发送。"
+    },
+    "save": "保存偏好设置",
+    "saving": "保存中...",
+    "saved": "偏好设置保存成功！"
+  },
+  "referral": {
+    "title": "您的推荐代码",
+    "description": "与朋友分享您的代码",
+    "copyButton": "复制代码",
+    "copied": "已复制！",
+    "notGenerated": "推荐代码尚未生成"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "title": "Mi Perfil",
+  "subtitle": "Ver y gestionar la información de tu cuenta",
+  "error": "Error al cargar el perfil",
+  "accountInfo": {
+    "title": "Información de la Cuenta",
+    "description": "Tus detalles básicos de cuenta",
+    "username": "Nombre de Usuario",
+    "email": "Correo Electrónico",
+    "memberSince": "Miembro Desde",
+    "totalPoints": "Puntos Totales"
+  },
+  "wallet": {
+    "title": "Billetera BEP-20",
+    "description": "Tu dirección de billetera verificada para recibir recompensas",
+    "verified": "Dirección de Billetera Verificada",
+    "notSet": "Billetera No Configurada",
+    "notSetDescription": "Por favor, agrega tu dirección de billetera BEP-20 en la página de Billetera"
+  },
+  "socialMedia": {
+    "title": "Cuentas de Redes Sociales",
+    "description": "Conecta tus cuentas de redes sociales para completar tareas",
+    "verified": "Nombre de Usuario Verificado",
+    "permanentNote": "Este nombre de usuario está vinculado permanentemente a tu cuenta",
+    "usernameLabel": "Nombre de Usuario",
+    "usernameHelp": "Ingresa tu nombre de usuario sin el símbolo @",
+    "continue": "Continuar",
+    "processing": "Procesando...",
+    "twitter": {
+      "title": "Twitter",
+      "description": "Vincula tu cuenta de X (Twitter) para verificar tu identidad",
+      "verifiedDescription": "Tu cuenta de X (Twitter) está verificada y vinculada",
+      "placeholder": "@nombreusuario",
+      "verify": "Verificar Twitter",
+      "verified": "Verificado",
+      "notSet": "No Configurado"
+    },
+    "telegram": {
+      "title": "Telegram",
+      "description": "Vincula tu cuenta de Telegram para verificar tu identidad",
+      "verifiedDescription": "Tu cuenta de Telegram está verificada y vinculada",
+      "placeholder": "@nombreusuario",
+      "verify": "Verificar Telegram",
+      "verified": "Verificado",
+      "notSet": "No Configurado"
+    },
+    "warning": {
+      "title": "Importante: Lee Antes de Agregar",
+      "permanent": "Tu nombre de usuario se bloqueará permanentemente después de la confirmación",
+      "cannotChange": "No puedes cambiar tu nombre de usuario una vez verificado",
+      "doubleCheck": "Verifica dos veces tu nombre de usuario antes de confirmar"
+    },
+    "info": {
+      "title": "Requisitos del Nombre de Usuario",
+      "withoutAt": "Ingresa sin el símbolo @",
+      "length": "Debe tener entre 3 y 30 caracteres",
+      "characters": "Solo puede contener letras, números y guiones bajos",
+      "example": "Ejemplo:"
+    },
+    "errors": {
+      "required": "El nombre de usuario es obligatorio",
+      "tooShort": "El nombre de usuario debe tener al menos 3 caracteres",
+      "tooLong": "El nombre de usuario no puede exceder 30 caracteres",
+      "invalidFormat": "El nombre de usuario solo puede contener letras, números y guiones bajos",
+      "unknown": "Ocurrió un error inesperado. Por favor, inténtalo de nuevo."
+    }
+  },
+  "confirmation": {
+    "title": "Confirmar Nombre de Usuario",
+    "subtitle": "Esta acción no se puede deshacer",
+    "usernameLabel": "Tu Nombre de Usuario",
+    "critical": {
+      "title": "CRÍTICO: Por Favor Lee Cuidadosamente",
+      "permanent": "Este nombre de usuario se bloqueará PERMANENTEMENTE en tu cuenta",
+      "cannotChange": "NO PUEDES cambiar o actualizar este nombre de usuario después de la confirmación",
+      "verify": "Verifica que el nombre de usuario sea correcto antes de confirmar"
+    },
+    "acknowledgement": "Al confirmar, reconoces que has leído y comprendido todas las advertencias anteriores",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar y Bloquear Nombre de Usuario",
+    "confirming": "Confirmando..."
+  },
+  "emailPreferences": {
+    "title": "Preferencias de Correo Electrónico",
+    "description": "Gestiona la configuración de notificaciones por correo electrónico",
+    "taskCompletions": {
+      "title": "Notificaciones de Finalización de Tareas",
+      "description": "Recibe correos electrónicos cuando completes tareas y ganes puntos"
+    },
+    "walletVerifications": {
+      "title": "Actualizaciones de Verificación de Billetera",
+      "description": "Recibe notificaciones sobre cambios en el estado de verificación de tu billetera"
+    },
+    "adminNotifications": {
+      "title": "Actualizaciones Importantes de Cuenta",
+      "description": "Recibe notificaciones críticas sobre tu cuenta"
+    },
+    "marketingEmails": {
+      "title": "Marketing y Promociones",
+      "description": "Recibe actualizaciones sobre nuevas funciones, campañas y ofertas especiales"
+    },
+    "note": {
+      "title": "Nota:",
+      "description": "Los correos electrónicos críticos de seguridad y relacionados con la cuenta siempre se enviarán independientemente de tus preferencias."
+    },
+    "save": "Guardar Preferencias",
+    "saving": "Guardando...",
+    "saved": "¡Preferencias guardadas exitosamente!"
+  },
+  "referral": {
+    "title": "Tu Código de Referido",
+    "description": "Comparte tu código con amigos",
+    "copyButton": "Copiar Código",
+    "copied": "¡Copiado!",
+    "notGenerated": "Código de referido aún no generado"
+  }
+}

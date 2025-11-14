@@ -1,0 +1,688 @@
+{
+  "dashboard": {
+    "title": "Admin-Dashboard",
+    "welcome": "Willkommen zurück, {{username}}",
+    "stats": {
+      "totalUsers": "Gesamtbenutzer",
+      "totalUsersDesc": "Registrierte Plattformbenutzer",
+      "activeUsers": "Aktive Benutzer",
+      "activeUsersDesc": "Aktiv in den letzten 7 Tagen",
+      "totalCompletions": "Gesamtabschlüsse",
+      "totalCompletionsDesc": "Alle Aufgabenabschlüsse",
+      "totalPoints": "Gesamtpunkte",
+      "totalPointsDesc": "An Benutzer vergebene Punkte"
+    },
+    "authStatus": {
+      "title": "Authentifizierungsstatus",
+      "active": "Aktiv",
+      "description": "Als Administrator angemeldet"
+    },
+    "quickActions": {
+      "title": "Schnellaktionen",
+      "description": "Verwalten Sie Ihre Plattform effizient",
+      "manageTasks": "Aufgaben verwalten",
+      "manageTasksDesc": "Aufgaben erstellen und bearbeiten",
+      "viewUsers": "Benutzer anzeigen",
+      "viewUsersDesc": "Benutzerkonten verwalten",
+      "manageCampaigns": "Kampagnen verwalten",
+      "manageCampaignsDesc": "Kampagnen erstellen und verfolgen"
+    },
+    "sessionInfo": {
+      "title": "Sitzungsinformationen",
+      "description": "Ihre aktuelle Admin-Sitzung",
+      "email": "E-Mail:",
+      "role": "Rolle:",
+      "userId": "Benutzer-ID:"
+    },
+    "accessControl": {
+      "title": "Admin-Zugriffskontrolle",
+      "description": "Ihre Administratorrechte gewähren Ihnen Zugriff auf die folgenden Funktionen",
+      "features": {
+        "manageTasks": "Aufgaben erstellen, bearbeiten und löschen",
+        "viewUsers": "Alle Benutzerkonten und Statistiken anzeigen",
+        "viewHistory": "Auf Benutzer-Abschlussverlauf zugreifen",
+        "viewAnalytics": "Plattformanalysen und Metriken anzeigen"
+      }
+    },
+    "referralMetrics": {
+      "title": "[EN] Referral Program Metrics",
+      "description": "[EN] Track the performance of your referral task program",
+      "completions": "[EN] Referral Task Completions",
+      "completionsDesc": "[EN] Total successful referrals",
+      "points": "[EN] Points from Referrals",
+      "pointsDesc": "[EN] Points awarded through referrals",
+      "percentageOfTotal": "[EN] {{percentage}}% of total points"
+    }
+  },
+  "tasks": {
+    "title": "Aufgabenverwaltung",
+    "subtitle": "Erstellen und verwalten Sie Aufgaben für Benutzer",
+    "createButton": "Aufgabe erstellen",
+    "editTitle": "Aufgabe bearbeiten",
+    "createTitle": "Neue Aufgabe erstellen",
+    "empty": "Keine Aufgaben gefunden. Erstellen Sie Ihre erste Aufgabe, um zu beginnen.",
+    "active": "Aktiv",
+    "inactive": "Inaktiv",
+    "points": "Punkte",
+    "viewUrl": "URL anzeigen",
+    "completions": "Abschlüsse",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "resultsCount": "{{count}} von {{total}} Aufgaben werden angezeigt",
+    "deleteConfirm": "Sind Sie sicher, dass Sie diese Aufgabe löschen möchten?",
+    "deleteError": "Aufgabe konnte nicht gelöscht werden",
+    "filters": {
+      "all": "Alle Aufgaben",
+      "active": "Aktiv",
+      "inactive": "Inaktiv"
+    },
+    "form": {
+      "title": "Titel",
+      "titlePlaceholder": "Folgen Sie uns auf Twitter",
+      "description": "Beschreibung",
+      "descriptionPlaceholder": "Folgen Sie unserem offiziellen Twitter-Account, um auf dem Laufenden zu bleiben",
+      "points": "Punkte",
+      "pointsPlaceholder": "10",
+      "taskType": "Aufgabentyp",
+      "taskUrl": "Aufgaben-URL (Optional)",
+      "taskUrlPlaceholder": "https://twitter.com/sylvantoken",
+      "isActive": "Aktiv",
+      "submit": "Aufgabe erstellen",
+      "update": "Aufgabe aktualisieren",
+      "saving": "Wird gespeichert...",
+      "cancel": "Abbrechen",
+      "saveError": "Aufgabe konnte nicht gespeichert werden",
+      "types": {
+        "TWITTER_FOLLOW": "Twitter Folgen",
+        "TWITTER_LIKE": "Twitter Gefällt mir",
+        "TWITTER_RETWEET": "Twitter Retweet",
+        "TELEGRAM_JOIN": "Telegram Beitreten",
+        "CUSTOM": "Benutzerdefiniert",
+        "REFERRAL": "[EN] Referral Task"
+      },
+      "timeLimited": {
+        "enable": "[EN] Enable Time Limit",
+        "duration": "[EN] Duration (hours)",
+        "durationPlaceholder": "[EN] Enter duration in hours (1-24)",
+        "durationHelp": "[EN] Task duration must be between 1 and 24 hours",
+        "currentExpiration": "[EN] Current Expiration",
+        "newExpiration": "[EN] New expiration will be",
+        "willExpire": "[EN] Task will expire"
+      },
+      "referralTask": {
+        "title": "[EN] How Referral Tasks Work",
+        "description": "[EN] Referral tasks automatically reward users when their invited friends successfully register on the platform.",
+        "howItWorks": {
+          "step1": "[EN] Users claim the referral task and receive a PENDING status",
+          "step2": "[EN] Users share their unique referral code with friends",
+          "step3": "[EN] When a friend registers using the code, the task is automatically completed",
+          "step4": "[EN] Points are awarded immediately upon successful referral"
+        },
+        "tip": "[EN] Tip: Set attractive point rewards to encourage users to invite more friends and grow your platform!"
+      }
+    }
+  },
+  "users": {
+    "title": "Benutzerverwaltung",
+    "subtitle": "Alle registrierten Benutzer und ihre Aktivitäten anzeigen und verwalten",
+    "loading": "Wird geladen...",
+    "searchPlaceholder": "Nach E-Mail oder Benutzername suchen...",
+    "noUsers": "Keine Benutzer gefunden",
+    "export": "Exportieren",
+    "resultsCount": "{{count}} von {{total}} Benutzern werden angezeigt",
+    "filters": {
+      "title": "Filter",
+      "allUsers": "Alle Benutzer",
+      "users": "Nur Benutzer",
+      "admins": "Nur Administratoren"
+    },
+    "table": {
+      "username": "Benutzername",
+      "email": "E-Mail",
+      "points": "Punkte",
+      "completions": "Abschlüsse",
+      "registered": "Registriert",
+      "lastActive": "Zuletzt aktiv",
+      "actions": "Aktionen",
+      "view": "Anzeigen",
+      "admin": "Admin"
+    },
+    "pagination": {
+      "page": "Seite {{current}} von {{total}}",
+      "previous": "Zurück",
+      "next": "Weiter"
+    },
+    "detail": {
+      "back": "Zurück zu Benutzern",
+      "backShort": "Zurück",
+      "loading": "Benutzerdetails werden geladen...",
+      "notFound": "Benutzer nicht gefunden",
+      "admin": "Admin",
+      "stats": {
+        "totalPoints": "Gesamtpunkte",
+        "totalPointsDesc": "Angesammelte Punkte",
+        "completions": "Abschlüsse",
+        "completionsDesc": "Erledigte Aufgaben",
+        "streak": "Serie",
+        "streakDesc": "Aufeinanderfolgende Tage",
+        "memberSince": "Mitglied seit"
+      },
+      "accountInfo": {
+        "title": "Kontoinformationen",
+        "registrationDate": "Registrierungsdatum",
+        "lastActive": "Zuletzt aktiv"
+      },
+      "completionHistory": {
+        "title": "Abschlussverlauf",
+        "empty": "Noch keine Abschlüsse",
+        "table": {
+          "task": "Aufgabe",
+          "type": "Typ",
+          "points": "Punkte",
+          "completedAt": "Abgeschlossen am"
+        },
+        "pagination": "Seite {{current}} von {{total}} ({{count}} Abschlüsse insgesamt)"
+      }
+    }
+  },
+  "stats": {
+    "totalUsers": {
+      "title": "Gesamtbenutzer",
+      "description": "Alle registrierten Benutzer"
+    },
+    "activeUsers": {
+      "title": "Aktive Benutzer",
+      "description": "Aktiv in den letzten 7 Tagen"
+    },
+    "totalCompletions": {
+      "title": "Gesamtabschlüsse",
+      "description": "Alle Aufgabenabschlüsse"
+    },
+    "pointsAwarded": {
+      "title": "Vergebene Punkte",
+      "description": "Insgesamt verteilte Punkte"
+    }
+  },
+  "campaigns": {
+    "title": "Kampagnenverwaltung",
+    "loading": "Kampagnen werden geladen...",
+    "loadingDetails": "Kampagne wird geladen...",
+    "empty": "Keine Kampagnen gefunden"
+  },
+  "sidebar": {
+    "quickActions": "Schnellaktionen",
+    "createTask": "Aufgabe erstellen",
+    "viewUsers": "Benutzer anzeigen"
+  },
+  "verifications": {
+    "title": "Überprüfungs-Dashboard",
+    "loading": "Abschlüsse werden geladen...",
+    "empty": "Keine ausstehenden Überprüfungen"
+  },
+  "verification": {
+    "title": "Aufgabenüberprüfung",
+    "pending": "Ausstehend",
+    "approved": "Genehmigt",
+    "rejected": "Abgelehnt",
+    "needsReview": "Überprüfung erforderlich",
+    "approve": "Genehmigen",
+    "reject": "Ablehnen",
+    "fraudScore": "Betrugsbewertung",
+    "riskLevel": "Risikostufe",
+    "userInfo": "Benutzerinformationen",
+    "taskInfo": "Aufgabeninformationen",
+    "fraudAnalysis": "Betrugsanalyse",
+    "loading": "Abschlüsse werden geladen...",
+    "empty": "Keine ausstehenden Überprüfungen"
+  },
+  "bulkActions": {
+    "selectAll": "Alle auswählen",
+    "selectedCount": "{{count}} ausgewählt",
+    "bulkActions": "Massenaktionen",
+    "processing": "Verarbeitung...",
+    "assignPoints": "Punkte zuweisen",
+    "activate": "Benutzer aktivieren",
+    "block": "Benutzer blockieren",
+    "delete": "Benutzer löschen",
+    "export": "Ausgewählte exportieren",
+    "deleteDialog": {
+      "title": "Benutzer löschen",
+      "description": "Sind Sie sicher, dass Sie {{count}} Benutzer löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden und entfernt alle zugehörigen Daten.",
+      "cancel": "Abbrechen",
+      "confirm": "Benutzer löschen",
+      "deleting": "Löschen..."
+    },
+    "blockDialog": {
+      "title": "Benutzer blockieren",
+      "description": "Sind Sie sicher, dass Sie {{count}} Benutzer blockieren möchten? Blockierte Benutzer können nicht auf die Plattform zugreifen.",
+      "cancel": "Abbrechen",
+      "confirm": "Benutzer blockieren",
+      "blocking": "Blockieren..."
+    },
+    "pointsDialog": {
+      "title": "Punkte zuweisen",
+      "description": "Punkte an {{count}} ausgewählte Benutzer zuweisen.",
+      "label": "Zuzuweisende Punkte",
+      "hint": "Geben Sie eine positive Zahl ein, um Punkte hinzuzufügen, oder eine negative Zahl, um Punkte abzuziehen.",
+      "cancel": "Abbrechen",
+      "confirm": "Punkte zuweisen",
+      "assigning": "Zuweisen..."
+    },
+    "resultDialog": {
+      "successTitle": "Vorgang erfolgreich abgeschlossen",
+      "partialTitle": "Vorgang mit Fehlern abgeschlossen",
+      "successful": "Erfolgreich",
+      "failed": "Fehlgeschlagen",
+      "errors": "Fehler:",
+      "close": "Schließen"
+    }
+  },
+  "filters": {
+    "title": "Erweiterte Filter",
+    "addCriterion": "Filterkriterium hinzufügen",
+    "appliedFilters": "Angewendete Filter",
+    "clearAll": "Alle löschen",
+    "apply": "Filter anwenden",
+    "clear": "Löschen",
+    "loadPreset": "Voreinstellung laden",
+    "savePreset": "Voreinstellung speichern",
+    "presetName": "Voreinstellungsname",
+    "presetNamePlaceholder": "z.B., Aktive Benutzer mit hohen Punkten",
+    "savePresetDescription": "Speichern Sie Ihre aktuellen Filterkriterien für schnellen Zugriff",
+    "saving": "Speichern...",
+    "field": "Feld",
+    "operator": "Operator",
+    "value": "Wert",
+    "logic": {
+      "and": "UND",
+      "or": "ODER"
+    },
+    "operators": {
+      "equals": "Gleich",
+      "contains": "Enthält",
+      "gt": "Größer als",
+      "lt": "Kleiner als",
+      "between": "Zwischen",
+      "in": "In",
+      "onDate": "Am Datum",
+      "after": "Nach",
+      "before": "Vor"
+    },
+    "fields": {
+      "username": "Benutzername",
+      "email": "E-Mail",
+      "points": "Punkte",
+      "completions": "Abschlüsse",
+      "role": "Rolle",
+      "status": "Status",
+      "createdAt": "Registrierungsdatum",
+      "lastActive": "Zuletzt aktiv"
+    },
+    "placeholders": {
+      "enterValue": "Wert eingeben",
+      "selectValue": "Wert auswählen",
+      "min": "Min",
+      "max": "Max"
+    }
+  },
+  "export": {
+    "title": "Daten exportieren",
+    "description": "{{model}}-Daten in Ihrem bevorzugten Format exportieren",
+    "formatLabel": "Exportformat",
+    "fieldsLabel": "Zu exportierende Felder auswählen",
+    "selectAll": "Alle auswählen",
+    "deselectAll": "Alle abwählen",
+    "allFields": "Alle Felder",
+    "filtersApplied": "Filter angewendet",
+    "filtersCount": "{{count}} Filter werden auf den Export angewendet",
+    "cancel": "Abbrechen",
+    "export": "Exportieren",
+    "exporting": "Exportiere...",
+    "formats": {
+      "csvDesc": "Kommagetrennte Werte",
+      "excelDesc": "Microsoft Excel-Format",
+      "jsonDesc": "JavaScript Object Notation"
+    },
+    "models": {
+      "users": "Benutzer",
+      "tasks": "Aufgaben",
+      "completions": "Abschlüsse",
+      "campaigns": "Kampagnen"
+    },
+    "status": {
+      "successTitle": "Export erfolgreich",
+      "success": "Ihre Datei wurde erfolgreich heruntergeladen.",
+      "errorTitle": "Export fehlgeschlagen",
+      "asyncTitle": "Export in Warteschlange",
+      "asyncExport": "Ihr Export wird verarbeitet. Sie erhalten in Kürze eine E-Mail mit dem Download-Link."
+    },
+    "errors": {
+      "noFields": "Bitte wählen Sie mindestens ein Feld zum Exportieren aus",
+      "failed": "Export fehlgeschlagen. Bitte versuchen Sie es erneut."
+    }
+  },
+  "analytics": {
+    "title": "Analyse-Dashboard",
+    "subtitle": "Plattform-Leistungsmetriken und Einblicke",
+    "refresh": "Aktualisieren",
+    "exportPdf": "Als PDF exportieren",
+    "dateRange": {
+      "title": "Datumsbereich",
+      "description": "Wählen Sie einen Zeitraum zur Anzeige der Analysen",
+      "last7Days": "Letzte 7 Tage",
+      "last30Days": "Letzte 30 Tage",
+      "last90Days": "Letzte 90 Tage",
+      "lastYear": "Letztes Jahr",
+      "showing": "Daten von {{start}} bis {{end}} werden angezeigt"
+    },
+    "metrics": {
+      "totalUsers": "Gesamtbenutzer",
+      "totalUsersDesc": "Alle registrierten Benutzer",
+      "activeUsers": "Aktive Benutzer",
+      "activeUsersDesc": "Aktiv in den letzten 7 Tagen",
+      "totalCompletions": "Gesamtabschlüsse",
+      "totalCompletionsDesc": "Alle Aufgabenabschlüsse",
+      "totalPoints": "Gesamtpunkte",
+      "totalPointsDesc": "Durchschn.: {{avg}} pro Benutzer"
+    },
+    "charts": {
+      "userGrowth": "Benutzerwachstum",
+      "userGrowthDesc": "Tägliche Neuregistrierungen",
+      "completionTrends": "Abschlusstrends",
+      "completionTrendsDesc": "Tägliche Aufgabenabschlüsse",
+      "topTasks": "Top-Aufgaben nach Abschlüssen",
+      "topTasksDesc": "Beliebteste Aufgaben auf der Plattform",
+      "userActivity": "Benutzeraktivitätsverteilung",
+      "userActivityDesc": "Aktive vs. inaktive Benutzer",
+      "todayActivity": "Heutige Aktivität",
+      "todayActivityDesc": "Neue Benutzer und Abschlüsse heute",
+      "noData": "Keine Daten verfügbar"
+    },
+    "labels": {
+      "activeUsers": "Aktive Benutzer",
+      "inactiveUsers": "Inaktive Benutzer",
+      "newUsers": "Neue Benutzer",
+      "completions": "Abschlüsse"
+    }
+  },
+  "audit": {
+    "pageTitle": "Audit-Protokoll - Admin",
+    "pageDescription": "Verfolgen Sie alle administrativen Aktionen und Systemereignisse",
+    "heading": "Audit-Protokoll",
+    "subheading": "Vollständige Historie aller Admin-Aktionen für Rechenschaftspflicht und Sicherheit",
+    "title": "Audit-Protokoll",
+    "subtitle": "Verfolgen Sie alle administrativen Aktionen und Systemereignisse",
+    "description": "Vollständige Historie aller Admin-Aktionen für Rechenschaftspflicht und Sicherheit",
+    "loading": "Audit-Protokolle werden geladen...",
+    "noLogs": "Keine Audit-Protokolle gefunden",
+    "export": "Exportieren",
+    "searchPlaceholder": "Nach Aktion, Admin oder Datensatz-ID suchen...",
+    "filtersActive": "Filter aktiv",
+    "clearFilters": "Filter löschen",
+    "viewDetails": "Anzeigen",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "page": "Seite {{current}} von {{total}}",
+    "resultsCount": "Zeige {{start}}-{{end}} von {{total}} Protokollen",
+    "filters": {
+      "allEvents": "Alle Ereignisse",
+      "securityOnly": "Nur Sicherheitsereignisse",
+      "action": "Aktion",
+      "actionPlaceholder": "z.B. user_delete",
+      "model": "Modell",
+      "modelPlaceholder": "z.B. User",
+      "startDate": "Startdatum",
+      "endDate": "Enddatum"
+    },
+    "table": {
+      "timestamp": "Zeitstempel",
+      "action": "Aktion",
+      "admin": "Administrator",
+      "model": "Modell",
+      "recordId": "Datensatz-ID",
+      "ipAddress": "IP-Adresse",
+      "details": "Details"
+    },
+    "detailsDialog": {
+      "title": "Audit-Protokoll Details",
+      "securityEvent": "Sicherheitsrelevantes Ereignis",
+      "action": "Aktion",
+      "admin": "Admin-Benutzer",
+      "model": "Betroffenes Modell",
+      "recordId": "Datensatz-ID",
+      "ipAddress": "IP-Adresse",
+      "userAgent": "User-Agent",
+      "dataChanges": "Datenänderungen",
+      "before": "Vorher",
+      "after": "Nachher"
+    }
+  },
+  "roles": {
+    "title": "Rollenverwaltung",
+    "subtitle": "Rollen und Berechtigungen für Admin-Benutzer verwalten",
+    "loading": "Rollen werden geladen...",
+    "empty": "Keine Rollen gefunden. Erstellen Sie Ihre erste Rolle, um zu beginnen.",
+    "createButton": "Rolle erstellen",
+    "createTitle": "Neue Rolle erstellen",
+    "createDescription": "Definieren Sie eine neue Rolle mit spezifischen Berechtigungen",
+    "editTitle": "Rolle bearbeiten",
+    "editDescription": "Rollenname und Berechtigungen aktualisieren",
+    "assignTitle": "{{role}} Rolle zuweisen",
+    "assignDescription": "Wählen Sie Benutzer aus, um diese Rolle zuzuweisen",
+    "permissions": "Berechtigungen",
+    "more": "mehr",
+    "assignUsers": "Benutzer zuweisen",
+    "deleteError": "Rolle konnte nicht gelöscht werden",
+    "stats": {
+      "totalRoles": "Gesamtrollen",
+      "assignedUsers": "Zugewiesene Benutzer"
+    },
+    "list": {
+      "title": "Rollen",
+      "description": "Rollen und ihre Berechtigungen verwalten"
+    },
+    "form": {
+      "name": "Rollenname",
+      "namePlaceholder": "z.B. Content Manager",
+      "permissions": "Berechtigungen",
+      "nameRequired": "Rollenname ist erforderlich",
+      "permissionsRequired": "Mindestens eine Berechtigung ist erforderlich",
+      "saveError": "Rolle konnte nicht gespeichert werden",
+      "saving": "Wird gespeichert...",
+      "create": "Rolle erstellen",
+      "update": "Rolle aktualisieren",
+      "cancel": "Abbrechen"
+    },
+    "assign": {
+      "loading": "Benutzer werden geladen...",
+      "searchPlaceholder": "Nach Benutzername oder E-Mail suchen...",
+      "noUsers": "Keine Benutzer gefunden",
+      "noResults": "Keine Benutzer entsprechen Ihrer Suche",
+      "assigned": "Zugewiesen",
+      "assign": "Zuweisen",
+      "assigning": "Wird zugewiesen...",
+      "remove": "Entfernen",
+      "removing": "Wird entfernt...",
+      "assignError": "Rolle konnte nicht zugewiesen werden",
+      "removeError": "Rolle konnte nicht entfernt werden",
+      "summary": "{{assigned}} von {{total}} Benutzern haben diese Rolle",
+      "close": "Schließen"
+    },
+    "deleteDialog": {
+      "title": "Rolle löschen",
+      "description": "Sind Sie sicher, dass Sie die Rolle \"{{role}}\" löschen möchten? Benutzer mit dieser Rolle verlieren ihre Berechtigungen.",
+      "cancel": "Abbrechen",
+      "confirm": "Rolle löschen"
+    }
+  },
+  "emails": {
+    "title": "E-Mail-Analytik",
+    "subtitle": "E-Mail-Zustellung und Engagement-Metriken überwachen",
+    "loading": "E-Mail-Analytik wird geladen...",
+    "dateRange": {
+      "title": "Datumsbereichsfilter",
+      "startDate": "Startdatum",
+      "endDate": "Enddatum",
+      "apply": "Filter anwenden",
+      "reset": "Zurücksetzen"
+    },
+    "overview": {
+      "totalSent": "Gesendete E-Mails insgesamt",
+      "deliveryRate": "Zustellrate",
+      "delivered": "zugestellt",
+      "openRate": "Öffnungsrate",
+      "opened": "geöffnet",
+      "clickRate": "Klickrate",
+      "clicked": "geklickt",
+      "bounceRate": "Bounce-Rate",
+      "bounced": "zurückgewiesen",
+      "failureRate": "Fehlerrate",
+      "failed": "fehlgeschlagen"
+    },
+    "bounceBreakdown": {
+      "title": "Bounce-Aufschlüsselung",
+      "hard": "Hard Bounces",
+      "soft": "Soft Bounces",
+      "spam": "Spam-Meldungen",
+      "other": "Andere"
+    },
+    "templatePerformance": {
+      "title": "E-Mail-Leistung nach Vorlage",
+      "noData": "Keine E-Mail-Daten verfügbar",
+      "sent": "gesendet",
+      "delivery": "Zustellung",
+      "open": "Öffnung",
+      "click": "Klick"
+    },
+    "recentFailures": {
+      "title": "Kürzlich fehlgeschlagene E-Mails",
+      "to": "An:",
+      "template": "Vorlage:"
+    }
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten",
+    "retry": "Erneut versuchen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "create": "Erstellen",
+    "back": "Zurück"
+  },
+  "errorReports": {
+    "title": "[EN] Error Reports",
+    "subtitle": "[EN] Monitor and manage user-reported errors",
+    "viewDetails": "[EN] View Details",
+    "delete": "[EN] Delete",
+    "deleteConfirm": "[EN] Are you sure?",
+    "deleteDescription": "[EN] This action cannot be undone. This will permanently delete the error report and all associated data (tags, comments, etc.).",
+    "deletePermanently": "[EN] Delete Permanently",
+    "deleting": "[EN] Deleting...",
+    "deleted": "[EN] Deleted Successfully",
+    "deletedMessage": "[EN] Error report has been permanently deleted",
+    "updated": "[EN] Updated Successfully",
+    "updatedMessage": "[EN] Error report has been updated",
+    "analytics": {
+      "totalReports": "[EN] Total Reports",
+      "pending": "[EN] Pending",
+      "resolved": "[EN] Resolved",
+      "avgResponse": "[EN] Avg Response",
+      "avgResolution": "[EN] Avg Resolution",
+      "byPriority": "[EN] By Priority",
+      "byType": "[EN] By Type",
+      "byStatus": "[EN] By Status",
+      "trend": "[EN] 7-Day Trend",
+      "topTags": "[EN] Most Common Tags",
+      "noData": "[EN] No data available"
+    },
+    "tags": {
+      "title": "[EN] Tags",
+      "add": "[EN] Add",
+      "addPlaceholder": "[EN] Add a tag (e.g., bug, ui, performance)",
+      "suggestions": "[EN] Suggestions:",
+      "tagAdded": "[EN] Tag added",
+      "tagAddedMessage": "[EN] Tag has been added successfully",
+      "tagRemoved": "[EN] Tag removed",
+      "tagRemovedMessage": "[EN] Tag has been removed",
+      "tagExists": "[EN] Tag already exists",
+      "tagExistsMessage": "[EN] This tag is already added to this report",
+      "failed": "[EN] Failed to add tag",
+      "failedMessage": "[EN] An error occurred while adding the tag"
+    },
+    "comments": {
+      "title": "[EN] Comments",
+      "count": "[EN] {{count}} comments",
+      "add": "[EN] Comment",
+      "addPlaceholder": "[EN] Add a comment... (Ctrl+Enter to submit)",
+      "internal": "[EN] Internal note",
+      "public": "[EN] Public comment",
+      "noComments": "[EN] No comments yet",
+      "beFirst": "[EN] Be the first to comment on this error report",
+      "commentAdded": "[EN] Comment added",
+      "commentAddedMessage": "[EN] Your comment has been added successfully",
+      "internalNote": "[EN] Internal notes are only visible to admins. Public comments may be shared with the user.",
+      "failed": "[EN] Failed to add comment",
+      "failedMessage": "[EN] An error occurred while adding the comment"
+    },
+    "detail": {
+      "title": "[EN] Title",
+      "reportedBy": "[EN] Reported By",
+      "anonymous": "[EN] Anonymous",
+      "errorType": "[EN] Error Type",
+      "description": "[EN] Description",
+      "stackTrace": "[EN] Stack Trace",
+      "pageUrl": "[EN] Page URL",
+      "userAgent": "[EN] User Agent",
+      "createdAt": "[EN] Created At",
+      "tabs": {
+        "update": "[EN] Update",
+        "tags": "[EN] Tags",
+        "comments": "[EN] Comments"
+      },
+      "update": {
+        "title": "[EN] Update Status",
+        "status": "[EN] Status",
+        "priority": "[EN] Priority",
+        "resolution": "[EN] Resolution Notes",
+        "resolutionPlaceholder": "[EN] Add resolution notes...",
+        "cancel": "[EN] Cancel",
+        "update": "[EN] Update Report",
+        "updating": "[EN] Updating..."
+      }
+    },
+    "status": {
+      "PENDING": "[EN] Pending",
+      "IN_PROGRESS": "[EN] In Progress",
+      "RESOLVED": "[EN] Resolved",
+      "CLOSED": "[EN] Closed"
+    },
+    "priority": {
+      "LOW": "[EN] Low",
+      "MEDIUM": "[EN] Medium",
+      "HIGH": "[EN] High",
+      "CRITICAL": "[EN] Critical"
+    },
+    "filters": {
+      "allStatus": "[EN] All Status",
+      "allPriority": "[EN] All Priority",
+      "apply": "[EN] Apply Filters"
+    },
+    "table": {
+      "priority": "[EN] Priority",
+      "type": "[EN] Type",
+      "title": "[EN] Title",
+      "user": "[EN] User",
+      "status": "[EN] Status",
+      "created": "[EN] Created",
+      "actions": "[EN] Actions",
+      "noReports": "[EN] No error reports found"
+    },
+    "pagination": {
+      "page": "[EN] Page {{current}} of {{total}}",
+      "previous": "[EN] Previous",
+      "next": "[EN] Next"
+    }
+  }
+}

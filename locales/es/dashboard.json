@@ -1,0 +1,64 @@
+{
+  "title": "¡Bienvenido de nuevo, {username}!",
+  "subtitle": "Rastrea tu progreso y compite con otros miembros de la comunidad",
+  "loading": "Cargando panel...",
+  "hero": {
+    "title": "¡Bienvenido de nuevo, {username}!",
+    "subtitle": "Rastrea tu progreso y compite con otros miembros de la comunidad",
+    "stats": {
+      "points": "Puntos Totales",
+      "tasks": "Tareas Completadas",
+      "rank": "Tu Clasificación",
+      "streak": "Racha de Días"
+    }
+  },
+  "error": {
+    "title": "Error",
+    "retry": "Reintentar"
+  },
+  "stats": {
+    "totalPoints": {
+      "title": "Puntos Totales",
+      "description": "¡Sigue completando tareas para ganar más!"
+    },
+    "rank": {
+      "title": "Tu Clasificación",
+      "description": "De todos los participantes"
+    },
+    "streak": {
+      "title": "Racha Actual",
+      "day": "día",
+      "days": "días",
+      "description": "seguidos"
+    },
+    "completions": {
+      "title": "Tareas Completadas",
+      "description": "Finalizaciones totales"
+    }
+  },
+  "recentCompletions": {
+    "title": "Finalizaciones Recientes",
+    "subtitle": "Tus últimas tareas completadas",
+    "empty": "Aún no hay tareas completadas",
+    "emptyDescription": "¡Comienza a completar tareas para verlas aquí!",
+    "points": "pts"
+  },
+  "leaderboard": {
+    "title": "Clasificación",
+    "subtitle": "Los 10 mejores miembros de la comunidad",
+    "you": "(Tú)",
+    "task": "tarea",
+    "tasks": "tareas",
+    "points": "puntos"
+  },
+  "threshold": {
+    "below": "Necesitas recolectar 1500 puntos para ser elegible para recompensas",
+    "above": "¡Felicidades! Has superado el umbral",
+    "progress": "Puntos"
+  },
+  "pointThreshold": {
+    "belowThreshold": "Necesitas recolectar 1500 puntos para ser elegible para recompensas",
+    "aboveThreshold": "¡Felicidades! Has superado el umbral",
+    "pointsOf": "puntos"
+  }
+}

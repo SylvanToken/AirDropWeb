@@ -1,0 +1,22 @@
+{
+  "name": "Sylvan Token Airdrop Platform",
+  "short_name": "Sylvan Token",
+  "description": "Complete tasks, earn points, and participate in the Sylvan Token airdrop",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5faf7",
+  "theme_color": "#4ade80",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["finance", "productivity"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}

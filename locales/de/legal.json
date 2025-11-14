@@ -1,0 +1,179 @@
+{
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Letzte Aktualisierung: 9. November 2025",
+    "scrollToAccept": "Scrollen Sie nach unten, um zu akzeptieren",
+    "cancel": "Abbrechen",
+    "accept": "Ich akzeptiere",
+    "close": "Schließen",
+    "section1": {
+      "title": "1. Annahme der Bedingungen",
+      "content": "Durch den Zugriff auf und die Nutzung der Sylvan Token Airdrop-Plattform akzeptieren Sie die Bedingungen dieser Vereinbarung und stimmen ihnen zu. Wenn Sie diesen Nutzungsbedingungen nicht zustimmen, nutzen Sie die Plattform bitte nicht."
+    },
+    "section2": {
+      "title": "2. Berechtigung",
+      "content": "Sie müssen mindestens 18 Jahre alt sein, um diese Plattform zu nutzen. Durch die Nutzung der Plattform erklären und garantieren Sie, dass Sie diese Altersanforderung erfüllen und die rechtliche Befähigung haben, diese Bedingungen einzugehen."
+    },
+    "section3": {
+      "title": "3. Kontoregistrierung",
+      "intro": "Um am Airdrop-Programm teilzunehmen, müssen Sie ein Konto erstellen. Sie stimmen zu:",
+      "item1": "Bei der Registrierung genaue, aktuelle und vollständige Informationen anzugeben",
+      "item2": "Ihre Kontoinformationen zu pflegen und umgehend zu aktualisieren",
+      "item3": "Die Sicherheit Ihres Passworts und Kontos zu gewährleisten",
+      "item4": "Die Verantwortung für alle Aktivitäten zu übernehmen, die unter Ihrem Konto stattfinden",
+      "item5": "Uns unverzüglich über jede unbefugte Nutzung Ihres Kontos zu informieren"
+    },
+    "section4": {
+      "title": "4. Aufgabenerfüllung und Belohnungen",
+      "intro": "Die Plattform ermöglicht es Ihnen, verschiedene Aufgaben zu erledigen, um Punkte zu verdienen:",
+      "item1": "Aufgaben müssen echt und gemäß den Anforderungen erledigt werden",
+      "item2": "Punkte werden nach erfolgreicher Überprüfung der Aufgabenerfüllung vergeben",
+      "item3": "Wir behalten uns das Recht vor, die Aufgabenerfüllung zu überprüfen und Punkte bei betrügerischen Aktivitäten zu widerrufen",
+      "item4": "Die Token-Verteilung unterliegt den Kampagnenregeln und kann sich ohne Vorankündigung ändern",
+      "item5": "Wir garantieren keinen bestimmten Wert oder Nutzen der verteilten Token"
+    },
+    "section5": {
+      "title": "5. Verbotene Aktivitäten",
+      "intro": "Sie stimmen zu, sich nicht an folgenden verbotenen Aktivitäten zu beteiligen:",
+      "item1": "Erstellen mehrerer Konten oder Verwendung automatisierter Systeme (Bots)",
+      "item2": "Bereitstellung falscher Informationen oder Identitätsdiebstahl",
+      "item3": "Versuch, das Punktesystem zu manipulieren oder auszunutzen",
+      "item4": "Beteiligung an betrügerischer Aufgabenerfüllung",
+      "item5": "Verstoß gegen geltende Gesetze oder Vorschriften",
+      "item6": "Beeinträchtigung des Betriebs oder der Sicherheit der Plattform"
+    },
+    "section6": {
+      "title": "6. Wallet- und Social-Media-Verifizierung",
+      "intro": "Um Token zu erhalten, müssen Sie Ihre Wallet-Adresse verifizieren und Social-Media-Verifizierungen abschließen:",
+      "item1": "Wallet-Adressen und Social-Media-Konten werden nach der Verifizierung dauerhaft gesperrt",
+      "item2": "Sie sind dafür verantwortlich, die Richtigkeit Ihrer Wallet-Adresse sicherzustellen",
+      "item3": "Wir sind nicht verantwortlich für Token, die an falsche Adressen gesendet werden",
+      "item4": "Social-Media-Konten müssen echt sein und Ihnen gehören"
+    },
+    "section7": {
+      "title": "7. Geistiges Eigentum",
+      "content": "Alle Inhalte auf der Plattform, einschließlich Text, Grafiken, Logos und Software, sind Eigentum von Sylvan Token und durch Gesetze zum Schutz des geistigen Eigentums geschützt."
+    },
+    "section8": {
+      "title": "8. Haftungsausschluss",
+      "content": "DIE PLATTFORM WIRD 'WIE BESEHEN' UND 'WIE VERFÜGBAR' OHNE JEGLICHE AUSDRÜCKLICHE ODER STILLSCHWEIGENDE GARANTIEN BEREITGESTELLT."
+    },
+    "section9": {
+      "title": "9. Haftungsbeschränkung",
+      "content": "IM MAXIMAL GESETZLICH ZULÄSSIGEN UMFANG HAFTET SYLVAN TOKEN NICHT FÜR INDIREKTE, ZUFÄLLIGE, BESONDERE, FOLGE- ODER STRAFSCHÄDEN."
+    },
+    "section10": {
+      "title": "10. Änderungen der Bedingungen",
+      "content": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Ihre fortgesetzte Nutzung der Plattform nach solchen Änderungen stellt Ihre Zustimmung zu den aktualisierten Bedingungen dar."
+    },
+    "section11": {
+      "title": "11. Kündigung",
+      "content": "Wir behalten uns das Recht vor, Ihr Konto jederzeit mit oder ohne Vorankündigung aus beliebigem Grund, einschließlich Verstoß gegen diese Bedingungen, auszusetzen oder zu kündigen."
+    },
+    "section12": {
+      "title": "12. Kontaktinformationen",
+      "content": "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte über unsere offiziellen Social-Media-Kanäle."
+    }
+  },
+  "privacy": {
+    "title": "Datenschutzrichtlinie",
+    "lastUpdated": "Letzte Aktualisierung: 9. November 2025",
+    "scrollToAccept": "Scrollen Sie nach unten, um zu akzeptieren",
+    "cancel": "Abbrechen",
+    "accept": "Ich akzeptiere",
+    "close": "Schließen",
+    "section1": {
+      "title": "1. Einleitung",
+      "content": "Sylvan Token verpflichtet sich zum Schutz Ihrer Privatsphäre. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Airdrop-Plattform nutzen."
+    },
+    "section2": {
+      "title": "2. Informationen, die wir sammeln",
+      "subtitle1": "2.1 Persönliche Informationen",
+      "intro1": "Wir sammeln Informationen, die Sie uns direkt zur Verfügung stellen:",
+      "item1": "E-Mail-Adresse",
+      "item2": "Benutzername",
+      "item3": "Passwort (verschlüsselt)",
+      "item4": "Wallet-Adresse",
+      "item5": "Social-Media-Benutzernamen (Twitter, Telegram)",
+      "subtitle2": "2.2 Automatisch gesammelte Informationen",
+      "intro2": "Wenn Sie auf die Plattform zugreifen, sammeln wir automatisch:",
+      "item6": "IP-Adresse",
+      "item7": "Browsertyp und -version",
+      "item8": "Geräteinformationen",
+      "item9": "Anmeldezeitstempel",
+      "item10": "Aufgabenerfüllungsdaten"
+    },
+    "section3": {
+      "title": "3. Wie wir Ihre Informationen verwenden",
+      "intro": "Wir verwenden die gesammelten Informationen für folgende Zwecke:",
+      "item1": "Zur Erstellung und Verwaltung Ihres Kontos",
+      "item2": "Zur Verarbeitung von Aufgabenerfüllungen und Vergabe von Punkten",
+      "item3": "Zur Verteilung von Token an verifizierte Wallet-Adressen",
+      "item4": "Zur Überprüfung des Social-Media-Kontobesitzes",
+      "item5": "Zur Betrugsprävention und Gewährleistung der Plattformsicherheit",
+      "item6": "Zur Kommunikation wichtiger Updates über die Plattform",
+      "item7": "Zur Verbesserung unserer Dienste und Benutzererfahrung",
+      "item8": "Zur Erfüllung gesetzlicher Verpflichtungen"
+    },
+    "section4": {
+      "title": "4. Informationsweitergabe und Offenlegung",
+      "intro": "Wir verkaufen Ihre persönlichen Informationen nicht. Wir können Ihre Informationen unter folgenden Umständen weitergeben:",
+      "item1": "Öffentliche Rangliste: Ihr Benutzername und Ihre Punkte können öffentlich angezeigt werden",
+      "item2": "Dienstleister: Wir können Informationen mit Drittanbietern teilen",
+      "item3": "Gesetzliche Anforderungen: Wir können Informationen offenlegen, wenn dies gesetzlich vorgeschrieben ist",
+      "item4": "Geschäftsübertragungen: Informationen können im Zusammenhang mit einer Fusion oder Übernahme übertragen werden"
+    },
+    "section5": {
+      "title": "5. Datensicherheit",
+      "intro": "Wir implementieren angemessene technische und organisatorische Maßnahmen zum Schutz Ihrer persönlichen Informationen:",
+      "item1": "Passwortverschlüsselung mit branchenüblichen Algorithmen",
+      "item2": "Sichere Datenbankspeicherung",
+      "item3": "Regelmäßige Sicherheitsaudits",
+      "item4": "Zugriffskontrollen und Authentifizierung",
+      "note": "Keine Übertragungsmethode über das Internet ist jedoch zu 100% sicher."
+    },
+    "section6": {
+      "title": "6. Datenspeicherung",
+      "content": "Wir speichern Ihre persönlichen Informationen so lange, wie es zur Erfüllung der in dieser Datenschutzrichtlinie dargelegten Zwecke erforderlich ist, es sei denn, eine längere Aufbewahrungsfrist ist gesetzlich vorgeschrieben."
+    },
+    "section7": {
+      "title": "7. Ihre Rechte",
+      "intro": "Abhängig von Ihrem Standort haben Sie möglicherweise bestimmte Rechte in Bezug auf Ihre persönlichen Informationen:",
+      "item1Title": "Zugriff",
+      "item1": "Zugriff auf Ihre persönlichen Informationen anfordern",
+      "item2Title": "Korrektur",
+      "item2": "Korrektur ungenauer Informationen anfordern",
+      "item3Title": "Löschung",
+      "item3": "Löschung Ihres Kontos und Ihrer Daten anfordern",
+      "item4Title": "Widerspruch",
+      "item4": "Widerspruch gegen bestimmte Verarbeitungen Ihrer Informationen einlegen",
+      "item5Title": "Datenübertragbarkeit",
+      "item5": "Eine Kopie Ihrer Daten in einem übertragbaren Format anfordern",
+      "note": "Hinweis: Bestimmte Informationen (Wallet-Adressen, verifizierte Social-Media-Konten) können nach der Verifizierung nicht geändert werden."
+    },
+    "section8": {
+      "title": "8. Cookies und Tracking",
+      "content": "Wir verwenden Cookies und ähnliche Tracking-Technologien, um Ihre Erfahrung auf der Plattform zu verbessern. Sie können Cookies über Ihre Browsereinstellungen steuern."
+    },
+    "section9": {
+      "title": "9. Links zu Drittanbietern",
+      "content": "Die Plattform kann Links zu Websites oder Diensten von Drittanbietern enthalten. Wir sind nicht verantwortlich für die Datenschutzpraktiken dieser Drittanbieter."
+    },
+    "section10": {
+      "title": "10. Datenschutz von Kindern",
+      "content": "Die Plattform ist nicht für Benutzer unter 18 Jahren bestimmt. Wir sammeln wissentlich keine persönlichen Informationen von Kindern."
+    },
+    "section11": {
+      "title": "11. Internationale Datenübertragungen",
+      "content": "Ihre Informationen können in andere Länder als Ihr Wohnsitzland übertragen und dort verarbeitet werden. Durch die Nutzung der Plattform stimmen Sie solchen Übertragungen zu."
+    },
+    "section12": {
+      "title": "12. Änderungen dieser Datenschutzrichtlinie",
+      "content": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Ihre fortgesetzte Nutzung der Plattform nach solchen Änderungen stellt Ihre Zustimmung zur aktualisierten Datenschutzrichtlinie dar."
+    },
+    "section13": {
+      "title": "13. Kontaktieren Sie uns",
+      "content": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns bitte über unsere offiziellen Social-Media-Kanäle."
+    }
+  }
+}

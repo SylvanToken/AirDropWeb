@@ -1,0 +1,64 @@
+{
+  "title": "{username}님, 다시 오신 것을 환영합니다!",
+  "subtitle": "진행 상황을 추적하고 다른 커뮤니티 회원들과 경쟁하세요",
+  "loading": "대시보드 로딩 중...",
+  "hero": {
+    "title": "{username}님, 다시 오신 것을 환영합니다!",
+    "subtitle": "진행 상황을 추적하고 다른 커뮤니티 회원들과 경쟁하세요",
+    "stats": {
+      "points": "총 포인트",
+      "tasks": "완료된 작업",
+      "rank": "내 순위",
+      "streak": "연속 일수"
+    }
+  },
+  "error": {
+    "title": "오류",
+    "retry": "다시 시도"
+  },
+  "stats": {
+    "totalPoints": {
+      "title": "총 포인트",
+      "description": "더 많이 획득하려면 작업을 계속 완료하세요!"
+    },
+    "rank": {
+      "title": "내 순위",
+      "description": "전체 참가자 중"
+    },
+    "streak": {
+      "title": "현재 연속 기록",
+      "day": "일",
+      "days": "일",
+      "description": "연속"
+    },
+    "completions": {
+      "title": "완료된 작업",
+      "description": "총 완료 수"
+    }
+  },
+  "recentCompletions": {
+    "title": "최근 완료",
+    "subtitle": "최근 완료한 작업",
+    "empty": "아직 완료된 작업이 없습니다",
+    "emptyDescription": "작업을 완료하여 여기에서 확인하세요!",
+    "points": "포인트"
+  },
+  "leaderboard": {
+    "title": "리더보드",
+    "subtitle": "상위 10명의 커뮤니티 회원",
+    "you": "(나)",
+    "task": "작업",
+    "tasks": "작업",
+    "points": "포인트"
+  },
+  "threshold": {
+    "below": "보상을 받으려면 1500 포인트를 수집해야 합니다",
+    "above": "축하합니다! 기준점을 통과했습니다",
+    "progress": "포인트"
+  },
+  "pointThreshold": {
+    "belowThreshold": "보상을 받으려면 1500 포인트를 수집해야 합니다",
+    "aboveThreshold": "축하합니다! 기준점을 통과했습니다",
+    "pointsOf": "포인트"
+  }
+}

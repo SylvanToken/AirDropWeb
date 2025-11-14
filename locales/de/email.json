@@ -1,0 +1,56 @@
+{
+  "unsubscribe": {
+    "loading": {
+      "title": "Ihre Anfrage wird bearbeitet",
+      "description": "Bitte warten Sie, während wir Ihre E-Mail-Einstellungen aktualisieren..."
+    },
+    "success": {
+      "title": "Erfolgreich abgemeldet",
+      "descriptionAll": "Sie wurden von allen nicht wesentlichen E-Mails abgemeldet. Sie erhalten weiterhin wichtige Konto- und Sicherheitsbenachrichtigungen.",
+      "descriptionType": "Sie wurden von {{type}}-E-Mails abgemeldet.",
+      "note": "Sie erhalten weiterhin wichtige Transaktions-E-Mails wie Wallet-Verifizierung und Sicherheitswarnungen.",
+      "whatNext": "Was passiert als Nächstes?",
+      "step1": "Sie erhalten die ausgewählten E-Mail-Typen nicht mehr",
+      "step2": "Sie können sich jederzeit über Ihre Profileinstellungen erneut anmelden",
+      "step3": "Wichtige Kontobenachrichtigungen werden weiterhin gesendet"
+    },
+    "error": {
+      "title": "Abmeldung fehlgeschlagen",
+      "help": "Wenn Sie weiterhin Probleme haben, wenden Sie sich bitte an unser Support-Team oder verwalten Sie Ihre Einstellungen in Ihren Profileinstellungen."
+    },
+    "errors": {
+      "missingToken": "Ungültiger oder fehlender Abmeldelink. Bitte verwenden Sie den Link aus Ihrer E-Mail.",
+      "failed": "Ihre Abmeldeanfrage konnte nicht verarbeitet werden. Bitte versuchen Sie es erneut.",
+      "unknown": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es später erneut."
+    },
+    "actions": {
+      "goHome": "Zur Startseite",
+      "goToDashboard": "Zum Dashboard",
+      "goToSettings": "E-Mail-Einstellungen",
+      "managePreferences": "Einstellungen verwalten"
+    }
+  },
+  "preferences": {
+    "title": "E-Mail-Einstellungen",
+    "description": "Wählen Sie, welche E-Mails Sie erhalten möchten",
+    "taskCompletions": {
+      "label": "Aufgabenabschluss-Benachrichtigungen",
+      "description": "Benachrichtigung erhalten, wenn Sie Aufgaben abschließen und Punkte verdienen"
+    },
+    "walletVerifications": {
+      "label": "Wallet-Verifizierungs-Updates",
+      "description": "Wichtige Updates zum Status Ihrer Wallet-Verifizierung"
+    },
+    "adminNotifications": {
+      "label": "Administrator-Benachrichtigungen",
+      "description": "Benachrichtigungen von Administratoren (nur für Admin-Benutzer)"
+    },
+    "marketingEmails": {
+      "label": "Marketing & Updates",
+      "description": "Neuigkeiten, Updates und Werbeinhalte"
+    },
+    "transactionalNote": "Hinweis: Sie erhalten immer wichtige Transaktions-E-Mails wie Passwort-Zurücksetzungen und Sicherheitswarnungen.",
+    "saveSuccess": "E-Mail-Einstellungen erfolgreich gespeichert",
+    "saveError": "E-Mail-Einstellungen konnten nicht gespeichert werden"
+  }
+}

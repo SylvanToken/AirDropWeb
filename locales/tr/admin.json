@@ -1,0 +1,705 @@
+{
+  "dashboard": {
+    "title": "Yönetici Paneli",
+    "welcome": "Tekrar hoş geldin, {{username}}",
+    "stats": {
+      "totalUsers": "Toplam Kullanıcı",
+      "totalUsersDesc": "Kayıtlı platform kullanıcıları",
+      "activeUsers": "Aktif Kullanıcılar",
+      "activeUsersDesc": "Son 7 günde aktif",
+      "totalCompletions": "Toplam Tamamlama",
+      "totalCompletionsDesc": "Tüm görev tamamlamaları",
+      "totalPoints": "Toplam Puan",
+      "totalPointsDesc": "Kullanıcılara verilen puanlar"
+    },
+    "referralMetrics": {
+      "title": "Yönlendirme Programı Metrikleri",
+      "description": "Yönlendirme görev programınızın performansını takip edin",
+      "completions": "Yönlendirme Görevi Tamamlamaları",
+      "completionsDesc": "Toplam başarılı yönlendirmeler",
+      "points": "Yönlendirmelerden Kazanılan Puanlar",
+      "pointsDesc": "Yönlendirmeler yoluyla verilen puanlar",
+      "percentageOfTotal": "Toplam puanların %{{percentage}}'si"
+    },
+    "authStatus": {
+      "title": "Kimlik Doğrulama Durumu",
+      "active": "Aktif",
+      "description": "Yönetici olarak giriş yapıldı"
+    },
+    "quickActions": {
+      "title": "Hızlı İşlemler",
+      "description": "Platformunuzu verimli bir şekilde yönetin",
+      "manageTasks": "Görevleri Yönet",
+      "manageTasksDesc": "Görev oluştur ve düzenle",
+      "viewUsers": "Kullanıcıları Görüntüle",
+      "viewUsersDesc": "Kullanıcı hesaplarını yönet",
+      "manageCampaigns": "Kampanyaları Yönet",
+      "manageCampaignsDesc": "Kampanya oluştur ve takip et"
+    },
+    "sessionInfo": {
+      "title": "Oturum Bilgisi",
+      "description": "Mevcut yönetici oturumunuz",
+      "email": "E-posta:",
+      "role": "Rol:",
+      "userId": "Kullanıcı ID:"
+    },
+    "accessControl": {
+      "title": "Yönetici Erişim Kontrolü",
+      "description": "Yönetici ayrıcalıklarınız size aşağıdaki özelliklere erişim sağlar",
+      "features": {
+        "manageTasks": "Görevleri oluşturma, düzenleme ve silme",
+        "viewUsers": "Tüm kullanıcı hesaplarını ve istatistiklerini görüntüleme",
+        "viewHistory": "Kullanıcı tamamlama geçmişine erişim",
+        "viewAnalytics": "Platform analitiği ve metriklerini görüntüleme"
+      }
+    }
+  },
+  "tasks": {
+    "title": "Görev Yönetimi",
+    "subtitle": "Kullanıcıların tamamlaması için görevler oluşturun ve yönetin",
+    "createButton": "Görev Oluştur",
+    "editTitle": "Görevi Düzenle",
+    "createTitle": "Yeni Görev Oluştur",
+    "empty": "Görev bulunamadı. Başlamak için ilk görevinizi oluşturun.",
+    "active": "Aktif",
+    "inactive": "Pasif",
+    "points": "puan",
+    "viewUrl": "URL'yi Görüntüle",
+    "completions": "tamamlama",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "resultsCount": "{{total}} görevden {{count}} tanesi gösteriliyor",
+    "deleteConfirm": "Bu görevi silmek istediğinizden emin misiniz?",
+    "deleteError": "Görev silinemedi",
+    "filters": {
+      "all": "Tüm Görevler",
+      "active": "Aktif",
+      "inactive": "Pasif"
+    },
+    "form": {
+      "title": "Başlık",
+      "titlePlaceholder": "Bizi Twitter'da takip edin",
+      "description": "Açıklama",
+      "descriptionPlaceholder": "Güncel kalmak için resmi Twitter hesabımızı takip edin",
+      "points": "Puan",
+      "pointsPlaceholder": "10",
+      "taskType": "Görev Türü",
+      "taskUrl": "Görev URL'si (İsteğe Bağlı)",
+      "taskUrlPlaceholder": "https://twitter.com/sylvantoken",
+      "isActive": "Aktif",
+      "submit": "Görev Oluştur",
+      "update": "Görevi Güncelle",
+      "saving": "Kaydediliyor...",
+      "cancel": "İptal",
+      "saveError": "Görev kaydedilemedi",
+      "types": {
+        "TWITTER_FOLLOW": "Twitter Takip",
+        "TWITTER_LIKE": "Twitter Beğeni",
+        "TWITTER_RETWEET": "Twitter Retweet",
+        "TELEGRAM_JOIN": "Telegram Katılım",
+        "REFERRAL": "Yönlendirme Görevi",
+        "CUSTOM": "Özel"
+      },
+      "timeLimited": {
+        "enable": "Süre Sınırı Etkinleştir",
+        "duration": "Süre (saat)",
+        "durationPlaceholder": "Saat cinsinden süre girin (1-24)",
+        "durationHelp": "Görev süresi 1 ile 24 saat arasında olmalıdır",
+        "currentExpiration": "Mevcut Bitiş Zamanı",
+        "newExpiration": "Yeni bitiş zamanı şu andan itibaren",
+        "willExpire": "Görev oluşturulduktan sonra sona erecek"
+      },
+      "referralTask": {
+        "title": "Yönlendirme Görevleri Nasıl Çalışır",
+        "description": "Yönlendirme görevleri, davet edilen arkadaşları platformda başarıyla kaydolduğunda kullanıcıları otomatik olarak ödüllendirir.",
+        "howItWorks": {
+          "step1": "Kullanıcılar yönlendirme görevini talep eder ve BEKLEMEDE durumu alır",
+          "step2": "Kullanıcılar benzersiz yönlendirme kodlarını arkadaşlarıyla paylaşır",
+          "step3": "Bir arkadaş kodu kullanarak kaydolduğunda, görev otomatik olarak tamamlanır",
+          "step4": "Başarılı yönlendirme sonrasında puanlar hemen verilir"
+        },
+        "tip": "İpucu: Kullanıcıları daha fazla arkadaş davet etmeye teşvik etmek ve platformunuzu büyütmek için cazip puan ödülleri belirleyin!"
+      }
+    }
+  },
+  "users": {
+    "title": "Kullanıcı Yönetimi",
+    "subtitle": "Tüm kayıtlı kullanıcıları ve aktivitelerini görüntüleyin ve yönetin",
+    "loading": "Yükleniyor...",
+    "searchPlaceholder": "E-posta veya kullanıcı adına göre ara...",
+    "noUsers": "Kullanıcı bulunamadı",
+    "export": "Dışa Aktar",
+    "resultsCount": "{{total}} kullanıcıdan {{count}} tanesi gösteriliyor",
+    "filters": {
+      "title": "Filtreler",
+      "allUsers": "Tüm Kullanıcılar",
+      "users": "Sadece Kullanıcılar",
+      "admins": "Sadece Yöneticiler"
+    },
+    "table": {
+      "username": "Kullanıcı Adı",
+      "email": "E-posta",
+      "points": "Puan",
+      "completions": "Tamamlamalar",
+      "registered": "Kayıt Tarihi",
+      "lastActive": "Son Aktif",
+      "actions": "İşlemler",
+      "view": "Görüntüle",
+      "admin": "Yönetici"
+    },
+    "pagination": {
+      "page": "Sayfa {{current}} / {{total}}",
+      "previous": "Önceki",
+      "next": "Sonraki"
+    },
+    "detail": {
+      "back": "Kullanıcılara Dön",
+      "backShort": "Geri",
+      "loading": "Kullanıcı detayları yükleniyor...",
+      "notFound": "Kullanıcı bulunamadı",
+      "admin": "Yönetici",
+      "stats": {
+        "totalPoints": "Toplam Puan",
+        "totalPointsDesc": "Birikmiş puan",
+        "completions": "Tamamlamalar",
+        "completionsDesc": "Tamamlanan görevler",
+        "streak": "Seri",
+        "streakDesc": "Ardışık günler",
+        "memberSince": "Üyelik Tarihi"
+      },
+      "accountInfo": {
+        "title": "Hesap Bilgileri",
+        "registrationDate": "Kayıt Tarihi",
+        "lastActive": "Son Aktif"
+      },
+      "completionHistory": {
+        "title": "Tamamlama Geçmişi",
+        "empty": "Henüz tamamlama yok",
+        "table": {
+          "task": "Görev",
+          "type": "Tür",
+          "points": "Puan",
+          "completedAt": "Tamamlanma Tarihi"
+        },
+        "pagination": "Sayfa {{current}} / {{total}} ({{count}} toplam tamamlama)"
+      }
+    }
+  },
+  "stats": {
+    "totalUsers": {
+      "title": "Toplam Kullanıcı",
+      "description": "Tüm kayıtlı kullanıcılar"
+    },
+    "activeUsers": {
+      "title": "Aktif Kullanıcılar",
+      "description": "Son 7 günde aktif"
+    },
+    "totalCompletions": {
+      "title": "Toplam Tamamlama",
+      "description": "Tüm görev tamamlamaları"
+    },
+    "pointsAwarded": {
+      "title": "Verilen Puanlar",
+      "description": "Dağıtılan toplam puan"
+    }
+  },
+  "campaigns": {
+    "title": "Kampanya Yönetimi",
+    "subtitle": "Airdrop kampanyaları oluşturun ve yönetin",
+    "newCampaign": "Yeni Kampanya",
+    "createTitle": "Yeni Kampanya Oluştur",
+    "loading": "Kampanyalar yükleniyor...",
+    "loadingDetails": "Kampanya yükleniyor...",
+    "empty": "Kampanya bulunamadı"
+  },
+  "verifications": {
+    "title": "Doğrulama Paneli",
+    "loading": "Tamamlamalar yükleniyor...",
+    "empty": "Bekleyen doğrulama yok"
+  },
+  "bulkActions": {
+    "selectAll": "Tümünü Seç",
+    "selectedCount": "{{count}} seçildi",
+    "bulkActions": "Toplu İşlemler",
+    "processing": "İşleniyor...",
+    "assignPoints": "Puan Ata",
+    "activate": "Kullanıcıları Aktifleştir",
+    "block": "Kullanıcıları Engelle",
+    "delete": "Kullanıcıları Sil",
+    "export": "Seçilenleri Dışa Aktar",
+    "deleteDialog": {
+      "title": "Kullanıcıları Sil",
+      "description": "{{count}} kullanıcıyı silmek istediğinizden emin misiniz? Bu işlem geri alınamaz ve tüm ilişkili verileri kaldıracaktır.",
+      "cancel": "İptal",
+      "confirm": "Kullanıcıları Sil",
+      "deleting": "Siliniyor..."
+    },
+    "blockDialog": {
+      "title": "Kullanıcıları Engelle",
+      "description": "{{count}} kullanıcıyı engellemek istediğinizden emin misiniz? Engellenen kullanıcılar platforma erişemeyecektir.",
+      "cancel": "İptal",
+      "confirm": "Kullanıcıları Engelle",
+      "blocking": "Engelleniyor..."
+    },
+    "pointsDialog": {
+      "title": "Puan Ata",
+      "description": "Seçilen {{count}} kullanıcıya puan atayın.",
+      "label": "Atanacak puan",
+      "hint": "Puan eklemek için pozitif, puan düşmek için negatif sayı girin.",
+      "cancel": "İptal",
+      "confirm": "Puan Ata",
+      "assigning": "Atanıyor..."
+    },
+    "resultDialog": {
+      "successTitle": "İşlem Başarıyla Tamamlandı",
+      "partialTitle": "İşlem Hatalarla Tamamlandı",
+      "successful": "Başarılı",
+      "failed": "Başarısız",
+      "errors": "Hatalar:",
+      "close": "Kapat"
+    }
+  },
+  "filters": {
+    "title": "Gelişmiş Filtreler",
+    "addCriterion": "Filtre Kriteri Ekle",
+    "appliedFilters": "Uygulanan Filtreler",
+    "clearAll": "Tümünü temizle",
+    "apply": "Filtreleri Uygula",
+    "clear": "Temizle",
+    "loadPreset": "Ön ayar yükle",
+    "savePreset": "Ön Ayarı Kaydet",
+    "presetName": "Ön Ayar Adı",
+    "presetNamePlaceholder": "örn., Yüksek puanlı aktif kullanıcılar",
+    "savePresetDescription": "Hızlı erişim için mevcut filtre kriterlerinizi kaydedin",
+    "saving": "Kaydediliyor...",
+    "field": "Alan",
+    "operator": "Operatör",
+    "value": "Değer",
+    "logic": {
+      "and": "VE",
+      "or": "VEYA"
+    },
+    "operators": {
+      "equals": "Eşittir",
+      "contains": "İçerir",
+      "gt": "Büyüktür",
+      "lt": "Küçüktür",
+      "between": "Arasında",
+      "in": "İçinde",
+      "onDate": "Tarihte",
+      "after": "Sonra",
+      "before": "Önce"
+    },
+    "fields": {
+      "username": "Kullanıcı Adı",
+      "email": "E-posta",
+      "points": "Puanlar",
+      "completions": "Tamamlamalar",
+      "role": "Rol",
+      "status": "Durum",
+      "createdAt": "Kayıt Tarihi",
+      "lastActive": "Son Aktif"
+    },
+    "placeholders": {
+      "enterValue": "Değer girin",
+      "selectValue": "Değer seçin",
+      "min": "Min",
+      "max": "Maks"
+    }
+  },
+  "export": {
+    "title": "Veriyi Dışa Aktar",
+    "description": "{{model}} verilerini tercih ettiğiniz formatta dışa aktarın",
+    "formatLabel": "Dışa Aktarma Formatı",
+    "fieldsLabel": "Dışa Aktarılacak Alanları Seçin",
+    "selectAll": "Tümünü Seç",
+    "deselectAll": "Tümünün Seçimini Kaldır",
+    "allFields": "Tüm Alanlar",
+    "filtersApplied": "Filtreler Uygulandı",
+    "filtersCount": "{{count}} filtre dışa aktarmaya uygulanacak",
+    "cancel": "İptal",
+    "export": "Dışa Aktar",
+    "exporting": "Dışa Aktarılıyor...",
+    "formats": {
+      "csvDesc": "Virgülle ayrılmış değerler",
+      "excelDesc": "Microsoft Excel formatı",
+      "jsonDesc": "JavaScript Object Notation"
+    },
+    "models": {
+      "users": "kullanıcılar",
+      "tasks": "görevler",
+      "completions": "tamamlamalar",
+      "campaigns": "kampanyalar"
+    },
+    "status": {
+      "successTitle": "Dışa Aktarma Başarılı",
+      "success": "Dosyanız başarıyla indirildi.",
+      "errorTitle": "Dışa Aktarma Başarısız",
+      "asyncTitle": "Dışa Aktarma Sıraya Alındı",
+      "asyncExport": "Dışa aktarmanız işleniyor. Kısa süre içinde indirme bağlantısını içeren bir e-posta alacaksınız."
+    },
+    "errors": {
+      "noFields": "Lütfen dışa aktarmak için en az bir alan seçin",
+      "failed": "Dışa aktarma başarısız. Lütfen tekrar deneyin."
+    }
+  },
+  "analytics": {
+    "title": "Analitik Paneli",
+    "subtitle": "Platform performans metrikleri ve içgörüler",
+    "refresh": "Yenile",
+    "exportPdf": "PDF Olarak Dışa Aktar",
+    "dateRange": {
+      "title": "Tarih Aralığı",
+      "description": "Analitikleri görüntülemek için bir zaman dilimi seçin",
+      "last7Days": "Son 7 Gün",
+      "last30Days": "Son 30 Gün",
+      "last90Days": "Son 90 Gün",
+      "lastYear": "Son Yıl",
+      "showing": "{{start}} - {{end}} arası veriler gösteriliyor"
+    },
+    "metrics": {
+      "totalUsers": "Toplam Kullanıcı",
+      "totalUsersDesc": "Tüm kayıtlı kullanıcılar",
+      "activeUsers": "Aktif Kullanıcılar",
+      "activeUsersDesc": "Son 7 günde aktif",
+      "totalCompletions": "Toplam Tamamlama",
+      "totalCompletionsDesc": "Tüm görev tamamlamaları",
+      "totalPoints": "Toplam Puan",
+      "totalPointsDesc": "Ort: Kullanıcı başına {{avg}}"
+    },
+    "charts": {
+      "userGrowth": "Kullanıcı Büyümesi",
+      "userGrowthDesc": "Günlük yeni kullanıcı kayıtları",
+      "completionTrends": "Tamamlama Trendleri",
+      "completionTrendsDesc": "Günlük görev tamamlamaları",
+      "topTasks": "Tamamlanmaya Göre En İyi Görevler",
+      "topTasksDesc": "Platformdaki en popüler görevler",
+      "userActivity": "Kullanıcı Aktivite Dağılımı",
+      "userActivityDesc": "Aktif ve pasif kullanıcılar",
+      "todayActivity": "Bugünün Aktivitesi",
+      "todayActivityDesc": "Bugün yeni kullanıcılar ve tamamlamalar",
+      "noData": "Veri mevcut değil"
+    },
+    "labels": {
+      "activeUsers": "Aktif Kullanıcılar",
+      "inactiveUsers": "Pasif Kullanıcılar",
+      "newUsers": "Yeni Kullanıcılar",
+      "completions": "Tamamlamalar"
+    }
+  },
+  "audit": {
+    "pageTitle": "Denetim Günlüğü - Yönetici",
+    "pageDescription": "Tüm yönetici eylemlerini ve sistem olaylarını takip edin",
+    "heading": "Denetim Günlüğü",
+    "subheading": "Hesap verebilirlik ve güvenlik için tüm yönetici eylemlerinin tam geçmişi",
+    "title": "Denetim Günlüğü",
+    "subtitle": "Tüm yönetici eylemlerini ve sistem olaylarını takip edin",
+    "description": "Hesap verebilirlik ve güvenlik için tüm yönetici eylemlerinin tam geçmişi",
+    "loading": "Denetim günlükleri yükleniyor...",
+    "noLogs": "Denetim günlüğü bulunamadı",
+    "export": "Dışa Aktar",
+    "searchPlaceholder": "Eylem, yönetici veya kayıt ID'sine göre ara...",
+    "filtersActive": "Filtreler aktif",
+    "clearFilters": "Filtreleri temizle",
+    "viewDetails": "Görüntüle",
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "page": "Sayfa {{current}} / {{total}}",
+    "resultsCount": "{{total}} günlükten {{start}}-{{end}} arası gösteriliyor",
+    "filters": {
+      "allEvents": "Tüm Olaylar",
+      "securityOnly": "Sadece Güvenlik Olayları",
+      "action": "Eylem",
+      "actionPlaceholder": "örn., user_delete",
+      "model": "Model",
+      "modelPlaceholder": "örn., User",
+      "startDate": "Başlangıç Tarihi",
+      "endDate": "Bitiş Tarihi"
+    },
+    "table": {
+      "timestamp": "Zaman Damgası",
+      "action": "Eylem",
+      "admin": "Yönetici",
+      "model": "Model",
+      "recordId": "Kayıt ID",
+      "ipAddress": "IP Adresi",
+      "details": "Detaylar"
+    },
+    "detailsDialog": {
+      "title": "Denetim Günlüğü Detayları",
+      "securityEvent": "Güvenlik açısından hassas olay",
+      "action": "Eylem",
+      "admin": "Yönetici Kullanıcı",
+      "model": "Etkilenen Model",
+      "recordId": "Kayıt ID",
+      "ipAddress": "IP Adresi",
+      "userAgent": "Kullanıcı Aracısı",
+      "dataChanges": "Veri Değişiklikleri",
+      "before": "Önce",
+      "after": "Sonra"
+    },
+    "actions": {
+      "roles.list": "Rolleri Listele",
+      "roles.create": "Rol Oluştur",
+      "roles.update": "Rol Güncelle",
+      "roles.delete": "Rol Sil",
+      "users.list": "Kullanıcıları Listele",
+      "users.create": "Kullanıcı Oluştur",
+      "users.update": "Kullanıcı Güncelle",
+      "users.delete": "Kullanıcı Sil",
+      "tasks.list": "Görevleri Listele",
+      "tasks.create": "Görev Oluştur",
+      "tasks.update": "Görev Güncelle",
+      "tasks.delete": "Görev Sil"
+    }
+  },
+  "roles": {
+    "title": "Rol Yönetimi",
+    "subtitle": "Yönetici kullanıcılar için rolleri ve izinleri yönetin",
+    "loading": "Roller yükleniyor...",
+    "empty": "Rol bulunamadı. Başlamak için ilk rolünüzü oluşturun.",
+    "createButton": "Rol Oluştur",
+    "createTitle": "Yeni Rol Oluştur",
+    "createDescription": "Belirli izinlerle yeni bir rol tanımlayın",
+    "editTitle": "Rolü Düzenle",
+    "editDescription": "Rol adını ve izinlerini güncelleyin",
+    "assignTitle": "{{role}} Rolünü Ata",
+    "assignDescription": "Bu rolü atamak için kullanıcıları seçin",
+    "permissions": "izin",
+    "more": "daha fazla",
+    "assignUsers": "Kullanıcı Ata",
+    "deleteError": "Rol silinemedi",
+    "stats": {
+      "totalRoles": "Toplam Rol",
+      "assignedUsers": "Atanan Kullanıcılar"
+    },
+    "list": {
+      "title": "Roller",
+      "description": "Rolleri ve izinlerini yönetin"
+    },
+    "form": {
+      "name": "Rol Adı",
+      "namePlaceholder": "örn., İçerik Yöneticisi",
+      "permissions": "İzinler",
+      "nameRequired": "Rol adı gereklidir",
+      "permissionsRequired": "En az bir izin gereklidir",
+      "saveError": "Rol kaydedilemedi",
+      "saving": "Kaydediliyor...",
+      "create": "Rol Oluştur",
+      "update": "Rolü Güncelle",
+      "cancel": "İptal"
+    },
+    "assign": {
+      "loading": "Kullanıcılar yükleniyor...",
+      "searchPlaceholder": "Kullanıcı adı veya e-posta ile ara...",
+      "noUsers": "Kullanıcı bulunamadı",
+      "noResults": "Aramanızla eşleşen kullanıcı yok",
+      "assigned": "Atandı",
+      "assign": "Ata",
+      "assigning": "Atanıyor...",
+      "remove": "Kaldır",
+      "removing": "Kaldırılıyor...",
+      "assignError": "Rol atanamadı",
+      "removeError": "Rol kaldırılamadı",
+      "summary": "{{total}} kullanıcıdan {{assigned}} tanesi bu role sahip",
+      "close": "Kapat"
+    },
+    "deleteDialog": {
+      "title": "Rolü Sil",
+      "description": "\"{{role}}\" rolünü silmek istediğinizden emin misiniz? Bu role sahip kullanıcılar izinlerini kaybedecek.",
+      "cancel": "İptal",
+      "confirm": "Rolü Sil"
+    }
+  },
+  "emails": {
+    "title": "E-posta Analitikleri",
+    "subtitle": "E-posta teslimat ve etkileşim metriklerini izleyin",
+    "loading": "E-posta analitikleri yükleniyor...",
+    "dateRange": {
+      "title": "Tarih Aralığı Filtresi",
+      "startDate": "Başlangıç Tarihi",
+      "endDate": "Bitiş Tarihi",
+      "apply": "Filtreyi Uygula",
+      "reset": "Sıfırla"
+    },
+    "overview": {
+      "totalSent": "Gönderilen Toplam E-posta",
+      "deliveryRate": "Teslimat Oranı",
+      "delivered": "teslim edildi",
+      "openRate": "Açılma Oranı",
+      "opened": "açıldı",
+      "clickRate": "Tıklama Oranı",
+      "clicked": "tıklandı",
+      "bounceRate": "Geri Dönüş Oranı",
+      "bounced": "geri döndü",
+      "failureRate": "Başarısızlık Oranı",
+      "failed": "başarısız"
+    },
+    "bounceBreakdown": {
+      "title": "Geri Dönüş Dağılımı",
+      "hard": "Kalıcı Geri Dönüşler",
+      "soft": "Geçici Geri Dönüşler",
+      "spam": "Spam Raporları",
+      "other": "Diğer"
+    },
+    "templatePerformance": {
+      "title": "Şablona Göre E-posta Performansı",
+      "noData": "E-posta verisi mevcut değil",
+      "sent": "gönderildi",
+      "delivery": "Teslimat",
+      "open": "Açılma",
+      "click": "Tıklama"
+    },
+    "recentFailures": {
+      "title": "Son Başarısız E-postalar",
+      "to": "Kime:",
+      "template": "Şablon:"
+    }
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "retry": "Tekrar Dene",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "create": "Oluştur",
+    "back": "Geri"
+  },
+  "sidebar": {
+    "quickActions": "Hızlı İşlemler",
+    "createTask": "Görev Oluştur",
+    "viewUsers": "Kullanıcıları Görüntüle"
+  },
+  "databaseReset": {
+    "title": "Veritabanı Sıfırlama (Yalnızca Test)",
+    "warning": "⚠️ UYARI: Bu işlem tüm kullanıcıları, görevleri ve tamamlamaları kalıcı olarak silecektir. Admin hesapları korunacak ancak sıfırlanacaktır.",
+    "actionWillTitle": "Bu işlem şunları yapacak:",
+    "deleteUsers": "Tüm kullanıcı hesaplarını sil (adminler hariç)",
+    "deleteTasks": "Tüm görevleri ve kampanyaları sil",
+    "deleteCompletions": "Tüm görev tamamlamalarını sil",
+    "resetAdminData": "Admin kullanıcı verilerini sıfırla (cüzdan, sosyal medya, puanlar)",
+    "confirmTitle": "⚠️ Kesinlikle emin misiniz?",
+    "confirmMessage": "Veritabanı sıfırlamayı onaylamak için butona tekrar tıklayın. Bu işlem geri alınamaz!",
+    "resetButton": "Veritabanını Sıfırla",
+    "confirmButton": "Veritabanı Sıfırlamayı Onayla",
+    "resetting": "Sıfırlanıyor...",
+    "cancel": "İptal",
+    "successMessage": "Veritabanı başarıyla sıfırlandı! Tüm kullanıcı verileri silindi."
+  },
+  "errorReports": {
+    "title": "[EN] Error Reports",
+    "subtitle": "[EN] Monitor and manage user-reported errors",
+    "viewDetails": "[EN] View Details",
+    "delete": "[EN] Delete",
+    "deleteConfirm": "[EN] Are you sure?",
+    "deleteDescription": "[EN] This action cannot be undone. This will permanently delete the error report and all associated data (tags, comments, etc.).",
+    "deletePermanently": "[EN] Delete Permanently",
+    "deleting": "[EN] Deleting...",
+    "deleted": "[EN] Deleted Successfully",
+    "deletedMessage": "[EN] Error report has been permanently deleted",
+    "updated": "[EN] Updated Successfully",
+    "updatedMessage": "[EN] Error report has been updated",
+    "analytics": {
+      "totalReports": "[EN] Total Reports",
+      "pending": "[EN] Pending",
+      "resolved": "[EN] Resolved",
+      "avgResponse": "[EN] Avg Response",
+      "avgResolution": "[EN] Avg Resolution",
+      "byPriority": "[EN] By Priority",
+      "byType": "[EN] By Type",
+      "byStatus": "[EN] By Status",
+      "trend": "[EN] 7-Day Trend",
+      "topTags": "[EN] Most Common Tags",
+      "noData": "[EN] No data available"
+    },
+    "tags": {
+      "title": "[EN] Tags",
+      "add": "[EN] Add",
+      "addPlaceholder": "[EN] Add a tag (e.g., bug, ui, performance)",
+      "suggestions": "[EN] Suggestions:",
+      "tagAdded": "[EN] Tag added",
+      "tagAddedMessage": "[EN] Tag has been added successfully",
+      "tagRemoved": "[EN] Tag removed",
+      "tagRemovedMessage": "[EN] Tag has been removed",
+      "tagExists": "[EN] Tag already exists",
+      "tagExistsMessage": "[EN] This tag is already added to this report",
+      "failed": "[EN] Failed to add tag",
+      "failedMessage": "[EN] An error occurred while adding the tag"
+    },
+    "comments": {
+      "title": "[EN] Comments",
+      "count": "[EN] {{count}} comments",
+      "add": "[EN] Comment",
+      "addPlaceholder": "[EN] Add a comment... (Ctrl+Enter to submit)",
+      "internal": "[EN] Internal note",
+      "public": "[EN] Public comment",
+      "noComments": "[EN] No comments yet",
+      "beFirst": "[EN] Be the first to comment on this error report",
+      "commentAdded": "[EN] Comment added",
+      "commentAddedMessage": "[EN] Your comment has been added successfully",
+      "internalNote": "[EN] Internal notes are only visible to admins. Public comments may be shared with the user.",
+      "failed": "[EN] Failed to add comment",
+      "failedMessage": "[EN] An error occurred while adding the comment"
+    },
+    "detail": {
+      "title": "[EN] Title",
+      "reportedBy": "[EN] Reported By",
+      "anonymous": "[EN] Anonymous",
+      "errorType": "[EN] Error Type",
+      "description": "[EN] Description",
+      "stackTrace": "[EN] Stack Trace",
+      "pageUrl": "[EN] Page URL",
+      "userAgent": "[EN] User Agent",
+      "createdAt": "[EN] Created At",
+      "tabs": {
+        "update": "[EN] Update",
+        "tags": "[EN] Tags",
+        "comments": "[EN] Comments"
+      },
+      "update": {
+        "title": "[EN] Update Status",
+        "status": "[EN] Status",
+        "priority": "[EN] Priority",
+        "resolution": "[EN] Resolution Notes",
+        "resolutionPlaceholder": "[EN] Add resolution notes...",
+        "cancel": "[EN] Cancel",
+        "update": "[EN] Update Report",
+        "updating": "[EN] Updating..."
+      }
+    },
+    "status": {
+      "PENDING": "[EN] Pending",
+      "IN_PROGRESS": "[EN] In Progress",
+      "RESOLVED": "[EN] Resolved",
+      "CLOSED": "[EN] Closed"
+    },
+    "priority": {
+      "LOW": "[EN] Low",
+      "MEDIUM": "[EN] Medium",
+      "HIGH": "[EN] High",
+      "CRITICAL": "[EN] Critical"
+    },
+    "filters": {
+      "allStatus": "[EN] All Status",
+      "allPriority": "[EN] All Priority",
+      "apply": "[EN] Apply Filters"
+    },
+    "table": {
+      "priority": "[EN] Priority",
+      "type": "[EN] Type",
+      "title": "[EN] Title",
+      "user": "[EN] User",
+      "status": "[EN] Status",
+      "created": "[EN] Created",
+      "actions": "[EN] Actions",
+      "noReports": "[EN] No error reports found"
+    },
+    "pagination": {
+      "page": "[EN] Page {{current}} of {{total}}",
+      "previous": "[EN] Previous",
+      "next": "[EN] Next"
+    }
+  }
+}

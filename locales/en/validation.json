@@ -1,0 +1,35 @@
+{
+  "required": "This field is required",
+  "email": "Please enter a valid email address",
+  "password": {
+    "min": "Password must be at least {min} characters",
+    "max": "Password must be at most {max} characters",
+    "uppercase": "Password must contain at least one uppercase letter",
+    "lowercase": "Password must contain at least one lowercase letter",
+    "number": "Password must contain at least one number",
+    "special": "Password must contain at least one special character"
+  },
+  "username": {
+    "min": "Username must be at least {min} characters",
+    "max": "Username must be at most {max} characters",
+    "invalid": "Username can only contain letters, numbers, and underscores",
+    "taken": "This username is already taken"
+  },
+  "wallet": {
+    "invalid": "Invalid wallet address format",
+    "required": "Wallet address is required"
+  },
+  "social": {
+    "twitterInvalid": "Invalid Twitter username",
+    "telegramInvalid": "Invalid Telegram username",
+    "taken": "This username is already linked to another account"
+  },
+  "file": {
+    "tooLarge": "File size must be less than {maxSize}MB",
+    "invalidType": "Invalid file type. Allowed types: {types}",
+    "required": "Please select a file"
+  },
+  "terms": {
+    "required": "You must accept the terms and conditions"
+  }
+}

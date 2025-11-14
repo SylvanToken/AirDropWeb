@@ -1,0 +1,278 @@
+{
+  "header": {
+    "dashboard": "Dashboard",
+    "tasks": "Aufgaben",
+    "wallet": "Wallet",
+    "profile": "Profil",
+    "leaderboard": "Bestenliste",
+    "logout": "Abmelden",
+    "admin": "Administrator"
+  },
+  "footer": {
+    "copyright": "© 2025 Sylvan Token. Alle Rechte vorbehalten.",
+    "builtWith": "Mit ❤️ für die Sylvan Token Community erstellt",
+    "terms": "Bedingungen",
+    "privacy": "Datenschutz",
+    "language": "Sprache"
+  },
+  "language": {
+    "select": "Sprache wählen",
+    "current": "Aktuelle Sprache"
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "create": "Erstellen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "submit": "Absenden",
+    "close": "Schließen",
+    "yes": "Ja",
+    "no": "Nein",
+    "search": "Suchen",
+    "filter": "Filtern",
+    "sort": "Sortieren",
+    "actions": "Aktionen",
+    "signIn": "Anmelden"
+  },
+  "errors": {
+    "generic": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "network": "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.",
+    "unauthorized": "Sie sind nicht berechtigt, diese Aktion auszuführen.",
+    "notFound": "Die angeforderte Ressource wurde nicht gefunden.",
+    "validation": "Bitte überprüfen Sie Ihre Eingabe und versuchen Sie es erneut."
+  },
+  "welcomeModal": {
+    "title": "Wichtige Kontoinformationen",
+    "subtitle": "Bitte lesen Sie sorgfältig, bevor Sie Ihre Registrierung abschließen:",
+    "button": {
+      "understood": "Verstanden",
+      "countdownLabel": "Verstanden-Schaltfläche wird in {count} Sekunden aktiv",
+      "readyLabel": "Verstanden, Modal schließen"
+    },
+    "checkbox": {
+      "label": "Nicht mehr anzeigen"
+    },
+    "items": {
+      "security": "Die Kontosicherheit liegt in Ihrer Verantwortung",
+      "noPasswordReset": "\"Passwort vergessen\" Option ist nicht verfügbar",
+      "socialMediaLock": "Social-Media-Benutzername kann nach der Registrierung nicht geändert werden",
+      "walletLock": "Wallet-Adresse kann nach der Registrierung nicht geändert werden",
+      "futureEvents": "Ihre gespeicherten Informationen werden für zukünftige Veranstaltungen verwendet",
+      "earlyBenefits": "Frühe Mitglieder können unterschiedliche Bewertungsvorteile erhalten",
+      "timeLimited": "Einige Aufgaben und Aktivitäten sind zeitlich begrenzt",
+      "accuracy": "Bitte stellen Sie sicher, dass alle Informationen korrekt sind"
+    }
+  },
+  "accessibility": {
+    "skipToMain": "Zum Hauptinhalt springen",
+    "skipToNav": "Zur Navigation springen",
+    "skipToFooter": "Zur Fußzeile springen",
+    "settings": "Barrierefreiheitseinstellungen",
+    "settingsDescription": "Passen Sie Ihre Erfahrung für bessere Barrierefreiheit an",
+    "animations": "Animationen",
+    "animationsEnabled": "Animationen und Übergänge sind aktiviert",
+    "animationsDisabled": "Animationen und Übergänge sind deaktiviert",
+    "toggleAnimations": "Animationen umschalten",
+    "systemPreference": "Systemeinstellung:",
+    "reducedMotionDetected": "Ihr System ist auf reduzierte Bewegung eingestellt. Sie können diese Einstellung oben überschreiben.",
+    "info": "Das Deaktivieren von Animationen reduziert Bewegungseffekte in der gesamten Anwendung bei gleichzeitiger Beibehaltung der Funktionalität."
+  },
+  "shortcuts": {
+    "title": "Tastaturkürzel",
+    "home": "Zur Startseite",
+    "dashboard": "Zum Dashboard",
+    "tasks": "Zu Aufgaben",
+    "leaderboard": "Zur Bestenliste",
+    "profile": "Zum Profil",
+    "tab": "Zwischen Elementen navigieren",
+    "shiftTab": "Rückwärts navigieren",
+    "enter": "Fokussiertes Element aktivieren",
+    "escape": "Modal/Dropdown schließen"
+  },
+  "hero": {
+    "home": {
+      "title": "Willkommen bei Sylvan Token",
+      "subtitle": "Erledigen Sie Aufgaben, verdienen Sie Belohnungen und wachsen Sie mit unserer Community",
+      "cta": "Jetzt starten"
+    },
+    "dashboard": {
+      "title": "Willkommen zurück, {username}!",
+      "subtitle": "Verfolgen Sie Ihren Fortschritt und konkurrieren Sie mit der Community"
+    },
+    "tasks": {
+      "title": "Verfügbare Aufgaben",
+      "subtitle": "Erledigen Sie Aufgaben, um Punkte zu verdienen und die Bestenliste zu erklimmen"
+    },
+    "leaderboard": {
+      "title": "Community-Bestenliste",
+      "subtitle": "Sehen Sie, wie Sie im Vergleich zu anderen Mitgliedern abschneiden",
+      "yourRank": "Ihr Rang: #{rank} von {total}"
+    }
+  },
+  "leaderboardPage": {
+    "pageTitle": "Community-Bestenliste",
+    "pageSubtitle": "Sehen Sie, wie Sie im Vergleich zu anderen Mitgliedern abschneiden",
+    "userRankLabel": "Ihr Rang: #{rank} von {total}",
+    "loadingText": "Wird geladen..."
+  },
+  "home": {
+    "features": {
+      "title": "Warum Sylvan Token wählen?",
+      "subtitle": "Schließen Sie sich Tausenden von Benutzern an, die durch einfache Aufgaben Belohnungen verdienen",
+      "tasks": {
+        "title": "Einfache Aufgaben",
+        "description": "Erledigen Sie einfache Social-Media-Aufgaben und verdienen Sie sofort Punkte"
+      },
+      "rewards": {
+        "title": "Echte Belohnungen",
+        "description": "Verdienen Sie Punkte, die sich in echte Token-Belohnungen umwandeln"
+      },
+      "community": {
+        "title": "Aktive Community",
+        "description": "Treten Sie einer florierenden Community von Token-Enthusiasten bei"
+      },
+      "instant": {
+        "title": "Sofortige Verfolgung",
+        "description": "Verfolgen Sie Ihren Fortschritt und Ihre Einnahmen in Echtzeit"
+      }
+    },
+    "benefits": {
+      "title": "Beginnen Sie heute zu verdienen",
+      "subtitle": "Treten Sie der Sylvan Token Community bei und schalten Sie exklusive Vorteile frei",
+      "item1": "Erledigen Sie tägliche Aufgaben, um Punkte zu verdienen und die Bestenliste zu erklimmen",
+      "item2": "Verbinden Sie Ihre Wallet, um Token-Belohnungen direkt zu erhalten",
+      "item3": "Konkurrieren Sie mit anderen Mitgliedern um Bonusbelohnungen und Anerkennung",
+      "item4": "Zugang zu exklusiven Kampagnen und frühen Gelegenheiten"
+    },
+    "stats": {
+      "users": "10K+",
+      "usersLabel": "Registrierte Benutzer",
+      "tasks": "50K+",
+      "tasksLabel": "Erledigte Aufgaben",
+      "rewards": "1M+",
+      "rewardsLabel": "Verteilte Punkte"
+    },
+    "tokenDistribution": {
+      "title": "Token-Verteilung",
+      "subtitle": "Echtzeit-Token-Zuteilung",
+      "totalSupply": "Gesamtangebot",
+      "holders": "Inhaber",
+      "circulating": "Im Umlauf",
+      "locked": "Gesperrt",
+      "team": "Team",
+      "donation": "Spende",
+      "fee": "Gebühr",
+      "burned": "Verbrannt",
+      "updated": "Aktualisiert",
+      "billion": "Milliarde",
+      "million": "Million"
+    },
+    "cta": {
+      "title": "Bereit anzufangen?",
+      "subtitle": "Erstellen Sie jetzt Ihr Konto und beginnen Sie heute mit dem Verdienen von Belohnungen",
+      "button": "Kostenloses Konto erstellen"
+    }
+  },
+  "theme": {
+    "light": "Heller Modus",
+    "dark": "Dunkler Modus",
+    "toggle": "Thema wechseln"
+  },
+  "profile": {
+    "title": "Mein Profil",
+    "subtitle": "Verwalten Sie Ihre Kontoinformationen und Social-Media-Verbindungen",
+    "error": "Profil konnte nicht geladen werden",
+    "accountInfo": {
+      "title": "Kontoinformationen",
+      "description": "Ihre grundlegenden Kontodetails",
+      "username": "Benutzername",
+      "email": "E-Mail",
+      "memberSince": "Mitglied seit",
+      "totalPoints": "Gesamtpunkte"
+    },
+    "wallet": {
+      "title": "Wallet-Status",
+      "description": "Ihre BEP-20 Wallet-Adresse",
+      "verified": "Verifiziert",
+      "notSet": "Wallet-Adresse nicht festgelegt",
+      "notSetDescription": "Fügen Sie Ihre Wallet-Adresse hinzu, um Aufgaben zu erledigen und Belohnungen zu erhalten"
+    },
+    "socialMedia": {
+      "title": "Social-Media-Konten",
+      "description": "Verbinden Sie Ihre Social-Media-Konten, um Aufgaben zu erledigen",
+      "twitter": {
+        "title": "Twitter",
+        "description": "Verbinden Sie Ihr Twitter-Konto",
+        "placeholder": "@benutzername",
+        "verify": "Twitter verifizieren",
+        "verified": "Verifiziert",
+        "notSet": "Nicht festgelegt"
+      },
+      "telegram": {
+        "title": "Telegram",
+        "description": "Verbinden Sie Ihr Telegram-Konto",
+        "placeholder": "@benutzername",
+        "verify": "Telegram verifizieren",
+        "verified": "Verifiziert",
+        "notSet": "Nicht festgelegt"
+      }
+    }
+  },
+  "twitter": {
+    "connection": {
+      "title": "[EN] Twitter Connection",
+      "description": "[EN] Connect your Twitter account for automatic task verification",
+      "connected": "[EN] Connected",
+      "notConnected": "[EN] Not Connected",
+      "connect": "[EN] Connect Twitter",
+      "disconnect": "[EN] Disconnect",
+      "reconnect": "[EN] Reconnect",
+      "connecting": "[EN] Connecting...",
+      "disconnecting": "[EN] Disconnecting...",
+      "tokenExpired": "[EN] Token Expired",
+      "tokenExpiredMessage": "[EN] Your Twitter connection has expired. Please reconnect to enable automatic verification."
+    },
+    "verification": {
+      "title": "[EN] Twitter Verification",
+      "pending": "[EN] Pending",
+      "verifying": "[EN] Verifying...",
+      "approved": "[EN] Approved",
+      "rejected": "[EN] Rejected",
+      "error": "[EN] Error",
+      "retry": "[EN] Retry Verification",
+      "complete": "[EN] Complete Task",
+      "pointsEarned": "[EN] +{points} points earned!",
+      "checkingActivity": "[EN] Checking your Twitter activity...",
+      "waitingVerification": "[EN] Waiting for verification...",
+      "taskVerified": "[EN] Great! Your {taskType} task has been verified.",
+      "taskRejected": "[EN] Please complete the {taskType} action and try again.",
+      "verificationFailed": "[EN] Verification failed. Please try again or contact support."
+    },
+    "tasks": {
+      "follow": "[EN] Follow",
+      "like": "[EN] Like",
+      "retweet": "[EN] Retweet",
+      "followTitle": "[EN] Follow on Twitter",
+      "likeTitle": "[EN] Like Tweet",
+      "retweetTitle": "[EN] Retweet",
+      "instructions": "[EN] Instructions:",
+      "howItWorks": "[EN] How it works:",
+      "step1": "[EN] Connect your Twitter account (one-time setup)",
+      "step2": "[EN] Complete the Twitter action",
+      "step3": "[EN] Verification happens automatically",
+      "step4": "[EN] Earn points instantly!",
+      "connectionRequired": "[EN] Twitter Connection Required",
+      "connectionRequiredMessage": "[EN] Connect your Twitter account to enable automatic verification for this task. This will make the process much faster and easier!",
+      "automaticVerification": "[EN] Automatic Verification",
+      "automaticVerificationMessage": "[EN] Once you complete the action, we'll automatically verify it and award your points!",
+      "manualMode": "[EN] Manual Mode"
+    }
+  }
+}

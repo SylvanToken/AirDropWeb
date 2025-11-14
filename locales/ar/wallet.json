@@ -1,0 +1,67 @@
+{
+  "setup": {
+    "title": "إضافة محفظة BEP-20",
+    "description": "أدخل عنوان محفظة Binance Smart Chain (BEP-20) لاستلام المكافآت",
+    "verifiedTitle": "تم التحقق من المحفظة",
+    "verifiedDescription": "تم التحقق من عنوان محفظة BEP-20 وقفله",
+    "verifiedLabel": "عنوان المحفظة المحقق",
+    "verifiedNote": "هذا العنوان مرتبط بشكل دائم بحسابك ولا يمكن تغييره.",
+    "airdropInfoTitle": "معلومات الإيردروب",
+    "airdropInfoText": "سيتم إرسال جميع النقاط والمكافآت المكتسبة إلى عنوان المحفظة هذا عند بدء توزيع الإيردروب.",
+    "warningTitle": "مهم: اقرأ قبل إضافة المحفظة",
+    "warningItems": {
+      "bep20Only": "يتم دعم عناوين BEP-20 (Binance Smart Chain) فقط",
+      "permanentLock": "سيتم قفل عنوان محفظتك بشكل دائم بعد التأكيد",
+      "cannotChange": "لا يمكنك تغيير عنوان محفظتك بعد التحقق",
+      "doubleCheck": "تحقق مرة أخرى من عنوانك قبل التأكيد",
+      "rewardsDestination": "سيتم إرسال جميع مكافآت الإيردروب إلى هذا العنوان"
+    },
+    "infoTitle": "ما هو عنوان BEP-20؟",
+    "infoDescription": "BEP-20 هو معيار الرمز المميز على Binance Smart Chain. يجب أن يكون عنوان محفظتك:",
+    "infoItems": {
+      "startsWith": "يبدأ بـ 0x",
+      "length": "بطول 42 حرفاً بالضبط",
+      "characters": "يحتوي فقط على أرقام (0-9) وأحرف (a-f، A-F)"
+    },
+    "infoExample": "مثال:",
+    "walletLabel": "عنوان محفظة BEP-20",
+    "walletPlaceholder": "0x...",
+    "walletHelp": "الصق عنوان محفظة BEP-20 من Trust Wallet أو MetaMask أو Binance",
+    "continueButton": "متابعة",
+    "processingButton": "جاري المعالجة..."
+  },
+  "confirmation": {
+    "title": "تأكيد عنوان المحفظة",
+    "subtitle": "لا يمكن التراجع عن هذا الإجراء",
+    "addressLabel": "عنوان محفظتك:",
+    "criticalTitle": "حرج: يرجى القراءة بعناية",
+    "criticalItems": {
+      "permanentLock": "سيتم قفل عنوان المحفظة هذا بشكل دائم لحسابك",
+      "cannotChange": "لا يمكنك تغيير أو تحديث هذا العنوان بعد التأكيد",
+      "rewardsDestination": "سيتم إرسال جميع مكافآت الإيردروب إلى هذا العنوان",
+      "accessRequired": "تأكد من أن لديك وصولاً إلى هذه المحفظة",
+      "verifyCorrect": "تحقق من صحة العنوان قبل التأكيد"
+    },
+    "checklistTitle": "قائمة التحقق من التأكيد",
+    "checklistItems": {
+      "doubleChecked": "لقد تحققت مرة أخرى من عنوان محفظتي وهو صحيح",
+      "understandPermanent": "أفهم أن هذا العنوان لا يمكن تغييره بعد التأكيد",
+      "haveAccess": "لدي وصول إلى هذه المحفظة ويمكنني استلام الرموز",
+      "understandBep20": "أفهم أن هذا عنوان BEP-20 (Binance Smart Chain)"
+    },
+    "cancelButton": "إلغاء",
+    "confirmButton": "تأكيد وقفل المحفظة",
+    "confirmingButton": "جاري التأكيد...",
+    "checkAllRequired": "يرجى تحديد جميع المربعات للتأكيد",
+    "acknowledgement": "بالتأكيد، فإنك تقر بأنك قرأت وفهمت جميع التحذيرات أعلاه"
+  },
+  "errors": {
+    "walletAlreadySet": "تم بالفعل التحقق من عنوان محفظتك ولا يمكن تغييره. هذا إجراء أمني دائم.",
+    "walletInUse": "عنوان المحفظة هذا مسجل بالفعل لحساب آخر. يمكن ربط كل محفظة بحساب واحد فقط.",
+    "invalidAddress": "تنسيق عنوان المحفظة غير صحيح. يرجى تقديم عنوان BEP-20 صحيح يبدأ بـ 0x.",
+    "validationError": "فشل التحقق من عنوان المحفظة. يرجى التحقق من التنسيق والمحاولة مرة أخرى.",
+    "noWallet": "لم يتم العثور على عنوان محفظة. يرجى إضافة عنوان محفظة أولاً قبل التحقق.",
+    "alreadyVerified": "تم بالفعل التحقق من عنوان محفظتك. لا حاجة لاتخاذ مزيد من الإجراءات.",
+    "unknown": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى أو الاتصال بالدعم إذا استمرت المشكلة."
+  }
+}

@@ -1,0 +1,688 @@
+{
+  "dashboard": {
+    "title": "管理员仪表板",
+    "welcome": "欢迎回来，{{username}}",
+    "stats": {
+      "totalUsers": "总用户数",
+      "totalUsersDesc": "注册平台用户",
+      "activeUsers": "活跃用户",
+      "activeUsersDesc": "最近7天活跃",
+      "totalCompletions": "总完成数",
+      "totalCompletionsDesc": "所有任务完成",
+      "totalPoints": "总积分",
+      "totalPointsDesc": "授予用户的积分"
+    },
+    "authStatus": {
+      "title": "身份验证状态",
+      "active": "活跃",
+      "description": "以管理员身份登录"
+    },
+    "quickActions": {
+      "title": "快速操作",
+      "description": "高效管理您的平台",
+      "manageTasks": "管理任务",
+      "manageTasksDesc": "创建和编辑任务",
+      "viewUsers": "查看用户",
+      "viewUsersDesc": "管理用户账户",
+      "manageCampaigns": "管理活动",
+      "manageCampaignsDesc": "创建和跟踪活动"
+    },
+    "sessionInfo": {
+      "title": "会话信息",
+      "description": "您当前的管理员会话",
+      "email": "电子邮件：",
+      "role": "角色：",
+      "userId": "用户ID："
+    },
+    "accessControl": {
+      "title": "管理员访问控制",
+      "description": "您的管理员权限授予您访问以下功能",
+      "features": {
+        "manageTasks": "创建、编辑和删除任务",
+        "viewUsers": "查看所有用户帐户和统计信息",
+        "viewHistory": "访问用户完成历史记录",
+        "viewAnalytics": "查看平台分析和指标"
+      }
+    },
+    "referralMetrics": {
+      "title": "[EN] Referral Program Metrics",
+      "description": "[EN] Track the performance of your referral task program",
+      "completions": "[EN] Referral Task Completions",
+      "completionsDesc": "[EN] Total successful referrals",
+      "points": "[EN] Points from Referrals",
+      "pointsDesc": "[EN] Points awarded through referrals",
+      "percentageOfTotal": "[EN] {{percentage}}% of total points"
+    }
+  },
+  "tasks": {
+    "title": "任务管理",
+    "subtitle": "为用户创建和管理任务",
+    "createButton": "创建任务",
+    "editTitle": "编辑任务",
+    "createTitle": "创建新任务",
+    "empty": "未找到任务。创建您的第一个任务以开始。",
+    "active": "活跃",
+    "inactive": "不活跃",
+    "points": "积分",
+    "viewUrl": "查看URL",
+    "completions": "完成数",
+    "deleteConfirm": "您确定要删除此任务吗？",
+    "deleteError": "删除任务失败",
+    "form": {
+      "title": "标题",
+      "titlePlaceholder": "在Twitter上关注我们",
+      "description": "描述",
+      "descriptionPlaceholder": "关注我们的官方Twitter帐户以保持更新",
+      "points": "积分",
+      "pointsPlaceholder": "10",
+      "taskType": "任务类型",
+      "taskUrl": "任务URL（可选）",
+      "taskUrlPlaceholder": "https://twitter.com/sylvantoken",
+      "isActive": "活跃",
+      "submit": "创建任务",
+      "update": "更新任务",
+      "saving": "保存中...",
+      "cancel": "取消",
+      "saveError": "保存任务失败",
+      "types": {
+        "TWITTER_FOLLOW": "Twitter关注",
+        "TWITTER_LIKE": "Twitter点赞",
+        "TWITTER_RETWEET": "Twitter转发",
+        "TELEGRAM_JOIN": "Telegram加入",
+        "CUSTOM": "自定义",
+        "REFERRAL": "[EN] Referral Task"
+      },
+      "timeLimited": {
+        "enable": "[EN] Enable Time Limit",
+        "duration": "[EN] Duration (hours)",
+        "durationPlaceholder": "[EN] Enter duration in hours (1-24)",
+        "durationHelp": "[EN] Task duration must be between 1 and 24 hours",
+        "currentExpiration": "[EN] Current Expiration",
+        "newExpiration": "[EN] New expiration will be",
+        "willExpire": "[EN] Task will expire"
+      },
+      "referralTask": {
+        "title": "[EN] How Referral Tasks Work",
+        "description": "[EN] Referral tasks automatically reward users when their invited friends successfully register on the platform.",
+        "howItWorks": {
+          "step1": "[EN] Users claim the referral task and receive a PENDING status",
+          "step2": "[EN] Users share their unique referral code with friends",
+          "step3": "[EN] When a friend registers using the code, the task is automatically completed",
+          "step4": "[EN] Points are awarded immediately upon successful referral"
+        },
+        "tip": "[EN] Tip: Set attractive point rewards to encourage users to invite more friends and grow your platform!"
+      }
+    },
+    "edit": "[EN] Edit",
+    "delete": "[EN] Delete",
+    "resultsCount": "[EN] Showing {{count}} of {{total}} tasks",
+    "filters": {
+      "all": "[EN] All Tasks",
+      "active": "[EN] Active",
+      "inactive": "[EN] Inactive"
+    }
+  },
+  "users": {
+    "title": "用户管理",
+    "subtitle": "查看和管理所有注册用户及其活动",
+    "loading": "加载中...",
+    "searchPlaceholder": "按电子邮件或用户名搜索...",
+    "noUsers": "未找到用户",
+    "export": "导出",
+    "resultsCount": "显示 {{count}} / {{total}} 用户",
+    "filters": {
+      "title": "筛选",
+      "allUsers": "所有用户",
+      "users": "仅用户",
+      "admins": "仅管理员"
+    },
+    "table": {
+      "username": "用户名",
+      "email": "电子邮件",
+      "points": "积分",
+      "completions": "完成数",
+      "registered": "注册时间",
+      "lastActive": "最后活跃",
+      "actions": "操作",
+      "view": "查看",
+      "admin": "管理员"
+    },
+    "pagination": {
+      "page": "第{{current}}页，共{{total}}页",
+      "previous": "上一页",
+      "next": "下一页"
+    },
+    "detail": {
+      "back": "返回用户",
+      "backShort": "返回",
+      "loading": "正在加载用户详细信息...",
+      "notFound": "未找到用户",
+      "admin": "管理员",
+      "stats": {
+        "totalPoints": "总积分",
+        "totalPointsDesc": "累积积分",
+        "completions": "完成数",
+        "completionsDesc": "已完成任务",
+        "streak": "连续",
+        "streakDesc": "连续天数",
+        "memberSince": "成员自"
+      },
+      "accountInfo": {
+        "title": "帐户信息",
+        "registrationDate": "注册日期",
+        "lastActive": "最后活跃"
+      },
+      "completionHistory": {
+        "title": "完成历史",
+        "empty": "尚无完成记录",
+        "table": {
+          "task": "任务",
+          "type": "类型",
+          "points": "积分",
+          "completedAt": "完成时间"
+        },
+        "pagination": "第{{current}}页，共{{total}}页（共{{count}}次完成）"
+      }
+    }
+  },
+  "stats": {
+    "totalUsers": {
+      "title": "总用户数",
+      "description": "所有注册用户"
+    },
+    "activeUsers": {
+      "title": "活跃用户",
+      "description": "最近7天活跃"
+    },
+    "totalCompletions": {
+      "title": "总完成数",
+      "description": "所有任务完成"
+    },
+    "pointsAwarded": {
+      "title": "已授予积分",
+      "description": "分发的总积分"
+    }
+  },
+  "campaigns": {
+    "title": "活动管理",
+    "loading": "正在加载活动...",
+    "loadingDetails": "正在加载活动...",
+    "empty": "未找到活动"
+  },
+  "verifications": {
+    "title": "[EN] Verification Dashboard",
+    "loading": "[EN] Loading completions...",
+    "empty": "[EN] No pending verifications"
+  },
+  "verification": {
+    "title": "任务验证",
+    "pending": "待处理",
+    "approved": "已批准",
+    "rejected": "已拒绝",
+    "needsReview": "需要审核",
+    "approve": "批准",
+    "reject": "拒绝",
+    "fraudScore": "欺诈评分",
+    "riskLevel": "风险等级",
+    "userInfo": "用户信息",
+    "taskInfo": "任务信息",
+    "fraudAnalysis": "欺诈分析",
+    "loading": "正在加载完成...",
+    "empty": "没有待处理的验证"
+  },
+  "bulkActions": {
+    "selectAll": "全选",
+    "selectedCount": "已选择 {{count}} 个",
+    "bulkActions": "批量操作",
+    "processing": "处理中...",
+    "assignPoints": "分配积分",
+    "activate": "激活用户",
+    "block": "封禁用户",
+    "delete": "删除用户",
+    "export": "导出选中项",
+    "deleteDialog": {
+      "title": "删除用户",
+      "description": "您确定要删除 {{count}} 个用户吗？此操作无法撤销，将删除所有相关数据。",
+      "cancel": "取消",
+      "confirm": "删除用户",
+      "deleting": "删除中..."
+    },
+    "blockDialog": {
+      "title": "封禁用户",
+      "description": "您确定要封禁 {{count}} 个用户吗？被封禁的用户将无法访问平台。",
+      "cancel": "取消",
+      "confirm": "封禁用户",
+      "blocking": "封禁中..."
+    },
+    "pointsDialog": {
+      "title": "分配积分",
+      "description": "为选中的 {{count}} 个用户分配积分。",
+      "label": "要分配的积分",
+      "hint": "输入正数添加积分，输入负数扣除积分。",
+      "cancel": "取消",
+      "confirm": "分配积分",
+      "assigning": "分配中..."
+    },
+    "resultDialog": {
+      "successTitle": "操作成功完成",
+      "partialTitle": "操作完成但有错误",
+      "successful": "成功",
+      "failed": "失败",
+      "errors": "错误：",
+      "close": "关闭"
+    }
+  },
+  "filters": {
+    "title": "高级筛选",
+    "addCriterion": "添加筛选条件",
+    "appliedFilters": "已应用的筛选",
+    "clearAll": "清除全部",
+    "apply": "应用筛选",
+    "clear": "清除",
+    "loadPreset": "加载预设",
+    "savePreset": "保存预设",
+    "presetName": "预设名称",
+    "presetNamePlaceholder": "例如：高分活跃用户",
+    "savePresetDescription": "保存当前筛选条件以便快速访问",
+    "saving": "保存中...",
+    "field": "字段",
+    "operator": "运算符",
+    "value": "值",
+    "logic": {
+      "and": "且",
+      "or": "或"
+    },
+    "operators": {
+      "equals": "等于",
+      "contains": "包含",
+      "gt": "大于",
+      "lt": "小于",
+      "between": "介于",
+      "in": "在内",
+      "onDate": "在日期",
+      "after": "之后",
+      "before": "之前"
+    },
+    "fields": {
+      "username": "用户名",
+      "email": "邮箱",
+      "points": "积分",
+      "completions": "完成数",
+      "role": "角色",
+      "status": "状态",
+      "createdAt": "注册日期",
+      "lastActive": "最后活跃"
+    },
+    "placeholders": {
+      "enterValue": "输入值",
+      "selectValue": "选择值",
+      "min": "最小",
+      "max": "最大"
+    }
+  },
+  "export": {
+    "title": "导出数据",
+    "description": "以您喜欢的格式导出{{model}}数据",
+    "formatLabel": "导出格式",
+    "fieldsLabel": "选择要导出的字段",
+    "selectAll": "全选",
+    "deselectAll": "取消全选",
+    "allFields": "所有字段",
+    "filtersApplied": "已应用筛选",
+    "filtersCount": "{{count}}个筛选将应用于导出",
+    "cancel": "取消",
+    "export": "导出",
+    "exporting": "导出中...",
+    "formats": {
+      "csvDesc": "逗号分隔值",
+      "excelDesc": "Microsoft Excel格式",
+      "jsonDesc": "JavaScript对象表示法"
+    },
+    "models": {
+      "users": "用户",
+      "tasks": "任务",
+      "completions": "完成",
+      "campaigns": "活动"
+    },
+    "status": {
+      "successTitle": "导出成功",
+      "success": "您的文件已成功下载。",
+      "errorTitle": "导出失败",
+      "asyncTitle": "导出已排队",
+      "asyncExport": "您的导出正在处理中。您将很快收到包含下载链接的电子邮件。"
+    },
+    "errors": {
+      "noFields": "请至少选择一个要导出的字段",
+      "failed": "导出失败。请重试。"
+    }
+  },
+  "analytics": {
+    "title": "分析仪表板",
+    "subtitle": "平台性能指标和洞察",
+    "refresh": "刷新",
+    "exportPdf": "导出PDF",
+    "dateRange": {
+      "title": "日期范围",
+      "description": "选择时间段以查看分析",
+      "last7Days": "最近7天",
+      "last30Days": "最近30天",
+      "last90Days": "最近90天",
+      "lastYear": "去年",
+      "showing": "显示从{{start}}到{{end}}的数据"
+    },
+    "metrics": {
+      "totalUsers": "总用户数",
+      "totalUsersDesc": "所有注册用户",
+      "activeUsers": "活跃用户",
+      "activeUsersDesc": "最近7天活跃",
+      "totalCompletions": "总完成数",
+      "totalCompletionsDesc": "所有任务完成",
+      "totalPoints": "总积分",
+      "totalPointsDesc": "平均：每用户{{avg}}"
+    },
+    "charts": {
+      "userGrowth": "用户增长",
+      "userGrowthDesc": "每日新用户注册",
+      "completionTrends": "完成趋势",
+      "completionTrendsDesc": "每日任务完成",
+      "topTasks": "按完成数排名的热门任务",
+      "topTasksDesc": "平台上最受欢迎的任务",
+      "userActivity": "用户活动分布",
+      "userActivityDesc": "活跃与非活跃用户",
+      "todayActivity": "今日活动",
+      "todayActivityDesc": "今日新用户和完成数",
+      "noData": "无可用数据"
+    },
+    "labels": {
+      "activeUsers": "活跃用户",
+      "inactiveUsers": "非活跃用户",
+      "newUsers": "新用户",
+      "completions": "完成数"
+    }
+  },
+  "audit": {
+    "pageTitle": "审计日志 - 管理员",
+    "pageDescription": "跟踪所有管理操作和系统事件",
+    "heading": "审计日志",
+    "subheading": "所有管理操作的完整历史记录，用于问责和安全",
+    "title": "审计日志",
+    "subtitle": "跟踪所有管理操作和系统事件",
+    "description": "所有管理操作的完整历史记录，用于问责和安全",
+    "loading": "正在加载审计日志...",
+    "noLogs": "未找到审计日志",
+    "export": "导出",
+    "searchPlaceholder": "按操作、管理员或记录ID搜索...",
+    "filtersActive": "筛选器已激活",
+    "clearFilters": "清除筛选器",
+    "viewDetails": "查看",
+    "previous": "上一页",
+    "next": "下一页",
+    "page": "第{{current}}页，共{{total}}页",
+    "resultsCount": "显示第{{start}}-{{end}}条，共{{total}}条日志",
+    "filters": {
+      "allEvents": "所有事件",
+      "securityOnly": "仅安全事件",
+      "action": "操作",
+      "actionPlaceholder": "例如：user_delete",
+      "model": "模型",
+      "modelPlaceholder": "例如：User",
+      "startDate": "开始日期",
+      "endDate": "结束日期"
+    },
+    "table": {
+      "timestamp": "时间戳",
+      "action": "操作",
+      "admin": "管理员",
+      "model": "模型",
+      "recordId": "记录ID",
+      "ipAddress": "IP地址",
+      "details": "详情"
+    },
+    "detailsDialog": {
+      "title": "审计日志详情",
+      "securityEvent": "安全敏感事件",
+      "action": "操作",
+      "admin": "管理员用户",
+      "model": "受影响的模型",
+      "recordId": "记录ID",
+      "ipAddress": "IP地址",
+      "userAgent": "用户代理",
+      "dataChanges": "数据更改",
+      "before": "之前",
+      "after": "之后"
+    }
+  },
+  "roles": {
+    "title": "角色管理",
+    "subtitle": "管理管理员用户的角色和权限",
+    "loading": "正在加载角色...",
+    "empty": "未找到角色。创建您的第一个角色以开始。",
+    "createButton": "创建角色",
+    "createTitle": "创建新角色",
+    "createDescription": "定义具有特定权限的新角色",
+    "editTitle": "编辑角色",
+    "editDescription": "更新角色名称和权限",
+    "assignTitle": "分配{{role}}角色",
+    "assignDescription": "选择要分配此角色的用户",
+    "permissions": "权限",
+    "more": "更多",
+    "assignUsers": "分配用户",
+    "deleteError": "删除角色失败",
+    "stats": {
+      "totalRoles": "总角色数",
+      "assignedUsers": "已分配用户"
+    },
+    "list": {
+      "title": "角色",
+      "description": "管理角色及其权限"
+    },
+    "form": {
+      "name": "角色名称",
+      "namePlaceholder": "例如：内容管理员",
+      "permissions": "权限",
+      "nameRequired": "角色名称为必填项",
+      "permissionsRequired": "至少需要一个权限",
+      "saveError": "保存角色失败",
+      "saving": "正在保存...",
+      "create": "创建角色",
+      "update": "更新角色",
+      "cancel": "取消"
+    },
+    "assign": {
+      "loading": "正在加载用户...",
+      "searchPlaceholder": "按用户名或电子邮件搜索...",
+      "noUsers": "未找到用户",
+      "noResults": "没有用户匹配您的搜索",
+      "assigned": "已分配",
+      "assign": "分配",
+      "assigning": "正在分配...",
+      "remove": "移除",
+      "removing": "正在移除...",
+      "assignError": "分配角色失败",
+      "removeError": "移除角色失败",
+      "summary": "{{total}}个用户中有{{assigned}}个拥有此角色",
+      "close": "关闭"
+    },
+    "deleteDialog": {
+      "title": "删除角色",
+      "description": "您确定要删除角色\"{{role}}\"吗？拥有此角色的用户将失去其权限。",
+      "cancel": "取消",
+      "confirm": "删除角色"
+    }
+  },
+  "emails": {
+    "title": "电子邮件分析",
+    "subtitle": "监控电子邮件投递和参与度指标",
+    "loading": "正在加载电子邮件分析...",
+    "dateRange": {
+      "title": "日期范围筛选",
+      "startDate": "开始日期",
+      "endDate": "结束日期",
+      "apply": "应用筛选",
+      "reset": "重置"
+    },
+    "overview": {
+      "totalSent": "发送的电子邮件总数",
+      "deliveryRate": "投递率",
+      "delivered": "已投递",
+      "openRate": "打开率",
+      "opened": "已打开",
+      "clickRate": "点击率",
+      "clicked": "已点击",
+      "bounceRate": "退回率",
+      "bounced": "已退回",
+      "failureRate": "失败率",
+      "failed": "失败"
+    },
+    "bounceBreakdown": {
+      "title": "退回细分",
+      "hard": "硬退回",
+      "soft": "软退回",
+      "spam": "垃圾邮件报告",
+      "other": "其他"
+    },
+    "templatePerformance": {
+      "title": "按模板的电子邮件性能",
+      "noData": "无电子邮件数据",
+      "sent": "已发送",
+      "delivery": "投递",
+      "open": "打开",
+      "click": "点击"
+    },
+    "recentFailures": {
+      "title": "最近失败的电子邮件",
+      "to": "收件人：",
+      "template": "模板："
+    }
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "发生错误",
+    "retry": "重试",
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "create": "创建",
+    "back": "返回"
+  },
+  "sidebar": {
+    "quickActions": "[EN] Quick Actions",
+    "createTask": "[EN] Create Task",
+    "viewUsers": "[EN] View Users"
+  },
+  "errorReports": {
+    "title": "[EN] Error Reports",
+    "subtitle": "[EN] Monitor and manage user-reported errors",
+    "viewDetails": "[EN] View Details",
+    "delete": "[EN] Delete",
+    "deleteConfirm": "[EN] Are you sure?",
+    "deleteDescription": "[EN] This action cannot be undone. This will permanently delete the error report and all associated data (tags, comments, etc.).",
+    "deletePermanently": "[EN] Delete Permanently",
+    "deleting": "[EN] Deleting...",
+    "deleted": "[EN] Deleted Successfully",
+    "deletedMessage": "[EN] Error report has been permanently deleted",
+    "updated": "[EN] Updated Successfully",
+    "updatedMessage": "[EN] Error report has been updated",
+    "analytics": {
+      "totalReports": "[EN] Total Reports",
+      "pending": "[EN] Pending",
+      "resolved": "[EN] Resolved",
+      "avgResponse": "[EN] Avg Response",
+      "avgResolution": "[EN] Avg Resolution",
+      "byPriority": "[EN] By Priority",
+      "byType": "[EN] By Type",
+      "byStatus": "[EN] By Status",
+      "trend": "[EN] 7-Day Trend",
+      "topTags": "[EN] Most Common Tags",
+      "noData": "[EN] No data available"
+    },
+    "tags": {
+      "title": "[EN] Tags",
+      "add": "[EN] Add",
+      "addPlaceholder": "[EN] Add a tag (e.g., bug, ui, performance)",
+      "suggestions": "[EN] Suggestions:",
+      "tagAdded": "[EN] Tag added",
+      "tagAddedMessage": "[EN] Tag has been added successfully",
+      "tagRemoved": "[EN] Tag removed",
+      "tagRemovedMessage": "[EN] Tag has been removed",
+      "tagExists": "[EN] Tag already exists",
+      "tagExistsMessage": "[EN] This tag is already added to this report",
+      "failed": "[EN] Failed to add tag",
+      "failedMessage": "[EN] An error occurred while adding the tag"
+    },
+    "comments": {
+      "title": "[EN] Comments",
+      "count": "[EN] {{count}} comments",
+      "add": "[EN] Comment",
+      "addPlaceholder": "[EN] Add a comment... (Ctrl+Enter to submit)",
+      "internal": "[EN] Internal note",
+      "public": "[EN] Public comment",
+      "noComments": "[EN] No comments yet",
+      "beFirst": "[EN] Be the first to comment on this error report",
+      "commentAdded": "[EN] Comment added",
+      "commentAddedMessage": "[EN] Your comment has been added successfully",
+      "internalNote": "[EN] Internal notes are only visible to admins. Public comments may be shared with the user.",
+      "failed": "[EN] Failed to add comment",
+      "failedMessage": "[EN] An error occurred while adding the comment"
+    },
+    "detail": {
+      "title": "[EN] Title",
+      "reportedBy": "[EN] Reported By",
+      "anonymous": "[EN] Anonymous",
+      "errorType": "[EN] Error Type",
+      "description": "[EN] Description",
+      "stackTrace": "[EN] Stack Trace",
+      "pageUrl": "[EN] Page URL",
+      "userAgent": "[EN] User Agent",
+      "createdAt": "[EN] Created At",
+      "tabs": {
+        "update": "[EN] Update",
+        "tags": "[EN] Tags",
+        "comments": "[EN] Comments"
+      },
+      "update": {
+        "title": "[EN] Update Status",
+        "status": "[EN] Status",
+        "priority": "[EN] Priority",
+        "resolution": "[EN] Resolution Notes",
+        "resolutionPlaceholder": "[EN] Add resolution notes...",
+        "cancel": "[EN] Cancel",
+        "update": "[EN] Update Report",
+        "updating": "[EN] Updating..."
+      }
+    },
+    "status": {
+      "PENDING": "[EN] Pending",
+      "IN_PROGRESS": "[EN] In Progress",
+      "RESOLVED": "[EN] Resolved",
+      "CLOSED": "[EN] Closed"
+    },
+    "priority": {
+      "LOW": "[EN] Low",
+      "MEDIUM": "[EN] Medium",
+      "HIGH": "[EN] High",
+      "CRITICAL": "[EN] Critical"
+    },
+    "filters": {
+      "allStatus": "[EN] All Status",
+      "allPriority": "[EN] All Priority",
+      "apply": "[EN] Apply Filters"
+    },
+    "table": {
+      "priority": "[EN] Priority",
+      "type": "[EN] Type",
+      "title": "[EN] Title",
+      "user": "[EN] User",
+      "status": "[EN] Status",
+      "created": "[EN] Created",
+      "actions": "[EN] Actions",
+      "noReports": "[EN] No error reports found"
+    },
+    "pagination": {
+      "page": "[EN] Page {{current}} of {{total}}",
+      "previous": "[EN] Previous",
+      "next": "[EN] Next"
+    }
+  }
+}

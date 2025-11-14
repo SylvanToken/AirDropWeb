@@ -1,0 +1,37 @@
+{
+  "header": {
+    "navigation": {
+      "home": "Inicio",
+      "about": "Acerca de",
+      "airdrop": "Airdrop",
+      "whitepaper": "Libro Blanco",
+      "community": "Comunidad",
+      "contact": "Contacto"
+    },
+    "buttons": {
+      "connectWallet": "Conectar Billetera",
+      "joinAirdrop": "Unirse al Airdrop",
+      "login": "Iniciar Sesión",
+      "register": "Registrarse",
+      "dashboard": "Panel"
+    }
+  },
+  "footer": {
+    "description": "Sylvan Token está liderando el camino en sostenibilidad ambiental a través de la tecnología blockchain. Únete a nosotros para crear un futuro más verde.",
+    "links": {
+      "terms": "Términos",
+      "privacy": "Privacidad"
+    },
+    "social": {
+      "twitter": "Twitter",
+      "telegram": "Telegram"
+    },
+    "branding": {
+      "tagline": "Plataforma de Airdrop Ecológica",
+      "madeWith": "Hecho con",
+      "forNature": "para la naturaleza",
+      "greenerFuture": "Construyendo un futuro más verde juntos 🌱"
+    },
+    "copyright": "© {year} Sylvan Token"
+  }
+}

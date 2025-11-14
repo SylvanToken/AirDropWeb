@@ -1,0 +1,67 @@
+{
+  "general": {
+    "unknown": "Bilinmeyen bir hata oluştu",
+    "serverError": "Sunucu hatası oluştu",
+    "networkError": "Ağ bağlantı hatası",
+    "timeout": "İstek zaman aşımına uğradı"
+  },
+  "auth": {
+    "invalidCredentials": "Geçersiz e-posta veya şifre",
+    "emailExists": "E-posta adresi zaten kullanılıyor",
+    "usernameExists": "Kullanıcı adı zaten kullanılıyor",
+    "unauthorized": "Yetkisiz erişim",
+    "sessionExpired": "Oturumunuzun süresi doldu",
+    "invalidToken": "Geçersiz veya süresi dolmuş token"
+  },
+  "validation": {
+    "required": "Bu alan zorunludur",
+    "invalidEmail": "Geçersiz e-posta adresi",
+    "invalidPassword": "Şifre en az 8 karakter olmalıdır",
+    "passwordMismatch": "Şifreler eşleşmiyor",
+    "invalidUsername": "Kullanıcı adı 3-20 karakter olmalıdır",
+    "invalidWallet": "Geçersiz cüzdan adresi"
+  },
+  "api": {
+    "notFound": "Kaynak bulunamadı",
+    "forbidden": "Erişim yasak",
+    "badRequest": "Geçersiz istek",
+    "conflict": "Kaynak zaten mevcut",
+    "tooManyRequests": "Çok fazla istek, lütfen daha sonra tekrar deneyin"
+  },
+  "database": {
+    "connectionError": "Veritabanı bağlantı hatası",
+    "queryError": "Veritabanı sorgu hatası",
+    "uniqueConstraint": "Bu değer zaten mevcut"
+  },
+  "errorReport": {
+    "title": "Hata Bildir",
+    "subtitle": "Karşılaştığınız sorunları bildirerek bize yardımcı olun",
+    "button": "Hata Bildir",
+    "types": {
+      "UI_ERROR": "Arayüz/Görüntü Hatası",
+      "API_ERROR": "API/Bağlantı Hatası",
+      "TASK_ERROR": "Görev Tamamlama Hatası",
+      "PAYMENT_ERROR": "Ödeme/Cüzdan Hatası",
+      "OTHER": "Diğer"
+    },
+    "form": {
+      "errorType": "Hata Türü",
+      "errorTitle": "Hata Başlığı",
+      "errorTitlePlaceholder": "Hatanın kısa açıklaması",
+      "errorTitleRequired": "Hata başlığı gereklidir",
+      "errorDetails": "Hata Detayları",
+      "errorDetailsPlaceholder": "Lütfen ne olduğunu, ne yapmaya çalıştığınızı ve gördüğünüz hata mesajlarını açıklayın...",
+      "errorDetailsRequired": "Hata detayları gereklidir",
+      "submit": "Raporu Gönder",
+      "cancel": "İptal",
+      "submitting": "Gönderiliyor..."
+    },
+    "success": {
+      "title": "Rapor Gönderildi!",
+      "message": "Platformu geliştirmemize yardımcı olduğunuz için teşekkür ederiz"
+    },
+    "validation": {
+      "allFieldsRequired": "Lütfen tüm gerekli alanları doldurun"
+    }
+  }
+}

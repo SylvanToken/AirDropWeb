@@ -1,0 +1,67 @@
+{
+  "setup": {
+    "title": "BEP-20 Cüzdanınızı Ekleyin",
+    "description": "Ödülleri almak için Binance Smart Chain (BEP-20) cüzdan adresinizi girin",
+    "verifiedTitle": "Cüzdan Doğrulandı",
+    "verifiedDescription": "BEP-20 cüzdan adresiniz doğrulandı ve kilitlendi",
+    "verifiedLabel": "Doğrulanmış Cüzdan Adresi",
+    "verifiedNote": "Bu adres hesabınıza kalıcı olarak bağlanmıştır ve değiştirilemez.",
+    "airdropInfoTitle": "Airdrop Bilgisi",
+    "airdropInfoText": "Kazandığınız tüm puanlar ve ödüller, airdrop dağıtımı başladığında bu cüzdan adresine gönderilecektir.",
+    "warningTitle": "Önemli: Cüzdan Eklemeden Önce Okuyun",
+    "warningItems": {
+      "bep20Only": "Yalnızca BEP-20 (Binance Smart Chain) adresleri desteklenir",
+      "permanentLock": "Cüzdan adresiniz onaylandıktan sonra kalıcı olarak kilitlenecektir",
+      "cannotChange": "Doğrulandıktan sonra cüzdan adresinizi değiştiremezsiniz",
+      "doubleCheck": "Onaylamadan önce adresinizi iki kez kontrol edin",
+      "rewardsDestination": "Tüm airdrop ödülleri bu adrese gönderilecektir"
+    },
+    "infoTitle": "BEP-20 Adresi Nedir?",
+    "infoDescription": "BEP-20, Binance Smart Chain'deki token standardıdır. Cüzdan adresiniz şunları içermelidir:",
+    "infoItems": {
+      "startsWith": "0x ile başlamalı",
+      "length": "Tam olarak 42 karakter uzunluğunda olmalı",
+      "characters": "Yalnızca rakamlar (0-9) ve harfler (a-f, A-F) içermeli"
+    },
+    "infoExample": "Örnek:",
+    "walletLabel": "BEP-20 Cüzdan Adresi",
+    "walletPlaceholder": "0x...",
+    "walletHelp": "Trust Wallet, MetaMask veya Binance'den BEP-20 cüzdan adresinizi yapıştırın",
+    "continueButton": "Devam Et",
+    "processingButton": "İşleniyor..."
+  },
+  "confirmation": {
+    "title": "Cüzdan Adresini Onayla",
+    "subtitle": "Bu işlem geri alınamaz",
+    "addressLabel": "Cüzdan Adresiniz:",
+    "criticalTitle": "KRİTİK: Lütfen Dikkatlice Okuyun",
+    "criticalItems": {
+      "permanentLock": "Bu cüzdan adresi hesabınıza KALICI OLARAK kilitlenecektir",
+      "cannotChange": "Onayladıktan sonra bu adresi DEĞİŞTİREMEZ veya güncelleyemezsiniz",
+      "rewardsDestination": "Tüm airdrop ödülleri bu adrese gönderilecektir",
+      "accessRequired": "Bu cüzdana erişiminiz olduğundan emin olun",
+      "verifyCorrect": "Onaylamadan önce adresin doğru olduğunu kontrol edin"
+    },
+    "checklistTitle": "Onay Kontrol Listesi",
+    "checklistItems": {
+      "doubleChecked": "Cüzdan adresimi iki kez kontrol ettim ve doğru",
+      "understandPermanent": "Bu adresin onaylandıktan sonra değiştirilemeyeceğini anlıyorum",
+      "haveAccess": "Bu cüzdana erişimim var ve token alabilirim",
+      "understandBep20": "Bunun bir BEP-20 (Binance Smart Chain) adresi olduğunu anlıyorum"
+    },
+    "cancelButton": "İptal",
+    "confirmButton": "Onayla ve Cüzdanı Kilitle",
+    "confirmingButton": "Onaylanıyor...",
+    "checkAllRequired": "Onaylamak için lütfen tüm kutuları işaretleyin",
+    "acknowledgement": "Onaylayarak, yukarıdaki tüm uyarıları okuduğunuzu ve anladığınızı kabul ediyorsunuz"
+  },
+  "errors": {
+    "walletAlreadySet": "Cüzdan adresiniz zaten doğrulanmış ve değiştirilemez. Bu kalıcı bir güvenlik önlemidir.",
+    "walletInUse": "Bu cüzdan adresi başka bir hesaba kayıtlı. Her cüzdan sadece bir hesaba bağlanabilir.",
+    "invalidAddress": "Cüzdan adresi formatı geçersiz. Lütfen 0x ile başlayan geçerli bir BEP-20 adresi girin.",
+    "validationError": "Cüzdan adresi doğrulaması başarısız oldu. Lütfen formatı kontrol edip tekrar deneyin.",
+    "noWallet": "Cüzdan adresi bulunamadı. Lütfen önce bir cüzdan adresi ekleyin.",
+    "alreadyVerified": "Cüzdan adresiniz zaten doğrulanmış. Başka bir işlem yapmanıza gerek yok.",
+    "unknown": "Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin veya sorun devam ederse destek ile iletişime geçin."
+  }
+}

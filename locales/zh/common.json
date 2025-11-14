@@ -1,0 +1,278 @@
+{
+  "header": {
+    "dashboard": "仪表板",
+    "tasks": "任务",
+    "wallet": "钱包",
+    "profile": "个人资料",
+    "leaderboard": "排行榜",
+    "logout": "登出",
+    "admin": "管理员"
+  },
+  "footer": {
+    "copyright": "© 2025 Sylvan Token. 保留所有权利。",
+    "builtWith": "为Sylvan Token社区用❤️打造",
+    "terms": "条款",
+    "privacy": "隐私",
+    "language": "语言"
+  },
+  "language": {
+    "select": "选择语言",
+    "current": "当前语言"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "cancel": "取消",
+    "confirm": "确认",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "create": "创建",
+    "back": "返回",
+    "next": "下一步",
+    "submit": "提交",
+    "close": "关闭",
+    "yes": "是",
+    "no": "否",
+    "search": "搜索",
+    "filter": "筛选",
+    "sort": "排序",
+    "actions": "操作",
+    "signIn": "登录"
+  },
+  "errors": {
+    "generic": "发生错误。请重试。",
+    "network": "网络错误。请检查您的连接。",
+    "unauthorized": "您无权执行此操作。",
+    "notFound": "未找到请求的资源。",
+    "validation": "请检查您的输入并重试。"
+  },
+  "welcomeModal": {
+    "title": "重要账户信息",
+    "subtitle": "请在完成注册前仔细阅读：",
+    "button": {
+      "understood": "明白了",
+      "countdownLabel": "明白了按钮将在{count}秒后激活",
+      "readyLabel": "明白了，关闭弹窗"
+    },
+    "checkbox": {
+      "label": "不再显示"
+    },
+    "items": {
+      "security": "账户安全是您的责任",
+      "noPasswordReset": "不提供\"忘记密码\"选项",
+      "socialMediaLock": "社交媒体用户名注册后无法更改",
+      "walletLock": "钱包地址注册后无法更改",
+      "futureEvents": "您保存的信息将用于未来的活动",
+      "earlyBenefits": "早期成员可能获得不同的积分优势",
+      "timeLimited": "某些任务和活动有时间限制",
+      "accuracy": "请确保所有信息准确无误"
+    }
+  },
+  "hero": {
+    "home": {
+      "title": "欢迎来到Sylvan Token",
+      "subtitle": "完成任务，赚取奖励，与我们的社区一起成长",
+      "cta": "开始使用"
+    },
+    "dashboard": {
+      "title": "欢迎回来，{username}！",
+      "subtitle": "跟踪您的进度并与社区竞争"
+    },
+    "tasks": {
+      "title": "可用任务",
+      "subtitle": "完成任务以赚取积分并攀登排行榜"
+    },
+    "leaderboard": {
+      "title": "社区排行榜",
+      "subtitle": "查看您在其他成员中的排名",
+      "yourRank": "您的排名：#{rank} / {total}"
+    }
+  },
+  "leaderboardPage": {
+    "pageTitle": "社区排行榜",
+    "pageSubtitle": "查看您在其他成员中的排名",
+    "userRankLabel": "您的排名：#{rank} / {total}",
+    "loadingText": "加载中..."
+  },
+  "home": {
+    "features": {
+      "title": "为什么选择 Sylvan Token？",
+      "subtitle": "加入数千名通过简单任务赚取奖励的用户",
+      "tasks": {
+        "title": "简单任务",
+        "description": "完成简单的社交媒体任务并立即赚取积分"
+      },
+      "rewards": {
+        "title": "真实奖励",
+        "description": "赚取可转换为真实代币奖励的积分"
+      },
+      "community": {
+        "title": "活跃社区",
+        "description": "加入蓬勃发展的代币爱好者社区"
+      },
+      "instant": {
+        "title": "即时跟踪",
+        "description": "实时跟踪您的进度和收益"
+      }
+    },
+    "benefits": {
+      "title": "今天开始赚取",
+      "subtitle": "加入 Sylvan Token 社区并解锁独家福利",
+      "item1": "完成每日任务以赚取积分并攀登排行榜",
+      "item2": "连接您的钱包以直接接收代币奖励",
+      "item3": "与其他成员竞争获得奖金和认可",
+      "item4": "访问独家活动和早期机会"
+    },
+    "stats": {
+      "users": "10K+",
+      "usersLabel": "注册用户",
+      "tasks": "50K+",
+      "tasksLabel": "已完成任务",
+      "rewards": "1M+",
+      "rewardsLabel": "已分发积分"
+    },
+    "tokenDistribution": {
+      "title": "代币分配",
+      "subtitle": "实时代币分配",
+      "totalSupply": "总供应量",
+      "holders": "持有者",
+      "circulating": "流通中",
+      "locked": "锁定",
+      "team": "团队",
+      "donation": "捐赠",
+      "fee": "费用",
+      "burned": "销毁",
+      "updated": "更新时间",
+      "billion": "十亿",
+      "million": "百万"
+    },
+    "cta": {
+      "title": "准备开始了吗？",
+      "subtitle": "立即创建您的账户并开始赚取奖励",
+      "button": "创建免费账户"
+    }
+  },
+  "theme": {
+    "light": "浅色模式",
+    "dark": "深色模式",
+    "toggle": "切换主题"
+  },
+  "accessibility": {
+    "skipToMain": "跳转到主要内容",
+    "skipToNav": "跳转到导航",
+    "skipToFooter": "跳转到页脚",
+    "settings": "[EN] Accessibility Settings",
+    "settingsDescription": "[EN] Customize your experience for better accessibility",
+    "animations": "[EN] Animations",
+    "animationsEnabled": "[EN] Animations and transitions are enabled",
+    "animationsDisabled": "[EN] Animations and transitions are disabled",
+    "toggleAnimations": "[EN] Toggle animations",
+    "systemPreference": "[EN] System Preference:",
+    "reducedMotionDetected": "[EN] Your system is set to prefer reduced motion. You can override this setting above.",
+    "info": "[EN] Disabling animations will reduce motion effects throughout the application while maintaining functionality."
+  },
+  "profile": {
+    "title": "我的个人资料",
+    "subtitle": "管理您的账户信息和社交媒体连接",
+    "error": "无法加载个人资料",
+    "accountInfo": {
+      "title": "账户信息",
+      "description": "您的基本账户详情",
+      "username": "用户名",
+      "email": "电子邮件",
+      "memberSince": "注册时间",
+      "totalPoints": "总积分"
+    },
+    "wallet": {
+      "title": "钱包状态",
+      "description": "您的BEP-20钱包地址",
+      "verified": "已验证",
+      "notSet": "未设置钱包地址",
+      "notSetDescription": "添加您的钱包地址以完成任务并获得奖励"
+    },
+    "socialMedia": {
+      "title": "社交媒体账户",
+      "description": "连接您的社交媒体账户以完成任务",
+      "twitter": {
+        "title": "Twitter",
+        "description": "连接您的Twitter账户",
+        "placeholder": "@用户名",
+        "verify": "验证Twitter",
+        "verified": "已验证",
+        "notSet": "未设置"
+      },
+      "telegram": {
+        "title": "Telegram",
+        "description": "连接您的Telegram账户",
+        "placeholder": "@用户名",
+        "verify": "验证Telegram",
+        "verified": "已验证",
+        "notSet": "未设置"
+      }
+    }
+  },
+  "shortcuts": {
+    "title": "[EN] Keyboard Shortcuts",
+    "home": "[EN] Go to Home",
+    "dashboard": "[EN] Go to Dashboard",
+    "tasks": "[EN] Go to Tasks",
+    "leaderboard": "[EN] Go to Leaderboard",
+    "profile": "[EN] Go to Profile",
+    "tab": "[EN] Navigate between elements",
+    "shiftTab": "[EN] Navigate backwards",
+    "enter": "[EN] Activate focused element",
+    "escape": "[EN] Close modal/dropdown"
+  },
+  "twitter": {
+    "connection": {
+      "title": "[EN] Twitter Connection",
+      "description": "[EN] Connect your Twitter account for automatic task verification",
+      "connected": "[EN] Connected",
+      "notConnected": "[EN] Not Connected",
+      "connect": "[EN] Connect Twitter",
+      "disconnect": "[EN] Disconnect",
+      "reconnect": "[EN] Reconnect",
+      "connecting": "[EN] Connecting...",
+      "disconnecting": "[EN] Disconnecting...",
+      "tokenExpired": "[EN] Token Expired",
+      "tokenExpiredMessage": "[EN] Your Twitter connection has expired. Please reconnect to enable automatic verification."
+    },
+    "verification": {
+      "title": "[EN] Twitter Verification",
+      "pending": "[EN] Pending",
+      "verifying": "[EN] Verifying...",
+      "approved": "[EN] Approved",
+      "rejected": "[EN] Rejected",
+      "error": "[EN] Error",
+      "retry": "[EN] Retry Verification",
+      "complete": "[EN] Complete Task",
+      "pointsEarned": "[EN] +{points} points earned!",
+      "checkingActivity": "[EN] Checking your Twitter activity...",
+      "waitingVerification": "[EN] Waiting for verification...",
+      "taskVerified": "[EN] Great! Your {taskType} task has been verified.",
+      "taskRejected": "[EN] Please complete the {taskType} action and try again.",
+      "verificationFailed": "[EN] Verification failed. Please try again or contact support."
+    },
+    "tasks": {
+      "follow": "[EN] Follow",
+      "like": "[EN] Like",
+      "retweet": "[EN] Retweet",
+      "followTitle": "[EN] Follow on Twitter",
+      "likeTitle": "[EN] Like Tweet",
+      "retweetTitle": "[EN] Retweet",
+      "instructions": "[EN] Instructions:",
+      "howItWorks": "[EN] How it works:",
+      "step1": "[EN] Connect your Twitter account (one-time setup)",
+      "step2": "[EN] Complete the Twitter action",
+      "step3": "[EN] Verification happens automatically",
+      "step4": "[EN] Earn points instantly!",
+      "connectionRequired": "[EN] Twitter Connection Required",
+      "connectionRequiredMessage": "[EN] Connect your Twitter account to enable automatic verification for this task. This will make the process much faster and easier!",
+      "automaticVerification": "[EN] Automatic Verification",
+      "automaticVerificationMessage": "[EN] Once you complete the action, we'll automatically verify it and award your points!",
+      "manualMode": "[EN] Manual Mode"
+    }
+  }
+}

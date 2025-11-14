@@ -1,0 +1,56 @@
+{
+  "unsubscribe": {
+    "loading": {
+      "title": "요청 처리 중",
+      "description": "이메일 환경설정을 업데이트하는 동안 잠시 기다려 주세요..."
+    },
+    "success": {
+      "title": "구독 취소 완료",
+      "descriptionAll": "필수가 아닌 모든 이메일 구독이 취소되었습니다. 중요한 계정 및 보안 알림은 계속 받게 됩니다.",
+      "descriptionType": "{{type}} 이메일 구독이 취소되었습니다.",
+      "note": "지갑 인증 및 보안 알림과 같은 중요한 거래 이메일은 계속 받게 됩니다.",
+      "whatNext": "다음 단계는?",
+      "step1": "선택한 이메일 유형을 더 이상 받지 않습니다",
+      "step2": "프로필 설정에서 언제든지 다시 구독할 수 있습니다",
+      "step3": "중요한 계정 알림은 계속 전송됩니다"
+    },
+    "error": {
+      "title": "구독 취소 실패",
+      "help": "문제가 계속되면 지원팀에 문의하거나 프로필 설정에서 환경설정을 관리하세요."
+    },
+    "errors": {
+      "missingToken": "유효하지 않거나 누락된 구독 취소 링크입니다. 이메일의 링크를 사용하세요.",
+      "failed": "구독 취소 요청을 처리하지 못했습니다. 다시 시도해 주세요.",
+      "unknown": "예상치 못한 오류가 발생했습니다. 나중에 다시 시도해 주세요."
+    },
+    "actions": {
+      "goHome": "홈으로 이동",
+      "goToDashboard": "대시보드로 이동",
+      "goToSettings": "이메일 설정",
+      "managePreferences": "환경설정 관리"
+    }
+  },
+  "preferences": {
+    "title": "이메일 환경설정",
+    "description": "받고 싶은 이메일을 선택하세요",
+    "taskCompletions": {
+      "label": "작업 완료 알림",
+      "description": "작업을 완료하고 포인트를 획득할 때 알림을 받습니다"
+    },
+    "walletVerifications": {
+      "label": "지갑 인증 업데이트",
+      "description": "지갑 인증 상태에 대한 중요한 업데이트"
+    },
+    "adminNotifications": {
+      "label": "관리자 알림",
+      "description": "관리자의 알림 (관리자 사용자만)"
+    },
+    "marketingEmails": {
+      "label": "마케팅 및 업데이트",
+      "description": "뉴스, 업데이트 및 프로모션 콘텐츠"
+    },
+    "transactionalNote": "참고: 비밀번호 재설정 및 보안 알림과 같은 필수 거래 이메일은 항상 받게 됩니다.",
+    "saveSuccess": "이메일 환경설정이 성공적으로 저장되었습니다",
+    "saveError": "이메일 환경설정 저장 실패"
+  }
+}

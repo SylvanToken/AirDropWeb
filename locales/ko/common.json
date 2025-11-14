@@ -1,0 +1,238 @@
+{
+  "header": {
+    "dashboard": "대시보드",
+    "tasks": "작업",
+    "wallet": "지갑",
+    "profile": "프로필",
+    "leaderboard": "리더보드",
+    "logout": "로그아웃",
+    "admin": "관리자"
+  },
+  "footer": {
+    "copyright": "© 2025 Sylvan Token. 모든 권리 보유.",
+    "builtWith": "Sylvan Token 커뮤니티를 위해 ❤️로 제작",
+    "terms": "약관",
+    "privacy": "개인정보",
+    "language": "언어"
+  },
+  "language": {
+    "select": "언어 선택",
+    "current": "현재 언어"
+  },
+  "common": {
+    "loading": "로딩 중...",
+    "error": "오류",
+    "success": "성공",
+    "cancel": "취소",
+    "confirm": "확인",
+    "save": "저장",
+    "delete": "삭제",
+    "edit": "편집",
+    "create": "생성",
+    "back": "뒤로",
+    "next": "다음",
+    "submit": "제출",
+    "close": "닫기",
+    "yes": "예",
+    "no": "아니오",
+    "search": "검색",
+    "filter": "필터",
+    "sort": "정렬",
+    "actions": "작업",
+    "signIn": "로그인"
+  },
+  "errors": {
+    "generic": "오류가 발생했습니다. 다시 시도해주세요.",
+    "network": "네트워크 오류입니다. 연결을 확인해주세요.",
+    "unauthorized": "이 작업을 수행할 권한이 없습니다.",
+    "notFound": "요청한 리소스를 찾을 수 없습니다.",
+    "validation": "입력을 확인하고 다시 시도해주세요."
+  },
+  "welcomeModal": {
+    "title": "중요한 계정 정보",
+    "subtitle": "등록을 완료하기 전에 주의 깊게 읽어주세요:",
+    "button": {
+      "understood": "이해했습니다",
+      "countdownLabel": "{count}초 후에 이해했습니다 버튼이 활성화됩니다",
+      "readyLabel": "이해했습니다, 모달 닫기"
+    },
+    "checkbox": {
+      "label": "다시 표시하지 않기"
+    },
+    "items": {
+      "security": "계정 보안은 귀하의 책임입니다",
+      "noPasswordReset": "\"비밀번호 찾기\" 옵션을 사용할 수 없습니다",
+      "socialMediaLock": "소셜 미디어 사용자 이름은 등록 후 변경할 수 없습니다",
+      "walletLock": "지갑 주소는 등록 후 변경할 수 없습니다",
+      "futureEvents": "저장된 정보는 향후 이벤트에 사용됩니다",
+      "earlyBenefits": "초기 회원은 다른 점수 혜택을 받을 수 있습니다",
+      "timeLimited": "일부 작업 및 활동은 시간 제한이 있습니다",
+      "accuracy": "모든 정보가 정확한지 확인해주세요"
+    }
+  },
+  "accessibility": {
+    "skipToMain": "메인 콘텐츠로 건너뛰기",
+    "skipToNav": "네비게이션으로 건너뛰기",
+    "skipToFooter": "푸터로 건너뛰기",
+    "settings": "접근성 설정",
+    "settingsDescription": "더 나은 접근성을 위해 경험을 사용자 정의하세요",
+    "animations": "애니메이션",
+    "animationsEnabled": "애니메이션 및 전환이 활성화되었습니다",
+    "animationsDisabled": "애니메이션 및 전환이 비활성화되었습니다",
+    "toggleAnimations": "애니메이션 전환",
+    "systemPreference": "시스템 기본 설정:",
+    "reducedMotionDetected": "시스템이 모션 감소를 선호하도록 설정되어 있습니다. 위에서 이 설정을 재정의할 수 있습니다.",
+    "info": "애니메이션을 비활성화하면 기능을 유지하면서 애플리케이션 전체의 모션 효과가 줄어듭니다."
+  },
+  "shortcuts": {
+    "title": "키보드 단축키",
+    "home": "홈으로 이동",
+    "dashboard": "대시보드로 이동",
+    "tasks": "작업으로 이동",
+    "leaderboard": "리더보드로 이동",
+    "profile": "프로필로 이동",
+    "tab": "요소 간 탐색",
+    "shiftTab": "뒤로 탐색",
+    "enter": "포커스된 요소 활성화",
+    "escape": "모달/드롭다운 닫기"
+  },
+  "hero": {
+    "home": {
+      "title": "Sylvan Token에 오신 것을 환영합니다",
+      "subtitle": "작업을 완료하고, 보상을 받고, 커뮤니티와 함께 성장하세요",
+      "cta": "시작하기"
+    },
+    "dashboard": {
+      "title": "다시 오신 것을 환영합니다, {username}님!",
+      "subtitle": "진행 상황을 추적하고 커뮤니티와 경쟁하세요"
+    },
+    "tasks": {
+      "title": "사용 가능한 작업",
+      "subtitle": "작업을 완료하여 포인트를 획득하고 리더보드에 올라가세요"
+    },
+    "leaderboard": {
+      "title": "커뮤니티 리더보드",
+      "subtitle": "다른 회원들 사이에서 순위를 확인하세요",
+      "yourRank": "귀하의 순위: {total}명 중 #{rank}위"
+    }
+  },
+  "leaderboardPage": {
+    "pageTitle": "커뮤니티 리더보드",
+    "pageSubtitle": "다른 회원들 사이에서 순위를 확인하세요",
+    "userRankLabel": "귀하의 순위: {total}명 중 #{rank}위",
+    "loadingText": "로딩 중..."
+  },
+  "home": {
+    "features": {
+      "title": "왜 Sylvan Token을 선택해야 할까요?",
+      "subtitle": "간단한 작업을 통해 보상을 받는 수천 명의 사용자와 함께하세요",
+      "tasks": {
+        "title": "쉬운 작업",
+        "description": "간단한 소셜 미디어 작업을 완료하고 즉시 포인트를 획득하세요"
+      },
+      "rewards": {
+        "title": "실제 보상",
+        "description": "실제 토큰 보상으로 전환되는 포인트를 획득하세요"
+      },
+      "community": {
+        "title": "활발한 커뮤니티",
+        "description": "토큰 애호가들의 번창하는 커뮤니티에 참여하세요"
+      },
+      "instant": {
+        "title": "즉시 추적",
+        "description": "실시간으로 진행 상황과 수익을 추적하세요"
+      }
+    },
+    "benefits": {
+      "title": "오늘부터 수익 창출 시작",
+      "subtitle": "Sylvan Token 커뮤니티에 가입하고 독점 혜택을 누리세요",
+      "item1": "일일 작업을 완료하여 포인트를 획득하고 리더보드에 올라가세요",
+      "item2": "지갑을 연결하여 토큰 보상을 직접 받으세요",
+      "item3": "다른 회원들과 경쟁하여 보너스 보상과 인정을 받으세요",
+      "item4": "독점 캠페인과 조기 기회에 액세스하세요"
+    },
+    "stats": {
+      "users": "1만+",
+      "usersLabel": "등록된 사용자",
+      "tasks": "5만+",
+      "tasksLabel": "완료된 작업",
+      "rewards": "100만+",
+      "rewardsLabel": "배포된 포인트"
+    },
+    "tokenDistribution": {
+      "title": "토큰 분배",
+      "subtitle": "실시간 토큰 할당",
+      "totalSupply": "총 공급량",
+      "holders": "보유자",
+      "circulating": "유통량",
+      "locked": "잠금",
+      "team": "팀",
+      "donation": "기부",
+      "fee": "수수료",
+      "burned": "소각",
+      "updated": "업데이트됨",
+      "billion": "억",
+      "million": "만"
+    },
+    "cta": {
+      "title": "시작할 준비가 되셨나요?",
+      "subtitle": "지금 계정을 만들고 오늘부터 보상을 받기 시작하세요",
+      "button": "무료 계정 만들기"
+    }
+  },
+  "theme": {
+    "light": "라이트 모드",
+    "dark": "다크 모드",
+    "toggle": "테마 전환"
+  },
+  "twitter": {
+    "connection": {
+      "title": "Twitter 연결",
+      "description": "자동 작업 확인을 위해 Twitter 계정을 연결하세요",
+      "connected": "연결됨",
+      "notConnected": "연결되지 않음",
+      "connect": "Twitter 연결",
+      "disconnect": "연결 해제",
+      "reconnect": "재연결",
+      "connecting": "연결 중...",
+      "disconnecting": "연결 해제 중...",
+      "tokenExpired": "토큰 만료됨",
+      "tokenExpiredMessage": "Twitter 연결이 만료되었습니다. 자동 확인을 활성화하려면 다시 연결하세요."
+    },
+    "verification": {
+      "title": "Twitter 확인",
+      "pending": "대기 중",
+      "verifying": "확인 중...",
+      "approved": "승인됨",
+      "rejected": "거부됨",
+      "error": "오류",
+      "retry": "확인 재시도",
+      "complete": "작업 완료",
+      "pointsEarned": "+{points} 포인트 획득!",
+      "checkingActivity": "Twitter 활동 확인 중...",
+      "waitingVerification": "확인 대기 중...",
+      "taskVerified": "훌륭합니다! {taskType} 작업이 확인되었습니다.",
+      "taskRejected": "{taskType} 작업을 완료하고 다시 시도하세요.",
+      "verificationFailed": "확인에 실패했습니다. 다시 시도하거나 지원팀에 문의하세요."
+    },
+    "tasks": {
+      "follow": "팔로우",
+      "like": "좋아요",
+      "retweet": "리트윗",
+      "followTitle": "Twitter에서 팔로우",
+      "likeTitle": "트윗 좋아요",
+      "retweetTitle": "리트윗",
+      "instructions": "지침:",
+      "howItWorks": "작동 방식:",
+      "step1": "Twitter 계정 연결 (일회성 설정)",
+      "step2": "Twitter 작업 완료",
+      "step3": "자동으로 확인됨",
+      "step4": "즉시 포인트 획득!",
+      "connectionRequired": "Twitter 연결 필요",
+      "connectionRequiredMessage": "이 작업에 대한 자동 확인을 활성화하려면 Twitter 계정을 연결하세요. 프로세스가 훨씬 빠르고 쉬워집니다!",
+      "automaticVerification": "자동 확인",
+      "automaticVerificationMessage": "작업을 완료하면 자동으로 확인하고 포인트를 부여합니다!",
+      "manualMode": "수동 모드"
+    }
+  }
+}

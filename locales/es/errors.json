@@ -1,0 +1,67 @@
+{
+  "general": {
+    "unknown": "Ocurrió un error desconocido",
+    "serverError": "Ocurrió un error del servidor",
+    "networkError": "Error de conexión de red",
+    "timeout": "La solicitud ha expirado"
+  },
+  "auth": {
+    "invalidCredentials": "Correo electrónico o contraseña inválidos",
+    "emailExists": "El correo electrónico ya existe",
+    "usernameExists": "El nombre de usuario ya existe",
+    "unauthorized": "Acceso no autorizado",
+    "sessionExpired": "Tu sesión ha expirado",
+    "invalidToken": "Token inválido o expirado"
+  },
+  "validation": {
+    "required": "Este campo es obligatorio",
+    "invalidEmail": "Dirección de correo electrónico inválida",
+    "invalidPassword": "La contraseña debe tener al menos 8 caracteres",
+    "passwordMismatch": "Las contraseñas no coinciden",
+    "invalidUsername": "El nombre de usuario debe tener entre 3 y 20 caracteres",
+    "invalidWallet": "Dirección de billetera inválida"
+  },
+  "api": {
+    "notFound": "Recurso no encontrado",
+    "forbidden": "Acceso prohibido",
+    "badRequest": "Solicitud inválida",
+    "conflict": "El recurso ya existe",
+    "tooManyRequests": "Demasiadas solicitudes, por favor intenta más tarde"
+  },
+  "database": {
+    "connectionError": "Error de conexión a la base de datos",
+    "queryError": "Error de consulta a la base de datos",
+    "uniqueConstraint": "Este valor ya existe"
+  },
+  "errorReport": {
+    "title": "Reportar un Error",
+    "subtitle": "Ayúdanos a mejorar reportando cualquier problema que encuentres",
+    "button": "Reportar Error",
+    "types": {
+      "UI_ERROR": "Error de UI/Visualización",
+      "API_ERROR": "Error de API/Conexión",
+      "TASK_ERROR": "Error de Completación de Tarea",
+      "PAYMENT_ERROR": "Error de Pago/Billetera",
+      "OTHER": "Otro"
+    },
+    "form": {
+      "errorType": "Tipo de Error",
+      "errorTitle": "Título del Error",
+      "errorTitlePlaceholder": "Breve descripción del error",
+      "errorTitleRequired": "El título del error es obligatorio",
+      "errorDetails": "Detalles del Error",
+      "errorDetailsPlaceholder": "Por favor describe qué sucedió, qué estabas intentando hacer y cualquier mensaje de error que viste...",
+      "errorDetailsRequired": "Los detalles del error son obligatorios",
+      "submit": "Enviar Reporte",
+      "cancel": "Cancelar",
+      "submitting": "Enviando..."
+    },
+    "success": {
+      "title": "¡Reporte Enviado!",
+      "message": "Gracias por ayudarnos a mejorar la plataforma"
+    },
+    "validation": {
+      "allFieldsRequired": "Por favor completa todos los campos obligatorios"
+    }
+  }
+}

@@ -1,0 +1,546 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       String  @id @default(cuid())
+  email    String  @unique
+  username String  @unique
+  password String
+  role     String  @default("USER")
+  roleId   String?
+  status   String  @default("ACTIVE")
+
+  // Unique referral/invite code for each user
+  referralCode String? @unique
+  invitedBy    String? // Referral code of the user who invited this user
+
+  avatarUrl               String?
+  walletAddress           String?                  @unique
+  walletVerified          Boolean                  @default(false)
+  twitterUsername         String?                  @unique
+  twitterVerified         Boolean                  @default(false)
+  telegramUsername        String?                  @unique
+  telegramVerified        Boolean                  @default(false)
+  totalPoints             Int                      @default(0)
+  acceptedTerms           Boolean                  @default(false)
+  acceptedPrivacy         Boolean                  @default(false)
+  termsAcceptedAt         DateTime?
+  createdAt               DateTime                 @default(now())
+  lastActive              DateTime                 @default(now())
+  completions             Completion[]
+  loginLogs               LoginLog[]
+  userRole                Role?                    @relation(fields: [roleId], references: [id])
+  filterPresets           FilterPreset[]
+  workflows               Workflow[]
+  emailPreference         EmailPreference?
+  twitterConnection       TwitterConnection?
+  twitterVerificationLogs TwitterVerificationLog[]
+  telegramReactions       TelegramReaction[]
+  pointAdjustments        PointAdjustment[]
+  notifications           UserNotification[]
+  errorReports            ErrorReport[]
+
+  @@index([email])
+  @@index([totalPoints])
+  @@index([walletAddress])
+  @@index([status])
+  @@index([twitterUsername])
+  @@index([telegramUsername])
+  @@index([roleId])
+  @@index([referralCode])
+  @@index([invitedBy])
+}
+
+model Campaign {
+  id            String   @id @default(cuid())
+  
+  // English (default)
+  title         String
+  description   String
+  
+  // Translations
+  titleTr       String? // Turkish
+  descriptionTr String?
+  titleAr       String? // Arabic
+  descriptionAr String?
+  titleDe       String? // German
+  descriptionDe String?
+  titleEs       String? // Spanish
+  descriptionEs String?
+  titleKo       String? // Korean
+  descriptionKo String?
+  titleRu       String? // Russian
+  descriptionRu String?
+  titleZh       String? // Chinese
+  descriptionZh String?
+  
+  startDate     DateTime
+  endDate       DateTime
+  isActive      Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  tasks         Task[]
+
+  @@index([isActive])
+  @@index([startDate])
+  @@index([endDate])
+}
+
+model Task {
+  id            String  @id @default(cuid())
+  campaignId    String
+  
+  // English (default)
+  title         String
+  description   String
+  
+  // Translations
+  titleTr       String? // Turkish
+  descriptionTr String?
+  titleAr       String? // Arabic
+  descriptionAr String?
+  titleDe       String? // German
+  descriptionDe String?
+  titleEs       String? // Spanish
+  descriptionEs String?
+  titleKo       String? // Korean
+  descriptionKo String?
+  titleRu       String? // Russian
+  descriptionRu String?
+  titleZh       String? // Chinese
+  descriptionZh String?
+  
+  points        Int
+  taskType      String
+  taskUrl       String?
+  isActive      Boolean @default(true)
+
+  // Timer fields
+  scheduledDeadline DateTime? // Optional deadline for time-sensitive tasks
+  estimatedDuration Int? // Estimated completion time in seconds
+  isTimeSensitive   Boolean   @default(false)
+
+  // Time-limited task fields
+  duration  Int? // Duration in hours (null = no time limit)
+  expiresAt DateTime? // Calculated expiration timestamp
+
+  createdAt               DateTime                 @default(now())
+  updatedAt               DateTime                 @updatedAt
+  campaign                Campaign                 @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  completions             Completion[]
+  twitterVerificationLogs TwitterVerificationLog[]
+
+  @@index([isActive])
+  @@index([campaignId])
+  @@index([isTimeSensitive])
+  @@index([scheduledDeadline])
+  @@index([expiresAt])
+}
+
+model Completion {
+  id            String   @id @default(cuid())
+  userId        String
+  taskId        String
+  completedAt   DateTime @default(now())
+  pointsAwarded Int      @default(0)
+
+  // Verification fields
+  status             String    @default("PENDING") // PENDING, APPROVED, REJECTED, AUTO_APPROVED
+  verificationStatus String    @default("UNVERIFIED") // UNVERIFIED, VERIFIED, FLAGGED
+  needsReview        Boolean   @default(false)
+  reviewedBy         String?
+  reviewedAt         DateTime?
+  fraudScore         Int       @default(0) // 0-100 risk score
+  autoApproveAt      DateTime? // Auto-approve timestamp
+  rejectionReason    String?
+  completionTime     Int? // Time taken to complete (seconds)
+  ipAddress          String?
+  userAgent          String?
+
+  // Timer fields
+  scheduledFor   DateTime? // When task was scheduled to complete
+  actualDeadline DateTime? // Calculated deadline (start + duration)
+  isExpired      Boolean   @default(false)
+
+  // Time-limited task fields
+  missedAt DateTime? // Timestamp when task was missed (expired)
+
+  user                    User                     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  task                    Task                     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  twitterVerificationLogs TwitterVerificationLog[]
+
+  @@index([userId])
+  @@index([taskId])
+  @@index([completedAt])
+  @@index([userId, completedAt])
+  @@index([taskId, completedAt])
+  @@index([status])
+  @@index([needsReview])
+  @@index([autoApproveAt])
+  @@index([isExpired])
+  @@index([actualDeadline])
+  @@index([missedAt])
+  @@index([userId, status, taskId]) // Composite index for referral queries (Requirement 8.1, 8.3, 8.4)
+}
+
+model LoginLog {
+  id        String   @id @default(cuid())
+  userId    String
+  ipAddress String
+  userAgent String?
+  success   Boolean  @default(true)
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([createdAt])
+  @@index([userId, createdAt])
+}
+
+model FilterPreset {
+  id        String   @id @default(cuid())
+  name      String
+  criteria  String // JSON string
+  createdBy String
+  createdAt DateTime @default(now())
+  admin     User     @relation(fields: [createdBy], references: [id], onDelete: Cascade)
+
+  @@index([createdBy])
+}
+
+model Workflow {
+  id        String   @id @default(cuid())
+  name      String
+  trigger   String // JSON string
+  actions   String // JSON string
+  isActive  Boolean  @default(true)
+  createdBy String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  admin     User     @relation(fields: [createdBy], references: [id], onDelete: Cascade)
+
+  @@index([isActive])
+  @@index([createdBy])
+}
+
+model AuditLog {
+  id            String   @id @default(cuid())
+  action        String
+  adminId       String
+  adminEmail    String
+  timestamp     DateTime @default(now())
+  affectedModel String?
+  affectedId    String?
+  beforeData    String? // JSON string
+  afterData     String? // JSON string
+  ipAddress     String?
+  userAgent     String?
+
+  @@index([adminId])
+  @@index([action])
+  @@index([timestamp])
+}
+
+model Role {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  permissions String // JSON string
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  users       User[]
+}
+
+model SearchHistory {
+  id          String   @id @default(cuid())
+  userId      String
+  query       String
+  resultCount Int      @default(0)
+  createdAt   DateTime @default(now())
+
+  @@index([userId])
+  @@index([createdAt])
+  @@index([userId, createdAt])
+}
+
+model EmailLog {
+  id        String    @id @default(cuid())
+  to        String
+  subject   String
+  template  String
+  status    String // sent, delivered, failed, bounced, opened, clicked
+  error     String?
+  sentAt    DateTime  @default(now())
+  openedAt  DateTime?
+  clickedAt DateTime?
+
+  @@index([to])
+  @@index([status])
+  @@index([sentAt])
+  @@index([template])
+}
+
+model EmailPreference {
+  id                  String    @id @default(cuid())
+  userId              String    @unique
+  taskCompletions     Boolean   @default(true)
+  walletVerifications Boolean   @default(true)
+  adminNotifications  Boolean   @default(true)
+  marketingEmails     Boolean   @default(false)
+  unsubscribedAt      DateTime?
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+// SQLite doesn't support enums, using String instead
+// Valid values for role: "USER", "ADMIN"
+// Valid values for status: "ACTIVE", "BLOCKED", "DELETED"
+// Valid values for taskType: "TWITTER_FOLLOW", "TWITTER_LIKE", "TWITTER_RETWEET", "TELEGRAM_JOIN", "REFERRAL", "CUSTOM"
+// Valid values for email status: "sent", "delivered", "failed", "bounced", "opened", "clicked"
+
+// Campaign System:
+// - Campaigns have start and end dates
+// - Tasks belong to campaigns
+// - Completions are permanent and tied to specific tasks
+// - User points accumulate across all campaigns
+
+// Email System:
+// - EmailLog tracks all sent emails and their delivery status
+// - EmailPreference stores user preferences for different email types
+// - Users can opt-out of non-essential emails while still receiving transactional ones
+
+// Twitter OAuth Integration System:
+// - TwitterConnection stores encrypted OAuth tokens for each user
+// - TwitterVerificationLog tracks all verification attempts for audit and analytics
+// - Supports automatic verification of Twitter tasks (follow, like, retweet)
+
+model TwitterConnection {
+  id              String  @id @default(cuid())
+  userId          String  @unique
+  twitterId       String  @unique // Twitter user ID (numeric)
+  username        String // Twitter username (@handle)
+  displayName     String? // Twitter display name
+  profileImageUrl String? // Twitter profile image URL
+
+  // Encrypted OAuth tokens (AES-256-GCM)
+  accessToken    String // Encrypted access token
+  refreshToken   String // Encrypted refresh token
+  tokenExpiresAt DateTime // When access token expires
+
+  // OAuth metadata
+  scope     String // Granted permissions (e.g., "tweet.read users.read")
+  tokenType String @default("Bearer")
+
+  // Connection status
+  isActive       Boolean   @default(true)
+  lastVerifiedAt DateTime? // Last time tokens were used successfully
+
+  // Timestamps
+  connectedAt DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  user             User                     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  verificationLogs TwitterVerificationLog[]
+
+  @@index([userId])
+  @@index([twitterId])
+  @@index([isActive])
+  @@index([tokenExpiresAt])
+}
+
+model TwitterVerificationLog {
+  id           String @id @default(cuid())
+  completionId String
+  userId       String
+  taskId       String
+  taskType     String // TWITTER_FOLLOW, TWITTER_LIKE, TWITTER_RETWEET
+
+  // Verification details
+  verificationResult String // APPROVED, REJECTED, ERROR
+  twitterApiResponse String? // JSON response from Twitter API
+  errorMessage       String? // Error message if verification failed
+  rejectionReason    String? // User-friendly reason for rejection
+
+  // Performance metrics
+  verificationTime Int // Time taken in milliseconds
+  apiCallCount     Int // Number of API calls made
+  cacheHit         Boolean @default(false)
+
+  // Twitter connection reference
+  twitterConnectionId String?
+
+  // Timestamps
+  verifiedAt DateTime @default(now())
+
+  // Relations
+  completion        Completion         @relation(fields: [completionId], references: [id], onDelete: Cascade)
+  user              User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  task              Task               @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  twitterConnection TwitterConnection? @relation(fields: [twitterConnectionId], references: [id], onDelete: SetNull)
+
+  @@index([completionId])
+  @@index([userId])
+  @@index([taskId])
+  @@index([verifiedAt])
+  @@index([verificationResult])
+  @@index([taskType])
+  @@index([twitterConnectionId])
+}
+
+// Telegram Reaction Rewards System
+// Tracks user reactions to Telegram posts for automatic point rewards
+
+model TelegramReaction {
+  id             String    @id @default(cuid())
+  userId         String
+  telegramUserId String // Telegram user ID
+  postId         String // Telegram message ID
+  chatId         String // Telegram chat/group ID
+  reactionEmoji  String // Emoji used for reaction
+  pointsAwarded  Int       @default(20)
+  isActive       Boolean   @default(true) // false if reaction removed
+  createdAt      DateTime  @default(now())
+  removedAt      DateTime?
+  lastVerifiedAt DateTime?
+
+  user        User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  adjustments PointAdjustment[]
+
+  @@unique([userId, postId, reactionEmoji])
+  @@index([userId])
+  @@index([postId])
+  @@index([telegramUserId])
+  @@index([isActive])
+  @@index([createdAt])
+}
+
+model PointAdjustment {
+  id         String    @id @default(cuid())
+  userId     String
+  amount     Int // Positive or negative
+  reason     String // "reaction_added", "reaction_removed", "manipulation_detected"
+  reactionId String?
+  createdAt  DateTime  @default(now())
+  verifiedAt DateTime?
+
+  user     User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  reaction TelegramReaction? @relation(fields: [reactionId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([createdAt])
+  @@index([reason])
+}
+
+model UserNotification {
+  id           String    @id @default(cuid())
+  userId       String
+  type         String // "points_awarded", "points_deducted", "manipulation_warning"
+  title        String
+  message      String
+  pointsChange Int
+  isRead       Boolean   @default(false)
+  showOnLogin  Boolean   @default(true)
+  createdAt    DateTime  @default(now())
+  readAt       DateTime?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([isRead])
+  @@index([showOnLogin])
+  @@index([createdAt])
+}
+
+// Error Report System
+// Allows users to report errors they encounter in the application
+model ErrorReport {
+  id          String   @id @default(cuid())
+  userId      String?  // Optional - can be null for anonymous reports
+  user        User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  userEmail   String?  // Store email for follow-up
+  
+  // Error details
+  errorType   String   // "UI_ERROR", "API_ERROR", "TASK_ERROR", "PAYMENT_ERROR", "OTHER"
+  errorTitle  String   // Short description
+  errorMessage String  // Detailed error message
+  stackTrace  String?  // Technical stack trace if available
+  
+  // Context information
+  pageUrl     String   // URL where error occurred
+  userAgent   String?  // Browser/device info
+  screenshot  String?  // Base64 encoded screenshot or URL
+  
+  // Status tracking
+  status      String   @default("PENDING") // PENDING, IN_PROGRESS, RESOLVED, CLOSED
+  priority    String   @default("MEDIUM")  // LOW, MEDIUM, HIGH, CRITICAL
+  assignedTo  String?  // Admin user ID
+  
+  // Resolution
+  resolvedBy  String?  // Admin user ID who resolved
+  resolvedAt  DateTime?
+  resolution  String?  // Resolution notes
+  
+  // Analytics
+  viewCount      Int      @default(0)  // How many times viewed
+  responseTime   Int?     // Time to first response (minutes)
+  resolutionTime Int?     // Time to resolution (minutes)
+
+  // Relations
+  tags     ErrorReportTag[]
+  comments ErrorReportComment[]
+  
+  // Timestamps
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@index([userId])
+  @@index([status])
+  @@index([priority])
+  @@index([errorType])
+  @@index([createdAt])
+  @@index([assignedTo])
+}
+
+// Error Report Tags (for categorization)
+model ErrorReportTag {
+  id            String   @id @default(cuid())
+  errorReportId String
+  tag           String   // Tag name (e.g., "bug", "ui", "performance")
+  createdAt     DateTime @default(now())
+
+  errorReport ErrorReport @relation(fields: [errorReportId], references: [id], onDelete: Cascade)
+
+  @@unique([errorReportId, tag])
+  @@index([errorReportId])
+  @@index([tag])
+}
+
+// Error Report Comments (for admin collaboration)
+model ErrorReportComment {
+  id            String   @id @default(cuid())
+  errorReportId String
+  userId        String   // Admin who commented
+  comment       String   // Comment text
+  isInternal    Boolean  @default(false) // Internal note vs public comment
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  errorReport ErrorReport @relation(fields: [errorReportId], references: [id], onDelete: Cascade)
+
+  @@index([errorReportId])
+  @@index([userId])
+  @@index([createdAt])
+}

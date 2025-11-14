@@ -1,0 +1,37 @@
+{
+  "header": {
+    "navigation": {
+      "home": "首页",
+      "about": "关于我们",
+      "airdrop": "空投",
+      "whitepaper": "白皮书",
+      "community": "社区",
+      "contact": "联系我们"
+    },
+    "buttons": {
+      "connectWallet": "连接钱包",
+      "joinAirdrop": "参与空投",
+      "login": "登录",
+      "register": "注册",
+      "dashboard": "仪表板"
+    }
+  },
+  "footer": {
+    "description": "森林代币通过区块链技术引领环境可持续发展。加入我们，共创更绿色的未来。",
+    "links": {
+      "terms": "条款",
+      "privacy": "隐私"
+    },
+    "social": {
+      "twitter": "Twitter",
+      "telegram": "Telegram"
+    },
+    "branding": {
+      "tagline": "环保空投平台",
+      "madeWith": "用",
+      "forNature": "为自然而制作",
+      "greenerFuture": "共同建设更绿色的未来 🌱"
+    },
+    "copyright": "© {year} 森林代币"
+  }
+}

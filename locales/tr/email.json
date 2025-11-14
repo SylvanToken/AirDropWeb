@@ -1,0 +1,56 @@
+{
+  "unsubscribe": {
+    "loading": {
+      "title": "İsteğiniz İşleniyor",
+      "description": "E-posta tercihleriniz güncelleniyor, lütfen bekleyin..."
+    },
+    "success": {
+      "title": "Abonelikten Başarıyla Çıkıldı",
+      "descriptionAll": "Zorunlu olmayan tüm e-postalardan aboneliğiniz iptal edildi. Önemli hesap ve güvenlik bildirimlerini almaya devam edeceksiniz.",
+      "descriptionType": "{{type}} e-postalarından aboneliğiniz iptal edildi.",
+      "note": "Cüzdan doğrulama ve güvenlik uyarıları gibi önemli işlem e-postalarını almaya devam edeceksiniz.",
+      "whatNext": "Bundan sonra ne olacak?",
+      "step1": "Seçilen e-posta türlerini artık almayacaksınız",
+      "step2": "Profil ayarlarınızdan istediğiniz zaman yeniden abone olabilirsiniz",
+      "step3": "Önemli hesap bildirimleri yine de gönderilecek"
+    },
+    "error": {
+      "title": "Abonelik İptali Başarısız",
+      "help": "Sorun devam ederse, lütfen destek ekibimizle iletişime geçin veya profil ayarlarınızdan tercihlerinizi yönetin."
+    },
+    "errors": {
+      "missingToken": "Geçersiz veya eksik abonelik iptali bağlantısı. Lütfen e-postanızdaki bağlantıyı kullanın.",
+      "failed": "Abonelik iptali isteğiniz işlenemedi. Lütfen tekrar deneyin.",
+      "unknown": "Beklenmeyen bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+    },
+    "actions": {
+      "goHome": "Ana Sayfa",
+      "goToDashboard": "Kontrol Paneli",
+      "goToSettings": "E-posta Ayarları",
+      "managePreferences": "Tercihleri Yönet"
+    }
+  },
+  "preferences": {
+    "title": "E-posta Tercihleri",
+    "description": "Hangi e-postaları almak istediğinizi seçin",
+    "taskCompletions": {
+      "label": "Görev Tamamlama Bildirimleri",
+      "description": "Görevleri tamamladığınızda ve puan kazandığınızda bildirim alın"
+    },
+    "walletVerifications": {
+      "label": "Cüzdan Doğrulama Güncellemeleri",
+      "description": "Cüzdan doğrulama durumunuz hakkında önemli güncellemeler"
+    },
+    "adminNotifications": {
+      "label": "Yönetici Bildirimleri",
+      "description": "Yöneticilerden gelen bildirimler (sadece yönetici kullanıcılar için)"
+    },
+    "marketingEmails": {
+      "label": "Pazarlama ve Güncellemeler",
+      "description": "Haberler, güncellemeler ve promosyon içeriği"
+    },
+    "transactionalNote": "Not: Şifre sıfırlama ve güvenlik uyarıları gibi temel işlem e-postalarını her zaman alacaksınız.",
+    "saveSuccess": "E-posta tercihleri başarıyla kaydedildi",
+    "saveError": "E-posta tercihleri kaydedilemedi"
+  }
+}

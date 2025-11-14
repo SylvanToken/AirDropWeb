@@ -1,0 +1,673 @@
+{
+  "dashboard": {
+    "title": "Admin Dashboard",
+    "welcome": "Welcome back, {{username}}",
+    "stats": {
+      "totalUsers": "Total Users",
+      "totalUsersDesc": "Registered platform users",
+      "activeUsers": "Active Users",
+      "activeUsersDesc": "Active in last 7 days",
+      "totalCompletions": "Total Completions",
+      "totalCompletionsDesc": "All task completions",
+      "totalPoints": "Total Points",
+      "totalPointsDesc": "Points awarded to users"
+    },
+    "referralMetrics": {
+      "title": "Referral Program Metrics",
+      "description": "Track the performance of your referral task program",
+      "completions": "Referral Task Completions",
+      "completionsDesc": "Total successful referrals",
+      "points": "Points from Referrals",
+      "pointsDesc": "Points awarded through referrals",
+      "percentageOfTotal": "{{percentage}}% of total points"
+    },
+    "authStatus": {
+      "title": "Authentication Status",
+      "active": "Active",
+      "description": "Logged in as administrator"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "description": "Manage your platform efficiently",
+      "manageTasks": "Manage Tasks",
+      "manageTasksDesc": "Create and edit tasks",
+      "viewUsers": "View Users",
+      "viewUsersDesc": "Manage user accounts",
+      "manageCampaigns": "Manage Campaigns",
+      "manageCampaignsDesc": "Create and track campaigns"
+    },
+    "sessionInfo": {
+      "title": "Session Info",
+      "description": "Your current admin session",
+      "email": "Email:",
+      "role": "Role:",
+      "userId": "User ID:"
+    },
+    "accessControl": {
+      "title": "Admin Access Control",
+      "description": "Your administrator privileges grant you access to the following features",
+      "features": {
+        "manageTasks": "Create, edit, and delete tasks",
+        "viewUsers": "View all user accounts and statistics",
+        "viewHistory": "Access user completion history",
+        "viewAnalytics": "View platform analytics and metrics"
+      }
+    }
+  },
+  "tasks": {
+    "title": "Task Management",
+    "subtitle": "Create and manage tasks for users to complete",
+    "createButton": "Create Task",
+    "editTitle": "Edit Task",
+    "createTitle": "Create New Task",
+    "empty": "No tasks found. Create your first task to get started.",
+    "active": "Active",
+    "inactive": "Inactive",
+    "points": "points",
+    "viewUrl": "View URL",
+    "completions": "completions",
+    "edit": "Edit",
+    "delete": "Delete",
+    "resultsCount": "Showing {{count}} of {{total}} tasks",
+    "deleteConfirm": "Are you sure you want to delete this task?",
+    "deleteError": "Failed to delete task",
+    "filters": {
+      "all": "All Tasks",
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "form": {
+      "title": "Title",
+      "titlePlaceholder": "Follow us on Twitter",
+      "description": "Description",
+      "descriptionPlaceholder": "Follow our official Twitter account to stay updated",
+      "points": "Points",
+      "pointsPlaceholder": "10",
+      "taskType": "Task Type",
+      "taskUrl": "Task URL (Optional)",
+      "taskUrlPlaceholder": "https://twitter.com/sylvantoken",
+      "isActive": "Active",
+      "submit": "Create Task",
+      "update": "Update Task",
+      "saving": "Saving...",
+      "cancel": "Cancel",
+      "saveError": "Failed to save task",
+      "types": {
+        "TWITTER_FOLLOW": "Twitter Follow",
+        "TWITTER_LIKE": "Twitter Like",
+        "TWITTER_RETWEET": "Twitter Retweet",
+        "TELEGRAM_JOIN": "Telegram Join",
+        "REFERRAL": "Referral Task",
+        "CUSTOM": "Custom"
+      },
+      "timeLimited": {
+        "enable": "Enable Time Limit",
+        "duration": "Duration (hours)",
+        "durationPlaceholder": "Enter duration in hours (1-24)",
+        "durationHelp": "Task duration must be between 1 and 24 hours",
+        "currentExpiration": "Current Expiration",
+        "newExpiration": "New expiration will be",
+        "willExpire": "Task will expire"
+      },
+      "referralTask": {
+        "title": "How Referral Tasks Work",
+        "description": "Referral tasks automatically reward users when their invited friends successfully register on the platform.",
+        "howItWorks": {
+          "step1": "Users claim the referral task and receive a PENDING status",
+          "step2": "Users share their unique referral code with friends",
+          "step3": "When a friend registers using the code, the task is automatically completed",
+          "step4": "Points are awarded immediately upon successful referral"
+        },
+        "tip": "Tip: Set attractive point rewards to encourage users to invite more friends and grow your platform!"
+      }
+    }
+  },
+  "users": {
+    "title": "User Management",
+    "subtitle": "View and manage all registered users and their activity",
+    "loading": "Loading...",
+    "searchPlaceholder": "Search by email or username...",
+    "noUsers": "No users found",
+    "export": "Export",
+    "resultsCount": "Showing {{count}} of {{total}} users",
+    "filters": {
+      "title": "Filters",
+      "allUsers": "All Users",
+      "users": "Users Only",
+      "admins": "Admins Only"
+    },
+    "table": {
+      "username": "Username",
+      "email": "Email",
+      "points": "Points",
+      "completions": "Completions",
+      "registered": "Registered",
+      "lastActive": "Last Active",
+      "actions": "Actions",
+      "view": "View",
+      "admin": "Admin"
+    },
+    "pagination": {
+      "page": "Page {{current}} of {{total}}",
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "detail": {
+      "back": "Back to Users",
+      "backShort": "Back",
+      "loading": "Loading user details...",
+      "notFound": "User not found",
+      "admin": "Admin",
+      "stats": {
+        "totalPoints": "Total Points",
+        "totalPointsDesc": "Accumulated points",
+        "completions": "Completions",
+        "completionsDesc": "Tasks completed",
+        "streak": "Streak",
+        "streakDesc": "Consecutive days",
+        "memberSince": "Member Since"
+      },
+      "accountInfo": {
+        "title": "Account Information",
+        "registrationDate": "Registration Date",
+        "lastActive": "Last Active"
+      },
+      "completionHistory": {
+        "title": "Completion History",
+        "empty": "No completions yet",
+        "table": {
+          "task": "Task",
+          "type": "Type",
+          "points": "Points",
+          "completedAt": "Completed At"
+        },
+        "pagination": "Page {{current}} of {{total}} ({{count}} total completions)"
+      }
+    }
+  },
+  "stats": {
+    "totalUsers": {
+      "title": "Total Users",
+      "description": "All registered users"
+    },
+    "activeUsers": {
+      "title": "Active Users",
+      "description": "Active in last 7 days"
+    },
+    "totalCompletions": {
+      "title": "Total Completions",
+      "description": "All task completions"
+    },
+    "pointsAwarded": {
+      "title": "Points Awarded",
+      "description": "Total points distributed"
+    }
+  },
+  "campaigns": {
+    "title": "Campaign Management",
+    "loading": "Loading campaigns...",
+    "loadingDetails": "Loading campaign...",
+    "empty": "No campaigns found"
+  },
+  "verifications": {
+    "title": "Verification Dashboard",
+    "loading": "Loading completions...",
+    "empty": "No pending verifications"
+  },
+  "sidebar": {
+    "quickActions": "Quick Actions",
+    "createTask": "Create Task",
+    "viewUsers": "View Users"
+  },
+  "bulkActions": {
+    "selectAll": "Select All",
+    "selectedCount": "{{count}} selected",
+    "bulkActions": "Bulk Actions",
+    "processing": "Processing...",
+    "assignPoints": "Assign Points",
+    "activate": "Activate Users",
+    "block": "Block Users",
+    "delete": "Delete Users",
+    "export": "Export Selected",
+    "deleteDialog": {
+      "title": "Delete Users",
+      "description": "Are you sure you want to delete {{count}} user(s)? This action cannot be undone and will remove all associated data.",
+      "cancel": "Cancel",
+      "confirm": "Delete Users",
+      "deleting": "Deleting..."
+    },
+    "blockDialog": {
+      "title": "Block Users",
+      "description": "Are you sure you want to block {{count}} user(s)? Blocked users will not be able to access the platform.",
+      "cancel": "Cancel",
+      "confirm": "Block Users",
+      "blocking": "Blocking..."
+    },
+    "pointsDialog": {
+      "title": "Assign Points",
+      "description": "Assign points to {{count}} selected user(s).",
+      "label": "Points to assign",
+      "hint": "Enter a positive number to add points or a negative number to deduct points.",
+      "cancel": "Cancel",
+      "confirm": "Assign Points",
+      "assigning": "Assigning..."
+    },
+    "resultDialog": {
+      "successTitle": "Operation Completed Successfully",
+      "partialTitle": "Operation Completed with Errors",
+      "successful": "Successful",
+      "failed": "Failed",
+      "errors": "Errors:",
+      "close": "Close"
+    }
+  },
+  "filters": {
+    "title": "Advanced Filters",
+    "addCriterion": "Add Filter Criterion",
+    "appliedFilters": "Applied Filters",
+    "clearAll": "Clear all",
+    "apply": "Apply Filters",
+    "clear": "Clear",
+    "loadPreset": "Load preset",
+    "savePreset": "Save Preset",
+    "presetName": "Preset Name",
+    "presetNamePlaceholder": "e.g., Active users with high points",
+    "savePresetDescription": "Save your current filter criteria for quick access later",
+    "saving": "Saving...",
+    "field": "Field",
+    "operator": "Operator",
+    "value": "Value",
+    "logic": {
+      "and": "AND",
+      "or": "OR"
+    },
+    "operators": {
+      "equals": "Equals",
+      "contains": "Contains",
+      "gt": "Greater than",
+      "lt": "Less than",
+      "between": "Between",
+      "in": "In",
+      "onDate": "On date",
+      "after": "After",
+      "before": "Before"
+    },
+    "fields": {
+      "username": "Username",
+      "email": "Email",
+      "points": "Points",
+      "completions": "Completions",
+      "role": "Role",
+      "status": "Status",
+      "createdAt": "Registration Date",
+      "lastActive": "Last Active"
+    },
+    "placeholders": {
+      "enterValue": "Enter value",
+      "selectValue": "Select value",
+      "min": "Min",
+      "max": "Max"
+    }
+  },
+  "export": {
+    "title": "Export Data",
+    "description": "Export {{model}} data in your preferred format",
+    "formatLabel": "Export Format",
+    "fieldsLabel": "Select Fields to Export",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All",
+    "allFields": "All Fields",
+    "filtersApplied": "Filters Applied",
+    "filtersCount": "{{count}} filter(s) will be applied to the export",
+    "cancel": "Cancel",
+    "export": "Export",
+    "exporting": "Exporting...",
+    "formats": {
+      "csvDesc": "Comma-separated values",
+      "excelDesc": "Microsoft Excel format",
+      "jsonDesc": "JavaScript Object Notation"
+    },
+    "models": {
+      "users": "users",
+      "tasks": "tasks",
+      "completions": "completions",
+      "campaigns": "campaigns"
+    },
+    "status": {
+      "successTitle": "Export Successful",
+      "success": "Your file has been downloaded successfully.",
+      "errorTitle": "Export Failed",
+      "asyncTitle": "Export Queued",
+      "asyncExport": "Your export is being processed. You will receive an email with the download link shortly."
+    },
+    "errors": {
+      "noFields": "Please select at least one field to export",
+      "failed": "Export failed. Please try again."
+    }
+  },
+  "analytics": {
+    "title": "Analytics Dashboard",
+    "subtitle": "Platform performance metrics and insights",
+    "refresh": "Refresh",
+    "exportPdf": "Export PDF",
+    "dateRange": {
+      "title": "Date Range",
+      "description": "Select a time period to view analytics",
+      "last7Days": "Last 7 Days",
+      "last30Days": "Last 30 Days",
+      "last90Days": "Last 90 Days",
+      "lastYear": "Last Year",
+      "showing": "Showing data from {{start}} to {{end}}"
+    },
+    "metrics": {
+      "totalUsers": "Total Users",
+      "totalUsersDesc": "All registered users",
+      "activeUsers": "Active Users",
+      "activeUsersDesc": "Active in last 7 days",
+      "totalCompletions": "Total Completions",
+      "totalCompletionsDesc": "All task completions",
+      "totalPoints": "Total Points",
+      "totalPointsDesc": "Avg: {{avg}} per user"
+    },
+    "charts": {
+      "userGrowth": "User Growth",
+      "userGrowthDesc": "Daily new user registrations",
+      "completionTrends": "Completion Trends",
+      "completionTrendsDesc": "Daily task completions",
+      "topTasks": "Top Tasks by Completions",
+      "topTasksDesc": "Most popular tasks on the platform",
+      "userActivity": "User Activity Distribution",
+      "userActivityDesc": "Active vs inactive users",
+      "todayActivity": "Today's Activity",
+      "todayActivityDesc": "New users and completions today",
+      "noData": "No data available"
+    },
+    "labels": {
+      "activeUsers": "Active Users",
+      "inactiveUsers": "Inactive Users",
+      "newUsers": "New Users",
+      "completions": "Completions"
+    }
+  },
+  "audit": {
+    "pageTitle": "Audit Log - Admin",
+    "pageDescription": "Track all administrative actions and system events",
+    "heading": "Audit Log",
+    "subheading": "Complete history of all admin actions for accountability and security",
+    "title": "Audit Log",
+    "subtitle": "Track all administrative actions and system events",
+    "description": "Complete history of all admin actions for accountability and security",
+    "loading": "Loading audit logs...",
+    "noLogs": "No audit logs found",
+    "export": "Export",
+    "searchPlaceholder": "Search by action, admin, or record ID...",
+    "filtersActive": "Filters active",
+    "clearFilters": "Clear filters",
+    "viewDetails": "View",
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page {{current}} of {{total}}",
+    "resultsCount": "Showing {{start}}-{{end}} of {{total}} logs",
+    "filters": {
+      "allEvents": "All Events",
+      "securityOnly": "Security Events Only",
+      "action": "Action",
+      "actionPlaceholder": "e.g., user_delete",
+      "model": "Model",
+      "modelPlaceholder": "e.g., User",
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    },
+    "table": {
+      "timestamp": "Timestamp",
+      "action": "Action",
+      "admin": "Admin",
+      "model": "Model",
+      "recordId": "Record ID",
+      "ipAddress": "IP Address",
+      "details": "Details"
+    },
+    "detailsDialog": {
+      "title": "Audit Log Details",
+      "securityEvent": "Security-sensitive event",
+      "action": "Action",
+      "admin": "Admin User",
+      "model": "Affected Model",
+      "recordId": "Record ID",
+      "ipAddress": "IP Address",
+      "userAgent": "User Agent",
+      "dataChanges": "Data Changes",
+      "before": "Before",
+      "after": "After"
+    }
+  },
+  "roles": {
+    "title": "Role Management",
+    "subtitle": "Manage roles and permissions for admin users",
+    "loading": "Loading roles...",
+    "empty": "No roles found. Create your first role to get started.",
+    "createButton": "Create Role",
+    "createTitle": "Create New Role",
+    "createDescription": "Define a new role with specific permissions",
+    "editTitle": "Edit Role",
+    "editDescription": "Update role name and permissions",
+    "assignTitle": "Assign {{role}} Role",
+    "assignDescription": "Select users to assign this role to",
+    "permissions": "permissions",
+    "more": "more",
+    "assignUsers": "Assign Users",
+    "deleteError": "Failed to delete role",
+    "stats": {
+      "totalRoles": "Total Roles",
+      "assignedUsers": "Assigned Users"
+    },
+    "list": {
+      "title": "Roles",
+      "description": "Manage roles and their permissions"
+    },
+    "form": {
+      "name": "Role Name",
+      "namePlaceholder": "e.g., Content Manager",
+      "permissions": "Permissions",
+      "nameRequired": "Role name is required",
+      "permissionsRequired": "At least one permission is required",
+      "saveError": "Failed to save role",
+      "saving": "Saving...",
+      "create": "Create Role",
+      "update": "Update Role",
+      "cancel": "Cancel"
+    },
+    "assign": {
+      "loading": "Loading users...",
+      "searchPlaceholder": "Search by username or email...",
+      "noUsers": "No users found",
+      "noResults": "No users match your search",
+      "assigned": "Assigned",
+      "assign": "Assign",
+      "assigning": "Assigning...",
+      "remove": "Remove",
+      "removing": "Removing...",
+      "assignError": "Failed to assign role",
+      "removeError": "Failed to remove role",
+      "summary": "{{assigned}} of {{total}} users have this role",
+      "close": "Close"
+    },
+    "deleteDialog": {
+      "title": "Delete Role",
+      "description": "Are you sure you want to delete the role \"{{role}}\"? Users with this role will lose their permissions.",
+      "cancel": "Cancel",
+      "confirm": "Delete Role"
+    }
+  },
+  "emails": {
+    "title": "Email Analytics",
+    "subtitle": "Monitor email delivery and engagement metrics",
+    "loading": "Loading email analytics...",
+    "dateRange": {
+      "title": "Date Range Filter",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "apply": "Apply Filter",
+      "reset": "Reset"
+    },
+    "overview": {
+      "totalSent": "Total Emails Sent",
+      "deliveryRate": "Delivery Rate",
+      "delivered": "delivered",
+      "openRate": "Open Rate",
+      "opened": "opened",
+      "clickRate": "Click Rate",
+      "clicked": "clicked",
+      "bounceRate": "Bounce Rate",
+      "bounced": "bounced",
+      "failureRate": "Failure Rate",
+      "failed": "failed"
+    },
+    "bounceBreakdown": {
+      "title": "Bounce Breakdown",
+      "hard": "Hard Bounces",
+      "soft": "Soft Bounces",
+      "spam": "Spam Reports",
+      "other": "Other"
+    },
+    "templatePerformance": {
+      "title": "Email Performance by Template",
+      "noData": "No email data available",
+      "sent": "sent",
+      "delivery": "Delivery",
+      "open": "Open",
+      "click": "Click"
+    },
+    "recentFailures": {
+      "title": "Recent Failed Emails",
+      "to": "To:",
+      "template": "Template:"
+    }
+  },
+  "errorReports": {
+    "title": "Error Reports",
+    "subtitle": "Monitor and manage user-reported errors",
+    "viewDetails": "View Details",
+    "delete": "Delete",
+    "deleteConfirm": "Are you sure?",
+    "deleteDescription": "This action cannot be undone. This will permanently delete the error report and all associated data (tags, comments, etc.).",
+    "deletePermanently": "Delete Permanently",
+    "deleting": "Deleting...",
+    "deleted": "Deleted Successfully",
+    "deletedMessage": "Error report has been permanently deleted",
+    "updated": "Updated Successfully",
+    "updatedMessage": "Error report has been updated",
+    "analytics": {
+      "totalReports": "Total Reports",
+      "pending": "Pending",
+      "resolved": "Resolved",
+      "avgResponse": "Avg Response",
+      "avgResolution": "Avg Resolution",
+      "byPriority": "By Priority",
+      "byType": "By Type",
+      "byStatus": "By Status",
+      "trend": "7-Day Trend",
+      "topTags": "Most Common Tags",
+      "noData": "No data available"
+    },
+    "tags": {
+      "title": "Tags",
+      "add": "Add",
+      "addPlaceholder": "Add a tag (e.g., bug, ui, performance)",
+      "suggestions": "Suggestions:",
+      "tagAdded": "Tag added",
+      "tagAddedMessage": "Tag has been added successfully",
+      "tagRemoved": "Tag removed",
+      "tagRemovedMessage": "Tag has been removed",
+      "tagExists": "Tag already exists",
+      "tagExistsMessage": "This tag is already added to this report",
+      "failed": "Failed to add tag",
+      "failedMessage": "An error occurred while adding the tag"
+    },
+    "comments": {
+      "title": "Comments",
+      "count": "{{count}} comments",
+      "add": "Comment",
+      "addPlaceholder": "Add a comment... (Ctrl+Enter to submit)",
+      "internal": "Internal note",
+      "public": "Public comment",
+      "noComments": "No comments yet",
+      "beFirst": "Be the first to comment on this error report",
+      "commentAdded": "Comment added",
+      "commentAddedMessage": "Your comment has been added successfully",
+      "internalNote": "Internal notes are only visible to admins. Public comments may be shared with the user.",
+      "failed": "Failed to add comment",
+      "failedMessage": "An error occurred while adding the comment"
+    },
+    "detail": {
+      "title": "Error Report Details",
+      "reportedBy": "Reported By",
+      "anonymous": "Anonymous",
+      "errorType": "Error Type",
+      "title": "Title",
+      "description": "Description",
+      "stackTrace": "Stack Trace",
+      "pageUrl": "Page URL",
+      "userAgent": "User Agent",
+      "createdAt": "Created At",
+      "tabs": {
+        "update": "Update",
+        "tags": "Tags",
+        "comments": "Comments"
+      },
+      "update": {
+        "title": "Update Status",
+        "status": "Status",
+        "priority": "Priority",
+        "resolution": "Resolution Notes",
+        "resolutionPlaceholder": "Add resolution notes...",
+        "cancel": "Cancel",
+        "update": "Update Report",
+        "updating": "Updating..."
+      }
+    },
+    "status": {
+      "PENDING": "Pending",
+      "IN_PROGRESS": "In Progress",
+      "RESOLVED": "Resolved",
+      "CLOSED": "Closed"
+    },
+    "priority": {
+      "LOW": "Low",
+      "MEDIUM": "Medium",
+      "HIGH": "High",
+      "CRITICAL": "Critical"
+    },
+    "filters": {
+      "allStatus": "All Status",
+      "allPriority": "All Priority",
+      "apply": "Apply Filters"
+    },
+    "table": {
+      "priority": "Priority",
+      "type": "Type",
+      "title": "Title",
+      "user": "User",
+      "status": "Status",
+      "created": "Created",
+      "actions": "Actions",
+      "noReports": "No error reports found"
+    },
+    "pagination": {
+      "page": "Page {{current}} of {{total}}",
+      "previous": "Previous",
+      "next": "Next"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "back": "Back"
+  }
+}

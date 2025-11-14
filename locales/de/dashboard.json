@@ -1,0 +1,64 @@
+{
+  "title": "Willkommen zurück, {username}!",
+  "subtitle": "Verfolgen Sie Ihren Fortschritt und konkurrieren Sie mit anderen Community-Mitgliedern",
+  "loading": "Dashboard wird geladen...",
+  "hero": {
+    "title": "Willkommen zurück, {username}!",
+    "subtitle": "Verfolgen Sie Ihren Fortschritt und konkurrieren Sie mit anderen Community-Mitgliedern",
+    "stats": {
+      "points": "Gesamtpunkte",
+      "tasks": "Erledigte Aufgaben",
+      "rank": "Ihr Rang",
+      "streak": "Tagessträhne"
+    }
+  },
+  "error": {
+    "title": "Fehler",
+    "retry": "Erneut versuchen"
+  },
+  "stats": {
+    "totalPoints": {
+      "title": "Gesamtpunkte",
+      "description": "Erledigen Sie weiterhin Aufgaben, um mehr zu verdienen!"
+    },
+    "rank": {
+      "title": "Ihr Rang",
+      "description": "Von allen Teilnehmern"
+    },
+    "streak": {
+      "title": "Aktuelle Serie",
+      "day": "Tag",
+      "days": "Tage",
+      "description": "in Folge"
+    },
+    "completions": {
+      "title": "Erledigte Aufgaben",
+      "description": "Gesamtabschlüsse"
+    }
+  },
+  "recentCompletions": {
+    "title": "Kürzliche Abschlüsse",
+    "subtitle": "Ihre zuletzt erledigten Aufgaben",
+    "empty": "Noch keine Aufgaben erledigt",
+    "emptyDescription": "Beginnen Sie mit dem Erledigen von Aufgaben, um sie hier zu sehen!",
+    "points": "Pkt"
+  },
+  "leaderboard": {
+    "title": "Bestenliste",
+    "subtitle": "Top 10 Community-Mitglieder",
+    "you": "(Sie)",
+    "task": "Aufgabe",
+    "tasks": "Aufgaben",
+    "points": "Punkte"
+  },
+  "threshold": {
+    "below": "Sie müssen 1500 Punkte sammeln, um Belohnungen zu erhalten",
+    "above": "Herzlichen Glückwunsch! Sie haben die Schwelle überschritten",
+    "progress": "Punkte"
+  },
+  "pointThreshold": {
+    "belowThreshold": "Sie müssen 1500 Punkte sammeln, um für Belohnungen berechtigt zu sein",
+    "aboveThreshold": "Herzlichen Glückwunsch! Sie haben die Schwelle überschritten",
+    "pointsOf": "Punkte"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "unsubscribe": {
+    "loading": {
+      "title": "Procesando Tu Solicitud",
+      "description": "Por favor espera mientras actualizamos tus preferencias de correo electrónico..."
+    },
+    "success": {
+      "title": "Cancelación de Suscripción Exitosa",
+      "descriptionAll": "Te has dado de baja de todos los correos electrónicos no esenciales. Aún recibirás notificaciones importantes de cuenta y seguridad.",
+      "descriptionType": "Te has dado de baja de correos electrónicos de {{type}}.",
+      "note": "Aún recibirás correos electrónicos transaccionales importantes como verificación de billetera y alertas de seguridad.",
+      "whatNext": "[EN] What happens next?",
+      "step1": "[EN] You won't receive the selected email types anymore",
+      "step2": "[EN] You can resubscribe anytime from your profile settings",
+      "step3": "[EN] Important account notifications will still be sent"
+    },
+    "error": {
+      "title": "Cancelación de Suscripción Fallida",
+      "help": "Si continúas teniendo problemas, por favor contacta a nuestro equipo de soporte o gestiona tus preferencias desde la configuración de tu perfil."
+    },
+    "actions": {
+      "goHome": "Ir a Inicio",
+      "goToDashboard": "Ir al Panel",
+      "goToSettings": "Configuración de Correo",
+      "managePreferences": "Gestionar Preferencias"
+    },
+    "errors": {
+      "missingToken": "[EN] Invalid or missing unsubscribe link. Please use the link from your email.",
+      "failed": "[EN] Failed to process your unsubscribe request. Please try again.",
+      "unknown": "[EN] An unexpected error occurred. Please try again later."
+    }
+  },
+  "preferences": {
+    "title": "Preferencias de Correo Electrónico",
+    "description": "Elige qué correos electrónicos deseas recibir",
+    "taskCompletions": {
+      "label": "Notificaciones de Finalización de Tareas",
+      "description": "Recibe notificaciones cuando completes tareas y ganes puntos"
+    },
+    "walletVerifications": {
+      "label": "Actualizaciones de Verificación de Billetera",
+      "description": "Actualizaciones importantes sobre el estado de verificación de tu billetera"
+    },
+    "adminNotifications": {
+      "label": "Notificaciones de Administrador",
+      "description": "Notificaciones de administradores (solo para usuarios administradores)"
+    },
+    "marketingEmails": {
+      "label": "Marketing y Actualizaciones",
+      "description": "Noticias, actualizaciones y contenido promocional"
+    },
+    "transactionalNote": "Nota: Siempre recibirás correos electrónicos transaccionales esenciales como restablecimientos de contraseña y alertas de seguridad.",
+    "saveSuccess": "Preferencias de correo electrónico guardadas exitosamente",
+    "saveError": "Error al guardar las preferencias de correo electrónico"
+  }
+}

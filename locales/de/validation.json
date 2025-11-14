@@ -1,0 +1,35 @@
+{
+  "required": "Dieses Feld ist erforderlich",
+  "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+  "password": {
+    "min": "Passwort muss mindestens {min} Zeichen lang sein",
+    "max": "Passwort darf höchstens {max} Zeichen lang sein",
+    "uppercase": "Passwort muss mindestens einen Großbuchstaben enthalten",
+    "lowercase": "Passwort muss mindestens einen Kleinbuchstaben enthalten",
+    "number": "Passwort muss mindestens eine Zahl enthalten",
+    "special": "Passwort muss mindestens ein Sonderzeichen enthalten"
+  },
+  "username": {
+    "min": "Benutzername muss mindestens {min} Zeichen lang sein",
+    "max": "Benutzername darf höchstens {max} Zeichen lang sein",
+    "invalid": "Benutzername darf nur Buchstaben, Zahlen und Unterstriche enthalten",
+    "taken": "Dieser Benutzername ist bereits vergeben"
+  },
+  "wallet": {
+    "invalid": "Ungültiges Wallet-Adressformat",
+    "required": "Wallet-Adresse ist erforderlich"
+  },
+  "social": {
+    "twitterInvalid": "Ungültiger Twitter-Benutzername",
+    "telegramInvalid": "Ungültiger Telegram-Benutzername",
+    "taken": "Dieser Benutzername ist bereits mit einem anderen Konto verknüpft"
+  },
+  "file": {
+    "tooLarge": "Dateigröße muss kleiner als {maxSize}MB sein",
+    "invalidType": "Ungültiger Dateityp. Erlaubte Typen: {types}",
+    "required": "Bitte wählen Sie eine Datei aus"
+  },
+  "terms": {
+    "required": "Sie müssen die Allgemeinen Geschäftsbedingungen akzeptieren"
+  }
+}

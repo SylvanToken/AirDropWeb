@@ -1,0 +1,281 @@
+{
+  "header": {
+    "dashboard": "Панель",
+    "tasks": "Задания",
+    "wallet": "Кошелек",
+    "profile": "Профиль",
+    "leaderboard": "Таблица лидеров",
+    "logout": "Выйти",
+    "admin": "Администратор"
+  },
+  "footer": {
+    "copyright": "© 2025 Sylvan Token. Все права защищены.",
+    "builtWith": "Создано с ❤️ для сообщества Sylvan Token",
+    "terms": "Условия",
+    "privacy": "Конфиденциальность",
+    "language": "Язык"
+  },
+  "language": {
+    "select": "Выбрать язык",
+    "current": "Текущий язык"
+  },
+  "common": {
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "success": "Успех",
+    "cancel": "Отмена",
+    "confirm": "Подтвердить",
+    "save": "Сохранить",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "create": "Создать",
+    "back": "Назад",
+    "next": "Далее",
+    "submit": "Отправить",
+    "close": "Закрыть",
+    "yes": "Да",
+    "no": "Нет",
+    "search": "Поиск",
+    "filter": "Фильтр",
+    "sort": "Сортировка",
+    "actions": "Действия",
+    "signIn": "Войти"
+  },
+  "errors": {
+    "generic": "Произошла ошибка. Пожалуйста, попробуйте снова.",
+    "network": "Ошибка сети. Пожалуйста, проверьте ваше подключение.",
+    "unauthorized": "У вас нет прав для выполнения этого действия.",
+    "notFound": "Запрошенный ресурс не найден.",
+    "validation": "Пожалуйста, проверьте ваш ввод и попробуйте снова."
+  },
+  "welcomeModal": {
+    "title": "Важная информация об аккаунте",
+    "subtitle": "Пожалуйста, внимательно прочитайте перед завершением регистрации:",
+    "items": {
+      "security": "Безопасность вашего аккаунта - ваша ответственность. Все учетные данные надежно зашифрованы в нашей системе.",
+      "noPasswordReset": "Нет опции \"Забыли пароль\". Если вы потеряете пароль, доступ к вашему аккаунту не может быть восстановлен.",
+      "socialMediaLock": "Ваше имя пользователя в социальных сетях нельзя изменить после регистрации.",
+      "walletLock": "Ваш адрес кошелька нельзя изменить после регистрации.",
+      "futureEvents": "Информация, которую вы регистрируете, будет использоваться для будущих событий и систем вознаграждений.",
+      "earlyBenefits": "Ранние участники могут получить другие преимущества в начислении баллов по сравнению с новыми участниками.",
+      "timeLimited": "Некоторые задания и активности будут доступны только в течение ограниченного времени.",
+      "accuracy": "Пожалуйста, убедитесь, что вся информация точна перед отправкой регистрации."
+    },
+    "button": {
+      "withCountdown": "Я понимаю ({{count}})",
+      "ready": "Я понимаю",
+      "understood": "Понятно",
+      "countdownLabel": "Кнопка \"Понятно\" будет активна через {count} секунд",
+      "readyLabel": "Понятно, закрыть окно"
+    },
+    "dontShowAgain": "Больше не показывать это",
+    "checkbox": {
+      "label": "Больше не показывать это"
+    }
+  },
+  "hero": {
+    "home": {
+      "title": "Добро пожаловать в Sylvan Token",
+      "subtitle": "Выполняйте задачи, зарабатывайте награды и растите вместе с нашим сообществом",
+      "cta": "Начать"
+    },
+    "dashboard": {
+      "title": "С возвращением, {username}!",
+      "subtitle": "Отслеживайте свой прогресс и соревнуйтесь с сообществом"
+    },
+    "tasks": {
+      "title": "Доступные задачи",
+      "subtitle": "Выполняйте задачи, чтобы заработать очки и подняться в таблице лидеров"
+    },
+    "leaderboard": {
+      "title": "Таблица лидеров сообщества",
+      "subtitle": "Посмотрите, как вы ранжируетесь среди других участников",
+      "yourRank": "Ваш ранг: #{rank} из {total}"
+    }
+  },
+  "leaderboardPage": {
+    "pageTitle": "Таблица лидеров сообщества",
+    "pageSubtitle": "Посмотрите, как вы ранжируетесь среди других участников",
+    "userRankLabel": "Ваш ранг: #{rank} из {total}",
+    "loadingText": "Загрузка..."
+  },
+  "home": {
+    "features": {
+      "title": "Почему стоит выбрать Sylvan Token?",
+      "subtitle": "Присоединяйтесь к тысячам пользователей, зарабатывающих награды через простые задания",
+      "tasks": {
+        "title": "Простые задания",
+        "description": "Выполняйте простые задания в социальных сетях и мгновенно зарабатывайте баллы"
+      },
+      "rewards": {
+        "title": "Реальные награды",
+        "description": "Зарабатывайте баллы, которые конвертируются в реальные токены"
+      },
+      "community": {
+        "title": "Активное сообщество",
+        "description": "Присоединяйтесь к процветающему сообществу энтузиастов токенов"
+      },
+      "instant": {
+        "title": "Мгновенное отслеживание",
+        "description": "Отслеживайте свой прогресс и заработок в реальном времени"
+      }
+    },
+    "benefits": {
+      "title": "Начните зарабатывать сегодня",
+      "subtitle": "Присоединяйтесь к сообществу Sylvan Token и получите эксклюзивные преимущества",
+      "item1": "Выполняйте ежедневные задания, чтобы зарабатывать баллы и подниматься в таблице лидеров",
+      "item2": "Подключите свой кошелек для прямого получения токенов",
+      "item3": "Соревнуйтесь с другими участниками за бонусные награды и признание",
+      "item4": "Получите доступ к эксклюзивным кампаниям и ранним возможностям"
+    },
+    "stats": {
+      "users": "10K+",
+      "usersLabel": "Зарегистрированных пользователей",
+      "tasks": "50K+",
+      "tasksLabel": "Выполненных заданий",
+      "rewards": "1M+",
+      "rewardsLabel": "Распределенных баллов"
+    },
+    "tokenDistribution": {
+      "title": "Распределение токенов",
+      "subtitle": "Распределение токенов в реальном времени",
+      "totalSupply": "Общее предложение",
+      "holders": "Держатели",
+      "circulating": "В обращении",
+      "locked": "Заблокировано",
+      "team": "Команда",
+      "donation": "Пожертвование",
+      "fee": "Комиссия",
+      "burned": "Сожжено",
+      "updated": "Обновлено",
+      "billion": "Миллиард",
+      "million": "Миллион"
+    },
+    "cta": {
+      "title": "Готовы начать?",
+      "subtitle": "Создайте свой аккаунт сейчас и начните зарабатывать награды сегодня",
+      "button": "Создать бесплатный аккаунт"
+    }
+  },
+  "theme": {
+    "light": "Светлый режим",
+    "dark": "Темный режим",
+    "toggle": "Переключить тему"
+  },
+  "accessibility": {
+    "skipToMain": "Перейти к основному содержанию",
+    "skipToNav": "Перейти к навигации",
+    "skipToFooter": "Перейти к нижнему колонтитулу",
+    "settings": "[EN] Accessibility Settings",
+    "settingsDescription": "[EN] Customize your experience for better accessibility",
+    "animations": "[EN] Animations",
+    "animationsEnabled": "[EN] Animations and transitions are enabled",
+    "animationsDisabled": "[EN] Animations and transitions are disabled",
+    "toggleAnimations": "[EN] Toggle animations",
+    "systemPreference": "[EN] System Preference:",
+    "reducedMotionDetected": "[EN] Your system is set to prefer reduced motion. You can override this setting above.",
+    "info": "[EN] Disabling animations will reduce motion effects throughout the application while maintaining functionality."
+  },
+  "profile": {
+    "title": "Мой профиль",
+    "subtitle": "Управляйте информацией об аккаунте и подключениями к социальным сетям",
+    "error": "Не удалось загрузить профиль",
+    "accountInfo": {
+      "title": "Информация об аккаунте",
+      "description": "Основные данные вашего аккаунта",
+      "username": "Имя пользователя",
+      "email": "Электронная почта",
+      "memberSince": "Участник с",
+      "totalPoints": "Всего баллов"
+    },
+    "wallet": {
+      "title": "Статус кошелька",
+      "description": "Ваш адрес кошелька BEP-20",
+      "verified": "Подтвержден",
+      "notSet": "Адрес кошелька не установлен",
+      "notSetDescription": "Добавьте адрес кошелька для выполнения заданий и получения наград"
+    },
+    "socialMedia": {
+      "title": "Аккаунты в социальных сетях",
+      "description": "Подключите свои аккаунты в социальных сетях для выполнения заданий",
+      "twitter": {
+        "title": "Twitter",
+        "description": "Подключите свой аккаунт Twitter",
+        "placeholder": "@имяпользователя",
+        "verify": "Подтвердить Twitter",
+        "verified": "Подтвержден",
+        "notSet": "Не установлен"
+      },
+      "telegram": {
+        "title": "Telegram",
+        "description": "Подключите свой аккаунт Telegram",
+        "placeholder": "@имяпользователя",
+        "verify": "Подтвердить Telegram",
+        "verified": "Подтвержден",
+        "notSet": "Не установлен"
+      }
+    }
+  },
+  "shortcuts": {
+    "title": "[EN] Keyboard Shortcuts",
+    "home": "[EN] Go to Home",
+    "dashboard": "[EN] Go to Dashboard",
+    "tasks": "[EN] Go to Tasks",
+    "leaderboard": "[EN] Go to Leaderboard",
+    "profile": "[EN] Go to Profile",
+    "tab": "[EN] Navigate between elements",
+    "shiftTab": "[EN] Navigate backwards",
+    "enter": "[EN] Activate focused element",
+    "escape": "[EN] Close modal/dropdown"
+  },
+  "twitter": {
+    "connection": {
+      "title": "[EN] Twitter Connection",
+      "description": "[EN] Connect your Twitter account for automatic task verification",
+      "connected": "[EN] Connected",
+      "notConnected": "[EN] Not Connected",
+      "connect": "[EN] Connect Twitter",
+      "disconnect": "[EN] Disconnect",
+      "reconnect": "[EN] Reconnect",
+      "connecting": "[EN] Connecting...",
+      "disconnecting": "[EN] Disconnecting...",
+      "tokenExpired": "[EN] Token Expired",
+      "tokenExpiredMessage": "[EN] Your Twitter connection has expired. Please reconnect to enable automatic verification."
+    },
+    "verification": {
+      "title": "[EN] Twitter Verification",
+      "pending": "[EN] Pending",
+      "verifying": "[EN] Verifying...",
+      "approved": "[EN] Approved",
+      "rejected": "[EN] Rejected",
+      "error": "[EN] Error",
+      "retry": "[EN] Retry Verification",
+      "complete": "[EN] Complete Task",
+      "pointsEarned": "[EN] +{points} points earned!",
+      "checkingActivity": "[EN] Checking your Twitter activity...",
+      "waitingVerification": "[EN] Waiting for verification...",
+      "taskVerified": "[EN] Great! Your {taskType} task has been verified.",
+      "taskRejected": "[EN] Please complete the {taskType} action and try again.",
+      "verificationFailed": "[EN] Verification failed. Please try again or contact support."
+    },
+    "tasks": {
+      "follow": "[EN] Follow",
+      "like": "[EN] Like",
+      "retweet": "[EN] Retweet",
+      "followTitle": "[EN] Follow on Twitter",
+      "likeTitle": "[EN] Like Tweet",
+      "retweetTitle": "[EN] Retweet",
+      "instructions": "[EN] Instructions:",
+      "howItWorks": "[EN] How it works:",
+      "step1": "[EN] Connect your Twitter account (one-time setup)",
+      "step2": "[EN] Complete the Twitter action",
+      "step3": "[EN] Verification happens automatically",
+      "step4": "[EN] Earn points instantly!",
+      "connectionRequired": "[EN] Twitter Connection Required",
+      "connectionRequiredMessage": "[EN] Connect your Twitter account to enable automatic verification for this task. This will make the process much faster and easier!",
+      "automaticVerification": "[EN] Automatic Verification",
+      "automaticVerificationMessage": "[EN] Once you complete the action, we'll automatically verify it and award your points!",
+      "manualMode": "[EN] Manual Mode"
+    }
+  }
+}

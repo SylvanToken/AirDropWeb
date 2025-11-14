@@ -1,0 +1,67 @@
+{
+  "general": {
+    "unknown": "Ein unbekannter Fehler ist aufgetreten",
+    "serverError": "Serverfehler aufgetreten",
+    "networkError": "Netzwerkverbindungsfehler",
+    "timeout": "Anfrage-Zeitüberschreitung"
+  },
+  "auth": {
+    "invalidCredentials": "Ungültige E-Mail oder Passwort",
+    "emailExists": "E-Mail-Adresse existiert bereits",
+    "usernameExists": "Benutzername existiert bereits",
+    "unauthorized": "Unbefugter Zugriff",
+    "sessionExpired": "Ihre Sitzung ist abgelaufen",
+    "invalidToken": "Ungültiges oder abgelaufenes Token"
+  },
+  "validation": {
+    "required": "Dieses Feld ist erforderlich",
+    "invalidEmail": "Ungültige E-Mail-Adresse",
+    "invalidPassword": "Passwort muss mindestens 8 Zeichen lang sein",
+    "passwordMismatch": "Passwörter stimmen nicht überein",
+    "invalidUsername": "Benutzername muss 3-20 Zeichen lang sein",
+    "invalidWallet": "Ungültige Wallet-Adresse"
+  },
+  "api": {
+    "notFound": "Ressource nicht gefunden",
+    "forbidden": "Zugriff verboten",
+    "badRequest": "Ungültige Anfrage",
+    "conflict": "Ressource existiert bereits",
+    "tooManyRequests": "Zu viele Anfragen, bitte versuchen Sie es später erneut"
+  },
+  "database": {
+    "connectionError": "Datenbankverbindungsfehler",
+    "queryError": "Datenbankabfragefehler",
+    "uniqueConstraint": "Dieser Wert existiert bereits"
+  },
+  "errorReport": {
+    "title": "[EN] Report an Error",
+    "subtitle": "[EN] Help us improve by reporting any issues you encounter",
+    "button": "[EN] Report Error",
+    "types": {
+      "UI_ERROR": "[EN] UI/Display Error",
+      "API_ERROR": "[EN] API/Connection Error",
+      "TASK_ERROR": "[EN] Task Completion Error",
+      "PAYMENT_ERROR": "[EN] Payment/Wallet Error",
+      "OTHER": "[EN] Other"
+    },
+    "form": {
+      "errorType": "[EN] Error Type",
+      "errorTitle": "[EN] Error Title",
+      "errorTitlePlaceholder": "[EN] Brief description of the error",
+      "errorTitleRequired": "[EN] Error title is required",
+      "errorDetails": "[EN] Error Details",
+      "errorDetailsPlaceholder": "[EN] Please describe what happened, what you were trying to do, and any error messages you saw...",
+      "errorDetailsRequired": "[EN] Error details are required",
+      "submit": "[EN] Submit Report",
+      "cancel": "[EN] Cancel",
+      "submitting": "[EN] Submitting..."
+    },
+    "success": {
+      "title": "[EN] Report Submitted!",
+      "message": "[EN] Thank you for helping us improve the platform"
+    },
+    "validation": {
+      "allFieldsRequired": "[EN] Please fill in all required fields"
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "terms": {
+    "title": "Terms of Use",
+    "lastUpdated": "Last Updated: November 9, 2025",
+    "scrollToAccept": "Scroll to the bottom to accept",
+    "cancel": "Cancel",
+    "accept": "I Accept",
+    "close": "Close",
+    "section1": {
+      "title": "1. Acceptance of Terms",
+      "content": "By accessing and using the Sylvan Token Airdrop Platform, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to these Terms of Use, please do not use the Platform."
+    },
+    "section2": {
+      "title": "2. Eligibility",
+      "content": "You must be at least 18 years old to use this Platform. By using the Platform, you represent and warrant that you meet this age requirement and have the legal capacity to enter into these Terms."
+    },
+    "section3": {
+      "title": "3. Account Registration",
+      "intro": "To participate in the airdrop program, you must create an account. You agree to:",
+      "item1": "Provide accurate, current, and complete information during registration",
+      "item2": "Maintain and promptly update your account information",
+      "item3": "Maintain the security of your password and account",
+      "item4": "Accept responsibility for all activities that occur under your account",
+      "item5": "Notify us immediately of any unauthorized use of your account"
+    },
+    "section4": {
+      "title": "4. Task Completion and Rewards",
+      "intro": "The Platform allows you to complete various tasks to earn points:",
+      "item1": "Tasks must be completed genuinely and in accordance with requirements",
+      "item2": "Points are awarded upon successful verification of task completion",
+      "item3": "We reserve the right to verify task completion and revoke points for fraudulent activity",
+      "item4": "Token distribution is subject to campaign rules and may change without notice",
+      "item5": "We do not guarantee any specific value or utility of distributed tokens"
+    },
+    "section5": {
+      "title": "5. Prohibited Activities",
+      "intro": "You agree not to engage in any of the following prohibited activities:",
+      "item1": "Creating multiple accounts or using automated systems (bots)",
+      "item2": "Providing false information or impersonating others",
+      "item3": "Attempting to manipulate or exploit the point system",
+      "item4": "Engaging in fraudulent task completion",
+      "item5": "Violating any applicable laws or regulations",
+      "item6": "Interfering with the Platform's operation or security"
+    },
+    "section6": {
+      "title": "6. Wallet and Social Media Verification",
+      "intro": "To receive tokens, you must verify your wallet address and complete social media verifications:",
+      "item1": "Wallet addresses and social media accounts are permanently locked after verification",
+      "item2": "You are responsible for ensuring the accuracy of your wallet address",
+      "item3": "We are not responsible for tokens sent to incorrect addresses",
+      "item4": "Social media accounts must be genuine and owned by you"
+    },
+    "section7": {
+      "title": "7. Intellectual Property",
+      "content": "All content on the Platform, including text, graphics, logos, and software, is the property of Sylvan Token and is protected by intellectual property laws."
+    },
+    "section8": {
+      "title": "8. Disclaimer of Warranties",
+      "content": "THE PLATFORM IS PROVIDED 'AS IS' AND 'AS AVAILABLE' WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED."
+    },
+    "section9": {
+      "title": "9. Limitation of Liability",
+      "content": "TO THE MAXIMUM EXTENT PERMITTED BY LAW, SYLVAN TOKEN SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES."
+    },
+    "section10": {
+      "title": "10. Modifications to Terms",
+      "content": "We reserve the right to modify these Terms at any time. Your continued use of the Platform after such modifications constitutes your acceptance of the updated Terms."
+    },
+    "section11": {
+      "title": "11. Termination",
+      "content": "We reserve the right to suspend or terminate your account at any time, with or without notice, for any reason, including violation of these Terms."
+    },
+    "section12": {
+      "title": "12. Contact Information",
+      "content": "If you have any questions about these Terms, please contact us through our official social media channels."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated: November 9, 2025",
+    "scrollToAccept": "Scroll to the bottom to accept",
+    "cancel": "Cancel",
+    "accept": "I Accept",
+    "close": "Close",
+    "section1": {
+      "title": "1. Introduction",
+      "content": "Sylvan Token is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Airdrop Platform."
+    },
+    "section2": {
+      "title": "2. Information We Collect",
+      "subtitle1": "2.1 Personal Information",
+      "intro1": "We collect information that you provide directly to us, including:",
+      "item1": "Email address",
+      "item2": "Username",
+      "item3": "Password (encrypted)",
+      "item4": "Wallet address",
+      "item5": "Social media usernames (Twitter, Telegram)",
+      "subtitle2": "2.2 Automatically Collected Information",
+      "intro2": "When you access the Platform, we automatically collect:",
+      "item6": "IP address",
+      "item7": "Browser type and version",
+      "item8": "Device information",
+      "item9": "Login timestamps",
+      "item10": "Task completion data"
+    },
+    "section3": {
+      "title": "3. How We Use Your Information",
+      "intro": "We use the collected information for the following purposes:",
+      "item1": "To create and manage your account",
+      "item2": "To process task completions and award points",
+      "item3": "To distribute tokens to verified wallet addresses",
+      "item4": "To verify social media account ownership",
+      "item5": "To prevent fraud and ensure platform security",
+      "item6": "To communicate important updates about the platform",
+      "item7": "To improve our services and user experience",
+      "item8": "To comply with legal obligations"
+    },
+    "section4": {
+      "title": "4. Information Sharing and Disclosure",
+      "intro": "We do not sell your personal information. We may share your information in the following circumstances:",
+      "item1": "Public Leaderboard: Your username and points may be displayed publicly",
+      "item2": "Service Providers: We may share information with third-party service providers",
+      "item3": "Legal Requirements: We may disclose information if required by law",
+      "item4": "Business Transfers: Information may be transferred in connection with a merger or acquisition"
+    },
+    "section5": {
+      "title": "5. Data Security",
+      "intro": "We implement appropriate technical and organizational measures to protect your personal information:",
+      "item1": "Password encryption using industry-standard algorithms",
+      "item2": "Secure database storage",
+      "item3": "Regular security audits",
+      "item4": "Access controls and authentication",
+      "note": "However, no method of transmission over the Internet is 100% secure."
+    },
+    "section6": {
+      "title": "6. Data Retention",
+      "content": "We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law."
+    },
+    "section7": {
+      "title": "7. Your Rights",
+      "intro": "Depending on your location, you may have certain rights regarding your personal information:",
+      "item1Title": "Access",
+      "item1": "Request access to your personal information",
+      "item2Title": "Correction",
+      "item2": "Request correction of inaccurate information",
+      "item3Title": "Deletion",
+      "item3": "Request deletion of your account and data",
+      "item4Title": "Objection",
+      "item4": "Object to certain processing of your information",
+      "item5Title": "Data Portability",
+      "item5": "Request a copy of your data in a portable format",
+      "note": "Note: Certain information (wallet addresses, verified social media accounts) cannot be changed after verification."
+    },
+    "section8": {
+      "title": "8. Cookies and Tracking",
+      "content": "We use cookies and similar tracking technologies to enhance your experience on the Platform. You can control cookies through your browser settings."
+    },
+    "section9": {
+      "title": "9. Third-Party Links",
+      "content": "The Platform may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties."
+    },
+    "section10": {
+      "title": "10. Children's Privacy",
+      "content": "The Platform is not intended for users under the age of 18. We do not knowingly collect personal information from children."
+    },
+    "section11": {
+      "title": "11. International Data Transfers",
+      "content": "Your information may be transferred to and processed in countries other than your country of residence. By using the Platform, you consent to such transfers."
+    },
+    "section12": {
+      "title": "12. Changes to This Privacy Policy",
+      "content": "We may update this Privacy Policy from time to time. Your continued use of the Platform after such changes constitutes your acceptance of the updated Privacy Policy."
+    },
+    "section13": {
+      "title": "13. Contact Us",
+      "content": "If you have any questions about this Privacy Policy, please contact us through our official social media channels."
+    }
+  }
+}

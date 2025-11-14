@@ -1,0 +1,56 @@
+{
+  "unsubscribe": {
+    "loading": {
+      "title": "正在处理您的请求",
+      "description": "请稍候，我们正在更新您的电子邮件偏好设置..."
+    },
+    "success": {
+      "title": "成功取消订阅",
+      "descriptionAll": "您已取消订阅所有非必要电子邮件。您仍将收到重要的账户和安全通知。",
+      "descriptionType": "您已取消订阅{{type}}电子邮件。",
+      "note": "您仍将收到重要的交易电子邮件，如钱包验证和安全警报。",
+      "whatNext": "接下来会发生什么？",
+      "step1": "您将不再收到所选的电子邮件类型",
+      "step2": "您可以随时从个人资料设置中重新订阅",
+      "step3": "重要的账户通知仍将发送"
+    },
+    "error": {
+      "title": "取消订阅失败",
+      "help": "如果您继续遇到问题，请联系我们的支持团队或从您的个人资料设置中管理您的偏好。"
+    },
+    "errors": {
+      "missingToken": "无效或缺少取消订阅链接。请使用电子邮件中的链接。",
+      "failed": "无法处理您的取消订阅请求。请重试。",
+      "unknown": "发生意外错误。请稍后重试。"
+    },
+    "actions": {
+      "goHome": "返回首页",
+      "goToDashboard": "前往仪表板",
+      "goToSettings": "电子邮件设置",
+      "managePreferences": "管理偏好设置"
+    }
+  },
+  "preferences": {
+    "title": "电子邮件偏好设置",
+    "description": "选择您想要接收的电子邮件",
+    "taskCompletions": {
+      "label": "任务完成通知",
+      "description": "在您完成任务并获得积分时收到通知"
+    },
+    "walletVerifications": {
+      "label": "钱包验证更新",
+      "description": "关于您的钱包验证状态的重要更新"
+    },
+    "adminNotifications": {
+      "label": "管理员通知",
+      "description": "来自管理员的通知（仅限管理员用户）"
+    },
+    "marketingEmails": {
+      "label": "营销和更新",
+      "description": "新闻、更新和促销内容"
+    },
+    "transactionalNote": "注意：您将始终收到重要的交易电子邮件，如密码重置和安全警报。",
+    "saveSuccess": "电子邮件偏好设置保存成功",
+    "saveError": "无法保存电子邮件偏好设置"
+  }
+}

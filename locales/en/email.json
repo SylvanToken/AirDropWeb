@@ -1,0 +1,56 @@
+{
+  "unsubscribe": {
+    "loading": {
+      "title": "Processing Your Request",
+      "description": "Please wait while we update your email preferences..."
+    },
+    "success": {
+      "title": "Successfully Unsubscribed",
+      "descriptionAll": "You have been unsubscribed from all non-essential emails. You will still receive important account and security notifications.",
+      "descriptionType": "You have been unsubscribed from {{type}} emails.",
+      "note": "You will still receive important transactional emails such as wallet verification and security alerts.",
+      "whatNext": "What happens next?",
+      "step1": "You won't receive the selected email types anymore",
+      "step2": "You can resubscribe anytime from your profile settings",
+      "step3": "Important account notifications will still be sent"
+    },
+    "error": {
+      "title": "Unsubscribe Failed",
+      "help": "If you continue to have issues, please contact our support team or manage your preferences from your profile settings."
+    },
+    "errors": {
+      "missingToken": "Invalid or missing unsubscribe link. Please use the link from your email.",
+      "failed": "Failed to process your unsubscribe request. Please try again.",
+      "unknown": "An unexpected error occurred. Please try again later."
+    },
+    "actions": {
+      "goHome": "Go Home",
+      "goToDashboard": "Go to Dashboard",
+      "goToSettings": "Email Settings",
+      "managePreferences": "Manage Preferences"
+    }
+  },
+  "preferences": {
+    "title": "Email Preferences",
+    "description": "Choose which emails you want to receive",
+    "taskCompletions": {
+      "label": "Task Completion Notifications",
+      "description": "Get notified when you complete tasks and earn points"
+    },
+    "walletVerifications": {
+      "label": "Wallet Verification Updates",
+      "description": "Important updates about your wallet verification status"
+    },
+    "adminNotifications": {
+      "label": "Admin Notifications",
+      "description": "Notifications from administrators (for admin users only)"
+    },
+    "marketingEmails": {
+      "label": "Marketing & Updates",
+      "description": "News, updates, and promotional content"
+    },
+    "transactionalNote": "Note: You will always receive essential transactional emails such as password resets and security alerts.",
+    "saveSuccess": "Email preferences saved successfully",
+    "saveError": "Failed to save email preferences"
+  }
+}

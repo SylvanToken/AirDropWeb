@@ -1,0 +1,67 @@
+{
+  "setup": {
+    "title": "Fügen Sie Ihr BEP-20 Wallet hinzu",
+    "description": "Geben Sie Ihre Binance Smart Chain (BEP-20) Wallet-Adresse ein, um Belohnungen zu erhalten",
+    "verifiedTitle": "Wallet verifiziert",
+    "verifiedDescription": "Ihre BEP-20 Wallet-Adresse ist verifiziert und gesperrt",
+    "verifiedLabel": "Verifizierte Wallet-Adresse",
+    "verifiedNote": "Diese Adresse ist dauerhaft mit Ihrem Konto verknüpft und kann nicht geändert werden.",
+    "airdropInfoTitle": "Airdrop-Informationen",
+    "airdropInfoText": "Alle Ihre verdienten Punkte und Belohnungen werden an diese Wallet-Adresse gesendet, wenn die Airdrop-Verteilung beginnt.",
+    "warningTitle": "Wichtig: Lesen Sie dies, bevor Sie ein Wallet hinzufügen",
+    "warningItems": {
+      "bep20Only": "Nur BEP-20 (Binance Smart Chain) Adressen werden unterstützt",
+      "permanentLock": "Ihre Wallet-Adresse wird nach der Bestätigung dauerhaft gesperrt",
+      "cannotChange": "Sie können Ihre Wallet-Adresse nach der Verifizierung nicht ändern",
+      "doubleCheck": "Überprüfen Sie Ihre Adresse vor der Bestätigung doppelt",
+      "rewardsDestination": "Alle Airdrop-Belohnungen werden an diese Adresse gesendet"
+    },
+    "infoTitle": "Was ist eine BEP-20 Adresse?",
+    "infoDescription": "BEP-20 ist der Token-Standard auf der Binance Smart Chain. Ihre Wallet-Adresse sollte:",
+    "infoItems": {
+      "startsWith": "Mit 0x beginnen",
+      "length": "Genau 42 Zeichen lang sein",
+      "characters": "Nur Zahlen (0-9) und Buchstaben (a-f, A-F) enthalten"
+    },
+    "infoExample": "Beispiel:",
+    "walletLabel": "BEP-20 Wallet-Adresse",
+    "walletPlaceholder": "0x...",
+    "walletHelp": "Fügen Sie Ihre BEP-20 Wallet-Adresse von Trust Wallet, MetaMask oder Binance ein",
+    "continueButton": "Weiter",
+    "processingButton": "Verarbeitung..."
+  },
+  "confirmation": {
+    "title": "Wallet-Adresse bestätigen",
+    "subtitle": "Diese Aktion kann nicht rückgängig gemacht werden",
+    "addressLabel": "Ihre Wallet-Adresse:",
+    "criticalTitle": "KRITISCH: Bitte sorgfältig lesen",
+    "criticalItems": {
+      "permanentLock": "Diese Wallet-Adresse wird DAUERHAFT mit Ihrem Konto gesperrt",
+      "cannotChange": "Sie KÖNNEN diese Adresse nach der Bestätigung NICHT ändern oder aktualisieren",
+      "rewardsDestination": "Alle Airdrop-Belohnungen werden an diese Adresse gesendet",
+      "accessRequired": "Stellen Sie sicher, dass Sie Zugriff auf dieses Wallet haben",
+      "verifyCorrect": "Überprüfen Sie, ob die Adresse korrekt ist, bevor Sie bestätigen"
+    },
+    "checklistTitle": "Bestätigungs-Checkliste",
+    "checklistItems": {
+      "doubleChecked": "Ich habe meine Wallet-Adresse doppelt überprüft und sie ist korrekt",
+      "understandPermanent": "Ich verstehe, dass diese Adresse nach der Bestätigung nicht geändert werden kann",
+      "haveAccess": "Ich habe Zugriff auf dieses Wallet und kann Token empfangen",
+      "understandBep20": "Ich verstehe, dass dies eine BEP-20 (Binance Smart Chain) Adresse ist"
+    },
+    "cancelButton": "Abbrechen",
+    "confirmButton": "Bestätigen & Wallet sperren",
+    "confirmingButton": "Bestätigung läuft...",
+    "checkAllRequired": "Bitte aktivieren Sie alle Kontrollkästchen zur Bestätigung",
+    "acknowledgement": "Durch die Bestätigung bestätigen Sie, dass Sie alle oben genannten Warnungen gelesen und verstanden haben"
+  },
+  "errors": {
+    "walletAlreadySet": "Ihre Wallet-Adresse wurde bereits verifiziert und kann nicht geändert werden. Dies ist eine dauerhafte Sicherheitsmaßnahme.",
+    "walletInUse": "Diese Wallet-Adresse ist bereits mit einem anderen Konto registriert. Jede Wallet kann nur mit einem Konto verknüpft werden.",
+    "invalidAddress": "Das Wallet-Adressformat ist ungültig. Bitte geben Sie eine gültige BEP-20-Adresse ein, die mit 0x beginnt.",
+    "validationError": "Die Wallet-Adresse konnte nicht validiert werden. Bitte überprüfen Sie das Format und versuchen Sie es erneut.",
+    "noWallet": "Keine Wallet-Adresse gefunden. Bitte fügen Sie zuerst eine Wallet-Adresse hinzu.",
+    "alreadyVerified": "Ihre Wallet-Adresse ist bereits verifiziert. Es ist keine weitere Aktion erforderlich.",
+    "unknown": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie den Support, wenn das Problem weiterhin besteht."
+  }
+}

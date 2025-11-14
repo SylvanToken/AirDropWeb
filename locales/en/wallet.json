@@ -1,0 +1,67 @@
+{
+  "setup": {
+    "title": "Add Your BEP-20 Wallet",
+    "description": "Enter your Binance Smart Chain (BEP-20) wallet address to receive rewards",
+    "verifiedTitle": "Wallet Verified",
+    "verifiedDescription": "Your BEP-20 wallet address is verified and locked",
+    "verifiedLabel": "Verified Wallet Address",
+    "verifiedNote": "This address is permanently linked to your account and cannot be changed.",
+    "airdropInfoTitle": "Airdrop Information",
+    "airdropInfoText": "All your earned points and rewards will be sent to this wallet address when the airdrop distribution begins.",
+    "warningTitle": "Important: Read Before Adding Wallet",
+    "warningItems": {
+      "bep20Only": "Only BEP-20 (Binance Smart Chain) addresses are supported",
+      "permanentLock": "Your wallet address will be permanently locked after confirmation",
+      "cannotChange": "You cannot change your wallet address once verified",
+      "doubleCheck": "Double-check your address before confirming",
+      "rewardsDestination": "All airdrop rewards will be sent to this address"
+    },
+    "infoTitle": "What is a BEP-20 Address?",
+    "infoDescription": "BEP-20 is the token standard on Binance Smart Chain. Your wallet address should:",
+    "infoItems": {
+      "startsWith": "Start with 0x",
+      "length": "Be exactly 42 characters long",
+      "characters": "Contain only numbers (0-9) and letters (a-f, A-F)"
+    },
+    "infoExample": "Example:",
+    "walletLabel": "BEP-20 Wallet Address",
+    "walletPlaceholder": "0x...",
+    "walletHelp": "Paste your BEP-20 wallet address from Trust Wallet, MetaMask, or Binance",
+    "continueButton": "Continue",
+    "processingButton": "Processing..."
+  },
+  "confirmation": {
+    "title": "Confirm Wallet Address",
+    "subtitle": "This action cannot be undone",
+    "addressLabel": "Your Wallet Address:",
+    "criticalTitle": "CRITICAL: Please Read Carefully",
+    "criticalItems": {
+      "permanentLock": "This wallet address will be PERMANENTLY locked to your account",
+      "cannotChange": "You CANNOT change or update this address after confirmation",
+      "rewardsDestination": "All airdrop rewards will be sent to this address",
+      "accessRequired": "Make sure you have access to this wallet",
+      "verifyCorrect": "Verify the address is correct before confirming"
+    },
+    "checklistTitle": "Confirmation Checklist",
+    "checklistItems": {
+      "doubleChecked": "I have double-checked my wallet address and it is correct",
+      "understandPermanent": "I understand this address cannot be changed after confirmation",
+      "haveAccess": "I have access to this wallet and can receive tokens",
+      "understandBep20": "I understand this is a BEP-20 (Binance Smart Chain) address"
+    },
+    "cancelButton": "Cancel",
+    "confirmButton": "Confirm & Lock Wallet",
+    "confirmingButton": "Confirming...",
+    "checkAllRequired": "Please check all boxes to confirm",
+    "acknowledgement": "By confirming, you acknowledge that you have read and understood all warnings above"
+  },
+  "errors": {
+    "walletAlreadySet": "Your wallet address has already been verified and cannot be changed. This is a permanent security measure.",
+    "walletInUse": "This wallet address is already registered to another account. Each wallet can only be linked to one account.",
+    "invalidAddress": "The wallet address format is invalid. Please provide a valid BEP-20 address starting with 0x.",
+    "validationError": "The wallet address failed validation. Please check the format and try again.",
+    "noWallet": "No wallet address found. Please add a wallet address first before verifying.",
+    "alreadyVerified": "Your wallet address is already verified. No further action is needed.",
+    "unknown": "An unexpected error occurred. Please try again or contact support if the problem persists."
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "project": {
+    "name": "Sylvan Token",
+    "symbol": "SYL",
+    "description": "Community-driven environmental token project"
+  },
+  "links": {
+    "website": "https://www.sylvantoken.org/",
+    "airdrop": "https://airdrop.sylvantoken.org/",
+    "github": "https://github.com/SylvanToken/SylvanToken",
+    "twitter": "https://x.com/SylvanToken",
+    "telegram": "https://t.me/sylvantoken",
+    "coinscope": "https://www.coinscope.co/coin/1-syl",
+    "coinboom": "https://coinboom.net/coin/sylvan-token"
+  },
+  "socialMedia": {
+    "active": {
+      "twitter": {
+        "url": "https://x.com/SylvanToken",
+        "handle": "@SylvanToken",
+        "enabled": true
+      },
+      "telegram": {
+        "url": "https://t.me/sylvantoken",
+        "enabled": true
+      },
+      "github": {
+        "url": "https://github.com/SylvanToken/SylvanToken",
+        "enabled": true
+      }
+    },
+    "inactive": {
+      "youtube": { "enabled": false },
+      "medium": { "enabled": false },
+      "discord": { "enabled": false },
+      "reddit": { "enabled": false },
+      "linkedin": { "enabled": false },
+      "tiktok": { "enabled": false },
+      "instagram": { "enabled": false }
+    }
+  },
+  "taskCategories": {
+    "social": {
+      "name": "Social Media Tasks",
+      "priority": 1,
+      "types": ["TWITTER_FOLLOW", "TWITTER_LIKE", "TWITTER_RETWEET", "TELEGRAM_JOIN"]
+    },
+    "profile": {
+      "name": "Profile Completion Tasks",
+      "priority": 2,
+      "types": ["PROFILE_UPDATE"]
+    },
+    "environmental": {
+      "name": "Environmental Organization Tasks",
+      "priority": 3,
+      "types": ["WEBSITE_VISIT", "TWITTER_FOLLOW"],
+      "source": "public/cevreciler.html",
+      "description": "Tasks related to environmental organizations - website visits and Twitter follows (no retweets)"
+    },
+    "referral": {
+      "name": "Referral Tasks",
+      "priority": 4,
+      "types": ["REFERRAL"]
+    },
+    "listing": {
+      "name": "Token Listing Tasks",
+      "priority": 5,
+      "types": ["WEBSITE_VISIT"],
+      "sites": ["coinscope", "coinboom"]
+    }
+  },
+  "taskTemplates": {
+    "twitter": {
+      "follow": {
+        "title": "Follow Sylvan Token on Twitter",
+        "description": "Follow our official Twitter account to stay updated with the latest news",
+        "points": 10,
+        "taskType": "TWITTER_FOLLOW",
+        "taskUrl": "https://x.com/SylvanToken"
+      },
+      "like": {
+        "title": "Like Our Latest Tweet",
+        "description": "Show your support by liking our latest announcement",
+        "points": 5,
+        "taskType": "TWITTER_LIKE",
+        "taskUrl": "https://x.com/SylvanToken"
+      },
+      "retweet": {
+        "title": "Retweet Our Announcement",
+        "description": "Help spread the word by retweeting our announcement",
+        "points": 15,
+        "taskType": "TWITTER_RETWEET",
+        "taskUrl": "https://x.com/SylvanToken"
+      }
+    },
+    "telegram": {
+      "join": {
+        "title": "Join Sylvan Token Telegram",
+        "description": "Join our Telegram community to connect with other members",
+        "points": 10,
+        "taskType": "TELEGRAM_JOIN",
+        "taskUrl": "https://t.me/sylvantoken"
+      }
+    },
+    "website": {
+      "visit": {
+        "title": "Visit Sylvan Token Website",
+        "description": "Explore our official website to learn more about the project",
+        "points": 5,
+        "taskType": "WEBSITE_VISIT",
+        "taskUrl": "https://www.sylvantoken.org/"
+      },
+      "airdrop": {
+        "title": "Visit Airdrop Page",
+        "description": "Check out our airdrop page and share with friends",
+        "points": 5,
+        "taskType": "WEBSITE_VISIT",
+        "taskUrl": "https://airdrop.sylvantoken.org/"
+      }
+    },
+    "listing": {
+      "coinscope": {
+        "title": "Visit Sylvan Token on CoinScope",
+        "description": "Check out our listing on CoinScope and vote for us",
+        "points": 10,
+        "taskType": "WEBSITE_VISIT",
+        "taskUrl": "https://www.coinscope.co/coin/1-syl"
+      },
+      "coinboom": {
+        "title": "Visit Sylvan Token on CoinBoom",
+        "description": "View our token information on CoinBoom",
+        "points": 10,
+        "taskType": "WEBSITE_VISIT",
+        "taskUrl": "https://coinboom.net/coin/sylvan-token"
+      }
+    },
+    "github": {
+      "star": {
+        "title": "Star Sylvan Token on GitHub",
+        "description": "Show your support by starring our GitHub repository",
+        "points": 15,
+        "taskType": "GITHUB_STAR",
+        "taskUrl": "https://github.com/SylvanToken/SylvanToken"
+      }
+    },
+    "profile": {
+      "complete": {
+        "title": "Complete Your Profile",
+        "description": "Fill in all required profile information",
+        "points": 20,
+        "taskType": "PROFILE_UPDATE"
+      },
+      "verifyWallet": {
+        "title": "Verify Your Wallet",
+        "description": "Connect and verify your BEP-20 wallet address",
+        "points": 25,
+        "taskType": "PROFILE_UPDATE"
+      },
+      "verifyTwitter": {
+        "title": "Verify Your Twitter Account",
+        "description": "Link and verify your Twitter account",
+        "points": 15,
+        "taskType": "PROFILE_UPDATE"
+      },
+      "verifyTelegram": {
+        "title": "Verify Your Telegram Account",
+        "description": "Link and verify your Telegram account",
+        "points": 15,
+        "taskType": "PROFILE_UPDATE"
+      }
+    },
+    "referral": {
+      "invite": {
+        "title": "Invite a Friend",
+        "description": "Share your referral code and invite friends to join",
+        "points": 50,
+        "taskType": "REFERRAL"
+      }
+    }
+  },
+  "environmentalOrganizations": {
+    "source": "public/cevreciler.html",
+    "taskTypes": ["WEBSITE_VISIT", "TWITTER_FOLLOW"],
+    "excludeTypes": ["TWITTER_RETWEET"],
+    "pointsPerTask": {
+      "WEBSITE_VISIT": 5,
+      "TWITTER_FOLLOW": 10
+    },
+    "note": "Organizations will be loaded from cevreciler.html file"
+  },
+  "taskGeneration": {
+    "defaultLanguage": "en",
+    "supportedLanguages": ["en", "ar", "de", "es", "ko", "ru", "tr", "zh"],
+    "defaultStatus": "inactive",
+    "requiresAdminApproval": true,
+    "autoTranslate": true
+  }
+}

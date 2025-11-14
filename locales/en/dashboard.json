@@ -1,0 +1,64 @@
+{
+  "title": "Welcome back, {username}!",
+  "subtitle": "Track your progress and compete with other community members",
+  "loading": "Loading dashboard...",
+  "hero": {
+    "title": "Welcome back, {username}!",
+    "subtitle": "Track your progress and compete with other community members",
+    "stats": {
+      "points": "Total Points",
+      "tasks": "Tasks Completed",
+      "rank": "Your Rank",
+      "streak": "Day Streak"
+    }
+  },
+  "error": {
+    "title": "Error",
+    "retry": "Retry"
+  },
+  "stats": {
+    "totalPoints": {
+      "title": "Total Points",
+      "description": "Keep completing tasks to earn more!"
+    },
+    "rank": {
+      "title": "Your Rank",
+      "description": "Out of all participants"
+    },
+    "streak": {
+      "title": "Current Streak",
+      "day": "day",
+      "days": "days",
+      "description": "in a row"
+    },
+    "completions": {
+      "title": "Tasks Completed",
+      "description": "Total completions"
+    }
+  },
+  "recentCompletions": {
+    "title": "Recent Completions",
+    "subtitle": "Your latest completed tasks",
+    "empty": "No tasks completed yet",
+    "emptyDescription": "Start completing tasks to see them here!",
+    "points": "pts"
+  },
+  "leaderboard": {
+    "title": "Leaderboard",
+    "subtitle": "Top 10 community members",
+    "you": "(You)",
+    "task": "task",
+    "tasks": "tasks",
+    "points": "points"
+  },
+  "threshold": {
+    "below": "You need to collect 1500 points to be eligible for rewards",
+    "above": "Congratulations! You have passed the threshold",
+    "progress": "Points"
+  },
+  "pointThreshold": {
+    "belowThreshold": "You need to collect 1500 points to be eligible for rewards",
+    "aboveThreshold": "Congratulations! You have passed the threshold",
+    "pointsOf": "points"
+  }
+}

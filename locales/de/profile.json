@@ -1,0 +1,117 @@
+{
+  "title": "Mein Profil",
+  "subtitle": "Ihre Kontoinformationen anzeigen und verwalten",
+  "error": "Profil konnte nicht geladen werden",
+  "accountInfo": {
+    "title": "Kontoinformationen",
+    "description": "Ihre grundlegenden Kontodetails",
+    "username": "Benutzername",
+    "email": "E-Mail-Adresse",
+    "memberSince": "Mitglied seit",
+    "totalPoints": "Gesamtpunkte"
+  },
+  "wallet": {
+    "title": "BEP-20 Wallet",
+    "description": "Ihre verifizierte Wallet-Adresse für den Empfang von Belohnungen",
+    "verified": "Verifizierte Wallet-Adresse",
+    "notSet": "Wallet nicht eingerichtet",
+    "notSetDescription": "Bitte fügen Sie Ihre BEP-20 Wallet-Adresse auf der Wallet-Seite hinzu"
+  },
+  "socialMedia": {
+    "verified": "Verifizierter Benutzername",
+    "permanentNote": "Dieser Benutzername ist dauerhaft mit Ihrem Konto verknüpft",
+    "usernameLabel": "Benutzername",
+    "usernameHelp": "Geben Sie Ihren Benutzernamen ohne @ Symbol ein",
+    "continue": "Weiter",
+    "processing": "Verarbeitung...",
+    "twitter": {
+      "description": "Verknüpfen Sie Ihr X (Twitter) Konto, um Ihre Identität zu verifizieren",
+      "verifiedDescription": "Ihr X (Twitter) Konto ist verifiziert und verknüpft",
+      "title": "[EN] Twitter",
+      "placeholder": "[EN] @username",
+      "verify": "[EN] Verify Twitter",
+      "verified": "[EN] Verified",
+      "notSet": "[EN] Not Set"
+    },
+    "telegram": {
+      "description": "Verknüpfen Sie Ihr Telegram Konto, um Ihre Identität zu verifizieren",
+      "verifiedDescription": "Ihr Telegram Konto ist verifiziert und verknüpft",
+      "title": "[EN] Telegram",
+      "placeholder": "[EN] @username",
+      "verify": "[EN] Verify Telegram",
+      "verified": "[EN] Verified",
+      "notSet": "[EN] Not Set"
+    },
+    "warning": {
+      "title": "Wichtig: Vor dem Hinzufügen lesen",
+      "permanent": "Ihr Benutzername wird nach der Bestätigung dauerhaft gesperrt",
+      "cannotChange": "Sie können Ihren Benutzernamen nach der Verifizierung nicht ändern",
+      "doubleCheck": "Überprüfen Sie Ihren Benutzernamen vor der Bestätigung doppelt"
+    },
+    "info": {
+      "title": "Benutzername-Anforderungen",
+      "withoutAt": "Ohne @ Symbol eingeben",
+      "length": "Muss 3-30 Zeichen lang sein",
+      "characters": "Darf nur Buchstaben, Zahlen und Unterstriche enthalten",
+      "example": "Beispiel:"
+    },
+    "errors": {
+      "required": "Benutzername ist erforderlich",
+      "tooShort": "Benutzername muss mindestens 3 Zeichen lang sein",
+      "tooLong": "Benutzername darf 30 Zeichen nicht überschreiten",
+      "invalidFormat": "Benutzername darf nur Buchstaben, Zahlen und Unterstriche enthalten",
+      "unknown": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    },
+    "title": "[EN] Social Media Accounts",
+    "description": "[EN] Connect your social media accounts to complete tasks"
+  },
+  "confirmation": {
+    "title": "Benutzername bestätigen",
+    "subtitle": "Diese Aktion kann nicht rückgängig gemacht werden",
+    "usernameLabel": "Ihr Benutzername",
+    "critical": {
+      "title": "KRITISCH: Bitte sorgfältig lesen",
+      "permanent": "Dieser Benutzername wird DAUERHAFT mit Ihrem Konto gesperrt",
+      "cannotChange": "Sie KÖNNEN diesen Benutzernamen nach der Bestätigung NICHT ändern oder aktualisieren",
+      "verify": "Überprüfen Sie, ob der Benutzername korrekt ist, bevor Sie bestätigen"
+    },
+    "acknowledgement": "Durch die Bestätigung bestätigen Sie, dass Sie alle oben genannten Warnungen gelesen und verstanden haben",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen & Benutzername sperren",
+    "confirming": "Bestätigung läuft..."
+  },
+  "emailPreferences": {
+    "title": "E-Mail-Einstellungen",
+    "description": "Verwalten Sie Ihre E-Mail-Benachrichtigungseinstellungen",
+    "taskCompletions": {
+      "title": "Aufgabenabschluss-Benachrichtigungen",
+      "description": "Erhalten Sie E-Mails, wenn Sie Aufgaben abschließen und Punkte verdienen"
+    },
+    "walletVerifications": {
+      "title": "Wallet-Verifizierungs-Updates",
+      "description": "Werden Sie über Änderungen Ihres Wallet-Verifizierungsstatus benachrichtigt"
+    },
+    "adminNotifications": {
+      "title": "Wichtige Konto-Updates",
+      "description": "Erhalten Sie kritische Benachrichtigungen über Ihr Konto"
+    },
+    "marketingEmails": {
+      "title": "Marketing & Promotionen",
+      "description": "Erhalten Sie Updates über neue Funktionen, Kampagnen und Sonderangebote"
+    },
+    "note": {
+      "title": "Hinweis:",
+      "description": "Kritische Sicherheits- und kontobezogene E-Mails werden unabhängig von Ihren Einstellungen immer gesendet."
+    },
+    "save": "Einstellungen speichern",
+    "saving": "Wird gespeichert...",
+    "saved": "Einstellungen erfolgreich gespeichert!"
+  },
+  "referral": {
+    "title": "[EN] Your Referral Code",
+    "description": "[EN] Share your code with friends",
+    "copyButton": "[EN] Copy Code",
+    "copied": "[EN] Copied!",
+    "notGenerated": "[EN] Referral code not generated yet"
+  }
+}

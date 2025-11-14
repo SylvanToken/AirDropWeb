@@ -1,0 +1,793 @@
+{
+  "dashboard": {
+    "title": "Панель администратора",
+    "welcome": "Добро пожаловать, {{username}}",
+    "stats": {
+      "totalUsers": "Всего пользователей",
+      "totalUsersDesc": "Зарегистрированные пользователи платформы",
+      "activeUsers": "Активные пользователи",
+      "activeUsersDesc": "Активны за последние 7 дней",
+      "totalCompletions": "Всего завершений",
+      "totalCompletionsDesc": "Все завершения задач",
+      "totalPoints": "Всего баллов",
+      "totalPointsDesc": "Баллы, присужденные пользователям"
+    },
+    "authStatus": {
+      "title": "Статус аутентификации",
+      "active": "Активен",
+      "description": "Вход выполнен как администратор"
+    },
+    "quickActions": {
+      "title": "Быстрые действия",
+      "description": "Эффективно управляйте своей платформой",
+      "manageTasks": "Управление задачами",
+      "manageTasksDesc": "Создание и редактирование задач",
+      "viewUsers": "Просмотр пользователей",
+      "viewUsersDesc": "Управление учетными записями пользователей",
+      "manageCampaigns": "Управление кампаниями",
+      "manageCampaignsDesc": "Создание и отслеживание кампаний"
+    },
+    "sessionInfo": {
+      "title": "Информация о сеансе",
+      "description": "Ваш текущий сеанс администратора",
+      "email": "Электронная почта:",
+      "role": "Роль:",
+      "userId": "ID пользователя:"
+    },
+    "accessControl": {
+      "title": "Контроль доступа администратора",
+      "description": "Ваши права администратора предоставляют вам доступ к следующим функциям",
+      "features": {
+        "manageTasks": "Создание, редактирование и удаление задач",
+        "viewUsers": "Просмотр всех учетных записей пользователей и статистики",
+        "viewHistory": "Доступ к истории выполнения пользователей",
+        "viewAnalytics": "Просмотр аналитики и метрик платформы"
+      }
+    },
+    "referralMetrics": {
+      "title": "[EN] Referral Program Metrics",
+      "description": "[EN] Track the performance of your referral task program",
+      "completions": "[EN] Referral Task Completions",
+      "completionsDesc": "[EN] Total successful referrals",
+      "points": "[EN] Points from Referrals",
+      "pointsDesc": "[EN] Points awarded through referrals",
+      "percentageOfTotal": "[EN] {{percentage}}% of total points"
+    }
+  },
+  "stats": {
+    "totalUsers": {
+      "title": "[EN] Total Users",
+      "description": "[EN] All registered users"
+    },
+    "activeUsers": {
+      "title": "[EN] Active Users",
+      "description": "[EN] Active in last 7 days"
+    },
+    "totalCompletions": {
+      "title": "[EN] Total Completions",
+      "description": "[EN] All task completions"
+    },
+    "totalPoints": "Всего очков присуждено",
+    "pointsAwarded": {
+      "title": "[EN] Points Awarded",
+      "description": "[EN] Total points distributed"
+    }
+  },
+  "users": {
+    "title": "Управление пользователями",
+    "subtitle": "Просмотр и управление всеми пользователями платформы",
+    "search": "Поиск пользователей...",
+    "sortBy": "Сортировать по",
+    "sortOrder": "Порядок сортировки",
+    "ascending": "По возрастанию",
+    "descending": "По убыванию",
+    "filters": {
+      "all": "Все пользователи",
+      "active": "Активные",
+      "blocked": "Заблокированные",
+      "deleted": "Удаленные",
+      "title": "[EN] Filters",
+      "allUsers": "[EN] All Users",
+      "users": "[EN] Users Only",
+      "admins": "[EN] Admins Only"
+    },
+    "table": {
+      "username": "Имя пользователя",
+      "email": "Электронная почта",
+      "role": "Роль",
+      "status": "Статус",
+      "points": "Очки",
+      "completions": "Выполнения",
+      "joined": "Присоединился",
+      "lastActive": "Последняя активность",
+      "actions": "Действия",
+      "registered": "[EN] Registered",
+      "view": "[EN] View",
+      "admin": "[EN] Admin"
+    },
+    "status": {
+      "ACTIVE": "Активный",
+      "BLOCKED": "Заблокирован",
+      "DELETED": "Удален"
+    },
+    "role": {
+      "USER": "Пользователь",
+      "ADMIN": "Администратор"
+    },
+    "actions": {
+      "view": "Просмотр",
+      "block": "Заблокировать",
+      "unblock": "Разблокировать",
+      "delete": "Удалить"
+    },
+    "userDetail": {
+      "title": "Детали пользователя",
+      "accountInfo": "Информация об аккаунте",
+      "walletInfo": "Информация о кошельке",
+      "socialMedia": "Социальные сети",
+      "activityLog": "Журнал активности",
+      "completionHistory": "История выполнений",
+      "loginHistory": "История входов",
+      "noWallet": "Кошелек не установлен",
+      "notVerified": "Не подтвержден",
+      "verified": "Подтвержден",
+      "blockUser": "Заблокировать пользователя",
+      "unblockUser": "Разблокировать пользователя",
+      "deleteUser": "Удалить пользователя",
+      "confirmBlock": "Вы уверены, что хотите заблокировать этого пользователя?",
+      "confirmUnblock": "Вы уверены, что хотите разблокировать этого пользователя?",
+      "confirmDelete": "Вы уверены, что хотите удалить этого пользователя? Это действие нельзя отменить."
+    },
+    "loading": "[EN] Loading...",
+    "searchPlaceholder": "[EN] Search by email or username...",
+    "noUsers": "[EN] No users found",
+    "export": "[EN] Export",
+    "resultsCount": "[EN] Showing {{count}} of {{total}} users",
+    "pagination": {
+      "page": "[EN] Page {{current}} of {{total}}",
+      "previous": "[EN] Previous",
+      "next": "[EN] Next"
+    },
+    "detail": {
+      "back": "[EN] Back to Users",
+      "backShort": "[EN] Back",
+      "loading": "[EN] Loading user details...",
+      "notFound": "[EN] User not found",
+      "admin": "[EN] Admin",
+      "stats": {
+        "totalPoints": "[EN] Total Points",
+        "totalPointsDesc": "[EN] Accumulated points",
+        "completions": "[EN] Completions",
+        "completionsDesc": "[EN] Tasks completed",
+        "streak": "[EN] Streak",
+        "streakDesc": "[EN] Consecutive days",
+        "memberSince": "[EN] Member Since"
+      },
+      "accountInfo": {
+        "title": "[EN] Account Information",
+        "registrationDate": "[EN] Registration Date",
+        "lastActive": "[EN] Last Active"
+      },
+      "completionHistory": {
+        "title": "[EN] Completion History",
+        "empty": "[EN] No completions yet",
+        "table": {
+          "task": "[EN] Task",
+          "type": "[EN] Type",
+          "points": "[EN] Points",
+          "completedAt": "[EN] Completed At"
+        },
+        "pagination": "[EN] Page {{current}} of {{total}} ({{count}} total completions)"
+      }
+    }
+  },
+  "tasks": {
+    "title": "Управление задачами",
+    "subtitle": "Создание и управление задачами для пользователей",
+    "createTask": "Создать задачу",
+    "editTask": "Редактировать задачу",
+    "deleteTask": "Удалить задачу",
+    "form": {
+      "title": "Название",
+      "titlePlaceholder": "Введите название задачи",
+      "description": "Описание",
+      "descriptionPlaceholder": "Введите описание задачи",
+      "points": "Очки",
+      "pointsPlaceholder": "Количество очков",
+      "taskType": "Тип задачи",
+      "taskUrl": "URL задачи",
+      "taskUrlPlaceholder": "https://...",
+      "isActive": "Активна",
+      "campaign": "Кампания",
+      "selectCampaign": "Выберите кампанию",
+      "save": "Сохранить задачу",
+      "cancel": "Отмена",
+      "submit": "[EN] Create Task",
+      "update": "[EN] Update Task",
+      "saving": "[EN] Saving...",
+      "saveError": "[EN] Failed to save task",
+      "types": {
+        "TWITTER_FOLLOW": "[EN] Twitter Follow",
+        "TWITTER_LIKE": "[EN] Twitter Like",
+        "TWITTER_RETWEET": "[EN] Twitter Retweet",
+        "TELEGRAM_JOIN": "[EN] Telegram Join",
+        "REFERRAL": "[EN] Referral Task",
+        "CUSTOM": "[EN] Custom"
+      },
+      "timeLimited": {
+        "enable": "[EN] Enable Time Limit",
+        "duration": "[EN] Duration (hours)",
+        "durationPlaceholder": "[EN] Enter duration in hours (1-24)",
+        "durationHelp": "[EN] Task duration must be between 1 and 24 hours",
+        "currentExpiration": "[EN] Current Expiration",
+        "newExpiration": "[EN] New expiration will be",
+        "willExpire": "[EN] Task will expire"
+      },
+      "referralTask": {
+        "title": "[EN] How Referral Tasks Work",
+        "description": "[EN] Referral tasks automatically reward users when their invited friends successfully register on the platform.",
+        "howItWorks": {
+          "step1": "[EN] Users claim the referral task and receive a PENDING status",
+          "step2": "[EN] Users share their unique referral code with friends",
+          "step3": "[EN] When a friend registers using the code, the task is automatically completed",
+          "step4": "[EN] Points are awarded immediately upon successful referral"
+        },
+        "tip": "[EN] Tip: Set attractive point rewards to encourage users to invite more friends and grow your platform!"
+      }
+    },
+    "table": {
+      "title": "Название",
+      "type": "Тип",
+      "points": "Очки",
+      "campaign": "Кампания",
+      "status": "Статус",
+      "completions": "Выполнения",
+      "actions": "Действия"
+    },
+    "status": {
+      "active": "Активна",
+      "inactive": "Неактивна"
+    },
+    "confirmDelete": "Вы уверены, что хотите удалить эту задачу?",
+    "createButton": "[EN] Create Task",
+    "editTitle": "[EN] Edit Task",
+    "createTitle": "[EN] Create New Task",
+    "empty": "[EN] No tasks found. Create your first task to get started.",
+    "active": "[EN] Active",
+    "inactive": "[EN] Inactive",
+    "points": "[EN] points",
+    "viewUrl": "[EN] View URL",
+    "completions": "[EN] completions",
+    "edit": "[EN] Edit",
+    "delete": "[EN] Delete",
+    "resultsCount": "[EN] Showing {{count}} of {{total}} tasks",
+    "deleteConfirm": "[EN] Are you sure you want to delete this task?",
+    "deleteError": "[EN] Failed to delete task",
+    "filters": {
+      "all": "[EN] All Tasks",
+      "active": "[EN] Active",
+      "inactive": "[EN] Inactive"
+    }
+  },
+  "campaigns": {
+    "title": "Управление кампаниями",
+    "subtitle": "Создание и управление кампаниями airdrop",
+    "createCampaign": "Создать кампанию",
+    "editCampaign": "Редактировать кампанию",
+    "deleteCampaign": "Удалить кампанию",
+    "viewTasks": "Просмотр задач",
+    "form": {
+      "title": "Название",
+      "titlePlaceholder": "Введите название кампании",
+      "description": "Описание",
+      "descriptionPlaceholder": "Введите описание кампании",
+      "startDate": "Дата начала",
+      "endDate": "Дата окончания",
+      "isActive": "Активна",
+      "save": "Сохранить кампанию",
+      "cancel": "Отмена"
+    },
+    "table": {
+      "title": "Название",
+      "startDate": "Начало",
+      "endDate": "Конец",
+      "status": "Статус",
+      "tasks": "Задачи",
+      "actions": "Действия"
+    },
+    "status": {
+      "active": "Активна",
+      "inactive": "Неактивна",
+      "upcoming": "Предстоящая",
+      "ended": "Завершена"
+    },
+    "loading": "[EN] Loading campaigns...",
+    "loadingDetails": "[EN] Loading campaign...",
+    "empty": "[EN] No campaigns found"
+  },
+  "verifications": {
+    "title": "[EN] Verification Dashboard",
+    "loading": "[EN] Loading completions...",
+    "empty": "[EN] No pending verifications"
+  },
+  "verification": {
+    "title": "Проверка задач",
+    "pending": "Ожидает",
+    "approved": "Одобрено",
+    "rejected": "Отклонено",
+    "needsReview": "Требует проверки",
+    "approve": "Одобрить",
+    "reject": "Отклонить",
+    "fraudScore": "Оценка мошенничества",
+    "riskLevel": "Уровень риска",
+    "userInfo": "Информация о пользователе",
+    "taskInfo": "Информация о задаче",
+    "fraudAnalysis": "Анализ мошенничества",
+    "loading": "Загрузка завершений...",
+    "empty": "Нет ожидающих проверок"
+  },
+  "navigation": {
+    "dashboard": "Панель управления",
+    "users": "Пользователи",
+    "tasks": "Задачи",
+    "campaigns": "Кампании",
+    "analytics": "Аналитика",
+    "settings": "Настройки",
+    "logout": "Выход"
+  },
+  "bulkActions": {
+    "selectAll": "Выбрать все",
+    "selectedCount": "Выбрано: {{count}}",
+    "bulkActions": "Массовые операции",
+    "processing": "Обработка...",
+    "assignPoints": "Назначить баллы",
+    "activate": "Активировать пользователей",
+    "block": "Заблокировать пользователей",
+    "delete": "Удалить пользователей",
+    "export": "Экспортировать выбранное",
+    "deleteDialog": {
+      "title": "Удалить пользователей",
+      "description": "Вы уверены, что хотите удалить {{count}} пользователей? Это действие нельзя отменить, и все связанные данные будут удалены.",
+      "cancel": "Отмена",
+      "confirm": "Удалить пользователей",
+      "deleting": "Удаление..."
+    },
+    "blockDialog": {
+      "title": "Заблокировать пользователей",
+      "description": "Вы уверены, что хотите заблокировать {{count}} пользователей? Заблокированные пользователи не смогут получить доступ к платформе.",
+      "cancel": "Отмена",
+      "confirm": "Заблокировать пользователей",
+      "blocking": "Блокировка..."
+    },
+    "pointsDialog": {
+      "title": "Назначить баллы",
+      "description": "Назначить баллы {{count}} выбранным пользователям.",
+      "label": "Баллы для назначения",
+      "hint": "Введите положительное число для добавления баллов или отрицательное для вычитания.",
+      "cancel": "Отмена",
+      "confirm": "Назначить баллы",
+      "assigning": "Назначение..."
+    },
+    "resultDialog": {
+      "successTitle": "Операция успешно завершена",
+      "partialTitle": "Операция завершена с ошибками",
+      "successful": "Успешно",
+      "failed": "Не удалось",
+      "errors": "Ошибки:",
+      "close": "Закрыть"
+    }
+  },
+  "filters": {
+    "title": "Расширенные фильтры",
+    "addCriterion": "Добавить критерий фильтра",
+    "appliedFilters": "Примененные фильтры",
+    "clearAll": "Очистить все",
+    "apply": "Применить фильтры",
+    "clear": "Очистить",
+    "loadPreset": "Загрузить пресет",
+    "savePreset": "Сохранить пресет",
+    "presetName": "Название пресета",
+    "presetNamePlaceholder": "например, Активные пользователи с высокими баллами",
+    "savePresetDescription": "Сохраните текущие критерии фильтрации для быстрого доступа",
+    "saving": "Сохранение...",
+    "field": "Поле",
+    "operator": "Оператор",
+    "value": "Значение",
+    "logic": {
+      "and": "И",
+      "or": "ИЛИ"
+    },
+    "operators": {
+      "equals": "Равно",
+      "contains": "Содержит",
+      "gt": "Больше чем",
+      "lt": "Меньше чем",
+      "between": "Между",
+      "in": "В",
+      "onDate": "На дату",
+      "after": "После",
+      "before": "До"
+    },
+    "fields": {
+      "username": "Имя пользователя",
+      "email": "Email",
+      "points": "Баллы",
+      "completions": "Завершения",
+      "role": "Роль",
+      "status": "Статус",
+      "createdAt": "Дата регистрации",
+      "lastActive": "Последняя активность"
+    },
+    "placeholders": {
+      "enterValue": "Введите значение",
+      "selectValue": "Выберите значение",
+      "min": "Мин",
+      "max": "Макс"
+    }
+  },
+  "export": {
+    "title": "Экспорт данных",
+    "description": "Экспортировать данные {{model}} в предпочитаемом формате",
+    "formatLabel": "Формат экспорта",
+    "fieldsLabel": "Выберите поля для экспорта",
+    "selectAll": "Выбрать все",
+    "deselectAll": "Снять выделение",
+    "allFields": "Все поля",
+    "filtersApplied": "Применены фильтры",
+    "filtersCount": "{{count}} фильтров будут применены к экспорту",
+    "cancel": "Отмена",
+    "export": "Экспортировать",
+    "exporting": "Экспорт...",
+    "formats": {
+      "csvDesc": "Значения, разделенные запятыми",
+      "excelDesc": "Формат Microsoft Excel",
+      "jsonDesc": "JavaScript Object Notation"
+    },
+    "models": {
+      "users": "пользователи",
+      "tasks": "задачи",
+      "completions": "завершения",
+      "campaigns": "кампании"
+    },
+    "status": {
+      "successTitle": "Экспорт успешен",
+      "success": "Ваш файл успешно загружен.",
+      "errorTitle": "Ошибка экспорта",
+      "asyncTitle": "Экспорт в очереди",
+      "asyncExport": "Ваш экспорт обрабатывается. Вы скоро получите электронное письмо со ссылкой для скачивания."
+    },
+    "errors": {
+      "noFields": "Пожалуйста, выберите хотя бы одно поле для экспорта",
+      "failed": "Экспорт не удался. Пожалуйста, попробуйте снова."
+    }
+  },
+  "analytics": {
+    "title": "Панель аналитики",
+    "subtitle": "Метрики производительности платформы и аналитика",
+    "refresh": "Обновить",
+    "exportPdf": "Экспорт в PDF",
+    "dateRange": {
+      "title": "Диапазон дат",
+      "description": "Выберите период времени для просмотра аналитики",
+      "last7Days": "Последние 7 дней",
+      "last30Days": "Последние 30 дней",
+      "last90Days": "Последние 90 дней",
+      "lastYear": "Прошлый год",
+      "showing": "Показаны данные с {{start}} по {{end}}"
+    },
+    "metrics": {
+      "totalUsers": "Всего пользователей",
+      "totalUsersDesc": "Все зарегистрированные пользователи",
+      "activeUsers": "Активные пользователи",
+      "activeUsersDesc": "Активны за последние 7 дней",
+      "totalCompletions": "Всего завершений",
+      "totalCompletionsDesc": "Все завершения задач",
+      "totalPoints": "Всего баллов",
+      "totalPointsDesc": "Средн.: {{avg}} на пользователя"
+    },
+    "charts": {
+      "userGrowth": "Рост пользователей",
+      "userGrowthDesc": "Ежедневные регистрации новых пользователей",
+      "completionTrends": "Тренды завершений",
+      "completionTrendsDesc": "Ежедневные завершения задач",
+      "topTasks": "Топ задач по завершениям",
+      "topTasksDesc": "Самые популярные задачи на платформе",
+      "userActivity": "Распределение активности пользователей",
+      "userActivityDesc": "Активные и неактивные пользователи",
+      "todayActivity": "Активность сегодня",
+      "todayActivityDesc": "Новые пользователи и завершения сегодня",
+      "noData": "Нет доступных данных"
+    },
+    "labels": {
+      "activeUsers": "Активные пользователи",
+      "inactiveUsers": "Неактивные пользователи",
+      "newUsers": "Новые пользователи",
+      "completions": "Завершения"
+    }
+  },
+  "audit": {
+    "pageTitle": "Журнал аудита - Администратор",
+    "pageDescription": "Отслеживайте все административные действия и системные события",
+    "heading": "Журнал аудита",
+    "subheading": "Полная история всех действий администратора для подотчетности и безопасности",
+    "title": "Журнал аудита",
+    "subtitle": "Отслеживайте все административные действия и системные события",
+    "description": "Полная история всех действий администратора для подотчетности и безопасности",
+    "loading": "Загрузка журналов аудита...",
+    "noLogs": "Журналы аудита не найдены",
+    "export": "Экспорт",
+    "searchPlaceholder": "Поиск по действию, администратору или ID записи...",
+    "filtersActive": "Фильтры активны",
+    "clearFilters": "Очистить фильтры",
+    "viewDetails": "Просмотр",
+    "previous": "Предыдущая",
+    "next": "Следующая",
+    "page": "Страница {{current}} из {{total}}",
+    "resultsCount": "Показано {{start}}-{{end}} из {{total}} записей",
+    "filters": {
+      "allEvents": "Все события",
+      "securityOnly": "Только события безопасности",
+      "action": "Действие",
+      "actionPlaceholder": "например, user_delete",
+      "model": "Модель",
+      "modelPlaceholder": "например, User",
+      "startDate": "Дата начала",
+      "endDate": "Дата окончания"
+    },
+    "table": {
+      "timestamp": "Временная метка",
+      "action": "Действие",
+      "admin": "Администратор",
+      "model": "Модель",
+      "recordId": "ID записи",
+      "ipAddress": "IP-адрес",
+      "details": "Детали"
+    },
+    "detailsDialog": {
+      "title": "Детали журнала аудита",
+      "securityEvent": "Событие, критичное для безопасности",
+      "action": "Действие",
+      "admin": "Пользователь-администратор",
+      "model": "Затронутая модель",
+      "recordId": "ID записи",
+      "ipAddress": "IP-адрес",
+      "userAgent": "User Agent",
+      "dataChanges": "Изменения данных",
+      "before": "До",
+      "after": "После"
+    }
+  },
+  "roles": {
+    "title": "Управление ролями",
+    "subtitle": "Управление ролями и разрешениями для администраторов",
+    "loading": "Загрузка ролей...",
+    "empty": "Роли не найдены. Создайте свою первую роль для начала.",
+    "createButton": "Создать роль",
+    "createTitle": "Создать новую роль",
+    "createDescription": "Определите новую роль с конкретными разрешениями",
+    "editTitle": "Редактировать роль",
+    "editDescription": "Обновить название роли и разрешения",
+    "assignTitle": "Назначить роль {{role}}",
+    "assignDescription": "Выберите пользователей для назначения этой роли",
+    "permissions": "разрешения",
+    "more": "ещё",
+    "assignUsers": "Назначить пользователей",
+    "deleteError": "Не удалось удалить роль",
+    "stats": {
+      "totalRoles": "Всего ролей",
+      "assignedUsers": "Назначенные пользователи"
+    },
+    "list": {
+      "title": "Роли",
+      "description": "Управление ролями и их разрешениями"
+    },
+    "form": {
+      "name": "Название роли",
+      "namePlaceholder": "например, Менеджер контента",
+      "permissions": "Разрешения",
+      "nameRequired": "Название роли обязательно",
+      "permissionsRequired": "Требуется хотя бы одно разрешение",
+      "saveError": "Не удалось сохранить роль",
+      "saving": "Сохранение...",
+      "create": "Создать роль",
+      "update": "Обновить роль",
+      "cancel": "Отмена"
+    },
+    "assign": {
+      "loading": "Загрузка пользователей...",
+      "searchPlaceholder": "Поиск по имени пользователя или email...",
+      "noUsers": "Пользователи не найдены",
+      "noResults": "Нет пользователей, соответствующих вашему запросу",
+      "assigned": "Назначено",
+      "assign": "Назначить",
+      "assigning": "Назначение...",
+      "remove": "Удалить",
+      "removing": "Удаление...",
+      "assignError": "Не удалось назначить роль",
+      "removeError": "Не удалось удалить роль",
+      "summary": "{{assigned}} из {{total}} пользователей имеют эту роль",
+      "close": "Закрыть"
+    },
+    "deleteDialog": {
+      "title": "Удалить роль",
+      "description": "Вы уверены, что хотите удалить роль \"{{role}}\"? Пользователи с этой ролью потеряют свои разрешения.",
+      "cancel": "Отмена",
+      "confirm": "Удалить роль"
+    }
+  },
+  "emails": {
+    "title": "Аналитика электронной почты",
+    "subtitle": "Мониторинг доставки и вовлеченности электронной почты",
+    "loading": "Загрузка аналитики электронной почты...",
+    "dateRange": {
+      "title": "Фильтр диапазона дат",
+      "startDate": "Дата начала",
+      "endDate": "Дата окончания",
+      "apply": "Применить фильтр",
+      "reset": "Сбросить"
+    },
+    "overview": {
+      "totalSent": "Всего отправлено писем",
+      "deliveryRate": "Процент доставки",
+      "delivered": "доставлено",
+      "openRate": "Процент открытий",
+      "opened": "открыто",
+      "clickRate": "Процент кликов",
+      "clicked": "кликнуто",
+      "bounceRate": "Процент возвратов",
+      "bounced": "возвращено",
+      "failureRate": "Процент неудач",
+      "failed": "не удалось"
+    },
+    "bounceBreakdown": {
+      "title": "Разбивка возвратов",
+      "hard": "Жесткие возвраты",
+      "soft": "Мягкие возвраты",
+      "spam": "Жалобы на спам",
+      "other": "Другое"
+    },
+    "templatePerformance": {
+      "title": "Производительность электронной почты по шаблонам",
+      "noData": "Нет данных об электронной почте",
+      "sent": "отправлено",
+      "delivery": "Доставка",
+      "open": "Открытие",
+      "click": "Клик"
+    },
+    "recentFailures": {
+      "title": "Недавние неудачные письма",
+      "to": "Кому:",
+      "template": "Шаблон:"
+    }
+  },
+  "common": {
+    "loading": "Загрузка...",
+    "error": "Произошла ошибка",
+    "retry": "Повторить",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "create": "Создать",
+    "back": "Назад"
+  },
+  "sidebar": {
+    "quickActions": "[EN] Quick Actions",
+    "createTask": "[EN] Create Task",
+    "viewUsers": "[EN] View Users"
+  },
+  "errorReports": {
+    "title": "[EN] Error Reports",
+    "subtitle": "[EN] Monitor and manage user-reported errors",
+    "viewDetails": "[EN] View Details",
+    "delete": "[EN] Delete",
+    "deleteConfirm": "[EN] Are you sure?",
+    "deleteDescription": "[EN] This action cannot be undone. This will permanently delete the error report and all associated data (tags, comments, etc.).",
+    "deletePermanently": "[EN] Delete Permanently",
+    "deleting": "[EN] Deleting...",
+    "deleted": "[EN] Deleted Successfully",
+    "deletedMessage": "[EN] Error report has been permanently deleted",
+    "updated": "[EN] Updated Successfully",
+    "updatedMessage": "[EN] Error report has been updated",
+    "analytics": {
+      "totalReports": "[EN] Total Reports",
+      "pending": "[EN] Pending",
+      "resolved": "[EN] Resolved",
+      "avgResponse": "[EN] Avg Response",
+      "avgResolution": "[EN] Avg Resolution",
+      "byPriority": "[EN] By Priority",
+      "byType": "[EN] By Type",
+      "byStatus": "[EN] By Status",
+      "trend": "[EN] 7-Day Trend",
+      "topTags": "[EN] Most Common Tags",
+      "noData": "[EN] No data available"
+    },
+    "tags": {
+      "title": "[EN] Tags",
+      "add": "[EN] Add",
+      "addPlaceholder": "[EN] Add a tag (e.g., bug, ui, performance)",
+      "suggestions": "[EN] Suggestions:",
+      "tagAdded": "[EN] Tag added",
+      "tagAddedMessage": "[EN] Tag has been added successfully",
+      "tagRemoved": "[EN] Tag removed",
+      "tagRemovedMessage": "[EN] Tag has been removed",
+      "tagExists": "[EN] Tag already exists",
+      "tagExistsMessage": "[EN] This tag is already added to this report",
+      "failed": "[EN] Failed to add tag",
+      "failedMessage": "[EN] An error occurred while adding the tag"
+    },
+    "comments": {
+      "title": "[EN] Comments",
+      "count": "[EN] {{count}} comments",
+      "add": "[EN] Comment",
+      "addPlaceholder": "[EN] Add a comment... (Ctrl+Enter to submit)",
+      "internal": "[EN] Internal note",
+      "public": "[EN] Public comment",
+      "noComments": "[EN] No comments yet",
+      "beFirst": "[EN] Be the first to comment on this error report",
+      "commentAdded": "[EN] Comment added",
+      "commentAddedMessage": "[EN] Your comment has been added successfully",
+      "internalNote": "[EN] Internal notes are only visible to admins. Public comments may be shared with the user.",
+      "failed": "[EN] Failed to add comment",
+      "failedMessage": "[EN] An error occurred while adding the comment"
+    },
+    "detail": {
+      "title": "[EN] Title",
+      "reportedBy": "[EN] Reported By",
+      "anonymous": "[EN] Anonymous",
+      "errorType": "[EN] Error Type",
+      "description": "[EN] Description",
+      "stackTrace": "[EN] Stack Trace",
+      "pageUrl": "[EN] Page URL",
+      "userAgent": "[EN] User Agent",
+      "createdAt": "[EN] Created At",
+      "tabs": {
+        "update": "[EN] Update",
+        "tags": "[EN] Tags",
+        "comments": "[EN] Comments"
+      },
+      "update": {
+        "title": "[EN] Update Status",
+        "status": "[EN] Status",
+        "priority": "[EN] Priority",
+        "resolution": "[EN] Resolution Notes",
+        "resolutionPlaceholder": "[EN] Add resolution notes...",
+        "cancel": "[EN] Cancel",
+        "update": "[EN] Update Report",
+        "updating": "[EN] Updating..."
+      }
+    },
+    "status": {
+      "PENDING": "[EN] Pending",
+      "IN_PROGRESS": "[EN] In Progress",
+      "RESOLVED": "[EN] Resolved",
+      "CLOSED": "[EN] Closed"
+    },
+    "priority": {
+      "LOW": "[EN] Low",
+      "MEDIUM": "[EN] Medium",
+      "HIGH": "[EN] High",
+      "CRITICAL": "[EN] Critical"
+    },
+    "filters": {
+      "allStatus": "[EN] All Status",
+      "allPriority": "[EN] All Priority",
+      "apply": "[EN] Apply Filters"
+    },
+    "table": {
+      "priority": "[EN] Priority",
+      "type": "[EN] Type",
+      "title": "[EN] Title",
+      "user": "[EN] User",
+      "status": "[EN] Status",
+      "created": "[EN] Created",
+      "actions": "[EN] Actions",
+      "noReports": "[EN] No error reports found"
+    },
+    "pagination": {
+      "page": "[EN] Page {{current}} of {{total}}",
+      "previous": "[EN] Previous",
+      "next": "[EN] Next"
+    }
+  }
+}

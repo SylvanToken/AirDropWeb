@@ -1,0 +1,179 @@
+{
+  "terms": {
+    "title": "Términos de Uso",
+    "lastUpdated": "Última Actualización: 9 de noviembre de 2025",
+    "scrollToAccept": "Desplázate hasta el final para aceptar",
+    "cancel": "Cancelar",
+    "accept": "Acepto",
+    "close": "Cerrar",
+    "section1": {
+      "title": "1. Aceptación de Términos",
+      "content": "Al acceder y usar la Plataforma de Airdrop de Sylvan Token, aceptas y acuerdas estar sujeto a los términos y disposiciones de este acuerdo. Si no estás de acuerdo con estos Términos de Uso, por favor no uses la Plataforma."
+    },
+    "section2": {
+      "title": "2. Elegibilidad",
+      "content": "Debes tener al menos 18 años para usar esta Plataforma. Al usar la Plataforma, declaras y garantizas que cumples con este requisito de edad y tienes la capacidad legal para aceptar estos Términos."
+    },
+    "section3": {
+      "title": "3. Registro de Cuenta",
+      "intro": "Para participar en el programa de airdrop, debes crear una cuenta. Aceptas:",
+      "item1": "Proporcionar información precisa, actual y completa durante el registro",
+      "item2": "Mantener y actualizar rápidamente la información de tu cuenta",
+      "item3": "Mantener la seguridad de tu contraseña y cuenta",
+      "item4": "Aceptar la responsabilidad de todas las actividades que ocurran bajo tu cuenta",
+      "item5": "Notificarnos inmediatamente de cualquier uso no autorizado de tu cuenta"
+    },
+    "section4": {
+      "title": "4. Finalización de Tareas y Recompensas",
+      "intro": "La Plataforma te permite completar varias tareas para ganar puntos:",
+      "item1": "Las tareas deben completarse genuinamente y de acuerdo con los requisitos",
+      "item2": "Los puntos se otorgan tras la verificación exitosa de la finalización de la tarea",
+      "item3": "Nos reservamos el derecho de verificar la finalización de tareas y revocar puntos por actividad fraudulenta",
+      "item4": "La distribución de tokens está sujeta a las reglas de la campaña y puede cambiar sin previo aviso",
+      "item5": "No garantizamos ningún valor o utilidad específica de los tokens distribuidos"
+    },
+    "section5": {
+      "title": "5. Actividades Prohibidas",
+      "intro": "Aceptas no participar en ninguna de las siguientes actividades prohibidas:",
+      "item1": "Crear múltiples cuentas o usar sistemas automatizados (bots)",
+      "item2": "Proporcionar información falsa o hacerse pasar por otros",
+      "item3": "Intentar manipular o explotar el sistema de puntos",
+      "item4": "Participar en la finalización fraudulenta de tareas",
+      "item5": "Violar cualquier ley o regulación aplicable",
+      "item6": "Interferir con la operación o seguridad de la Plataforma"
+    },
+    "section6": {
+      "title": "6. Verificación de Billetera y Redes Sociales",
+      "intro": "Para recibir tokens, debes verificar tu dirección de billetera y completar las verificaciones de redes sociales:",
+      "item1": "Las direcciones de billetera y cuentas de redes sociales se bloquean permanentemente después de la verificación",
+      "item2": "Eres responsable de asegurar la precisión de tu dirección de billetera",
+      "item3": "No somos responsables de los tokens enviados a direcciones incorrectas",
+      "item4": "Las cuentas de redes sociales deben ser genuinas y de tu propiedad"
+    },
+    "section7": {
+      "title": "7. Propiedad Intelectual",
+      "content": "Todo el contenido en la Plataforma, incluyendo texto, gráficos, logotipos y software, es propiedad de Sylvan Token y está protegido por leyes de propiedad intelectual."
+    },
+    "section8": {
+      "title": "8. Descargo de Garantías",
+      "content": "LA PLATAFORMA SE PROPORCIONA 'TAL CUAL' Y 'SEGÚN DISPONIBILIDAD' SIN GARANTÍAS DE NINGÚN TIPO, YA SEAN EXPRESAS O IMPLÍCITAS."
+    },
+    "section9": {
+      "title": "9. Limitación de Responsabilidad",
+      "content": "EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY, SYLVAN TOKEN NO SERÁ RESPONSABLE DE NINGÚN DAÑO INDIRECTO, INCIDENTAL, ESPECIAL, CONSECUENTE O PUNITIVO."
+    },
+    "section10": {
+      "title": "10. Modificaciones a los Términos",
+      "content": "Nos reservamos el derecho de modificar estos Términos en cualquier momento. Tu uso continuado de la Plataforma después de tales modificaciones constituye tu aceptación de los Términos actualizados."
+    },
+    "section11": {
+      "title": "11. Terminación",
+      "content": "Nos reservamos el derecho de suspender o terminar tu cuenta en cualquier momento, con o sin previo aviso, por cualquier motivo, incluyendo la violación de estos Términos."
+    },
+    "section12": {
+      "title": "12. Información de Contacto",
+      "content": "Si tienes alguna pregunta sobre estos Términos, por favor contáctanos a través de nuestros canales oficiales de redes sociales."
+    }
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última Actualización: 9 de noviembre de 2025",
+    "scrollToAccept": "Desplázate hasta el final para aceptar",
+    "cancel": "Cancelar",
+    "accept": "Acepto",
+    "close": "Cerrar",
+    "section1": {
+      "title": "1. Introducción",
+      "content": "Sylvan Token está comprometido con la protección de tu privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos tu información cuando usas nuestra Plataforma de Airdrop."
+    },
+    "section2": {
+      "title": "2. Información que Recopilamos",
+      "subtitle1": "2.1 Información Personal",
+      "intro1": "Recopilamos información que nos proporcionas directamente, incluyendo:",
+      "item1": "Dirección de correo electrónico",
+      "item2": "Nombre de usuario",
+      "item3": "Contraseña (encriptada)",
+      "item4": "Dirección de billetera",
+      "item5": "Nombres de usuario de redes sociales (Twitter, Telegram)",
+      "subtitle2": "2.2 Información Recopilada Automáticamente",
+      "intro2": "Cuando accedes a la Plataforma, recopilamos automáticamente:",
+      "item6": "Dirección IP",
+      "item7": "Tipo y versión del navegador",
+      "item8": "Información del dispositivo",
+      "item9": "Marcas de tiempo de inicio de sesión",
+      "item10": "Datos de finalización de tareas"
+    },
+    "section3": {
+      "title": "3. Cómo Usamos Tu Información",
+      "intro": "Usamos la información recopilada para los siguientes propósitos:",
+      "item1": "Para crear y gestionar tu cuenta",
+      "item2": "Para procesar finalizaciones de tareas y otorgar puntos",
+      "item3": "Para distribuir tokens a direcciones de billetera verificadas",
+      "item4": "Para verificar la propiedad de cuentas de redes sociales",
+      "item5": "Para prevenir fraudes y asegurar la seguridad de la plataforma",
+      "item6": "Para comunicar actualizaciones importantes sobre la plataforma",
+      "item7": "Para mejorar nuestros servicios y experiencia de usuario",
+      "item8": "Para cumplir con obligaciones legales"
+    },
+    "section4": {
+      "title": "4. Compartir y Divulgación de Información",
+      "intro": "No vendemos tu información personal. Podemos compartir tu información en las siguientes circunstancias:",
+      "item1": "Tabla de Clasificación Pública: Tu nombre de usuario y puntos pueden mostrarse públicamente",
+      "item2": "Proveedores de Servicios: Podemos compartir información con proveedores de servicios de terceros",
+      "item3": "Requisitos Legales: Podemos divulgar información si lo requiere la ley",
+      "item4": "Transferencias Comerciales: La información puede transferirse en conexión con una fusión o adquisición"
+    },
+    "section5": {
+      "title": "5. Seguridad de Datos",
+      "intro": "Implementamos medidas técnicas y organizativas apropiadas para proteger tu información personal:",
+      "item1": "Encriptación de contraseñas usando algoritmos estándar de la industria",
+      "item2": "Almacenamiento seguro de base de datos",
+      "item3": "Auditorías de seguridad regulares",
+      "item4": "Controles de acceso y autenticación",
+      "note": "Sin embargo, ningún método de transmisión por Internet es 100% seguro."
+    },
+    "section6": {
+      "title": "6. Retención de Datos",
+      "content": "Retenemos tu información personal durante el tiempo necesario para cumplir con los propósitos descritos en esta Política de Privacidad, a menos que la ley requiera un período de retención más largo."
+    },
+    "section7": {
+      "title": "7. Tus Derechos",
+      "intro": "Dependiendo de tu ubicación, puedes tener ciertos derechos con respecto a tu información personal:",
+      "item1Title": "Acceso",
+      "item1": "Solicitar acceso a tu información personal",
+      "item2Title": "Corrección",
+      "item2": "Solicitar corrección de información inexacta",
+      "item3Title": "Eliminación",
+      "item3": "Solicitar eliminación de tu cuenta y datos",
+      "item4Title": "Objeción",
+      "item4": "Objetar cierto procesamiento de tu información",
+      "item5Title": "Portabilidad de Datos",
+      "item5": "Solicitar una copia de tus datos en formato portable",
+      "note": "Nota: Cierta información (direcciones de billetera, cuentas de redes sociales verificadas) no puede cambiarse después de la verificación."
+    },
+    "section8": {
+      "title": "8. Cookies y Rastreo",
+      "content": "Usamos cookies y tecnologías de rastreo similares para mejorar tu experiencia en la Plataforma. Puedes controlar las cookies a través de la configuración de tu navegador."
+    },
+    "section9": {
+      "title": "9. Enlaces de Terceros",
+      "content": "La Plataforma puede contener enlaces a sitios web o servicios de terceros. No somos responsables de las prácticas de privacidad de estos terceros."
+    },
+    "section10": {
+      "title": "10. Privacidad de Menores",
+      "content": "La Plataforma no está destinada a usuarios menores de 18 años. No recopilamos intencionalmente información personal de menores."
+    },
+    "section11": {
+      "title": "11. Transferencias Internacionales de Datos",
+      "content": "Tu información puede ser transferida y procesada en países distintos a tu país de residencia. Al usar la Plataforma, consientes tales transferencias."
+    },
+    "section12": {
+      "title": "12. Cambios a Esta Política de Privacidad",
+      "content": "Podemos actualizar esta Política de Privacidad de vez en cuando. Tu uso continuado de la Plataforma después de tales cambios constituye tu aceptación de la Política de Privacidad actualizada."
+    },
+    "section13": {
+      "title": "13. Contáctanos",
+      "content": "Si tienes alguna pregunta sobre esta Política de Privacidad, por favor contáctanos a través de nuestros canales oficiales de redes sociales."
+    }
+  }
+}

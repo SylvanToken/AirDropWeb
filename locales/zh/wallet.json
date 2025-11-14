@@ -1,0 +1,67 @@
+{
+  "setup": {
+    "title": "添加您的 BEP-20 钱包",
+    "description": "输入您的币安智能链 (BEP-20) 钱包地址以接收奖励",
+    "verifiedTitle": "钱包已验证",
+    "verifiedDescription": "您的 BEP-20 钱包地址已验证并锁定",
+    "verifiedLabel": "已验证的钱包地址",
+    "verifiedNote": "此地址已永久链接到您的账户，无法更改。",
+    "airdropInfoTitle": "空投信息",
+    "airdropInfoText": "当空投分发开始时，您赚取的所有积分和奖励将发送到此钱包地址。",
+    "warningTitle": "重要提示：添加钱包前请阅读",
+    "warningItems": {
+      "bep20Only": "仅支持 BEP-20（币安智能链）地址",
+      "permanentLock": "确认后，您的钱包地址将被永久锁定",
+      "cannotChange": "验证后无法更改您的钱包地址",
+      "doubleCheck": "确认前请仔细检查您的地址",
+      "rewardsDestination": "所有空投奖励将发送到此地址"
+    },
+    "infoTitle": "什么是 BEP-20 地址？",
+    "infoDescription": "BEP-20 是币安智能链上的代币标准。您的钱包地址应该：",
+    "infoItems": {
+      "startsWith": "以 0x 开头",
+      "length": "正好 42 个字符长",
+      "characters": "仅包含数字 (0-9) 和字母 (a-f, A-F)"
+    },
+    "infoExample": "示例：",
+    "walletLabel": "BEP-20 钱包地址",
+    "walletPlaceholder": "0x...",
+    "walletHelp": "从 Trust Wallet、MetaMask 或币安粘贴您的 BEP-20 钱包地址",
+    "continueButton": "继续",
+    "processingButton": "处理中..."
+  },
+  "confirmation": {
+    "title": "确认钱包地址",
+    "subtitle": "此操作无法撤销",
+    "addressLabel": "您的钱包地址：",
+    "criticalTitle": "重要提示：请仔细阅读",
+    "criticalItems": {
+      "permanentLock": "此钱包地址将永久锁定到您的账户",
+      "cannotChange": "确认后您无法更改或更新此地址",
+      "rewardsDestination": "所有空投奖励将发送到此地址",
+      "accessRequired": "确保您可以访问此钱包",
+      "verifyCorrect": "确认前请验证地址是否正确"
+    },
+    "checklistTitle": "确认清单",
+    "checklistItems": {
+      "doubleChecked": "我已仔细检查我的钱包地址，确认无误",
+      "understandPermanent": "我理解此地址在确认后无法更改",
+      "haveAccess": "我可以访问此钱包并能够接收代币",
+      "understandBep20": "我理解这是一个 BEP-20（币安智能链）地址"
+    },
+    "cancelButton": "取消",
+    "confirmButton": "确认并锁定钱包",
+    "confirmingButton": "确认中...",
+    "checkAllRequired": "请勾选所有复选框以确认",
+    "acknowledgement": "确认即表示您已阅读并理解上述所有警告"
+  },
+  "errors": {
+    "walletAlreadySet": "您的钱包地址已经验证，无法更改。这是永久性的安全措施。",
+    "walletInUse": "此钱包地址已注册到另一个账户。每个钱包只能链接到一个账户。",
+    "invalidAddress": "钱包地址格式无效。请提供以 0x 开头的有效 BEP-20 地址。",
+    "validationError": "钱包地址验证失败。请检查格式后重试。",
+    "noWallet": "未找到钱包地址。请先添加钱包地址。",
+    "alreadyVerified": "您的钱包地址已经验证。无需进一步操作。",
+    "unknown": "发生意外错误。请重试，如果问题仍然存在，请联系支持。"
+  }
+}

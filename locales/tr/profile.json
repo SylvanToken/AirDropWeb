@@ -1,0 +1,117 @@
+{
+  "title": "Profilim",
+  "subtitle": "Hesap bilgilerinizi görüntüleyin ve yönetin",
+  "error": "Profil yüklenemedi",
+  "accountInfo": {
+    "title": "Hesap Bilgileri",
+    "description": "Temel hesap detaylarınız",
+    "username": "Kullanıcı Adı",
+    "email": "E-posta Adresi",
+    "memberSince": "Üyelik Tarihi",
+    "totalPoints": "Toplam Puan"
+  },
+  "wallet": {
+    "title": "BEP-20 Cüzdan",
+    "description": "Ödülleri almak için doğrulanmış cüzdan adresiniz",
+    "verified": "Doğrulanmış Cüzdan Adresi",
+    "notSet": "Cüzdan Ayarlanmadı",
+    "notSetDescription": "Lütfen Cüzdan sayfasından BEP-20 cüzdan adresinizi ekleyin"
+  },
+  "referral": {
+    "title": "Referans Kodunuz",
+    "description": "Arkadaşlarınızla kodunuzu paylaşın",
+    "copyButton": "Kodu Kopyala",
+    "copied": "Kopyalandı!",
+    "notGenerated": "Referans kodu henüz oluşturulmadı"
+  },
+  "socialMedia": {
+    "title": "Sosyal Medya Hesapları",
+    "description": "Görevleri tamamlamak için sosyal medya hesaplarınızı bağlayın",
+    "verified": "Doğrulanmış Kullanıcı Adı",
+    "permanentNote": "Bu kullanıcı adı hesabınıza kalıcı olarak bağlanmıştır",
+    "usernameLabel": "Kullanıcı Adı",
+    "usernameHelp": "Kullanıcı adınızı @ işareti olmadan girin",
+    "continue": "Devam Et",
+    "processing": "İşleniyor...",
+    "twitter": {
+      "title": "Twitter",
+      "description": "Kimliğinizi doğrulamak için X (Twitter) hesabınızı bağlayın",
+      "verifiedDescription": "X (Twitter) hesabınız doğrulandı ve bağlandı",
+      "placeholder": "@kullaniciadi",
+      "verify": "Twitter'ı Doğrula",
+      "verified": "Doğrulandı",
+      "notSet": "Ayarlanmadı"
+    },
+    "telegram": {
+      "title": "Telegram",
+      "description": "Kimliğinizi doğrulamak için Telegram hesabınızı bağlayın",
+      "verifiedDescription": "Telegram hesabınız doğrulandı ve bağlandı",
+      "placeholder": "@kullaniciadi",
+      "verify": "Telegram'ı Doğrula",
+      "verified": "Doğrulandı",
+      "notSet": "Ayarlanmadı"
+    },
+    "warning": {
+      "title": "Önemli: Eklemeden Önce Okuyun",
+      "permanent": "Kullanıcı adınız onaydan sonra kalıcı olarak kilitlenecek",
+      "cannotChange": "Doğrulandıktan sonra kullanıcı adınızı değiştiremezsiniz",
+      "doubleCheck": "Onaylamadan önce kullanıcı adınızı iki kez kontrol edin"
+    },
+    "info": {
+      "title": "Kullanıcı Adı Gereksinimleri",
+      "withoutAt": "@ işareti olmadan girin",
+      "length": "3-30 karakter uzunluğunda olmalı",
+      "characters": "Sadece harf, rakam ve alt çizgi içerebilir",
+      "example": "Örnek:"
+    },
+    "errors": {
+      "required": "Kullanıcı adı gereklidir",
+      "tooShort": "Kullanıcı adı en az 3 karakter olmalı",
+      "tooLong": "Kullanıcı adı 30 karakteri geçemez",
+      "invalidFormat": "Kullanıcı adı sadece harf, rakam ve alt çizgi içerebilir",
+      "unknown": "Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin."
+    }
+  },
+  "confirmation": {
+    "title": "Kullanıcı Adını Onayla",
+    "subtitle": "Bu işlem geri alınamaz",
+    "usernameLabel": "Kullanıcı Adınız",
+    "critical": {
+      "title": "KRİTİK: Lütfen Dikkatlice Okuyun",
+      "permanent": "Bu kullanıcı adı hesabınıza KALICI olarak kilitlenecek",
+      "cannotChange": "Onaydan sonra bu kullanıcı adını DEĞİŞTİREMEZSİNİZ",
+      "verify": "Onaylamadan önce kullanıcı adının doğru olduğunu kontrol edin"
+    },
+    "acknowledgement": "Onaylayarak, yukarıdaki tüm uyarıları okuduğunuzu ve anladığınızı kabul ediyorsunuz",
+    "cancel": "İptal",
+    "confirm": "Onayla ve Kilitle",
+    "confirming": "Onaylanıyor..."
+  },
+  "emailPreferences": {
+    "title": "E-posta Tercihleri",
+    "description": "E-posta bildirim ayarlarınızı yönetin",
+    "taskCompletions": {
+      "title": "Görev Tamamlama Bildirimleri",
+      "description": "Görevleri tamamladığınızda ve puan kazandığınızda e-posta alın"
+    },
+    "walletVerifications": {
+      "title": "Cüzdan Doğrulama Güncellemeleri",
+      "description": "Cüzdan doğrulama durumu değişikliklerinde bildirim alın"
+    },
+    "adminNotifications": {
+      "title": "Önemli Hesap Güncellemeleri",
+      "description": "Hesabınızla ilgili kritik bildirimleri alın"
+    },
+    "marketingEmails": {
+      "title": "Pazarlama ve Promosyonlar",
+      "description": "Yeni özellikler, kampanyalar ve özel teklifler hakkında güncellemeler alın"
+    },
+    "note": {
+      "title": "Not:",
+      "description": "Kritik güvenlik ve hesapla ilgili e-postalar tercihlerinize bakılmaksızın her zaman gönderilecektir."
+    },
+    "save": "Tercihleri Kaydet",
+    "saving": "Kaydediliyor...",
+    "saved": "Tercihler başarıyla kaydedildi!"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "setup": {
+    "title": "Agregar Tu Billetera BEP-20",
+    "description": "Ingresa tu dirección de billetera de Binance Smart Chain (BEP-20) para recibir recompensas",
+    "verifiedTitle": "Billetera Verificada",
+    "verifiedDescription": "Tu dirección de billetera BEP-20 está verificada y bloqueada",
+    "verifiedLabel": "Dirección de Billetera Verificada",
+    "verifiedNote": "Esta dirección está vinculada permanentemente a tu cuenta y no se puede cambiar.",
+    "airdropInfoTitle": "Información del Airdrop",
+    "airdropInfoText": "Todos tus puntos y recompensas ganados se enviarán a esta dirección de billetera cuando comience la distribución del airdrop.",
+    "warningTitle": "Importante: Lee Antes de Agregar Billetera",
+    "warningItems": {
+      "bep20Only": "Solo se admiten direcciones BEP-20 (Binance Smart Chain)",
+      "permanentLock": "Tu dirección de billetera se bloqueará permanentemente después de la confirmación",
+      "cannotChange": "No puedes cambiar tu dirección de billetera una vez verificada",
+      "doubleCheck": "Verifica dos veces tu dirección antes de confirmar",
+      "rewardsDestination": "Todas las recompensas del airdrop se enviarán a esta dirección"
+    },
+    "infoTitle": "¿Qué es una Dirección BEP-20?",
+    "infoDescription": "BEP-20 es el estándar de token en Binance Smart Chain. Tu dirección de billetera debe:",
+    "infoItems": {
+      "startsWith": "Comenzar con 0x",
+      "length": "Tener exactamente 42 caracteres",
+      "characters": "Contener solo números (0-9) y letras (a-f, A-F)"
+    },
+    "infoExample": "Ejemplo:",
+    "walletLabel": "Dirección de Billetera BEP-20",
+    "walletPlaceholder": "0x...",
+    "walletHelp": "Pega tu dirección de billetera BEP-20 de Trust Wallet, MetaMask o Binance",
+    "continueButton": "Continuar",
+    "processingButton": "Procesando..."
+  },
+  "confirmation": {
+    "title": "Confirmar Dirección de Billetera",
+    "subtitle": "Esta acción no se puede deshacer",
+    "addressLabel": "Tu Dirección de Billetera:",
+    "criticalTitle": "CRÍTICO: Por Favor Lee Cuidadosamente",
+    "criticalItems": {
+      "permanentLock": "Esta dirección de billetera se bloqueará PERMANENTEMENTE en tu cuenta",
+      "cannotChange": "NO PUEDES cambiar o actualizar esta dirección después de la confirmación",
+      "rewardsDestination": "Todas las recompensas del airdrop se enviarán a esta dirección",
+      "accessRequired": "Asegúrate de tener acceso a esta billetera",
+      "verifyCorrect": "Verifica que la dirección sea correcta antes de confirmar"
+    },
+    "checklistTitle": "Lista de Verificación de Confirmación",
+    "checklistItems": {
+      "doubleChecked": "He verificado dos veces mi dirección de billetera y es correcta",
+      "understandPermanent": "Entiendo que esta dirección no se puede cambiar después de la confirmación",
+      "haveAccess": "Tengo acceso a esta billetera y puedo recibir tokens",
+      "understandBep20": "Entiendo que esta es una dirección BEP-20 (Binance Smart Chain)"
+    },
+    "cancelButton": "Cancelar",
+    "confirmButton": "Confirmar y Bloquear Billetera",
+    "confirmingButton": "Confirmando...",
+    "checkAllRequired": "Por favor, marca todas las casillas para confirmar",
+    "acknowledgement": "Al confirmar, reconoces que has leído y comprendido todas las advertencias anteriores"
+  },
+  "errors": {
+    "walletAlreadySet": "Tu dirección de billetera ya ha sido verificada y no se puede cambiar. Esta es una medida de seguridad permanente.",
+    "walletInUse": "Esta dirección de billetera ya está registrada en otra cuenta. Cada billetera solo puede vincularse a una cuenta.",
+    "invalidAddress": "El formato de la dirección de billetera no es válido. Por favor, proporciona una dirección BEP-20 válida que comience con 0x.",
+    "validationError": "La dirección de billetera falló la validación. Por favor, verifica el formato e inténtalo de nuevo.",
+    "noWallet": "No se encontró ninguna dirección de billetera. Por favor, agrega una dirección de billetera primero antes de verificar.",
+    "alreadyVerified": "Tu dirección de billetera ya está verificada. No se requiere ninguna acción adicional.",
+    "unknown": "Ocurrió un error inesperado. Por favor, inténtalo de nuevo o contacta al soporte si el problema persiste."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "general": {
+    "unknown": "An unknown error occurred",
+    "serverError": "Server error occurred",
+    "networkError": "Network connection error",
+    "timeout": "Request timed out"
+  },
+  "auth": {
+    "invalidCredentials": "Invalid email or password",
+    "emailExists": "Email already exists",
+    "usernameExists": "Username already exists",
+    "unauthorized": "Unauthorized access",
+    "sessionExpired": "Your session has expired",
+    "invalidToken": "Invalid or expired token"
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "invalidPassword": "Password must be at least 8 characters",
+    "passwordMismatch": "Passwords do not match",
+    "invalidUsername": "Username must be 3-20 characters",
+    "invalidWallet": "Invalid wallet address"
+  },
+  "api": {
+    "notFound": "Resource not found",
+    "forbidden": "Access forbidden",
+    "badRequest": "Invalid request",
+    "conflict": "Resource already exists",
+    "tooManyRequests": "Too many requests, please try again later"
+  },
+  "database": {
+    "connectionError": "Database connection error",
+    "queryError": "Database query error",
+    "uniqueConstraint": "This value already exists"
+  },
+  "errorReport": {
+    "title": "Report an Error",
+    "subtitle": "Help us improve by reporting any issues you encounter",
+    "button": "Report Error",
+    "types": {
+      "UI_ERROR": "UI/Display Error",
+      "API_ERROR": "API/Connection Error",
+      "TASK_ERROR": "Task Completion Error",
+      "PAYMENT_ERROR": "Payment/Wallet Error",
+      "OTHER": "Other"
+    },
+    "form": {
+      "errorType": "Error Type",
+      "errorTitle": "Error Title",
+      "errorTitlePlaceholder": "Brief description of the error",
+      "errorTitleRequired": "Error title is required",
+      "errorDetails": "Error Details",
+      "errorDetailsPlaceholder": "Please describe what happened, what you were trying to do, and any error messages you saw...",
+      "errorDetailsRequired": "Error details are required",
+      "submit": "Submit Report",
+      "cancel": "Cancel",
+      "submitting": "Submitting..."
+    },
+    "success": {
+      "title": "Report Submitted!",
+      "message": "Thank you for helping us improve the platform"
+    },
+    "validation": {
+      "allFieldsRequired": "Please fill in all required fields"
+    }
+  }
+}

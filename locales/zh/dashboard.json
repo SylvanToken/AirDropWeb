@@ -1,0 +1,64 @@
+{
+  "title": "欢迎回来，{username}！",
+  "subtitle": "跟踪您的进度并与其他社区成员竞争",
+  "loading": "正在加载仪表板...",
+  "hero": {
+    "title": "欢迎回来，{username}！",
+    "subtitle": "跟踪您的进度并与其他社区成员竞争",
+    "stats": {
+      "points": "总积分",
+      "tasks": "已完成任务",
+      "rank": "您的排名",
+      "streak": "连续天数"
+    }
+  },
+  "error": {
+    "title": "错误",
+    "retry": "重试"
+  },
+  "stats": {
+    "totalPoints": {
+      "title": "总积分",
+      "description": "继续完成任务以赚取更多积分！"
+    },
+    "rank": {
+      "title": "您的排名",
+      "description": "在所有参与者中"
+    },
+    "streak": {
+      "title": "当前连续",
+      "day": "天",
+      "days": "天",
+      "description": "连续"
+    },
+    "completions": {
+      "title": "已完成任务",
+      "description": "总完成数"
+    }
+  },
+  "recentCompletions": {
+    "title": "最近完成",
+    "subtitle": "您最近完成的任务",
+    "empty": "尚未完成任务",
+    "emptyDescription": "开始完成任务以在此处查看它们！",
+    "points": "分"
+  },
+  "leaderboard": {
+    "title": "排行榜",
+    "subtitle": "前10名社区成员",
+    "you": "（您）",
+    "task": "任务",
+    "tasks": "任务",
+    "points": "积分"
+  },
+  "threshold": {
+    "below": "您需要收集1500积分才有资格获得奖励",
+    "above": "恭喜！您已超过门槛",
+    "progress": "积分"
+  },
+  "pointThreshold": {
+    "belowThreshold": "您需要收集1500积分才能获得奖励资格",
+    "aboveThreshold": "恭喜！您已通过门槛",
+    "pointsOf": "积分"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "general": {
+    "unknown": "حدث خطأ غير معروف",
+    "serverError": "حدث خطأ في الخادم",
+    "networkError": "خطأ في اتصال الشبكة",
+    "timeout": "انتهت مهلة الطلب"
+  },
+  "auth": {
+    "invalidCredentials": "بريد إلكتروني أو كلمة مرور غير صحيحة",
+    "emailExists": "البريد الإلكتروني موجود بالفعل",
+    "usernameExists": "اسم المستخدم موجود بالفعل",
+    "unauthorized": "وصول غير مصرح به",
+    "sessionExpired": "انتهت صلاحية جلستك",
+    "invalidToken": "رمز غير صالح أو منتهي الصلاحية"
+  },
+  "validation": {
+    "required": "هذا الحقل مطلوب",
+    "invalidEmail": "عنوان بريد إلكتروني غير صالح",
+    "invalidPassword": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
+    "passwordMismatch": "كلمات المرور غير متطابقة",
+    "invalidUsername": "يجب أن يكون اسم المستخدم من 3 إلى 20 حرفًا",
+    "invalidWallet": "عنوان محفظة غير صالح"
+  },
+  "api": {
+    "notFound": "المورد غير موجود",
+    "forbidden": "الوصول محظور",
+    "badRequest": "طلب غير صالح",
+    "conflict": "المورد موجود بالفعل",
+    "tooManyRequests": "طلبات كثيرة جدًا، يرجى المحاولة لاحقًا"
+  },
+  "database": {
+    "connectionError": "خطأ في الاتصال بقاعدة البيانات",
+    "queryError": "خطأ في استعلام قاعدة البيانات",
+    "uniqueConstraint": "هذه القيمة موجودة بالفعل"
+  },
+  "errorReport": {
+    "title": "الإبلاغ عن خطأ",
+    "subtitle": "ساعدنا في التحسين من خلال الإبلاغ عن أي مشاكل تواجهها",
+    "button": "الإبلاغ عن خطأ",
+    "types": {
+      "UI_ERROR": "خطأ في واجهة المستخدم/العرض",
+      "API_ERROR": "خطأ في API/الاتصال",
+      "TASK_ERROR": "خطأ في إكمال المهمة",
+      "PAYMENT_ERROR": "خطأ في الدفع/المحفظة",
+      "OTHER": "أخرى"
+    },
+    "form": {
+      "errorType": "نوع الخطأ",
+      "errorTitle": "عنوان الخطأ",
+      "errorTitlePlaceholder": "وصف موجز للخطأ",
+      "errorTitleRequired": "عنوان الخطأ مطلوب",
+      "errorDetails": "تفاصيل الخطأ",
+      "errorDetailsPlaceholder": "يرجى وصف ما حدث، وما كنت تحاول القيام به، وأي رسائل خطأ رأيتها...",
+      "errorDetailsRequired": "تفاصيل الخطأ مطلوبة",
+      "submit": "إرسال التقرير",
+      "cancel": "إلغاء",
+      "submitting": "جاري الإرسال..."
+    },
+    "success": {
+      "title": "تم إرسال التقرير!",
+      "message": "شكرًا لمساعدتنا في تحسين المنصة"
+    },
+    "validation": {
+      "allFieldsRequired": "يرجى ملء جميع الحقول المطلوبة"
+    }
+  }
+}
