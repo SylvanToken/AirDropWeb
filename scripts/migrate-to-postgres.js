@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Use environment variable for database connection
-const connectionString = process.env.DATABASE_URL || 'postgres://username:password@host:5432/database';
+const connectionString = process.env.DATABASE_URL || 'postgresql://username:password@host:5432/database';
 
 // Read the Prisma schema and generate SQL
 const schema = fs.readFileSync(path.join(__dirname, '../prisma/schema.prisma'), 'utf8');

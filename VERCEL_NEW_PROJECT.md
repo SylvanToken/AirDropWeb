@@ -177,7 +177,7 @@ DATABASE_URL
 
 **Value:** (Your existing Supabase URL)
 ```
-postgresql://postgres.fahcabutajczylskmmgw:bkEOzJECBtU2SZcM@aws-0-us-east-1.pooler.supabase.com:5432/postgres
+postgresql://username:password@host:5432/database
 ```
 
 **Environment:**
@@ -196,9 +196,9 @@ Click **"Add"** button
 NEXTAUTH_URL
 ```
 
-**Value:** (Your Vercel domain - placeholder for now)
+**Value:** (Production domain)
 ```
-https://sylvan-airdrop-platform.vercel.app
+https://airdrop.sylvantoken.org
 ```
 
 **⚠️ NOTE:** We'll update with real domain after deployment
@@ -361,8 +361,7 @@ Click the **"Deploy"** button!
 
 After successful deployment:
 
-1. Copy the URL next to the **"Visit"** button
-   - Example: `https://sylvan-airdrop-platform.vercel.app`
+1. The production URL is: `https://airdrop.sylvantoken.org`
 
 ### 7.2 Update NEXTAUTH_URL
 
@@ -371,9 +370,9 @@ After successful deployment:
 3. Select **"Environment Variables"** from left menu
 4. Find the **NEXTAUTH_URL** variable
 5. Click **"Edit"** button on the right
-6. Replace value with your real domain:
+6. Replace value with production domain:
    ```
-   https://sylvan-airdrop-platform.vercel.app
+   https://airdrop.sylvantoken.org
    ```
 7. Click **"Save"** button
 
@@ -393,7 +392,7 @@ After successful deployment:
 
 Open in browser:
 ```
-https://sylvan-airdrop-platform.vercel.app/countdown
+https://airdrop.sylvantoken.org/countdown
 ```
 
 **✅ Success:** 
@@ -410,7 +409,7 @@ https://sylvan-airdrop-platform.vercel.app/countdown
 
 Open in browser:
 ```
-https://sylvan-airdrop-platform.vercel.app/
+https://airdrop.sylvantoken.org/
 ```
 
 **✅ Success:** 
@@ -420,7 +419,7 @@ https://sylvan-airdrop-platform.vercel.app/
 
 **Open incognito window**, then:
 ```
-https://sylvan-airdrop-platform.vercel.app/?access=07c3bc6110ce1528fa7206f504420d3fc62deab8a8ea03548d289b6eb8a3fc1c
+https://airdrop.sylvantoken.org/?access=07c3bc6110ce1528fa7206f504420d3fc62deab8a8ea03548d289b6eb8a3fc1c
 ```
 
 **✅ Success:**
@@ -436,7 +435,7 @@ After admin access:
 
 1. Open in normal window (not incognito):
    ```
-   https://sylvan-airdrop-platform.vercel.app/
+   https://airdrop.sylvantoken.org/
    ```
 
 2. **✅ Success:** Redirects to dashboard (cookie is working)
@@ -449,7 +448,7 @@ After admin access:
 
 Open from your phone:
 ```
-https://sylvan-airdrop-platform.vercel.app/countdown
+https://airdrop.sylvantoken.org/countdown
 ```
 
 **✅ Success:** Responsive design looks good
@@ -520,12 +519,12 @@ Your project is now live on Vercel!
 
 **Production URL:**
 ```
-https://sylvan-airdrop-platform.vercel.app
+https://airdrop.sylvantoken.org
 ```
 
 **Admin Access:**
 ```
-https://sylvan-airdrop-platform.vercel.app/?access=07c3bc6110ce1528fa7206f504420d3fc62deab8a8ea03548d289b6eb8a3fc1c
+https://airdrop.sylvantoken.org/?access=07c3bc6110ce1528fa7206f504420d3fc62deab8a8ea03548d289b6eb8a3fc1c
 ```
 
 **Vercel Dashboard:**
