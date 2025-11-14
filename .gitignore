@@ -111,3 +111,6 @@ jspm_packages/
 /test-results/
 /playwright-report/
 /playwright/.cache/
+
+# Deployment backups (contain sensitive data)
+backups/
