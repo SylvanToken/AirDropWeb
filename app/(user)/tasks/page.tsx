@@ -108,7 +108,7 @@ export default async function TasksPage() {
       completedAt: true,
       missedAt: true,
       status: true,
-      task: {
+      Task: {
         select: {
           id: true,
           campaignId: true,
