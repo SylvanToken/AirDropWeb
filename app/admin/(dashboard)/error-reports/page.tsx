@@ -40,7 +40,7 @@ export default async function ErrorReportsPage({
   const errorReports = await prisma.errorReport.findMany({
     where,
     include: {
-      user: {
+      User: {
         select: {
           id: true,
           email: true,
