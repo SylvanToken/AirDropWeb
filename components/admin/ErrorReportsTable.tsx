@@ -32,7 +32,7 @@ interface ErrorReport {
   priority: string;
   pageUrl: string;
   createdAt: Date;
-  user: {
+  User: {
     id: string;
     email: string;
     username: string;
